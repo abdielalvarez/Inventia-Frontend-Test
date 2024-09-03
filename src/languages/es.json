@@ -1,0 +1,489 @@
+{
+    "lang": {
+        "test": "es"
+    },
+    "change-to": "es",
+    "header": {
+        "services": {
+            "title": "Servicios",
+            "section1": {
+                "subtitle1": "Inventia Experience",
+                "text1": "Costumer Research and Insights",
+                "text2": "Product Design",
+                "text3": "Service Design"
+            },
+            "section2": {
+                "subtitle1": "Inventia Software",
+                "text1": "Full Stack Development",
+                "text2": "Cloud Engineering",
+                "text3": "DevOps Development"
+            }
+        },
+        "successful": {
+            "title": "Casos de éxito",
+            "section1": {
+                "subtitle1": "Servicios Financieros",
+                "text1": "BBVA",
+                "text2": "Grupo Gentera"
+            },
+            "section2": {
+                "subtitle1": "Banking",
+                "text1": "Podemos Progresar",
+                "text2": "ION"
+            }
+        },
+        "about-us": {
+            "title": "Nosotros"
+        },
+        "contact-us": {
+            "title": "¡Hablemos!"
+        }
+    },
+    "footer": {
+        "contact-us": {
+            "title": "Contáctanos",
+            "cellphone": "55.55.92.32.66",
+            "email": "contacto@inventialab.com"
+        },
+        "address": {
+            "title": "Dirección",
+            "text1": "Lisboa #47 Colonia Juárez, C.P 06600, CDMX"
+        },
+        "home": {
+            "title": "Inicio",
+            "services": "Servicios",
+            "successful": "Casos de éxito",
+            "about-us": "Nosotros",
+            "contact-us": "¡Hablemos!"
+        },
+        "company": {
+            "title": "Company",
+            "subtitle": "Inventia Lab S.A. de C.V"
+        }
+    },
+    "home": {
+        "block1": {
+            "welcome": "Bienvenido a",
+            "inventia": "INVENTIA"
+        },
+        "block2": {
+            "text1": "Transformación",
+            "text2": "digital",
+            "text3": "centrada",
+            "text4": "en las personas."
+        },
+        "block3": {
+            "text1": "Somos una firma de diseño de experiencia centrado en las personas e ingeniería de software a escala.",
+            "text2": "¡Hablemos!"
+        },
+        "block4": {
+            "text1": "Inventia Experience",
+            "text2": "Inventia Software",
+            "text3": "Cómo te ayudamos.",
+            "text4": "Creamos en conjunto diferentes estrategias para solucionar los desafíos que se  presentan en tu organización, a estructurar tus proyectos y darle una respuesta realmente funcional."
+        },
+        "block5": {
+            "text1": "Más que diseñar una experiencia, sé especialista en",
+            "text2": "conectar emocionalmente con tu cliente.",
+            "text3": "Inventia Experience",
+            "text4": "Lanza plataformas tecnológicas de software con",
+            "text5": "altos estándares de calidad e innovación",
+            "text6": "Inventia Software"
+        },
+        "block6": {
+            "title": "Nos especializamos en la industria financiera."
+        },
+        "block7": {
+            "title": "Ellos confían en nosotros",
+            "button": "¡Hablemos!"
+        },
+        "block8": {
+            "title": "Nosotros",
+            "text1": "Nuestro equipo de especialistas, es nuestra herramienta",
+            "text2": "más importante",
+            "text3": "para darte los mejores resultados",
+            "button": "Ver más"
+        },
+        "block9": {
+            "title": "¡Hablemos!",
+            "text1": "Déjanos tus datos y nosotros nos pondremos en contacto contigo",
+            "input1": "teléfono",
+            "input2": "email",
+            "input3": "nombre",
+            "button": "¡Enviar!"
+        }
+    },
+    "services": {
+        "primary": {
+            "block1": {
+                "title": "Cómo te ayudamos",
+                "text1": "Creamos en conjunto diferentes estrategias para solucionar los desafíos que se presentan en tu organización y estructuramos tus proyectos en un sentido realmente funcional.",
+                "text2": "Inventia",
+                "text3": "Experience",
+                "text4": "Inventia",
+                "text5": "Software",
+                "text6": "Metodología"
+            },
+            "block2": {
+                "title": "Inventia Experience",
+                "text1": "UX Design y UX research centrados en las personas para comprender a tus usuarios. Creamos productos y servicios diferenciados que realmente responden a las necesidades de tu organización y de tus clientes",
+                "button": "¡Hablemos!",
+                "text2": "Customer Research e Insights.",
+                "text3": "Product Design and Build",
+                "text4": "Service Design"
+            },
+            "block3": {
+                "title": "Inventia Software",
+                "text1": "Especialistas en adaptive technology.",
+                "text2": "Nuestro equipo de desarrolladores full-stack proporciona servicios de desarrollo frontend y backend en estrecha colaboración con nuestros diseñadores.",
+                "button": "¡Hablemos!"
+            },
+            "block4": {
+                "text1": "Full Stack Development",
+                "text2": "Cloud Engineering",
+                "text3": "DevOps Implementation"
+            },
+            "block5": {
+                "title": "Metodología",
+                "subtitle": "Basamos nuestra metodología en el proceso iterativo y creativo de Design Thinking es decir, centrándonos en el usuario. Obteniendo así resultados que realmente sean funcionales.",
+                "text1": "empatía",
+                "text2": "definición",
+                "text3": "ideación",
+                "text4": "prototipado y testeo"
+            }
+        },
+        "inventiaexperience-research": {
+            "block1": {
+                "title": "Inventia Experience",
+                "subtitle": "Customer Research e Insights.",
+                "text1": "Teniendo como centro del proceso al usuario, la investigación y la empatía, puedes lograr traducir las",
+                "text2": "necesidades principales del cliente en",
+                "text3": "interacciones significativas e inclusivas."
+            },
+            "block2": {
+                "text1": "Comprenderás mejor a tu cliente, sus motivaciones, comportaminetos, emociones y obstáculos.",
+                "text2": "Mejor comunicación y entendimiento de tus productos y servicios.",
+                "text3": "Obtendrás insights y hallazgos sobre tu organzación y competencia."
+            },
+            "block3": {
+                "text1": "Basados en Design Thinking, Customer Research e Insights te brindará un amplio conocimineto e información para sentar bases en cualquier proyecto.",
+                "button": "¡Hablemos!"
+            },
+            "block4": {
+                "title": "Casos de éxito",
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Customer Research e Insights."
+            }
+        },
+        "inventiaexperience-productdesign": {
+            "block1": {
+                "title": "Inventia Experience",
+                "subtitle": "Product Design and Build",
+                "text1": "Diseñamos experiencias inclusivas para cerrar",
+                "text2": "la brecha entre las personas y la tecnología."
+            },
+            "block2": {
+                "text1": "Aquí es dónde alineamos la",
+                "text2": "visión creativa con la estrategia comercial.",
+                "text3": "Es una",
+                "text4": "interacción directa y constante",
+                "text5": "Es una interacción directa y constante con el usuario.",
+                "text6": "Creamos prototipos,",
+                "text7": "probamos continuamente:",
+                "text8": "si funciona bien, si se entiende, si es accesible, si es verdaderamente un buen producto."
+            },
+            "block3": {
+                "text1": "Product Design se basa en la investigación realizada y en el proceso iterativo de Design Thinking para brindar soluciones que creen impacto.",
+                "button": "¡Hablemos!"
+            },
+            "block4": {
+                "title": "Casos de éxito",
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Product Design."
+            }
+        },
+        "inventiaexperience-servicedesign": {
+            "block1": {
+                "title": "Inventia Experience",
+                "subtitle": "Service Design",
+                "text1": "UX aplicado a lo largo de todos sus servicios. Comprenda e interactúe con sus clientes creando y brindando servicios efectivos y diferenciados."
+            },
+            "block2": {
+                "text1": "Es ir más allá de las pantallas para crear experiencias e interacciones intencionales y significativas a lo largo del customer journey."
+            },
+            "block3": {
+                "text1": "Diseñamos estrategias",
+                "text2": "Diseñamos estrategias y procesos. Trabajamos para que el servicio completo sea realmente funcional.",
+                "button": "¡Hablemos!"
+            },
+            "block4": {
+                "title": "Casos de éxito",
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Service Design."
+            }
+        },
+        "inventiasoftware-fullstackdevelopment": {
+            "block1": {
+                "title": "Inventia Software",
+                "subtitle": "Full Stack Development",
+                "list1": {
+                    "title1": "Frontend Development",
+                    "text1": "Micro front ends",
+                    "text2": "Atomic Design",
+                    "text3": "PWA (Progressive Web Apps)",
+                    "text4": "Frontal architecture"
+                },
+                "list2": {
+                    "title1": "Backend Development",
+                    "text1": "API and web service development",
+                    "text2": "Architecture backend",
+                    "text3": "Software integration"
+                },
+                "list3": {
+                    "title1": "Mobile Development",
+                    "text1": "Native app development:",
+                    "text2": "iOS | Android",
+                    "text3": "App porting and migration",
+                    "text4": "Hybrid apps development"
+                }
+            },
+            "block2": {
+                "text1": "Lanza plataformas tecnológicas de software con altos estándares de calidad e innovación.",
+                "button": "¡Hablemos!"
+            },
+            "block3": {
+                "title": "Casos de éxito",
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Full Stack Development."
+            }
+        },
+        "inventiasoftware-cloudengineering": {
+            "block1": {
+                "title": "Inventia Software",
+                "subtitle": "Cloud Engineering",
+                "text1": "“Propone un acercamiento sistemático a temas de comercialización, estandarización, y gobernabilidad en la nube.”",
+                "text2": "Cloud consulting & strategy:",
+                "text3": "IaaS | PaaS | SaaS",
+                "text4": "Cloud automation",
+                "text5": "Cloud Application test & implementation"
+            },
+            "block2": {
+                "text1": "Lanza plataformas tecnológicas de software con altos estándares de calidad e innovación.",
+                "button": "¡Hablemos!"
+            },
+            "block3": {
+                "title": "Casos de éxito",
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Cloud Engineering."
+            }
+        },
+        "inventiasoftware-devopsimplementation": {
+            "block1": {
+                "title": "Inventia Software",
+                "subtitle": "DevOps Implementation",
+                "text1": "Es la combinación de prácticas y herramientas diseñadas para aumentar la capacidad de una organización para entregar aplicaciones y servicios más rápido que los procesos tradicionales de desarrollo de software.",
+                "text2": "Automated CI / CD pipeline",
+                "text3": "Managed cloud services",
+                "text4": "DevSecOps - Security integrated",
+                "text5": "Infrastructure as Code (IaC)",
+                "text6": "DevOps maturity model"
+            },
+            "block2": {
+                "text1": "Lanza plataformas tecnológicas de software con altos estándares de calidad e innovación.",
+                "button": "¡Hablemos!"
+            },
+            "block3": {
+                "title": "Casos de éxito",
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en DevOps."
+            }
+        }
+    },
+    "success-stories": {
+        "primary": {
+            "block1": {
+                "title": "Casos de éxito",
+                "text1": "Transformamos procesos que llevan desde el entendimiento de tu cliente, a ofrecer una solución funcional."
+            },
+            "block2": {
+                "title": "Nos especializamos en servicios financieros"
+            },
+            "block3": {
+                "title": "Servicios financieros",
+                "text1": "Banking",
+                "text2": "Fintech"
+            },
+            "block4": {
+                "text1": "Ofrecemos servicios de consultoría de diseño de productos y servicios, para diferentes canales de venta o atención al cliente."
+            },
+            "block5": {
+                "title": "Testimonios",
+                "subtitle": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
+                "text1": "-Nombre Apellido."
+            },
+            "block6": {
+                "title": "¡Trabajemos en conjunto y desarrollemos nuevas soluciones a problemas complejos!",
+                "button": "¡Hablemos!"
+            }
+        },
+        "banking-bbva": {
+            "block1": {
+                "title": "Banking",
+                "subtitle": "BBVA",
+                "description": "Servicios de consultoría de diseño de productos y servicios, para diferentes canales de venta o atención al cliente.",
+                "tags": "Inventia Experience | Customer Research e Insights| Product & Service Design."
+            },
+            "block2": {
+                "title": "Brief",
+                "subtitle": "Resolver soluciones multiplataforma, problemas de comunicación, navegación, conversión y venta de servicios y productos BBVA.",
+                "text": "Mejora sustancial de los productos y servicios digitales en la comunicación, usabilidad y navegación, así como la tasa de conversión del uso de las aplicaciones en sus canales."
+            },
+            "block3": {
+                "title": "resultados",
+                "text1": "Diseño de experiencias satisfactorias y placenteras para la",
+                "text2": "app BBVA, bbva.mx",
+                "text3": "Diseño de diferentes canales de servicio de la marca, alcanzando los KPIs de negocio."
+            },
+            "block4": {
+                "title": "¡Trabajemos en conjunto y desarrollemos nuevas soluciones a problemas complejos!",
+                "text1": "¡Hablemos!"
+            },
+            "block5": {
+                "title": "otros casos de éxito"
+            }
+        },
+        "banking-grupogentera": {
+            "block1": {
+                "title": "Banking",
+                "tags": "Inventia Experience | Customer Research e Insights| Product & Service Design.",
+                "subtitle": "Grupo Gentera",
+                "description": "Estrategia y modelo comercial del laboratorio de innovación de Grupo Gentera."
+            },
+            "block2": {
+                "title": "Brief",
+                "subtitle": "Diseñar la estrategia tecnológica para los próximos 3 años, basado en el desarrollo de productos y servicios para propiciar la inclusión financiera del sector no bancarizado en México.",
+                "text": "Diseñamos a través de técnicas de service design, la estrategia, modelo de negocio, cadena de valor y service blueprint para implementar los proyectos que serían más rentables para Gentera."
+            },
+            "block3": {
+                "title": "resultados",
+                "text1": "Se",
+                "text2": "optimizó",
+                "text3": "el gasto de inversión en innovación, eliminando las iniciativas que no generaban valor.",
+                "text4": "Priorizando recursos en proyectos con alto potencial de ingresos.",
+                "text5": "Se estableció el modelo de negocio y servicio de la nueva iniciativa."
+            },
+            "block4": {
+                "title": "¡Trabajemos en conjunto y desarrollemos nuevas soluciones a problemas complejos!",
+                "text1": "¡Hablemos!"
+            },
+            "block5": {
+                "title": "otros casos de éxito"
+            }
+        },
+        "banking-financierapodemosprogresar": {
+            "block1": {
+                "title": "Banking",
+                "tags": "Inventia Experience | Customer Research e Insights",
+                "subtitle": "Financiera Podemos Progresar",
+                "description": "Un research hecho desde lo humano."
+            },
+            "block2": {
+                "title": "Brief",
+                "subtitle": "Descubrir las necesidades, motivadores,  barreras, emociones y actores involucrados en el journey de adquisición en el proceso de colocación.",
+                "text": "A través de entrevistas etnográficas realizadas a profundidad con usuarios de Podemos Progresar e investigación enfocada a las motivaciones y obstáculos de las integrantes logramos:"
+            },
+            "block3": {
+                "title": "resultados",
+                "text1": "Encontramos áreas de oportunidad clave para dar seguimiento al proceso de ideación.",
+                "text2": "Dimos a conocer los obstáculos y motivadores para continuar con sus negocios y consolidarse",
+                "text3": "Identificamos y analizamos cómo perciben a Podemos Progresar frente a la competencia."
+            },
+            "block4": {
+                "title": "¡Trabajemos en conjunto y desarrollemos nuevas soluciones a problemas complejos!",
+                "text1": "¡Hablemos!"
+            },
+            "block5": {
+                "title": "otros casos de éxito"
+            }
+        },
+        "banking-ion": {
+            "block1": {
+                "title": "Banking",
+                "tags1": "Inventia Software | FronEnd Development | BackEnd Development",
+                "tags2": "Inventia Experience | Customer Research e Insights| Product & Service Design.",
+                "subtitle": "ION",
+                "description": "Transformación digital, diseño y desarrollo de nuevos canales de venta, gestión de productos hipotecarios y crédito pyme."
+            },
+            "block2": {
+                "title": "Brief",
+                "subtitle": "Establecer una estrategia de DesignOps, para gestionar iniciativas complejas de desarrollo, metodología, arquitectura tecnológica y diseño CU.",
+                "text1": "Diseñamos un modelo de atención de requerimientos en base a la complejidad.",
+                "text2": "Establecimos lineamientos para los equipos de: tecnología, operaciones y gestión."
+            },
+            "block3": {
+                "title": "resultados",
+                "text1": "Onboarding de cliente intuitivo y automatizado con los sistemas BackEnd, incrementando las ventas.",
+                "text2": "Se logró la transformación digital del canal de ventas.",
+                "text3": "Se cumplió con la regulación establecida por CNBV."
+            },
+            "block4": {
+                "title": "¡Trabajemos en conjunto y desarrollemos nuevas soluciones a problemas complejos!",
+                "text1": "¡Hablemos!"
+            },
+            "block5": {
+                "title": "otros casos de éxito"
+            }
+        }
+    },
+    "about-us": {
+        "block1": {
+            "title": "Nuestro equipo",
+            "subtitle": "En Inventia desarrollamos equipos autogestionables e incentivamos el talento para impulsar el cambio.",
+            "text1": "Inventia Experience",
+            "text2": "Inventia Software"
+        },
+        "block2": {
+            "title": "Equipo Inventia Experience",
+            "subtitle": "Tenemos en nuestro equipo a:",
+            "text1": "UX",
+            "text2": "Research",
+            "text3": "Data",
+            "text4": "Analyst",
+            "text5": "Content",
+            "text6": "Strategist",
+            "text7": "Product",
+            "text8": "Designer",
+            "text9": "Service",
+            "text10": "Visual Designer",
+            "button": "Únete al equipo"
+        },
+        "block3": {
+            "title": "Equipo Inventia Software",
+            "subtitle": "Tenemos en nuestro equipo a:",
+            "text1": "Agile Coach",
+            "text2": "Scrum Masters",
+            "text3": "Tech Lead",
+            "text4": "Backend, Frontend, Full Stack",
+            "text5": "Developers",
+            "text6": "Arquitecto APIs",
+            "text7": "Arquitecto Empresarial",
+            "text8": "Devops Engineer",
+            "text9": "Tester Automation",
+            "button": "Únete al equipo"
+        },
+        "block4": {
+            "title": "¡Únete al equipo!",
+            "subtitle": "Déjanos tus datos y nosotros nos pondremos en contacto contigo.",
+            "input1": "teléfono",
+            "input2": "email",
+            "input3": "nombre",
+            "input4": "puesto al que estás interesado",
+            "button": "¡Enviar!"
+        }
+    },
+    "contact-us": {
+        "block1": {
+            "title": "¿Te gustaría realizar un proyecto con nosotros?",
+            "subtitle": "¡Hablemos!",
+            "description": "Déjanos tus datos y nosotros nos pondremos en contacto contigo.",
+            "input1": "teléfono",
+            "input2": "email",
+            "input3": "nombre",
+            "button": "¡Enviar!"
+        }
+    }
+}

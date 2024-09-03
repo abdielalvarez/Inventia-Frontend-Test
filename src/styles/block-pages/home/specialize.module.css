@@ -1,0 +1,32 @@
+.background {
+    background-color: #2005C0;
+    padding: 212px 40px 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.title {
+    max-width: 852px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 91.2px;
+}
+
+@media (max-width: 920px) {
+    .background {
+        padding: 130px 20px 109px;
+    }
+
+    .title {
+        max-width: 323px;
+        width: 100%;
+        line-height: 30.4px;
+    }
+}

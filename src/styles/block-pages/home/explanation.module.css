@@ -1,0 +1,141 @@
+.background {
+    background-color: #E5E5E5;
+    padding: 246px 80px 348px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.containerLeft1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.containerLeft2 {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 0 -40px 50px;
+}
+
+.containerLeft3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.textLeft1 {
+    margin: 0 0 50px;
+}
+
+.imgLeft2 {
+    margin: 20px 0 0;
+}
+
+.containerRight1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 220px 0 0;
+}
+
+.containerRight2 {
+    max-width: 450px;
+    width: 100%;
+    margin: 40px 50px 0 0;
+}
+
+.containerRight3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.textRight1 {
+    margin: 0 0 50px;
+}
+
+.imgRight2 {
+    margin: 20px 0 0;
+}
+
+@media (max-width: 920px) {
+    .background {
+        padding: 130px 38px 125px;
+    }
+
+    .containerLeft1 {
+        align-items: center;
+        margin: 0;
+    }
+
+    .containerRight1 {
+        align-items: center;
+        margin: 110px 0 0;
+    }
+
+    .containerLeft2 {
+        margin: 0;
+    }
+
+    .containerRight2 {
+        margin: 0;
+    }
+
+    .imgLeft1 {
+        margin: 0 30px 0 0;
+    }
+
+    .imgRight1 {
+        margin: 0 0 0 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    .containerLeft1 {
+        flex-direction: column-reverse;
+        max-width: 257px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .textLeft1 {
+        margin: 0 0 10px;
+    }
+
+    .imgLeft1 {
+        margin: -16px -30px 0px auto;
+    }
+
+    .imgLeft2 {
+        margin: 10px 0 0;
+    }
+
+    .containerRight1 {
+        flex-direction: column;
+        max-width: 257px;
+        width: 100%;
+        margin: 110px auto 0;
+    }
+
+    .containerRight3 {
+        text-align: end;
+    }
+
+    .textRight1 {
+        margin: 0 0 10px;
+        text-align: end;
+    }
+
+    .imgRight1 {
+        margin: -16px auto 0px -30px;
+    }
+
+    .imgRight2 {
+        margin: 10px 0 0 auto;
+    }
+}

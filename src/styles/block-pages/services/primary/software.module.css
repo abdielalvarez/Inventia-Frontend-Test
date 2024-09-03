@@ -1,0 +1,121 @@
+.background {
+    background: #2005C0;
+    position: relative;
+    padding: 280px 100px 194px 154px;
+}
+
+.wrapper {
+    max-width: 1111px;
+    width: 100%;
+}
+
+.textContainer {
+    width: 100%;
+    margin: 0 0 163px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.textContainer2 {
+    max-width: 370px;
+}
+
+.titleContainer {
+    margin: 0 0 50px;
+}
+
+.title {
+    line-height: 60.8px;
+}
+
+.descriptionContainer {
+    margin: 0 0 50px;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texts {
+    max-width: 420px;
+    width: 100%;
+}
+
+.textContent {
+    margin: 0 0 80px;
+}
+
+.text {
+    margin: 0 0 20px;
+}
+
+.item {
+    line-height: 38px;
+}
+
+@media (max-width: 768px) {
+    .background {
+        padding: 65px 26px 52px 35px;
+    }
+
+    .titleContainer {
+        margin: 0;
+    }
+
+    .title {
+        max-width: 100px;
+        display: block;
+        line-height: 25px;
+        margin: 0 0 20px;
+    }
+
+    .descriptionContainer {
+        margin: 0 0 30px;
+    }
+
+    .description1 {
+        max-width: 130px;
+        display: block;
+    }
+
+    .description2 {
+        max-width: 200px;
+        display: block;
+    }
+
+    .texts {
+        margin: -58px 0 0 15px;
+        max-width: 126px;
+    }
+
+    .textContainer {
+        margin: 0 0 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .textContent {
+        margin: 0 0 20px;
+    }
+
+    .text {
+        margin: 0;
+    }
+
+    .item {
+        line-height: normal;
+        max-width: 126px;
+        width: 100%;
+        display: block;
+    }
+
+    .button {
+        display: flex;
+        justify-content: flex-start;
+        margin: 35px 10px 0 0px;
+    }
+}

@@ -1,0 +1,7 @@
+export const ACTIONS = {
+    RESET: 'RESET',
+    SET_DATA: 'SET_DATA',
+    SET_LOADING: 'SET_LOADING',
+    SET_ERROR: 'SET_ERROR',
+    SET_LANGUAGE: 'SET_LANGUAGE',
+};

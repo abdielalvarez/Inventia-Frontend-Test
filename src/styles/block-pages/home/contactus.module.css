@@ -1,0 +1,40 @@
+.background {
+    background-color: #E5E5E5;
+    padding: 365px 40px 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 55px 0 0;
+}
+
+.title {
+    max-width: 627px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width: 920px) {
+    .background {
+        padding: 130px 20px 109px;
+    }
+
+    .title {
+        max-width: 317px;
+        width: 100%;
+    }
+
+    .buttonContainer {
+        margin: 20px 0 0;
+    }
+}
