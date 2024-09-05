@@ -147,9 +147,13 @@
                 "title": "Methodology",
                 "subtitle": "We base our methodology on the iterative and creative process of Design Thinking, in other words, focusing on the user. Obtaining really functional results. ",
                 "text1": "empaty",
+                "description1": "We connect with the current situation, deeply understanding your users' needs and your organization's goals.",
                 "text2": "definition",
+                "description2": "We identify key pain points and discover insights that turn into opportunities for innovation.",
                 "text3": "idation",
-                "text4": "prototyping and testing"
+                "description3": "We generate high-impact ideas through creative and collaborative sessions like co-creation workshops and brainstorming.",
+                "text4": "prototyping and testing",
+                "description4": "We create and refine concepts with navigation maps, prototypes, wireframes, mockups, and interactive user testing."
             }
         },
         "inventiaexperience-research": {

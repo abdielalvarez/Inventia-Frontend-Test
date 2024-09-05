@@ -147,9 +147,13 @@
                 "title": "Metodología",
                 "subtitle": "Basamos nuestra metodología en el proceso iterativo y creativo de Design Thinking es decir, centrándonos en el usuario. Obteniendo así resultados que realmente sean funcionales.",
                 "text1": "empatía",
+                "description1": "Investigación y acercamiento a la situación actual. Comprensión de las necesidades de los usuarios y los objetivos de la organización",
                 "text2": "definición",
+                "description2": "Pain points, insights, hallazgos como oportunidades para la innovación.",
                 "text3": "ideación",
-                "text4": "prototipado y testeo"
+                "description3": "Lluvia de ideas, co-creación, sesiones de workshop creativo.",
+                "text4": "prototipado y testeo",
+                "description4": "Mapas de navegación Prototipos Wireframes Mockups Look and feel Layouts Prototipos interactivos Pruebas con usuarios."
             }
         },
         "inventiaexperience-research": {
