@@ -1,0 +1,123 @@
+.background {
+    background: #FFFFFF;
+    padding: 164px 40px 0;
+}
+
+.wrapper {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper2 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 140px 0 399px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleContainer {
+    max-width: 261px;
+    width: 100%;
+}
+
+.title {
+    line-height: 45.6px;
+}
+
+.logo {
+    margin: 0 0 0 -30px;
+}
+
+.descriptionContainer {
+    max-width: 475px;
+    width: 100%;
+}
+
+.textContent {
+    margin: 0 0 20px;
+}
+
+.text {
+    max-width: 214px;
+    width: 100%;
+    text-align: end;
+}
+
+.background2 {
+    width: 100%;
+    max-width: 100%;
+}
+
+.background2 :global(img) {
+    display: block;
+}
+
+.img1 {
+    margin: 0 30% 0 0;
+}
+
+@media (max-width: 768px) {
+
+    .background {
+        padding: 110px 40px 0;
+    }
+
+    .title {
+        line-height: 19px;
+    }
+
+    .container {
+        margin: 40px 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin: 0 0 15px -10px;
+    }
+
+    .titleContainer {
+        margin: 0 0 20px;
+        max-width: 220px;
+        width: 100%;
+    }
+
+    .descriptionContainer {
+        max-width: 245px;
+        width: 100%;
+    }
+
+    .text {
+        max-width: 180px;
+        width: 100%;
+    }
+
+    .textContent {
+        margin: 0 0 10px;
+    }
+
+    .explanationContent {
+        display: flex;
+        padding: 130px 0;
+        align-items: center;
+    }
+
+    .img1 {
+        margin: 30px 10% 0 0;
+    }
+
+    .wrapper2 {
+        max-width: 300px;
+        margin: 0 auto 70px;
+        align-items: flex-start;
+    }
+}

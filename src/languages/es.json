@@ -242,10 +242,9 @@
                 },
                 "list3": {
                     "title1": "Mobile Development",
-                    "text1": "Native app development:",
-                    "text2": "iOS | Android",
-                    "text3": "App porting and migration",
-                    "text4": "Hybrid apps development"
+                    "text1": "Native app development: iOS | Android",
+                    "text2": "App porting and migration",
+                    "text3": "Hybrid apps development"
                 }
             },
             "block2": {

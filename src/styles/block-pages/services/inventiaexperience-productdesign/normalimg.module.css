@@ -1,8 +1,0 @@
-.background {
-  width: 100%;
-  max-width: 100%;
-}
-
-.background :global(img) {
-  display: block; /* Elimina el espacio debajo de la imagen */
-}
