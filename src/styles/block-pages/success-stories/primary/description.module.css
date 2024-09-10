@@ -1,0 +1,28 @@
+.background {
+    background-color: #E77C30;
+    position: relative;
+    padding: 318px 0;
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.text {
+    max-width: 556px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .background {
+        padding: 168px 0;
+    }
+
+    .text {
+        max-width: 264px;
+    }
+}

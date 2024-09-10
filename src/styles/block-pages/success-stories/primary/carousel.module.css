@@ -1,0 +1,122 @@
+.background {
+    background: #E5E5E5;
+    margin: 0 auto;
+    padding: 96px 0 166px;
+}
+
+.title {
+    text-align: center;
+    margin: 0 0 175px;
+}
+
+.message {
+    max-width: 672px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.author {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 100px 0px 0 -120px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 1020px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.arrowLeft {
+    left: 10px;
+    color: #E77C30;
+}
+
+.arrowRight {
+    right: 10px;
+    color: #E77C30;
+}
+
+.bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 52px;
+}
+
+.bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bullet.activeBullet {
+    background-color: #E77C30;
+}
+
+@media (max-width: 768px) {
+
+    .background {
+        padding: 96px 15px 82px;
+    }
+
+    .message {
+        max-width: 265px;
+        margin: 0 auto 0 45px;
+        text-align: start;
+    }
+    
+    .author {
+        margin: 25px 0px 0px -120px;
+    }
+
+    .title {
+        text-align: start;
+        margin: 0 0 47px 60px;
+    }
+    
+    .bullets {
+        margin-top: 24px;
+    }
+
+    .arrow {
+        top: 25%;
+    }
+}

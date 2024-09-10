@@ -48,7 +48,7 @@ const Header = () => {
     successText,
     aboutUsText,
     contactUsText
-  } = useText(isMenuOpen)
+  } = useText(isMenuOpen, colliders)
 
   const isSmallScreen = useResponsive(768);
 

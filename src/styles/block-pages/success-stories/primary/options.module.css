@@ -1,0 +1,95 @@
+.background {
+    background-color: #E5E5E5;
+    position: relative;
+    padding: 498px 0 342px 179px;
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.title {
+    max-width: 338px;
+    display: block;
+    line-height: 45.6px;
+}
+
+.optionsCollapsed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 30px;
+    background-color: #F5F5F5;
+    position: fixed;
+    z-index: 1000;
+    height: 69px;
+    width: 100%;
+}
+
+.optionsCollider {
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 0 141px;
+}
+
+.collapseContent {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.5s ease-out;
+    margin: 0 0 20px;
+}
+
+.expand {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.text1 {
+    margin: 70px 0 0;
+}
+
+.text2 {
+    margin: 10px 0;
+}
+
+.text {
+    margin: 0;
+}
+
+@media (max-width: 1150px) {
+    .img {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .text1 {
+        margin: 10px 0;
+    }
+    
+    .text2 {
+        margin: 10px 0;
+    }
+
+    .background {
+        padding: 135px 0 135px 30px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .title {
+        max-width: 144px;
+        line-height: 25.6px;
+    }
+
+    .optionsCollider {
+        cursor: pointer;
+        overflow: hidden;
+        margin: 0 0 30px;
+    }
+}

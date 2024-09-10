@@ -1,0 +1,34 @@
+.background {
+    background-color: #E5E5E5;
+    position: relative;
+    padding: 217px 139px;
+    background-image: url('/images/success-stories/primary/main/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1020px;
+    width: 100%;
+}
+
+.titleContainer {
+    max-width: 852px;
+    width: 100%;
+    line-height: 91.2px;
+}
+
+@media (max-width: 768px) {
+
+    .background {
+        padding: 54px 30px;
+    }
+
+    .titleContainer {
+        max-width: 318px;
+        width: 100%;
+        line-height: 34.2px;
+    }
+}

@@ -306,17 +306,34 @@
                 "title": "Nos especializamos en servicios financieros"
             },
             "block3": {
-                "title": "Servicios financieros",
-                "text1": "Banking",
-                "text2": "Fintech"
+                "collider1": {
+                    "title": "Servicios Financieros",
+                    "explanation1": "Podemos progresar",
+                    "explanation2": "ION Financiera"
+                },
+                "collider2": {
+                    "title": "Banking",
+                    "explanation1": "BBVA México",
+                    "explanation2": "Grupo Gentera"
+                }
             },
             "block4": {
                 "text1": "Ofrecemos servicios de consultoría de diseño de productos y servicios, para diferentes canales de venta o atención al cliente."
             },
             "block5": {
                 "title": "Testimonios",
-                "subtitle": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
-                "text1": "-Nombre Apellido."
+                "slide1": {
+                    "message": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
+                    "author": "-Nombre Apellido 1."
+                },
+                "slide2": {
+                    "message": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,”",
+                    "author": "-Nombre Apellido 2."
+                },
+                "slide3": {
+                    "message": "“Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
+                    "author": "-Nombre Apellido 3."
+                }
             },
             "block6": {
                 "title": "¡Trabajemos en conjunto y desarrollemos nuevas soluciones a problemas complejos!",
@@ -328,7 +345,7 @@
                 "title": "Banking",
                 "subtitle": "BBVA",
                 "description": "Servicios de consultoría de diseño de productos y servicios, para diferentes canales de venta o atención al cliente.",
-                "tags": "Inventia Experience | Customer Research e Insights| Product & Service Design."
+                "tags": "Inventia Experience | Customer Research e Insights | Product & Service Design."
             },
             "block2": {
                 "title": "Brief",

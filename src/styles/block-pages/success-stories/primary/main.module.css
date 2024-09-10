@@ -1,0 +1,40 @@
+.background {
+    background-color: #E5E5E5;
+    position: relative;
+    padding: 469px 139px 416px;
+}
+
+.wrapper {
+    max-width: 1020px;
+    width: 100%;
+}
+
+.titleContainer {
+    margin: 0 0 10px;
+}
+
+.subtitleContainer {
+    max-width: 556px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .background {
+        padding: 240px 30px 171px;
+    }
+
+    .wrapper {
+        max-width: 265px;
+        width: 100%;
+    }
+
+    .titleContainer {
+        margin: 0 0 10px;
+    }
+
+    .subtitleContainer {
+        max-width: 243px;
+        width: 100%;
+    }
+}
