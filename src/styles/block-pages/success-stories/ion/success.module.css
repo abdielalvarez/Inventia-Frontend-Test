@@ -1,0 +1,46 @@
+.background {
+    background: #B4B3B3;
+    padding: 293px 40px 212px;
+}
+
+.wrapper {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titleContainer {
+    width: 100%;
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+@media (max-width: 768px) {
+
+    .background {
+        background: #B4B3B3;
+        padding: 115px 40px;
+    }
+
+    .container {
+        margin: 0 0 10px;
+    }
+
+    .img {
+        margin: 0 16px 0 0;
+    }
+}

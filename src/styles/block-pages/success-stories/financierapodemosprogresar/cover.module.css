@@ -1,0 +1,9 @@
+.background {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.background :global(img) {
+    display: block;
+}
