@@ -1,0 +1,105 @@
+.background {
+    position: relative;
+    padding: 253px 40px 161px;
+    background-color: #2005C0;
+}
+
+.wrapper {
+    max-width: 1072px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    max-width: 514px;
+    width: 100%;
+    display: block;
+}
+
+.infoContent {
+    position: relative;
+}
+
+.logoImg {
+    position: absolute;
+    top: 0;
+    left: -105px;
+}
+
+.titleContainer {
+    margin: 0 auto 40px;
+}
+
+.title {
+    max-width: 627px;
+    width: 100%;
+}
+
+.title2 {
+    max-width: 627px;
+    width: 100%;
+}
+
+.subtitleContainer {
+    margin: 0 0 56px;
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 360px;
+}
+
+.inputContainer {
+    margin: 0 0 50px;
+}
+
+.buttonContainer {
+    max-width: 243px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .background {
+        padding: 170px 40px 100px;
+    }
+
+    .formContainer {
+        width: 100%;
+        max-width: 243px;
+    }
+
+    .inputContainer {
+        margin: 0 0 30px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .title {
+        max-width: 243px;
+        width: 100%;
+        margin: 0 0 150px;
+    }
+
+    .title2 {
+        max-width: 243px;
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+    .subtitle {
+        display: block;
+        max-width: 257px;
+        width: 100%;
+    }
+}

@@ -9,6 +9,21 @@
     margin: 0 0 21px;
 }
 
+.inputContactUs {
+    color: white;
+    background: rgba(255, 255, 255, 0.21);
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 25px;
+    max-width: 360px;
+    height: 82px;
+    margin: 0 0 21px;
+}
+
+.inputContactUs::placeholder {
+    color: white;
+}
+
 .input {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -23,6 +38,11 @@
 
 @media (max-width: 768px) {
     .inputJoinTeam {
+        max-width: 243px;
+        height: 56px;
+    }
+
+    .inputContactUs {
         max-width: 243px;
         height: 56px;
     }

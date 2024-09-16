@@ -1,0 +1,66 @@
+.background {
+    background-color: #FFFFFF;
+    padding: 250px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoContent {
+    position: relative;
+}
+
+.logoImg {
+    position: absolute;
+    top: -66px;
+}
+
+.titleContainer {
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.title {
+    max-width: 627px;
+    width: 100%;
+    text-align: center;
+}
+
+.subtitleContainer {
+    margin: 0 0 56px;
+}
+
+.formContainer {
+    width: 100%;
+}
+
+.inputContainer {
+    margin: 0 0 50px;
+}
+
+@media (max-width: 768px) {
+
+    .background {
+        padding: 166px 40px 50px;
+    }
+
+    .wrapper {
+        max-width: 243px;
+    }
+
+    .inputContainer {
+        margin: 0 0 30px;
+    }
+
+    .titleContainer {
+        text-align: start;
+    }
+}

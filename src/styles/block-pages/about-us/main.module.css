@@ -1,0 +1,15 @@
+.background {
+    width: 100%;
+    max-width: 100%;
+    padding: 112px 0 0;
+}
+
+.background :global(img) {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .background {
+        padding: 69px 0 0;
+    }
+}
