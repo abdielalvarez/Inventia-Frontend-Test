@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const useContactUsForm = () => {
+const useContactUsForm = (onSubmit) => {
 
     const [formData, setFormData] = useState({});
 
@@ -15,9 +15,11 @@ const useContactUsForm = () => {
     const handleSubmit = async (e) => {
         try {
             e.preventDefault();
-            console.log(formData);
+            if (onSubmit) {
+                await onSubmit(formData)
+            }
         } catch (error) {
-            console.error(error)
+            return error
         }
     };
 

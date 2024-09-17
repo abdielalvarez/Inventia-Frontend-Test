@@ -8,7 +8,7 @@
 }
 
 .wrapper {
-    padding: 246px 80px 348px;
+    padding: 246px 80px 180px;
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
@@ -39,6 +39,11 @@
     margin: 40px 0 60px;
 }
 
+.imgLeft1 {
+    position: relative;
+    z-index: 1;
+}
+
 .imgLeft2 {
     position: absolute;
     top: 0;
@@ -46,9 +51,10 @@
     right: -115px;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 768px) {
     .wrapper {
         padding: 218px 38px 125px;
+        max-width: 360px;
     }
 
     .containerLeft1 {
@@ -65,8 +71,16 @@
         margin: 0 0 0 auto;
     }
 
+    .textLeft1 {
+        margin: 0 0 20px;
+    }
+
+    .textLeft2 {
+        margin: 0 0 60px;
+    }
+
     .imgLeft1 {
-        margin: 0 30px 60px 0;
+        margin: 0 30px 28px 0;
     }
 
     .imgLeft2 {

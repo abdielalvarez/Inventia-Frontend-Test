@@ -1,15 +1,16 @@
+import { useEffect, useRef } from "react";
 import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
-import styles from "../../../styles/block-pages/home/trust.module.css"
+import styles from "../../../styles/block-pages/home/trust.module.css";
 import useResponsive from "@/hooks/useResponsive";
 import AnchorButton from "@/components/AnchorButton";
 import { ROUTE_CONTACTUS } from "@/utils/routes";
 import Image from "next/image";
 
 const Trust = () => {
-
-    const { t } = useApiContext()
-    const isResponsive = useResponsive(768)
+    const { t } = useApiContext();
+    const isResponsive = useResponsive(768);
+    const imgContainerRef = useRef(null); // Solo cambiamos el ref para las imágenes
 
     const contactText = [
         {
@@ -31,6 +32,32 @@ const Trust = () => {
         }
     ];
 
+    useEffect(() => {
+        const imgContainer = imgContainerRef.current;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(styles.visible); // Mantenemos la lógica de animación
+                        observer.unobserve(entry.target); // Dejar de observar una vez activado
+                    }
+                });
+            },
+            {
+                threshold: 0.1, // 10% visible para activar
+            }
+        );
+
+        if (imgContainer) {
+            observer.observe(imgContainer); // Observamos el contenedor de imágenes
+        }
+
+        return () => {
+            if (imgContainer) observer.unobserve(imgContainer); // Limpiamos el observer
+        };
+    }, []);
+
     return (
         <section className={styles.background}>
             <div className={styles.wrapper}>
@@ -42,7 +69,7 @@ const Trust = () => {
                         </AnchorButton>
                     </div>
                 </div>
-                <div className={styles.imgContainer}>
+                <div className={styles.imgContainer} ref={imgContainerRef}>
                     <Image
                         src="/images/home/trust/bbva.svg"
                         alt="BBVA"
@@ -74,7 +101,7 @@ const Trust = () => {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
-export default Trust
+export default Trust;

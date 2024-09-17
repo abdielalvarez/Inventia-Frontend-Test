@@ -7,12 +7,25 @@ import useContactUsForm from "@/hooks/useContactUsForm";
 import Input from "@/components/Input";
 import styles from "../../../styles/block-pages/home/contactusform.module.css"
 import inputStyles from "../../../styles/components/input.module.css"
+import ApiService from "@/services";
 
 const ContactUsForm = () => {
 
     const { t } = useApiContext()
     const isResponsive = useResponsive(768)
-    const { formData, handleChange, handleSubmit } = useContactUsForm()
+
+    const onSubmit = async (formData) => {
+        try {
+            console.log('formData', formData)
+            const api = new ApiService('https://rickandmortyapi.com/api');
+            const data = await api.get('character')
+            console.log('data', data)
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
+    const { formData, handleChange, handleSubmit } = useContactUsForm(onSubmit)
 
     const titleText = {
         text: t('home.block9.title'),
@@ -43,6 +56,30 @@ const ContactUsForm = () => {
             <div className={styles.wrapper}>
                 <div>
                     <div className={styles.infoContent}>
+                        <Image
+                            src="/images/home/lets-talk/line-1.svg"
+                            alt="Let's talk"
+                            width={1}
+                            height={575}
+                            priority
+                            className={styles.icon1}
+                        />
+                        <Image
+                            src="/images/home/lets-talk/line-2.svg"
+                            alt="Let's talk"
+                            width={1}
+                            height={417}
+                            priority
+                            className={styles.icon2}
+                        />
+                        <Image
+                            src="/images/home/lets-talk/line-3.svg"
+                            alt="Let's talk"
+                            width={1}
+                            height={113}
+                            priority
+                            className={styles.icon3}
+                        />
                         <Image
                             src="/images/home/lets-talk/logo.svg"
                             alt="Inventia"

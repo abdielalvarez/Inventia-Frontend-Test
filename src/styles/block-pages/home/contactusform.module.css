@@ -46,12 +46,54 @@
     margin: 0 0 50px;
 }
 
+.icon1 {
+    position: absolute;
+    top: -560px;
+    left: -28px;
+}
+
+.icon2 {
+    display: none;
+}
+
+.icon3 {
+    display: none;
+}
+
 @media (max-width: 768px) {
+
+    .background {
+        padding: 40px 40px 190px;
+    }
+
     .wrapper {
         max-width: 243px;
     }
 
     .inputContainer {
         margin: 0 0 30px;
+    }
+
+    .icon1 {
+        display: none;
+    }
+
+    .icon2 {
+        position: absolute;
+        display: block;
+        top: -460px;
+        left: 8px;
+    }
+
+    .icon3 {
+        display: block;
+        position: absolute;
+        top: -510px;
+        left: 75px;
+    }
+
+    .logoImg {
+        top: -75px;
+        left: 6px;
     }
 }
