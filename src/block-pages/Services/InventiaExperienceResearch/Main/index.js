@@ -6,6 +6,7 @@ import {
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
 import Image from "next/image";
+import FadeInUpWrapper from "@/context/wrappers/FadeInUpWrapper";
 
 const Main = () => {
 
@@ -79,58 +80,66 @@ const Main = () => {
     return (
         <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
             <div className={styles.wrapper}>
-                <div className={styles.titleContainer}>
-                    <Text text={titleText} className={styles.title} />
-                </div>
-                <div className={styles.container}>
+                <FadeInUpWrapper>
                     <div className={styles.titleContainer}>
-                        <Image
-                            src="/images/services/inventiaexperience-research/description/logo.svg"
-                            alt="Inventia"
-                            width={isResponsive ? 28 : 53}
-                            height={isResponsive ? 34 : 64}
-                            priority
-                            className={styles.logo}
-                        />
-                        <div>
-                            <Text text={subtitleText} className={styles.title} />
+                        <Text text={titleText} className={styles.title} />
+                    </div>
+                    <div className={styles.container}>
+                        <div className={styles.titleContainer}>
+                            <Image
+                                src="/images/services/inventiaexperience-research/description/logo.svg"
+                                alt="Inventia"
+                                width={isResponsive ? 28 : 53}
+                                height={isResponsive ? 34 : 64}
+                                priority
+                                className={styles.logo}
+                            />
+                            <div>
+                                <Text text={subtitleText} className={styles.title} />
+                            </div>
+                        </div>
+                        <div className={styles.descriptionContainer}>
+                            <Text texts={descriptionText} className={styles.description} />
                         </div>
                     </div>
-                    <div className={styles.descriptionContainer}>
-                        <Text texts={descriptionText} className={styles.description} />
-                    </div>
-                </div>
+                </FadeInUpWrapper>
                 <div className={styles.texts}>
-                    <div className={styles.textContent}>
-                        <Image
-                            src="/images/services/inventiaexperience-research/explanation/person.svg"
-                            alt="Better client understanding"
-                            width={isResponsive ? 104 : 214}
-                            height={isResponsive ? 104 : 214}
-                            priority
-                        />
-                        <div className={styles.text}><Text text={explanation1Text} /></div>
-                    </div>
-                    <div className={styles.textContent}>
-                        <Image
-                            src="/images/services/inventiaexperience-research/explanation/chat.svg"
-                            alt="Better client understanding"
-                            width={isResponsive ? 104 : 214}
-                            height={isResponsive ? 104 : 214}
-                            priority
-                        />
-                        <div className={styles.text}><Text text={explanation2Text} /></div>
-                    </div>
-                    <div className={styles.textContent}>
-                        <Image
-                            src="/images/services/inventiaexperience-research/explanation/light.svg"
-                            alt="Better client understanding"
-                            width={isResponsive ? 104 : 214}
-                            height={isResponsive ? 104 : 214}
-                            priority
-                        />
-                        <div className={styles.text}><Text text={explanation3Text} /></div>
-                    </div>
+                    <FadeInUpWrapper>
+                        <div className={styles.textContent}>
+                            <Image
+                                src="/images/services/inventiaexperience-research/explanation/person.svg"
+                                alt="Better client understanding"
+                                width={isResponsive ? 104 : 214}
+                                height={isResponsive ? 104 : 214}
+                                priority
+                            />
+                            <div className={styles.text}><Text text={explanation1Text} /></div>
+                        </div>
+                    </FadeInUpWrapper>
+                    <FadeInUpWrapper>
+                        <div className={styles.textContent}>
+                            <Image
+                                src="/images/services/inventiaexperience-research/explanation/chat.svg"
+                                alt="Better client understanding"
+                                width={isResponsive ? 104 : 214}
+                                height={isResponsive ? 104 : 214}
+                                priority
+                            />
+                            <div className={styles.text}><Text text={explanation2Text} /></div>
+                        </div>
+                    </FadeInUpWrapper>
+                    <FadeInUpWrapper>
+                        <div className={styles.textContent}>
+                            <Image
+                                src="/images/services/inventiaexperience-research/explanation/light.svg"
+                                alt="Better client understanding"
+                                width={isResponsive ? 104 : 214}
+                                height={isResponsive ? 104 : 214}
+                                priority
+                            />
+                            <div className={styles.text}><Text text={explanation3Text} /></div>
+                        </div>
+                    </FadeInUpWrapper>
                 </div>
             </div>
         </section>

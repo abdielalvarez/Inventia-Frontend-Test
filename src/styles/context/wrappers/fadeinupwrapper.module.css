@@ -1,0 +1,12 @@
+/* El estado inicial del wrapper */
+.wrapper {
+    opacity: 0; /* Elemento invisible */
+    transform: translateY(50px); /* Desplazado hacia abajo */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Animación combinada */
+}
+
+/* Cuando el elemento es visible */
+.visible {
+    opacity: 1; /* Aparece */
+    transform: translateY(0); /* Se mueve a su posición original */
+}
