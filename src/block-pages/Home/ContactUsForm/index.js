@@ -16,10 +16,14 @@ const ContactUsForm = () => {
 
     const onSubmit = async (formData) => {
         try {
-            console.log('formData', formData)
-            const api = new ApiService('https://rickandmortyapi.com/api');
-            const data = await api.get('character')
-            console.log('data', data)
+            const payload = {
+                "phoneNumber": formData?.['home-phone'],
+                "email": formData?.['home-email'],
+                "name": formData?.['home-name'],
+            }
+            const apiService = new ApiService('http://localhost:8000');
+            await apiService.post('inventia/contact/send', payload)
+            // Crea un toast de emergencia
         } catch (error) {
             console.error(error)
         }

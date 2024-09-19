@@ -6,12 +6,29 @@ import AnchorButton from "@/components/AnchorButton";
 import useContactUsForm from "@/hooks/useContactUsForm";
 import Input from "@/components/Input";
 import inputStyles from "../../../styles/components/input.module.css"
+import ApiService from "@/services";
 
 const Main = () => {
 
     const { t } = useApiContext()
     const isResponsive = useResponsive(768)
-    const { formData, handleChange, handleSubmit } = useContactUsForm()
+
+    const onSubmit = async (formData) => {
+        try {
+            const payload = {
+                "phoneNumber": formData?.['home-phone'],
+                "email": formData?.['home-email'],
+                "name": formData?.['home-name'],
+            }
+            const apiService = new ApiService('http://localhost:8000');
+            await apiService.post('inventia/contact/send', payload)
+            // Crea un toast de emergencia
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
+    const { formData, handleChange, handleSubmit } = useContactUsForm(onSubmit)
 
     const explanationText = {
         text: t('contact-us.block1.title'),

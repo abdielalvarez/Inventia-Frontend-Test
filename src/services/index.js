@@ -13,7 +13,7 @@ class ApiService {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                mode: 'cors' // Se asegura de que las políticas de CORS se respeten
+                mode: 'cors'
             });
 
             if (!response.ok) {
@@ -26,6 +26,68 @@ class ApiService {
             console.error('Fetch error:', error);
             throw error;
         }
+    }
+
+    async post(endpoint, body = {}) {
+        const url = `${this.baseURL}/${endpoint}`;
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(body),
+                mode: 'cors'
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error('Fetch error:', error);
+            throw error;
+        }
+    }
+
+    async postFormData(endpoint, body) {
+        const url = `${this.baseURL}/${endpoint}`;
+        const formData = this.convertToFormData(body);
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                body: formData,
+                mode: 'cors'
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error('Fetch error:', error);
+            throw error;
+        }
+    }
+
+    convertToFormData(object) {
+        const formData = new FormData();
+        Object.keys(object).forEach(key => {
+            if (key === 'files') {
+                object[key].forEach(file => {
+                    formData.append('files', file);
+                });
+            } else {
+                formData.append(key, object[key]);
+            }
+        });
+        return formData;
     }
 }
 
