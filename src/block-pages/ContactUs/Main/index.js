@@ -7,24 +7,33 @@ import useContactUsForm from "@/hooks/useContactUsForm";
 import Input from "@/components/Input";
 import inputStyles from "../../../styles/components/input.module.css"
 import ApiService from "@/services";
+import { useState } from "react";
+import envs from "@/config/envs";
 
 const Main = () => {
 
     const { t } = useApiContext()
     const isResponsive = useResponsive(768)
 
+    const [loading, setLoading] = useState(false)
+    const [success, setSuccess] = useState(false)
+    const { API_URL } = envs
+
     const onSubmit = async (formData) => {
         try {
+            setLoading(true)
             const payload = {
                 "phoneNumber": formData?.['home-phone'],
                 "email": formData?.['home-email'],
                 "name": formData?.['home-name'],
             }
-            const apiService = new ApiService('http://localhost:8000');
+            const apiService = new ApiService(API_URL);
             await apiService.post('inventia/contact/send', payload)
-            // Crea un toast de emergencia
+            setLoading(false)
+            setSuccess(true)
         } catch (error) {
             console.error(error)
+            setLoading(false)
         }
     }
 
@@ -55,7 +64,10 @@ const Main = () => {
     }
 
     const buttonText = {
-        text: t('home.block9.button'),
+        text:
+            loading ? 'Está siendo enviado' :
+            success && !loading ? 'Ya lo enviamos' :
+            t('home.block9.button'),
         tag: "p",
         font: "poppinsRegular",
         size: isResponsive ? 15 : 18,
@@ -112,6 +124,7 @@ const Main = () => {
                                     responsiveBreakpoint={768}
                                     theme="tertiary"
                                     type="submit"
+                                    disabled={loading || success}
                                 >
                                     <Text text={buttonText} />
                                 </AnchorButton>

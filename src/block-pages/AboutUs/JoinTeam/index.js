@@ -10,12 +10,14 @@ import Image from "next/image";
 import ApiService from "@/services";
 import { joinTeamOptions } from "@/utils/constants";
 import { useState } from "react";
+import envs from "@/config/envs";
 
 const JoinTeamForm = () => {
     const { t } = useApiContext();
     const isResponsive = useResponsive(768);
     const [loading, setLoading] = useState(false)
     const [success, setSuccess] = useState(false)
+    const { API_URL } = envs
 
     const onSubmit = async (formData) => {
         try {
@@ -27,7 +29,7 @@ const JoinTeamForm = () => {
                 position: formData?.['jointeam-position'],
                 files: formData?.['jointeam-files'],
             };
-            const apiService = new ApiService('http://localhost:8000');
+            const apiService = new ApiService(API_URL);
             const result = await apiService.postFormData('inventia/contact/send/files', payload);
             console.log('result', result)
             setLoading(false)

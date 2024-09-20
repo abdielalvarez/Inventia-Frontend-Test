@@ -25,13 +25,15 @@ const AnchorButton = ({ href, children, theme = 'primary', responsiveBreakpoint 
       </a>
     );
   } else if (href && isInternal) {
-    <Link
-      href={href}
-      className={generalStyles}
-      {...props}
-    >
-      {children}
-    </Link>
+    return (
+      <Link
+        href={href}
+        className={generalStyles}
+        {...props}
+      >
+        {children}
+      </Link>
+    )
   }
   return (
     <button className={generalStyles} {...props}>

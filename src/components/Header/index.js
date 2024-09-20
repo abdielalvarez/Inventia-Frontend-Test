@@ -23,10 +23,14 @@ const Header = () => {
   });
 
   const toggleCollider = (colliderName) => {
-    setColliders((prevState) => ({
-      ...prevState,
-      [colliderName]: !prevState[colliderName],
-    }));
+    setColliders((prevState) => {
+      const isAlreadyOpen = prevState[colliderName];
+      const updatedColliders = Object.keys(prevState).reduce((acc, key) => {
+        acc[key] = key === colliderName ? !isAlreadyOpen : false;
+        return acc;
+      }, {});
+      return updatedColliders;
+    });
   };
 
   const {

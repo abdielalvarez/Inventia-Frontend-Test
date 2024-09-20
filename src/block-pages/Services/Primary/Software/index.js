@@ -3,6 +3,7 @@ import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../../styles/block-pages/services/primary/software.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import {
+    ROUTE_CONTACTUS,
     ROUTE_SERVICES_INVENTIASOFTWARE_CLOUDENGINEERING,
     ROUTE_SERVICES_INVENTIASOFTWARE_DEVOPSIMPLEMENTATION,
     ROUTE_SERVICES_INVENTIASOFTWARE_FULLSTACKDEVELOPMENT,
@@ -98,6 +99,7 @@ const Software = () => {
                                     responsiveBreakpoint={768}
                                     theme="tertiary"
                                     type="submit"
+                                    href={ROUTE_CONTACTUS}
                                 >
                                     <Text text={buttonText} />
                                 </AnchorButton>
@@ -148,6 +150,7 @@ const Software = () => {
                 {isResponsive ? <div className={styles.button}>
                         <AnchorButton
                             responsiveBreakpoint={768}
+                            href={ROUTE_CONTACTUS}
                             theme="tertiary"
                         >
                             <Text text={buttonText} />

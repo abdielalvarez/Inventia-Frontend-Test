@@ -5,6 +5,7 @@ import useResponsive from "@/hooks/useResponsive";
 import {
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
+import { useState } from "react";
 
 const Methodology = () => {
 
@@ -91,6 +92,34 @@ const Methodology = () => {
         color: 'blackBase',
     }
 
+    const [hover, setHover] = useState({
+        empathyHover: false,
+        descriptionHover: false,
+        ideaHover: false,
+        prototypeHover: false
+    })
+
+    const handleHoverOpen = (hoverName) => {
+        setHover({
+            ...hover,
+            [hoverName]: true,
+        });
+    };
+
+    const handleHoverClose = (hoverName) => {
+        setHover({
+            ...hover,
+            [hoverName]: false
+        });
+    };
+
+    const handleClick = (hoverName) => {
+        setHover({
+            ...hover,
+            [hoverName]: !hover[hoverName]
+        });
+    }
+
     return (
         <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
             <div className={styles.wrapper}>
@@ -102,58 +131,108 @@ const Methodology = () => {
                 </div>
             </div>
             <div className={styles.container}>
-                <div className={styles.textContainer1}>
-                    {!isResponsive ?
-                        <div className={styles.description1}>
-                            <Text text={empathyDescriptionText} />
-                        </div> : null
+                <div
+                    className={styles.textContainer1}
+                    onMouseEnter={() => handleHoverOpen('empathyHover')}
+                    onMouseLeave={() => handleHoverClose('empathyHover')}
+                    onClick={() => handleClick('empathyHover')}
+                >
+                    {hover.empathyHover ?
+                        <>
+                            {!isResponsive ?
+                                <div className={styles.description1}>
+                                    <Text text={empathyDescriptionText} />
+                                </div> : null
+                            }
+                        </> : null
                     }
-                    <div className={styles.text1}><Text text={empathyText} /></div>
+                    <div className={styles.text1}>
+                        <Text text={empathyText} />
+                    </div>
                 </div>
-                {isResponsive ?
-                    <div className={styles.description1}>
-                        <Text text={empathyDescriptionText} />
-                    </div> : null
+                {hover.descriptionHover ?
+                    <>
+                        {isResponsive ?
+                            <div className={styles.description1}>
+                                <Text text={empathyDescriptionText} />
+                            </div> : null
+                        }
+                    </> : null
                 }
-                <div className={styles.textContainer2}>
-                    {!isResponsive ?
-                        <div className={styles.description2}>
-                            <Text text={definitionDescriptionText} />
-                        </div> : null
-                    }
+                <div
+                    className={styles.textContainer2}
+                    onMouseEnter={() => handleHoverOpen('descriptionHover')}
+                    onMouseLeave={() => handleHoverClose('descriptionHover')}
+                    onClick={() => handleClick('descriptionHover')}
+                >
+                    {hover.descriptionHover ?
+                        <>
+                            {!isResponsive ?
+                                <div className={styles.description2}>
+                                    <Text text={definitionDescriptionText} />
+                                </div> : null
+                            }
+                        </> : null}
+
                     <div className={styles.text2}><Text text={definitionText} /></div>
                 </div>
-                {isResponsive ?
-                    <div className={styles.description2}>
-                        <Text text={definitionDescriptionText} />
-                    </div> : null
+                {hover.empathyHover ?
+                    <>
+                        {isResponsive ?
+                            <div className={styles.description2}>
+                                <Text text={definitionDescriptionText} />
+                            </div> : null
+                        }
+                    </> : null
                 }
-                <div className={styles.textContainer3}>
-                    {!isResponsive ?
-                        <div className={styles.description3}>
-                            <Text text={ideaDescriptionText} />
-                        </div> : null
-                    }
+                <div
+                    className={styles.textContainer3}
+                    onMouseEnter={() => handleHoverOpen('ideaHover')}
+                    onMouseLeave={() => handleHoverClose('ideaHover')}
+                    onClick={() => handleClick('ideaHover')}
+                >
+                    {hover.ideaHover ?
+                        <>
+                            {!isResponsive ?
+                                <div className={styles.description3}>
+                                    <Text text={ideaDescriptionText} />
+                                </div> : null
+                            }
+                        </> : null}
                     <div className={styles.text3}><Text text={ideaText} /></div>
                 </div>
-                {isResponsive ?
-                    <div className={styles.description3}>
-                        <Text text={ideaDescriptionText} />
-                    </div> : null
-                }
-                <div className={styles.textContainer4}>
-                    {!isResponsive ?
-                        <div className={styles.description4}>
-                            <Text text={prototypeDescriptionText} />
-                        </div> : null
-                    }
+                {hover.ideaHover ?
+                    <>
+                        {isResponsive ?
+                            <div className={styles.description3}>
+                                <Text text={ideaDescriptionText} />
+                            </div> : null
+                        }
+                    </> : null}
+                <div
+                    className={styles.textContainer4}
+                    onMouseEnter={() => handleHoverOpen('prototypeHover')}
+                    onMouseLeave={() => handleHoverClose('prototypeHover')}
+                    onClick={() => handleClick('prototypeHover')}
+                >
+                    {hover.prototypeHover ?
+                        <>
+                            {!isResponsive ?
+                                <div className={styles.description4}>
+                                    <Text text={prototypeDescriptionText} />
+                                </div> : null
+                            }
+                        </> : null}
                     <div className={styles.text4}><Text text={prototypeText} /></div>
                 </div>
-                {isResponsive ?
-                    <div className={styles.description4}>
-                        <Text text={prototypeDescriptionText} />
-                    </div> : null
-                }
+                {hover.prototypeHover ?
+                    <>
+                        {isResponsive ?
+                            <div className={styles.description4}>
+                                <Text text={prototypeDescriptionText} />
+                            </div> : null
+                        }
+                    </> : null}
             </div>
         </section>
     )

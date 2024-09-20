@@ -18,7 +18,7 @@ import {
     ROUTE_SUCCESSSTORIES_BANKINGION
 } from "@/utils/routes";
 
-const useText = (isMenuOpen, colliders) => {
+const useText = (isMenuOpen) => {
 
     const { t } = useApiContext()
     const isSmallScreen = useResponsive(768);
@@ -26,8 +26,8 @@ const useText = (isMenuOpen, colliders) => {
     const servicesText = [
         {
             text: t('header.services.title'),
-            href: !colliders.services ? null : ROUTE_SERVICES,
-            tag: !colliders.services ? "a" : "p",
+            href: isMenuOpen ? null : ROUTE_SERVICES,
+            tag: isMenuOpen ? "p" : "a",
             font: "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase',
@@ -123,8 +123,8 @@ const useText = (isMenuOpen, colliders) => {
     const successText = [
         {
             text: t('header.successful.title'),
-            href: !colliders.services ? null : ROUTE_SUCCESSSTORIES,
-            tag: !colliders.services ? "a" : "p",
+            href: isMenuOpen ? null : ROUTE_SUCCESSSTORIES,
+            tag: isMenuOpen ? "p" : "a",
             font: "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase'

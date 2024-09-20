@@ -3,9 +3,9 @@
     background-color: #ffffff;
     border: 1px solid #000000;
     border-radius: 4px;
-    padding: 25px;
+    padding: 0 16px;
     max-width: 360px;
-    height: 82px;
+    height: 40px;
     margin: 0 0 21px;
 }
 
@@ -116,15 +116,35 @@
     cursor: pointer;
 }
 
+.customSelect {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
 
+.customSelect select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%2217%22%20viewBox%3D%220%200%2016%2017%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M13.1431%204.01702L2.85706%204.01702C2.75292%204.01741%202.65084%204.05194%202.56181%204.11689C2.47278%204.18183%202.40017%204.27474%202.3518%204.3856C2.30342%204.49646%202.28111%204.62109%202.28728%204.74606C2.29344%204.87103%202.32783%204.99161%202.38677%205.09483L7.52977%2014.025C7.74292%2014.3953%208.25607%2014.3953%208.46979%2014.025L13.6128%205.09483C13.6723%204.99183%2013.7072%204.87118%2013.7137%204.74601C13.7202%204.62083%2013.6981%204.4959%2013.6496%204.3848C13.6012%204.27371%2013.5284%204.18068%2013.4391%204.11584C13.3498%204.051%2013.2474%204.01682%2013.1431%204.01702Z%22%20fill%3D%22%23464545%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+}
 
-
-
+.customSelect select:focus {
+    border-color: #0070f3;
+    outline: none;
+}
 
 @media (max-width: 768px) {
     .inputJoinTeam {
         max-width: 243px;
-        height: 56px;
     }
 
     .inputContactUs {

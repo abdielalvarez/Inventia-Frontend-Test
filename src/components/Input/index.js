@@ -107,7 +107,7 @@ const Input = ({
           onChange={onChange}
           name={name}
           id={id}
-          className={`${className} ${styles.input}`}
+          className={`${className} ${styles.input} ${styles.customSelect}`}
           {...rest}
         >
           <option value="" disabled>{placeholder}</option>
