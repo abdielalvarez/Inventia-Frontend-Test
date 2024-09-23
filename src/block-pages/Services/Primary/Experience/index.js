@@ -11,6 +11,7 @@ import {
 import AnchorButton from "@/components/AnchorButton";
 import Image from "next/image";
 import Link from "next/link";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Experience = () => {
 
@@ -69,10 +70,14 @@ const Experience = () => {
         <section id={TAG_INVENTIAEXPERIENCE} className={styles.background}>
             <div className={styles.wrapper}>
                 <div className={styles.textContainer}>
-                    <div className={styles.titleContainer}>
-                        <Text text={titleText} className={styles.title}/>
-                    </div>
-                    <div className={styles.descriptionContainer}><Text text={descriptionText} /></div>
+                    <FadeInWrapper type='fadeinright' replay={true}>
+                        <div className={styles.titleContainer}>
+                            <Text text={titleText} className={styles.title} />
+                        </div>
+                    </FadeInWrapper>
+                    <FadeInWrapper type='fadeinright' replay={true}>
+                        <div className={styles.descriptionContainer}><Text text={descriptionText} /></div>
+                    </FadeInWrapper>
                     {isResponsive ? null :
                         <div>
                             <AnchorButton
@@ -89,38 +94,50 @@ const Experience = () => {
                     <div className={styles.texts}>
                         <div className={styles.textContent}>
                             <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_RESEARCH}>
-                                <div className={styles.text}><Text text={option1Text} className={styles.item} /></div>
-                                <Image
-                                    src="/images/services/primary/experience/arrow.svg"
-                                    alt="Custom Research e Insights"
-                                    width={isResponsive ? 12 : 44}
-                                    height={isResponsive ? 12 : 44}
-                                    priority
-                                />
+                                <FadeInWrapper type='fadeinup' replay={true}>
+                                    <div className={styles.text}><Text text={option1Text} className={styles.item} /></div>
+                                </FadeInWrapper>
+                                <FadeInWrapper type='fadeinright' replay={true}>
+                                    <Image
+                                        src="/images/services/primary/experience/arrow.svg"
+                                        alt="Custom Research e Insights"
+                                        width={isResponsive ? 12 : 44}
+                                        height={isResponsive ? 12 : 44}
+                                        priority
+                                    />
+                                </FadeInWrapper>
                             </Link>
                         </div>
                         <div className={styles.textContent}>
                             <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_PRODUCTDESIGN}>
-                                <div className={styles.text}><Text text={option2Text} className={styles.item} /></div>
-                                <Image
-                                    src="/images/services/primary/experience/arrow.svg"
-                                    alt="Product Design and Build"
-                                    width={isResponsive ? 12 : 44}
-                                    height={isResponsive ? 12 : 44}
-                                    priority
-                                />
+                                <FadeInWrapper type='fadeinup' replay={true}>
+                                    <div className={styles.text}><Text text={option2Text} className={styles.item} /></div>
+                                </FadeInWrapper>
+                                <FadeInWrapper type='fadeinright' replay={true}>
+                                    <Image
+                                        src="/images/services/primary/experience/arrow.svg"
+                                        alt="Product Design and Build"
+                                        width={isResponsive ? 12 : 44}
+                                        height={isResponsive ? 12 : 44}
+                                        priority
+                                    />
+                                </FadeInWrapper>
                             </Link>
                         </div>
                         <div>
                             <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_SERVICEDESIGN}>
-                                <div className={styles.text}><Text text={option3Text} className={styles.item} /></div>
-                                <Image
-                                    src="/images/services/primary/experience/arrow.svg"
-                                    alt="Service Design"
-                                    width={isResponsive ? 12 : 44}
-                                    height={isResponsive ? 12 : 44}
-                                    priority
-                                />
+                                <FadeInWrapper type='fadeinup' replay={true}>
+                                    <div className={styles.text}><Text text={option3Text} className={styles.item} /></div>
+                                </FadeInWrapper>
+                                <FadeInWrapper type='fadeinright' replay={true}>
+                                    <Image
+                                        src="/images/services/primary/experience/arrow.svg"
+                                        alt="Service Design"
+                                        width={isResponsive ? 12 : 44}
+                                        height={isResponsive ? 12 : 44}
+                                        priority
+                                    />
+                                </FadeInWrapper>
                             </Link>
                         </div>
                     </div>
@@ -135,13 +152,13 @@ const Experience = () => {
                     </div>
                 </div>
                 {isResponsive ? <div className={styles.button}>
-                        <AnchorButton
-                            responsiveBreakpoint={768}
-                            theme="tertiary"
-                        >
-                            <Text text={buttonText} />
-                        </AnchorButton>
-                    </div> : null
+                    <AnchorButton
+                        responsiveBreakpoint={768}
+                        theme="tertiary"
+                    >
+                        <Text text={buttonText} />
+                    </AnchorButton>
+                </div> : null
                 }
             </div>
         </section>

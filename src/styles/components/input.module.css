@@ -9,7 +9,17 @@
     margin: 0 0 21px;
 }
 
-.inputContactUs {
+.inputJoinTeam::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.inputJoinTeam:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+    box-shadow: 0 0 0 1000px #ffffff inset;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.5);
+}
+
+.inputContactUsModule {
     color: white;
     background: rgba(255, 255, 255, 0.21);
     border: 1px solid #000000;
@@ -18,10 +28,42 @@
     max-width: 360px;
     height: 82px;
     margin: 0 0 21px;
+    -webkit-text-fill-color: white;
 }
 
-.inputContactUs::placeholder {
+.inputContactUsModule::placeholder {
     color: white;
+}
+
+.inputContactUsModule:-webkit-autofill,
+.inputContactUsModule:-webkit-autofill:hover, 
+.inputContactUsModule:-webkit-autofill:focus, 
+.inputContactUsModule:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.21) inset !important;
+    box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.21) inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.inputContactUsHome {
+    color: rgba(0, 0, 0, 0.50);
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 25px;
+    max-width: 360px;
+    height: 82px;
+    margin: 0 0 21px;
+}
+
+.inputContactUsHome::placeholder {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.inputContactUsHome:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset;
+    box-shadow: 0 0 0 1000px #FFFFFF inset;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.50);
 }
 
 .input {
@@ -147,7 +189,12 @@
         max-width: 243px;
     }
 
-    .inputContactUs {
+    .inputContactUsHome {
+        max-width: 243px;
+        height: 56px;
+    }
+
+    .inputContactUsModule {
         max-width: 243px;
         height: 56px;
     }

@@ -1,0 +1,40 @@
+.wrapper {
+    opacity: 0;
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.fadeinup {
+    transform: translateY(50px);
+}
+
+.fadeinup.visible {
+    transform: translateY(0);
+}
+
+.fadeindown {
+    transform: translateY(-50px);
+}
+
+.fadeindown.visible {
+    transform: translateY(0);
+}
+
+.fadeinright {
+    transform: translateX(-50px);
+}
+
+.fadeinright.visible {
+    transform: translateX(0);
+}
+
+.fadeinleft {
+    transform: translateX(50px);
+}
+
+.fadeinleft.visible {
+    transform: translateX(0);
+}

@@ -1,6 +1,7 @@
 import styles from "../../../../styles/block-pages/success-stories/primary/description.module.css"
 import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 import useResponsive from "@/hooks/useResponsive";
 
 const Description = () => {
@@ -20,7 +21,9 @@ const Description = () => {
         <div className={styles.background}>
             <div className={styles.wrapper}>
                 <div className={styles.text}>
-                    <Text text={text} />
+                    <FadeInWrapper type='fadeinright' replay={true}>
+                        <Text text={text} />
+                    </FadeInWrapper>
                 </div>
             </div>
         </div>

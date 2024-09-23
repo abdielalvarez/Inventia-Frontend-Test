@@ -2,6 +2,7 @@ import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../styles/block-pages/home/welcome.module.css"
 import useResponsive from "@/hooks/useResponsive";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Welcome = () => {
 
@@ -28,7 +29,9 @@ const Welcome = () => {
     return (
         <section className={styles.background}>
             <div className={styles.wrapper}>
-                <Text texts={welcomeText} className={styles.title} />
+                <FadeInWrapper type="fadein">
+                    <Text texts={welcomeText} className={styles.title} />
+                </FadeInWrapper>
             </div>
         </section>
     )

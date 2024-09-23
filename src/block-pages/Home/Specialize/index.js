@@ -2,6 +2,7 @@ import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../styles/block-pages/home/specialize.module.css"
 import useResponsive from "@/hooks/useResponsive";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Specialize = () => {
 
@@ -19,7 +20,9 @@ const Specialize = () => {
     return (
         <section className={styles.background}>
             <div className={styles.wrapper}>
-                <Text text={text} />
+                <FadeInWrapper type='fadeinright' replay={true}>
+                    <Text text={text} />
+                </FadeInWrapper>
             </div>
         </section>
     )

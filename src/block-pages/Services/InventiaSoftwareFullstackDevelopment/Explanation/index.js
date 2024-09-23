@@ -4,6 +4,7 @@ import styles from "../../../../styles/block-pages/services/inventiasoftware-ful
 import useResponsive from "@/hooks/useResponsive";
 import { ROUTE_CONTACTUS } from "@/utils/routes";
 import AnchorButton from "@/components/AnchorButton";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Explanation = () => {
 
@@ -29,9 +30,11 @@ const Explanation = () => {
     return (
         <section className={styles.background}>
             <div className={styles.wrapper}>
-                <div className={styles.titleContainer}>
-                    <Text text={descriptionText} className={styles.title} />
-                </div>
+                <FadeInWrapper type='fadeinup' replay={true}>
+                    <div className={styles.titleContainer}>
+                        <Text text={descriptionText} className={styles.title} />
+                    </div>
+                </FadeInWrapper>
                 <div>
                     <AnchorButton
                         href={ROUTE_CONTACTUS}

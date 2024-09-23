@@ -5,6 +5,7 @@ import useResponsive from "@/hooks/useResponsive";
 import { ROUTE_SERVICES, TAG_INVENTIAEXPERIENCE } from "@/utils/routes";
 import Image from "next/image";
 import Link from "next/link";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Explanation = () => {
 
@@ -74,10 +75,13 @@ const Explanation = () => {
                         className={styles.imgLeft1}
                     />
                     <div className={styles.containerLeft2}>
+                        <FadeInWrapper type='fadeinright' replay={true}>
                             <Text texts={explanationText1} className={styles.textLeft1} />
-                            <Link href={`${ROUTE_SERVICES}/#${TAG_INVENTIAEXPERIENCE}`}>
-                                <div className={styles.containerLeft3}>
-                                    <Text text={experienceText1} className={styles.textLeft2} />
+                        </FadeInWrapper>
+                        <Link href={`${ROUTE_SERVICES}/#${TAG_INVENTIAEXPERIENCE}`}>
+                            <div className={styles.containerLeft3}>
+                                <Text text={experienceText1} className={styles.textLeft2} />
+                                <FadeInWrapper type='fadeinright' replay={true}>
                                     <Image
                                         src="/images/home/explanation/orange-arrow.svg"
                                         alt="Inventia Experience"
@@ -86,17 +90,21 @@ const Explanation = () => {
                                         priority
                                         className={styles.imgLeft2}
                                     />
-                                </div>
-                            </Link>
+                                </FadeInWrapper>
+                            </div>
+                        </Link>
                     </div>
                 </div>
 
                 <div className={styles.containerRight1}>
                     <div className={styles.containerRight2}>
-                        <Text texts={explanationText2} className={styles.textRight1} />
-                            <Link href={`${ROUTE_SERVICES}/#${TAG_INVENTIAEXPERIENCE}`}>
-                                <div className={styles.containerRight3}>
-                                    <Text text={softwareText1} className={styles.textRight2} />
+                        <FadeInWrapper type='fadeinup' replay={true}>
+                            <Text texts={explanationText2} className={styles.textRight1} />
+                        </FadeInWrapper>
+                        <Link href={`${ROUTE_SERVICES}/#${TAG_INVENTIAEXPERIENCE}`}>
+                            <div className={styles.containerRight3}>
+                                <Text text={softwareText1} className={styles.textRight2} />
+                                <FadeInWrapper type='fadeinright' replay={true}>
                                     <Image
                                         src="/images/home/explanation/blue-arrow.svg"
                                         alt="Inventia Experience"
@@ -105,8 +113,9 @@ const Explanation = () => {
                                         priority
                                         className={styles.imgRight2}
                                     />
-                                </div>
-                            </Link>
+                                </FadeInWrapper>
+                            </div>
+                        </Link>
                     </div>
                     <Image
                         src="/images/home/explanation/people2.png"

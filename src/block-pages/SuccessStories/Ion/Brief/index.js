@@ -3,6 +3,7 @@ import styles from "../../../../styles/block-pages/success-stories/ion/brief.mod
 import useResponsive from "@/hooks/useResponsive";
 import Text from "@/components/Text";
 import Image from "next/image";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Brief = () => {
 
@@ -56,17 +57,23 @@ const Brief = () => {
                     <div className={styles.titleContainer}>
                         <Text text={titleText} />
                     </div>
-                    <div className={styles.subtitleContainer}>
-                        <Text text={subtitleText} />
-                    </div>
+                    <FadeInWrapper type='fadeinright' replay={true}>
+                        <div className={styles.subtitleContainer}>
+                            <Text text={subtitleText} />
+                        </div>
+                    </FadeInWrapper>
                 </div>
             </div>
             <div className={styles.wrapper2}>
                 <div className={styles.container2}>
                     <div className={styles.description1Container}>
-                        <Text text={description1Text} />
+                        <FadeInWrapper type='fadeindown' replay={true}>
+                            <Text text={description1Text} />
+                        </FadeInWrapper>
                         <br /><br /><br /><br />
-                        <Text text={description2Text} />
+                        <FadeInWrapper type='fadeindown' replay={true}>
+                            <Text text={description2Text} />
+                        </FadeInWrapper>
                     </div>
                 </div>
             </div>

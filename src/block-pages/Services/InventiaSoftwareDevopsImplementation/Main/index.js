@@ -6,6 +6,7 @@ import {
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
 import Image from "next/image";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Main = () => {
 
@@ -83,16 +84,18 @@ const Main = () => {
                     <div className={styles.titleContainer}>
                         <Text text={titleText} className={styles.title} />
                     </div>
-                    <div className={styles.container}>
-                        <div className={styles.titleContainer}>
-                            <div>
-                                <Text text={subtitleText} className={styles.title} />
+                    <FadeInWrapper type='fadeinright' replay={true}>
+                        <div className={styles.container}>
+                            <div className={styles.titleContainer}>
+                                <div>
+                                    <Text text={subtitleText} className={styles.title} />
+                                </div>
+                            </div>
+                            <div className={styles.descriptionContainer}>
+                                <Text text={descriptionText} className={styles.description} />
                             </div>
                         </div>
-                        <div className={styles.descriptionContainer}>
-                            <Text text={descriptionText} className={styles.description} />
-                        </div>
-                    </div>
+                    </FadeInWrapper>
                 </div>
             </section>
             <section id={TAG_INVENTIASOFTWARE} className={styles.wrapper2}>
@@ -105,23 +108,25 @@ const Main = () => {
                         priority
                     />
                 </div>
-                <div className={styles.texts}>
-                    <div className={styles.textContent}>
-                        <div className={styles.text}><Text text={explanation1Text} /></div>
+                <FadeInWrapper type='fadeinright' replay={true}>
+                    <div className={styles.texts}>
+                        <div className={styles.textContent}>
+                            <div className={styles.text}><Text text={explanation1Text} /></div>
+                        </div>
+                        <div className={styles.textContent}>
+                            <div className={styles.text}><Text text={explanation2Text} /></div>
+                        </div>
+                        <div className={styles.textContent}>
+                            <div className={styles.text}><Text text={explanation3Text} /></div>
+                        </div>
+                        <div className={styles.textContent}>
+                            <div className={styles.text}><Text text={explanation4Text} /></div>
+                        </div>
+                        <div className={styles.textContent}>
+                            <div className={styles.text}><Text text={explanation5Text} /></div>
+                        </div>
                     </div>
-                    <div className={styles.textContent}>
-                        <div className={styles.text}><Text text={explanation2Text} /></div>
-                    </div>
-                    <div className={styles.textContent}>
-                        <div className={styles.text}><Text text={explanation3Text} /></div>
-                    </div>
-                    <div className={styles.textContent}>
-                        <div className={styles.text}><Text text={explanation4Text} /></div>
-                    </div>
-                    <div className={styles.textContent}>
-                        <div className={styles.text}><Text text={explanation5Text} /></div>
-                    </div>
-                </div>
+                </FadeInWrapper>
 
             </section>
         </div>

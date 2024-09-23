@@ -4,6 +4,7 @@ import styles from "../../../../styles/block-pages/success-stories/bbva/contactu
 import useResponsive from "@/hooks/useResponsive";
 import { ROUTE_CONTACTUS } from "@/utils/routes";
 import AnchorButton from "@/components/AnchorButton";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const ContactUs = () => {
 
@@ -29,9 +30,11 @@ const ContactUs = () => {
     return (
         <section className={styles.background}>
             <div className={styles.wrapper}>
-                <div className={styles.titleContainer}>
-                    <Text text={descriptionText} className={styles.title} />
-                </div>
+                <FadeInWrapper type='fadeinup' replay={true}>
+                    <div className={styles.titleContainer}>
+                        <Text text={descriptionText} className={styles.title} />
+                    </div>
+                </FadeInWrapper>
                 <div className={styles.buttonContainer}>
                     <AnchorButton
                         href={ROUTE_CONTACTUS}

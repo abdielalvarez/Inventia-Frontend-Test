@@ -2,6 +2,7 @@ import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../../styles/block-pages/success-stories/primary/main.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import Text from "@/components/Text";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Main = () => {
 
@@ -27,12 +28,16 @@ const Main = () => {
     return (
         <div className={styles.background}>
             <div className={styles.wrapper}>
+            <FadeInWrapper type='fadeinright' replay={true}>
                 <div className={styles.titleContainer}>
                     <Text text={titleText} />
                 </div>
+            </FadeInWrapper>
+            <FadeInWrapper type='fadeinright' replay={true}>
                 <div className={styles.subtitleContainer}>
                     <Text text={subtitleText} />
                 </div>
+            </FadeInWrapper>
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ import {
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
 import Image from "next/image";
-import FadeInUpWrapper from "@/context/wrappers/FadeInUpWrapper";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Main = () => {
 
@@ -80,10 +80,10 @@ const Main = () => {
     return (
         <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
             <div className={styles.wrapper}>
-                <FadeInUpWrapper>
-                    <div className={styles.titleContainer}>
-                        <Text text={titleText} className={styles.title} />
-                    </div>
+                <div className={styles.titleContainer}>
+                    <Text text={titleText} className={styles.title} />
+                </div>
+                <FadeInWrapper type='fadeinright' replay={true}>
                     <div className={styles.container}>
                         <div className={styles.titleContainer}>
                             <Image
@@ -102,9 +102,9 @@ const Main = () => {
                             <Text texts={descriptionText} className={styles.description} />
                         </div>
                     </div>
-                </FadeInUpWrapper>
+                </FadeInWrapper>
                 <div className={styles.texts}>
-                    <FadeInUpWrapper>
+                    <FadeInWrapper type='fadeinup' replay={true}>
                         <div className={styles.textContent}>
                             <Image
                                 src="/images/services/inventiaexperience-research/explanation/person.svg"
@@ -115,8 +115,8 @@ const Main = () => {
                             />
                             <div className={styles.text}><Text text={explanation1Text} /></div>
                         </div>
-                    </FadeInUpWrapper>
-                    <FadeInUpWrapper>
+                    </FadeInWrapper>
+                    <FadeInWrapper type='fadeinup' replay={true}>
                         <div className={styles.textContent}>
                             <Image
                                 src="/images/services/inventiaexperience-research/explanation/chat.svg"
@@ -127,8 +127,8 @@ const Main = () => {
                             />
                             <div className={styles.text}><Text text={explanation2Text} /></div>
                         </div>
-                    </FadeInUpWrapper>
-                    <FadeInUpWrapper>
+                    </FadeInWrapper>
+                    <FadeInWrapper type='fadeinup' replay={true}>
                         <div className={styles.textContent}>
                             <Image
                                 src="/images/services/inventiaexperience-research/explanation/light.svg"
@@ -139,7 +139,7 @@ const Main = () => {
                             />
                             <div className={styles.text}><Text text={explanation3Text} /></div>
                         </div>
-                    </FadeInUpWrapper>
+                    </FadeInWrapper>
                 </div>
             </div>
         </section>

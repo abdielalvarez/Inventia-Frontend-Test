@@ -5,6 +5,7 @@ import useText from "../useText";
 import AnchorButton from "@/components/AnchorButton";
 import { ROUTE_ABOUTUS } from "@/utils/routes";
 import useResponsive from "@/hooks/useResponsive";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Experience = () => {
 
@@ -29,32 +30,34 @@ const Experience = () => {
     return (
         <section className={styles.background}>
             <div className={styles.wrapper}>
-                <div className={styles.container1}>
-                    <Image
-                        src="/images/about-us/experience/icon1.png"
-                        alt="Experience"
-                        width={isResponsive ? 90 : 189}
-                        height={isResponsive ? 90 : 189}
-                        priority
-                        className={styles.img}
-                    />
-                    <Image
-                        src="/images/about-us/experience/icon2.png"
-                        alt="Experience"
-                        width={isResponsive ? 90 : 189}
-                        height={isResponsive ? 90 : 189}
-                        priority
-                        className={styles.img}
-                    />
-                    <Image
-                        src="/images/about-us/experience/icon3.png"
-                        alt="Experience"
-                        width={isResponsive ? 90 : 189}
-                        height={isResponsive ? 90 : 189}
-                        priority
-                        className={styles.img}
-                    />
-                </div>
+                <FadeInWrapper type='fadeindown' replay={true}>
+                    <div className={styles.container1}>
+                        <Image
+                            src="/images/about-us/experience/icon1.png"
+                            alt="Experience"
+                            width={isResponsive ? 90 : 189}
+                            height={isResponsive ? 90 : 189}
+                            priority
+                            className={styles.img}
+                        />
+                        <Image
+                            src="/images/about-us/experience/icon2.png"
+                            alt="Experience"
+                            width={isResponsive ? 90 : 189}
+                            height={isResponsive ? 90 : 189}
+                            priority
+                            className={styles.img}
+                        />
+                        <Image
+                            src="/images/about-us/experience/icon3.png"
+                            alt="Experience"
+                            width={isResponsive ? 90 : 189}
+                            height={isResponsive ? 90 : 189}
+                            priority
+                            className={styles.img}
+                        />
+                    </div>
+                </FadeInWrapper>
                 <div className={styles.container2}>
                     <div className={styles.title}><Text text={titleExperienceText} /></div>
                     <div className={styles.subtitle}><Text text={subtitleExperienceText} /></div>

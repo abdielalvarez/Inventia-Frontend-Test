@@ -9,6 +9,7 @@ import inputStyles from "../../../styles/components/input.module.css"
 import ApiService from "@/services";
 import { useState } from "react";
 import envs from "@/config/envs";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Main = () => {
 
@@ -66,8 +67,8 @@ const Main = () => {
     const buttonText = {
         text:
             loading ? 'Está siendo enviado' :
-            success && !loading ? 'Ya lo enviamos' :
-            t('home.block9.button'),
+                success && !loading ? 'Ya lo enviamos' :
+                    t('home.block9.button'),
         tag: "p",
         font: "poppinsRegular",
         size: isResponsive ? 15 : 18,
@@ -77,7 +78,9 @@ const Main = () => {
     return (
         <section className={styles.background}>
             <div className={styles.wrapper}>
-                <div><Text text={explanationText} className={styles.title} /></div>
+                <FadeInWrapper type='fadeinright' replay={true}>
+                    <div className={styles.title}><Text text={explanationText} /></div>
+                </FadeInWrapper>
                 <div className={styles.container}>
                     <div className={styles.formContainer}>
                         <div className={styles.infoContent}>
@@ -97,7 +100,7 @@ const Main = () => {
                                     onChange={handleChange}
                                     name="home-phone"
                                     id="home-phone"
-                                    className={inputStyles.inputContactUs}
+                                    className={inputStyles.inputContactUsModule}
                                 />
                                 <Input
                                     type="email"
@@ -106,7 +109,7 @@ const Main = () => {
                                     onChange={handleChange}
                                     name="home-email"
                                     id="home-email"
-                                    className={inputStyles.inputContactUs}
+                                    className={inputStyles.inputContactUsModule}
                                 />
                                 <Input
                                     type="text"
@@ -115,7 +118,7 @@ const Main = () => {
                                     onChange={handleChange}
                                     name="home-name"
                                     id="home-name"
-                                    className={inputStyles.inputContactUs}
+                                    className={inputStyles.inputContactUsModule}
                                 />
                             </div>
                             <div className={styles.buttonContainer}>

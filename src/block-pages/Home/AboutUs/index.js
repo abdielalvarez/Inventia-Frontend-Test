@@ -5,6 +5,7 @@ import useResponsive from "@/hooks/useResponsive";
 import { ROUTE_CONTACTUS } from "@/utils/routes";
 import Image from "next/image";
 import AnchorButton from "@/components/AnchorButton";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const AboutUs = () => {
 
@@ -71,19 +72,21 @@ const AboutUs = () => {
                         priority
                         className={styles.imgLeft1}
                     />
-                    <div className={styles.containerLeft2}>
-                        <Text text={aboutText} className={styles.textLeft1} />
-                        <div className={styles.containerLeft3}>
-                            <div>
-                                <Text texts={descriptionText} className={styles.textLeft2} />
-                            </div>
-                            <div>
-                                <AnchorButton href={ROUTE_CONTACTUS} theme="secondary" responsiveBreakpoint="920">
-                                    <Text text={buttonText} />
-                                </AnchorButton>
+                    <FadeInWrapper type='fadeinright' replay={true}>
+                        <div className={styles.containerLeft2}>
+                            <Text text={aboutText} className={styles.textLeft1} />
+                            <div className={styles.containerLeft3}>
+                                <div>
+                                    <Text texts={descriptionText} className={styles.textLeft2} />
+                                </div>
+                                <div>
+                                    <AnchorButton href={ROUTE_CONTACTUS} theme="secondary" responsiveBreakpoint="920">
+                                        <Text text={buttonText} />
+                                    </AnchorButton>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </FadeInWrapper>
                 </div>
             </div>
         </section>

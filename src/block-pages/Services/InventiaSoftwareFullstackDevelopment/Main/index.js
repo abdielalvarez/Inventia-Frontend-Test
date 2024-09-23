@@ -6,6 +6,7 @@ import {
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
 import Image from "next/image";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Main = () => {
 
@@ -151,9 +152,11 @@ const Main = () => {
                     </div>
                     <div className={styles.container}>
                         <div className={styles.titleContainer}>
-                            <div>
-                                <Text text={subtitleText} className={styles.title} />
-                            </div>
+                            <FadeInWrapper type='fadeinright' replay={true}>
+                                <div>
+                                    <Text text={subtitleText} className={styles.title} />
+                                </div>
+                            </FadeInWrapper>
                         </div>
                     </div>
                 </div>
@@ -169,13 +172,15 @@ const Main = () => {
                                 height={isResponsive ? 104 : 334}
                                 priority
                             />
-                            <div className={styles.content}>
-                                <div className={styles.title}><Text className={styles.text} text={list1Text} /></div>
-                                <div className={styles.text}><Text text={list1Item1Text} /></div>
-                                <div className={styles.text}><Text text={list1Item2Text} /></div>
-                                <div className={styles.text}><Text text={list1Item3Text} /></div>
-                                <div className={styles.text}><Text text={list1Item4Text} /></div>
-                            </div>
+                            <FadeInWrapper type='fadeinright' replay={true}>
+                                <div className={styles.content}>
+                                    <div className={styles.title}><Text className={styles.text} text={list1Text} /></div>
+                                    <div className={styles.text}><Text text={list1Item1Text} /></div>
+                                    <div className={styles.text}><Text text={list1Item2Text} /></div>
+                                    <div className={styles.text}><Text text={list1Item3Text} /></div>
+                                    <div className={styles.text}><Text text={list1Item4Text} /></div>
+                                </div>
+                            </FadeInWrapper>
                         </div>
                         <div className={styles.textContent}>
                             <Image
@@ -185,12 +190,14 @@ const Main = () => {
                                 height={isResponsive ? 104 : 334}
                                 priority
                             />
-                            <div className={styles.content}>
-                                <div className={styles.title}><Text className={styles.text} text={list2Text} /></div>
-                                <div className={styles.text}><Text text={list2Item1Text} /></div>
-                                <div className={styles.text}><Text text={list2Item2Text} /></div>
-                                <div className={styles.text}><Text text={list2Item3Text} /></div>
-                            </div>
+                            <FadeInWrapper type='fadeinright' replay={true}>
+                                <div className={styles.content}>
+                                    <div className={styles.title}><Text className={styles.text} text={list2Text} /></div>
+                                    <div className={styles.text}><Text text={list2Item1Text} /></div>
+                                    <div className={styles.text}><Text text={list2Item2Text} /></div>
+                                    <div className={styles.text}><Text text={list2Item3Text} /></div>
+                                </div>
+                            </FadeInWrapper>
                         </div>
                         <div className={styles.textContent}>
                             <Image
@@ -200,12 +207,14 @@ const Main = () => {
                                 height={isResponsive ? 104 : 334}
                                 priority
                             />
-                            <div className={styles.content}>
-                                <div className={styles.title}><Text className={styles.text} text={list3Text} /></div>
-                                <div className={styles.text}><Text text={list3Item1Text} /></div>
-                                <div className={styles.text}><Text text={list3Item2Text} /></div>
-                                <div className={styles.text}><Text text={list3Item3Text} /></div>
-                            </div>
+                            <FadeInWrapper type='fadeinright' replay={true}>
+                                <div className={styles.content}>
+                                    <div className={styles.title}><Text className={styles.text} text={list3Text} /></div>
+                                    <div className={styles.text}><Text text={list3Item1Text} /></div>
+                                    <div className={styles.text}><Text text={list3Item2Text} /></div>
+                                    <div className={styles.text}><Text text={list3Item3Text} /></div>
+                                </div>
+                            </FadeInWrapper>
                         </div>
                     </div>
                 </div>

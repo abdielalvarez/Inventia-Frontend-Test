@@ -2,9 +2,10 @@ import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../../styles/block-pages/services/inventiasoftware-fullstackdevelopment/success.module.css"
 import useResponsive from "@/hooks/useResponsive";
-import { ROUTE_SERVICES_INVENTIAEXPERIENCE_SERVICEDESIGN, ROUTE_SERVICES_INVENTIASOFTWARE_CLOUDENGINEERING } from "@/utils/routes";
+import { ROUTE_SERVICES_INVENTIASOFTWARE_CLOUDENGINEERING } from "@/utils/routes";
 import Link from "next/link";
 import Image from "next/image";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Success = () => {
 
@@ -40,16 +41,18 @@ const Success = () => {
                             priority
                         />
                     </div>
-                    <div>
-                        <div className={styles.titleContainer}>
-                            <Text text={titleText} className={styles.title} />
+                    <FadeInWrapper type='fadeinup' replay={true}>
+                        <div>
+                            <div className={styles.titleContainer}>
+                                <Text text={titleText} className={styles.title} />
+                            </div>
+                            {!isResponsive ?
+                                <div className={styles.descriptionContainer}>
+                                    <Text text={descriptionText} className={styles.description} />
+                                </div> : null
+                            }
                         </div>
-                        {!isResponsive ?
-                            <div className={styles.descriptionContainer}>
-                                <Text text={descriptionText} className={styles.description} />
-                            </div> : null
-                        }
-                    </div>
+                    </FadeInWrapper>
                 </div>
                 <div className={styles.container2}>
                     {isResponsive ?
@@ -58,13 +61,15 @@ const Success = () => {
                         </div> : null
                     }
                     <Link href={ROUTE_SERVICES_INVENTIASOFTWARE_CLOUDENGINEERING}>
-                        <Image
-                            src="/images/services/inventiasoftware-fullstackdevelopment/success/arrow.svg"
-                            alt="Success"
-                            width={isResponsive ? 50 : 99}
-                            height={isResponsive ? 15 : 30}
-                            priority
-                        />
+                        <FadeInWrapper type='fadeinright' replay={true}>
+                            <Image
+                                src="/images/services/inventiasoftware-fullstackdevelopment/success/arrow.svg"
+                                alt="Success"
+                                width={isResponsive ? 50 : 99}
+                                height={isResponsive ? 15 : 30}
+                                priority
+                            />
+                        </FadeInWrapper>
                     </Link>
                 </div>
             </div>

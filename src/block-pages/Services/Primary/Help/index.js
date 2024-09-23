@@ -3,6 +3,7 @@ import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../../styles/block-pages/services/primary/help.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import Image from "next/image";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Help = () => {
 
@@ -79,25 +80,29 @@ const Help = () => {
                 priority
                 className={styles.imgLeft2}
             />
-            <div className={styles.wrapper}>
-                <div className={styles.textLeft1}>
-                    <Text text={helpTitle} />
+            <FadeInWrapper type='fadeinright' replay={true}>
+                <div className={styles.wrapper}>
+                    <div className={styles.textLeft1}>
+                        <Text text={helpTitle} />
+                    </div>
+                    <div className={styles.textLeft2}>
+                        <Text text={helpSubtitle} />
+                    </div>
                 </div>
-                <div className={styles.textLeft2}>
-                    <Text text={helpSubtitle} />
+            </FadeInWrapper>
+            <FadeInWrapper type='fadeinleft' replay={true}>
+                <div className={styles.wrapper2}>
+                    <div>
+                        <Text texts={experienceText} className={styles.text1} />
+                    </div>
+                    <div>
+                        <Text texts={softwareText} className={styles.text2} />
+                    </div>
+                    <div>
+                        <Text texts={methodologyText} className={styles.text3} />
+                    </div>
                 </div>
-            </div>
-            <div className={styles.wrapper2}>
-                <div>
-                    <Text texts={experienceText} className={styles.text1} />
-                </div>
-                <div>
-                    <Text texts={softwareText} className={styles.text2} />
-                </div>
-                <div>
-                    <Text texts={methodologyText} className={styles.text3} />
-                </div>
-            </div>
+            </FadeInWrapper>
         </section>
     )
 }

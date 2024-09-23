@@ -6,6 +6,7 @@ import {
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
 import Image from "next/image";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Main = () => {
 
@@ -50,38 +51,42 @@ const Main = () => {
                 <div className={styles.titleContainer}>
                     <Text text={titleText} className={styles.title} />
                 </div>
-                <div className={styles.container}>
-                    <div className={styles.titleContainer}>
-                        <div>
-                            <Text text={subtitleText} className={styles.title} />
+                <FadeInWrapper type='fadeinright' replay={true}>
+                    <div className={styles.container}>
+                        <div className={styles.titleContainer}>
+                            <div>
+                                <Text text={subtitleText} className={styles.title} />
+                            </div>
+                        </div>
+                        <div className={styles.descriptionContainer}>
+                            <Text text={descriptionText} className={styles.description} />
                         </div>
                     </div>
-                    <div className={styles.descriptionContainer}>
-                        <Text text={descriptionText} className={styles.description} />
+                </FadeInWrapper>
+                <FadeInWrapper type='fadeinright' replay={true}>
+                    <div className={styles.content}>
+                        <div className={styles.contentInfo1}>
+                            <div className={styles.text}><Text text={explanationText} /></div>
+                        </div>
+                        <div className={styles.contentInfo2}>
+                            <Image
+                                src="/images/services/inventiaexperience-servicedesign/description/settings.svg"
+                                alt="Settings"
+                                width={isResponsive ? 104 : 385}
+                                height={isResponsive ? 104 : 385}
+                                priority
+                                className={styles.img1}
+                            />
+                            <Image
+                                src="/images/services/inventiaexperience-servicedesign/description/location.svg"
+                                alt="Location"
+                                width={isResponsive ? 104 : 385}
+                                height={isResponsive ? 104 : 385}
+                                priority
+                            />
+                        </div>
                     </div>
-                </div>
-                <div className={styles.content}>
-                    <div className={styles.contentInfo1}>
-                        <div className={styles.text}><Text text={explanationText} /></div>
-                    </div>
-                    <div className={styles.contentInfo2}>
-                        <Image
-                            src="/images/services/inventiaexperience-servicedesign/description/settings.svg"
-                            alt="Settings"
-                            width={isResponsive ? 104 : 385}
-                            height={isResponsive ? 104 : 385}
-                            priority
-                            className={styles.img1}
-                        />
-                        <Image
-                            src="/images/services/inventiaexperience-servicedesign/description/location.svg"
-                            alt="Location"
-                            width={isResponsive ? 104 : 385}
-                            height={isResponsive ? 104 : 385}
-                            priority
-                        />
-                    </div>
-                </div>
+                </FadeInWrapper>
             </div>
         </section>
     )

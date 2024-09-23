@@ -6,6 +6,7 @@ import {
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
 import { useState } from "react";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Methodology = () => {
 
@@ -126,9 +127,11 @@ const Methodology = () => {
                 <div className={styles.titleContainer}>
                     <Text text={titleText} className={styles.title} />
                 </div>
-                <div className={styles.descriptionContainer}>
-                    <Text text={descriptionText} className={styles.description} />
-                </div>
+                <FadeInWrapper type='fadeinright' replay={true}>
+                    <div className={styles.descriptionContainer}>
+                        <Text text={descriptionText} className={styles.description} />
+                    </div>
+                </FadeInWrapper>
             </div>
             <div className={styles.container}>
                 <div
@@ -141,7 +144,9 @@ const Methodology = () => {
                         <>
                             {!isResponsive ?
                                 <div className={styles.description1}>
-                                    <Text text={empathyDescriptionText} />
+                                    <FadeInWrapper type='fadeinup' replay={true}>
+                                        <Text text={empathyDescriptionText} />
+                                    </FadeInWrapper>
                                 </div> : null
                             }
                         </> : null
@@ -169,7 +174,9 @@ const Methodology = () => {
                         <>
                             {!isResponsive ?
                                 <div className={styles.description2}>
-                                    <Text text={definitionDescriptionText} />
+                                    <FadeInWrapper type='fadeindown' replay={true}>
+                                        <Text text={definitionDescriptionText} />
+                                    </FadeInWrapper>
                                 </div> : null
                             }
                         </> : null}
@@ -195,7 +202,9 @@ const Methodology = () => {
                         <>
                             {!isResponsive ?
                                 <div className={styles.description3}>
-                                    <Text text={ideaDescriptionText} />
+                                    <FadeInWrapper type='fadeinup' replay={true}>
+                                        <Text text={ideaDescriptionText} />
+                                    </FadeInWrapper>
                                 </div> : null
                             }
                         </> : null}
@@ -219,7 +228,9 @@ const Methodology = () => {
                         <>
                             {!isResponsive ?
                                 <div className={styles.description4}>
-                                    <Text text={prototypeDescriptionText} />
+                                    <FadeInWrapper type='fadeindown' replay={true}>
+                                        <Text text={prototypeDescriptionText} />
+                                    </FadeInWrapper>
                                 </div> : null
                             }
                         </> : null}

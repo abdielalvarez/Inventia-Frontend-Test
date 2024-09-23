@@ -6,6 +6,7 @@ import {
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
 import Image from "next/image";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Main = () => {
 
@@ -117,16 +118,18 @@ const Main = () => {
                     <div className={styles.titleContainer}>
                         <Text text={titleText} className={styles.title} />
                     </div>
-                    <div className={styles.container}>
-                        <div className={styles.titleContainer}>
-                            <div>
-                                <Text text={subtitleText} className={styles.title} />
+                    <FadeInWrapper type='fadeinright' replay={true}>
+                        <div className={styles.container}>
+                            <div className={styles.titleContainer}>
+                                <div>
+                                    <Text text={subtitleText} className={styles.title} />
+                                </div>
+                            </div>
+                            <div className={styles.descriptionContainer}>
+                                <Text texts={descriptionText} className={styles.description} />
                             </div>
                         </div>
-                        <div className={styles.descriptionContainer}>
-                            <Text texts={descriptionText} className={styles.description} />
-                        </div>
-                    </div>
+                    </FadeInWrapper>
                 </div>
             </section>
             <div className={styles.background2}>
@@ -142,36 +145,42 @@ const Main = () => {
             <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
                 <div className={styles.wrapper}>
                     <div className={styles.texts}>
-                        <div className={styles.textContent}>
-                            <Image
-                                src="/images/services/inventiaexperience-productdesign/explanation/vision.svg"
-                                alt="Better client understanding"
-                                width={isResponsive ? 107 : 270}
-                                height={isResponsive ? 47 : 118}
-                                priority
-                            />
-                            <div className={styles.text}><Text texts={explanation1Text} /></div>
-                        </div>
-                        <div className={styles.textContent}>
-                            <Image
-                                src="/images/services/inventiaexperience-productdesign/explanation/person.svg"
-                                alt="Better client understanding"
-                                width={isResponsive ? 104 : 214}
-                                height={isResponsive ? 104 : 214}
-                                priority
-                            />
-                            <div className={styles.text}><Text texts={explanation2Text} /></div>
-                        </div>
-                        <div className={styles.textContent}>
-                            <Image
-                                src="/images/services/inventiaexperience-productdesign/explanation/prototype.svg"
-                                alt="Better client understanding"
-                                width={isResponsive ? 104 : 214}
-                                height={isResponsive ? 104 : 214}
-                                priority
-                            />
-                            <div className={styles.text}><Text texts={explanation3Text} /></div>
-                        </div>
+                        <FadeInWrapper type='fadeinup' replay={true}>
+                            <div className={styles.textContent}>
+                                <Image
+                                    src="/images/services/inventiaexperience-productdesign/explanation/vision.svg"
+                                    alt="Better client understanding"
+                                    width={isResponsive ? 107 : 270}
+                                    height={isResponsive ? 47 : 118}
+                                    priority
+                                />
+                                <div className={styles.text}><Text texts={explanation1Text} /></div>
+                            </div>
+                        </FadeInWrapper>
+                        <FadeInWrapper type='fadeinup' replay={true}>
+                            <div className={styles.textContent}>
+                                <Image
+                                    src="/images/services/inventiaexperience-productdesign/explanation/person.svg"
+                                    alt="Better client understanding"
+                                    width={isResponsive ? 104 : 214}
+                                    height={isResponsive ? 104 : 214}
+                                    priority
+                                />
+                                <div className={styles.text}><Text texts={explanation2Text} /></div>
+                            </div>
+                        </FadeInWrapper>
+                        <FadeInWrapper type='fadeinup' replay={true}>
+                            <div className={styles.textContent}>
+                                <Image
+                                    src="/images/services/inventiaexperience-productdesign/explanation/prototype.svg"
+                                    alt="Better client understanding"
+                                    width={isResponsive ? 104 : 214}
+                                    height={isResponsive ? 104 : 214}
+                                    priority
+                                />
+                                <div className={styles.text}><Text texts={explanation3Text} /></div>
+                            </div>
+                        </FadeInWrapper>
                     </div>
                 </div>
             </section>

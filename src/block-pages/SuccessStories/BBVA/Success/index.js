@@ -5,6 +5,7 @@ import useResponsive from "@/hooks/useResponsive";
 import { ROUTE_SERVICES_INVENTIAEXPERIENCE_SERVICEDESIGN } from "@/utils/routes";
 import Link from "next/link";
 import Image from "next/image";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Success = () => {
 
@@ -23,11 +24,13 @@ const Success = () => {
         <section className={styles.background}>
             <div className={styles.wrapper}>
                 <div className={styles.container}>
-                    {!isResponsive ?
-                        <div className={styles.titleContainer}>
-                            <Text text={titleText} className={styles.title} />
-                        </div> : null
-                    }
+                    <FadeInWrapper type='fadeindown' replay={true}>
+                        {!isResponsive ?
+                            <div className={styles.titleContainer}>
+                                <Text text={titleText} className={styles.title} />
+                            </div> : null
+                        }
+                    </FadeInWrapper>
                     <div className={styles.container2}>
                         <Image
                             src="/images/success-stories/banking-bbva/success/illustration.jpg"
@@ -44,13 +47,15 @@ const Success = () => {
                                 </div> : null
                             }
                             <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_SERVICEDESIGN}>
-                                <Image
-                                    src="/images/success-stories/banking-bbva/success/arrow.svg"
-                                    alt="Success"
-                                    width={isResponsive ? 50 : 99}
-                                    height={isResponsive ? 15 : 30}
-                                    priority
-                                />
+                                <FadeInWrapper type='fadeinright' replay={true}>
+                                    <Image
+                                        src="/images/success-stories/banking-bbva/success/arrow.svg"
+                                        alt="Success"
+                                        width={isResponsive ? 50 : 99}
+                                        height={isResponsive ? 15 : 30}
+                                        priority
+                                    />
+                                </FadeInWrapper>
                             </Link>
                         </div>
                     </div>

@@ -3,6 +3,7 @@ import styles from "../../../../styles/block-pages/success-stories/bbva/brief.mo
 import useResponsive from "@/hooks/useResponsive";
 import Text from "@/components/Text";
 import Image from "next/image";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Brief = () => {
 
@@ -43,21 +44,26 @@ const Brief = () => {
                 priority
                 className={styles.img}
             />
+
             <div className={styles.wrapper1}>
                 <div className={styles.container1}>
                     <div className={styles.titleContainer}>
                         <Text text={titleText} />
                     </div>
-                    <div className={styles.subtitleContainer}>
-                        <Text text={subtitleText} />
-                    </div>
+                    <FadeInWrapper type='fadeinright' replay={true}>
+                        <div className={styles.subtitleContainer}>
+                            <Text text={subtitleText} />
+                        </div>
+                    </FadeInWrapper>
                 </div>
             </div>
             <div className={styles.wrapper2}>
                 <div className={styles.container2}>
+                <FadeInWrapper type='fadeinup' replay={true}>
                     <div className={styles.description1Container}>
                         <Text text={description1Text} />
                     </div>
+                </FadeInWrapper>
                 </div>
             </div>
         </div>

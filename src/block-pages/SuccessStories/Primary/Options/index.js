@@ -8,7 +8,6 @@ import Image from "next/image";
 const Options = () => {
 
     const is1150 = useResponsive(1150);
-    const is920 = useResponsive(920);
     const is768 = useResponsive(768);
 
     const [colliders, setColliders] = useState({
@@ -30,7 +29,7 @@ const Options = () => {
         bankingText,
         bankingOption1Text,
         bankingOption2Text
-    } = useText()
+    } = useText(colliders)
 
     const openedArrow = 'orange'
     const closedArrow = 'black'

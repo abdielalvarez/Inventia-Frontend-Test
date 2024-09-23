@@ -12,6 +12,7 @@ import {
 import AnchorButton from "@/components/AnchorButton";
 import Image from "next/image";
 import Link from "next/link";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Software = () => {
 
@@ -88,11 +89,13 @@ const Software = () => {
                         />
                     </div>
                     <div className={styles.textContainer2}>
-                        <div className={styles.titleContainer}>
-                            <Text text={titleText} className={styles.title}/>
-                        </div>
-                        <div className={styles.descriptionContainer}><Text text={description1Text} className={styles.description1} /></div>
-                        <div className={styles.descriptionContainer}><Text text={description2Text} className={styles.description2} /></div>
+                        <FadeInWrapper type='fadeinleft' replay={true}>
+                            <div className={styles.titleContainer}>
+                                <Text text={titleText} className={styles.title} />
+                            </div>
+                            <div className={styles.descriptionContainer}><Text text={description1Text} className={styles.description1} /></div>
+                            <div className={styles.descriptionContainer}><Text text={description2Text} className={styles.description2} /></div>
+                        </FadeInWrapper>
                         {isResponsive ? null :
                             <div>
                                 <AnchorButton
@@ -111,51 +114,63 @@ const Software = () => {
                     <div className={styles.texts}>
                         <div className={styles.textContent}>
                             <Link href={ROUTE_SERVICES_INVENTIASOFTWARE_FULLSTACKDEVELOPMENT}>
-                                <div className={styles.text}><Text text={option1Text} className={styles.item} /></div>
-                                <Image
-                                    src="/images/services/primary/software/arrow.svg"
-                                    alt="Custom Research e Insights"
-                                    width={isResponsive ? 12 : 44}
-                                    height={isResponsive ? 12 : 44}
-                                    priority
-                                />
+                                <FadeInWrapper type='fadeinleft' replay={true}>
+                                    <div className={styles.text}><Text text={option1Text} className={styles.item} /></div>
+                                </FadeInWrapper>
+                                <FadeInWrapper type='fadeinright' replay={true}>
+                                    <Image
+                                        src="/images/services/primary/software/arrow.svg"
+                                        alt="Custom Research e Insights"
+                                        width={isResponsive ? 12 : 44}
+                                        height={isResponsive ? 12 : 44}
+                                        priority
+                                    />
+                                </FadeInWrapper>
                             </Link>
                         </div>
                         <div className={styles.textContent}>
                             <Link href={ROUTE_SERVICES_INVENTIASOFTWARE_CLOUDENGINEERING}>
-                                <div className={styles.text}><Text text={option2Text} className={styles.item} /></div>
-                                <Image
-                                    src="/images/services/primary/software/arrow.svg"
-                                    alt="Product Design and Build"
-                                    width={isResponsive ? 12 : 44}
-                                    height={isResponsive ? 12 : 44}
-                                    priority
-                                />
+                                <FadeInWrapper type='fadeinleft' replay={true}>
+                                    <div className={styles.text}><Text text={option2Text} className={styles.item} /></div>
+                                </FadeInWrapper>
+                                <FadeInWrapper type='fadeinright' replay={true}>
+                                    <Image
+                                        src="/images/services/primary/software/arrow.svg"
+                                        alt="Product Design and Build"
+                                        width={isResponsive ? 12 : 44}
+                                        height={isResponsive ? 12 : 44}
+                                        priority
+                                    />
+                                </FadeInWrapper>
                             </Link>
                         </div>
                         <div>
                             <Link href={ROUTE_SERVICES_INVENTIASOFTWARE_DEVOPSIMPLEMENTATION}>
-                                <div className={styles.text}><Text text={option3Text} className={styles.item} /></div>
-                                <Image
-                                    src="/images/services/primary/software/arrow.svg"
-                                    alt="Service Design"
-                                    width={isResponsive ? 12 : 44}
-                                    height={isResponsive ? 12 : 44}
-                                    priority
-                                />
+                                <FadeInWrapper type='fadeinleft' replay={true}>
+                                    <div className={styles.text}><Text text={option3Text} className={styles.item} /></div>
+                                </FadeInWrapper>
+                                <FadeInWrapper type='fadeinright' replay={true}>
+                                    <Image
+                                        src="/images/services/primary/software/arrow.svg"
+                                        alt="Service Design"
+                                        width={isResponsive ? 12 : 44}
+                                        height={isResponsive ? 12 : 44}
+                                        priority
+                                    />
+                                </FadeInWrapper>
                             </Link>
                         </div>
                     </div>
                 </div>
                 {isResponsive ? <div className={styles.button}>
-                        <AnchorButton
-                            responsiveBreakpoint={768}
-                            href={ROUTE_CONTACTUS}
-                            theme="tertiary"
-                        >
-                            <Text text={buttonText} />
-                        </AnchorButton>
-                    </div> : null
+                    <AnchorButton
+                        responsiveBreakpoint={768}
+                        href={ROUTE_CONTACTUS}
+                        theme="tertiary"
+                    >
+                        <Text text={buttonText} />
+                    </AnchorButton>
+                </div> : null
                 }
             </div>
         </section>

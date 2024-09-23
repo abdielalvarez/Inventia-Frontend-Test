@@ -10,6 +10,7 @@ import inputStyles from "../../../styles/components/input.module.css"
 import ApiService from "@/services";
 import { useState } from "react";
 import envs from "@/config/envs";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const ContactUsForm = () => {
 
@@ -59,8 +60,8 @@ const ContactUsForm = () => {
     const buttonText = {
         text:
             loading ? 'Está siendo enviado' :
-            success && !loading ? 'Ya lo enviamos' :
-            t('home.block9.button'),
+                success && !loading ? 'Ya lo enviamos' :
+                    t('home.block9.button'),
         tag: "p",
         font: "poppinsRegular",
         size: isResponsive ? 15 : 18,
@@ -72,14 +73,16 @@ const ContactUsForm = () => {
             <div className={styles.wrapper}>
                 <div>
                     <div className={styles.infoContent}>
-                        <Image
-                            src="/images/home/lets-talk/line-1.svg"
-                            alt="Let's talk"
-                            width={1}
-                            height={575}
-                            priority
-                            className={styles.icon1}
-                        />
+                        <FadeInWrapper type='fadeindown' replay={true}>
+                            <Image
+                                src="/images/home/lets-talk/line-1.svg"
+                                alt="Let's talk"
+                                width={1}
+                                height={575}
+                                priority
+                                className={styles.icon1}
+                            />
+                        </FadeInWrapper>
                         <Image
                             src="/images/home/lets-talk/line-2.svg"
                             alt="Let's talk"
@@ -96,14 +99,16 @@ const ContactUsForm = () => {
                             priority
                             className={styles.icon3}
                         />
-                        <Image
-                            src="/images/home/lets-talk/logo.svg"
-                            alt="Inventia"
-                            width={isResponsive ? 46 : 85}
-                            height={isResponsive ? 56 : 103}
-                            priority
-                            className={styles.logoImg}
-                        />
+                        <FadeInWrapper type='fadeindown' replay={true}>
+                            <Image
+                                src="/images/home/lets-talk/logo.svg"
+                                alt="Inventia"
+                                width={isResponsive ? 46 : 85}
+                                height={isResponsive ? 56 : 103}
+                                priority
+                                className={styles.logoImg}
+                            />
+                        </FadeInWrapper>
                         <div className={styles.titleContainer}>
                             <Text text={titleText} className={styles.title} />
                         </div>
@@ -122,7 +127,7 @@ const ContactUsForm = () => {
                                 onChange={handleChange}
                                 name="home-phone"
                                 id="home-phone"
-                                className={inputStyles.inputContactUs}
+                                className={inputStyles.inputContactUsHome}
                             />
                             <Input
                                 type="email"
@@ -131,7 +136,7 @@ const ContactUsForm = () => {
                                 onChange={handleChange}
                                 name="home-email"
                                 id="home-email"
-                                className={inputStyles.inputContactUs}
+                                className={inputStyles.inputContactUsHome}
                             />
                             <Input
                                 type="text"
@@ -140,7 +145,7 @@ const ContactUsForm = () => {
                                 onChange={handleChange}
                                 name="home-name"
                                 id="home-name"
-                                className={inputStyles.inputContactUs}
+                                className={inputStyles.inputContactUsHome}
                             />
                         </div>
                         <AnchorButton

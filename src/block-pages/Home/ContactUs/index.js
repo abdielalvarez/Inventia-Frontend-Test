@@ -4,6 +4,7 @@ import styles from "../../../styles/block-pages/home/contactus.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import AnchorButton from "@/components/AnchorButton";
 import { ROUTE_CONTACTUS } from "@/utils/routes";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const ContactUs = () => {
 
@@ -33,7 +34,9 @@ const ContactUs = () => {
     return (
         <section className={styles.background}>
             <div className={styles.wrapper}>
-                <Text texts={contactText} className={styles.title} />
+                <FadeInWrapper type='fadeinright' replay={true}>
+                    <Text texts={contactText} className={styles.title} />
+                </FadeInWrapper>
                 <div className={styles.buttonContainer}>
                     <AnchorButton href={ROUTE_CONTACTUS}>
                         <Text texts={buttonText} />

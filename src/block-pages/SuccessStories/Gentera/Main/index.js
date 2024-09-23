@@ -2,6 +2,7 @@ import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../../styles/block-pages/success-stories/gentera/main.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import Text from "@/components/Text";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Main = () => {
 
@@ -51,14 +52,16 @@ const Main = () => {
                         <Text text={tagsText} />
                     </div> : null
                 }
-                <div className={styles.container}>
-                    <div className={styles.subtitleContainer}>
-                        <Text text={subtitleText} />
+                <FadeInWrapper type='fadeinright' replay={true}>
+                    <div className={styles.container}>
+                        <div className={styles.subtitleContainer}>
+                            <Text text={subtitleText} />
+                        </div>
+                        <div className={styles.descriptionContainer}>
+                            <Text text={descriptionText} />
+                        </div>
                     </div>
-                    <div className={styles.descriptionContainer}>
-                        <Text text={descriptionText} />
-                    </div>
-                </div>
+                </FadeInWrapper>
                 {isResponsive ?
                     <div className={styles.tagsContainer}>
                         <Text text={tagsText} />

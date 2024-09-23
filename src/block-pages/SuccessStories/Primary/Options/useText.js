@@ -3,7 +3,7 @@ import { useApiContext } from "@/context/wrappers/ContextProvider";
 import useResponsive from "@/hooks/useResponsive";
 import { ROUTE_SUCCESSSTORIES_BANKINGBBVA, ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR, ROUTE_SUCCESSSTORIES_BANKINGGRUPOGENTERA, ROUTE_SUCCESSSTORIES_BANKINGION } from "@/utils/routes";
 
-const useText = () => {
+const useText = (colliders) => {
 
     const { t } = useApiContext()
     const isResponsive = useResponsive(768);
@@ -18,8 +18,8 @@ const useText = () => {
 
     const financialServicesOption1Text = {
         text: t('success-stories.primary.block3.collider1.explanation1'),
-        href: ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR,
-        tag: "a",
+        href: colliders.financialServices ? ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR : null,
+        tag: colliders.financialServices ? "a" : "p",
         font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 16 : 27,
         color: 'blackBase',
@@ -27,8 +27,8 @@ const useText = () => {
 
     const financialServicesOption2Text = {
         text: t('success-stories.primary.block3.collider1.explanation2'),
-        href: ROUTE_SUCCESSSTORIES_BANKINGION,
-        tag: "a",
+        href: colliders.financialServices ? ROUTE_SUCCESSSTORIES_BANKINGION : null,
+        tag: colliders.financialServices ? "a" : "p",
         font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 16 : 27,
         color: 'blackBase',
@@ -44,8 +44,8 @@ const useText = () => {
 
     const bankingOption1Text = {
         text: t('success-stories.primary.block3.collider2.explanation1'),
-        href: ROUTE_SUCCESSSTORIES_BANKINGBBVA,
-        tag: "a",
+        href: colliders.banking ? ROUTE_SUCCESSSTORIES_BANKINGBBVA : null,
+        tag: colliders.banking ? "a" : "p",
         font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 16 : 27,
         color: 'blackBase'
@@ -53,8 +53,8 @@ const useText = () => {
 
     const bankingOption2Text = {
         text: t('success-stories.primary.block3.collider2.explanation2'),
-        href: ROUTE_SUCCESSSTORIES_BANKINGGRUPOGENTERA,
-        tag: "a",
+        href: colliders.banking ? ROUTE_SUCCESSSTORIES_BANKINGGRUPOGENTERA : null,
+        tag: colliders.banking ? "a" : "p",
         font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 16 : 27,
         color: 'blackBase'

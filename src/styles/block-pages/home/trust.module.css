@@ -27,34 +27,14 @@
     margin: 0;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .imgContainer {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-    opacity: 0;
-    transform: translateY(30px); 
-    transition: opacity 2.5s ease-out, transform 2.5s ease-out;
-}
-
-.visible {
     opacity: 1;
-    transform: translateY(0);
-    animation: fadeInUp 2.5s ease-out forwards; 
 }
-
 
 @media (max-width: 768px) {
     .background {

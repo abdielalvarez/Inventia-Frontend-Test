@@ -2,6 +2,7 @@ import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../../styles/block-pages/success-stories/primary/specialize.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import Text from "@/components/Text";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Specialize = () => {
 
@@ -20,9 +21,11 @@ const Specialize = () => {
     return (
         <div className={styles.background}>
             <div className={styles.wrapper}>
-                <div className={styles.titleContainer}>
-                    <Text text={titleText} />
-                </div>
+                <FadeInWrapper type='fadeinright' replay={true}>
+                    <div className={styles.titleContainer}>
+                        <Text text={titleText} />
+                    </div>
+                </FadeInWrapper>
             </div>
         </div>
     )

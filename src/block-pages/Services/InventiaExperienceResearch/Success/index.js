@@ -5,6 +5,7 @@ import useResponsive from "@/hooks/useResponsive";
 import { ROUTE_SERVICES_INVENTIAEXPERIENCE_PRODUCTDESIGN } from "@/utils/routes";
 import Link from "next/link";
 import Image from "next/image";
+import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const Success = () => {
 
@@ -41,14 +42,16 @@ const Success = () => {
                         />
                     </div>
                     <div>
-                        <div className={styles.titleContainer}>
-                            <Text text={titleText} className={styles.title} />
-                        </div>
-                        {!isResponsive ?
-                            <div className={styles.descriptionContainer}>
-                                <Text text={descriptionText} className={styles.description} />
-                            </div> : null
-                        }
+                        <FadeInWrapper type='fadeinup' replay={true}>
+                            <div className={styles.titleContainer}>
+                                <Text text={titleText} className={styles.title} />
+                            </div>
+                            {!isResponsive ?
+                                <div className={styles.descriptionContainer}>
+                                    <Text text={descriptionText} className={styles.description} />
+                                </div> : null
+                            }
+                        </FadeInWrapper>
                     </div>
                 </div>
                 <div className={styles.container2}>
@@ -57,15 +60,17 @@ const Success = () => {
                             <Text text={descriptionText} className={styles.description} />
                         </div> : null
                     }
-                    <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_PRODUCTDESIGN}>
-                        <Image
-                            src="/images/services/inventiaexperience-research/success/arrow.svg"
-                            alt="Success"
-                            width={isResponsive ? 50 : 99}
-                            height={isResponsive ? 15 : 30}
-                            priority
-                        />
-                    </Link>
+                    <FadeInWrapper type='fadeinright' replay={true}>
+                        <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_PRODUCTDESIGN}>
+                            <Image
+                                src="/images/services/inventiaexperience-research/success/arrow.svg"
+                                alt="Success"
+                                width={isResponsive ? 50 : 99}
+                                height={isResponsive ? 15 : 30}
+                                priority
+                            />
+                        </Link>
+                    </FadeInWrapper>
                 </div>
             </div>
         </section>
