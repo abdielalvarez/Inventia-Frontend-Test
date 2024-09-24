@@ -7,6 +7,7 @@ import Text from '../Text';
 import useResponsive from '@/hooks/useResponsive';
 import Link from 'next/link';
 import { ROUTE_HOME } from '@/utils/routes';
+import Dropdown from '../Dropdown';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -51,7 +52,9 @@ const Header = () => {
     successBankingOption2Text,
     successText,
     aboutUsText,
-    contactUsText
+    contactUsText,
+    dropdownDataServices,
+    dropdownDataSuccessStories
   } = useText(isMenuOpen, colliders)
 
   const isSmallScreen = useResponsive(768);
@@ -88,15 +91,19 @@ const Header = () => {
       }
     >
       {!isMenuOpen ?
-        <MainLogo/> : null
+        <MainLogo /> : null
       }
       <div className={styles.headerlabels}>
-        <div className={styles.headerlabel}>
-          <Text texts={servicesText} />
-        </div>
-        <div className={styles.headerlabel}>
-          <Text texts={successText} />
-        </div>
+        <Dropdown items={dropdownDataServices} disappearWhen768>
+          <div className={styles.headerlabel}>
+            <Text texts={servicesText} />
+          </div>
+        </Dropdown>
+        <Dropdown items={dropdownDataSuccessStories} disappearWhen768>
+          <div className={styles.headerlabel}>
+            <Text texts={successText} />
+          </div>
+        </Dropdown>
         <div className={styles.headerlabel}>
           <Text texts={aboutUsText} />
         </div>
@@ -128,7 +135,7 @@ const Header = () => {
         <div className={styles.headermenuContent}>
           <div className={styles.headerlabel} onClick={toggleMenu}>
             {isMenuOpen ?
-              <MainLogo/> : null
+              <MainLogo /> : null
             }
           </div>
           <div className={`${styles.headerCollider} ${colliders.services ? styles.headerColliderOpen : ''}`} onClick={() => toggleCollider('services')}>

@@ -29,7 +29,6 @@ const Text = ({ texts, text, ...rest }) => {
     };
 
     const getProps = (textObj) => {
-        const Tag = textObj.tag || "p";
         const font = determineFont(textObj.font);
         const size = styles?.[`fontSize${textObj.size}`];
         const color = styles?.[`color${textObj.color}`];

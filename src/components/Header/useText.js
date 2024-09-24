@@ -15,7 +15,9 @@ import {
     ROUTE_SUCCESSSTORIES_BANKINGBBVA,
     ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR,
     ROUTE_SUCCESSSTORIES_BANKINGGRUPOGENTERA,
-    ROUTE_SUCCESSSTORIES_BANKINGION
+    ROUTE_SUCCESSSTORIES_BANKINGION,
+    TAG_INVENTIAEXPERIENCE,
+    TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
 
 const useText = (isMenuOpen) => {
@@ -26,8 +28,8 @@ const useText = (isMenuOpen) => {
     const servicesText = [
         {
             text: t('header.services.title'),
-            href: isMenuOpen ? null : ROUTE_SERVICES,
-            tag: isMenuOpen ? "p" : "a",
+            href: null,
+            tag: "p",
             font: "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase',
@@ -123,8 +125,8 @@ const useText = (isMenuOpen) => {
     const successText = [
         {
             text: t('header.successful.title'),
-            href: isMenuOpen ? null : ROUTE_SUCCESSSTORIES,
-            tag: isMenuOpen ? "p" : "a",
+            href: null,
+            tag: "p",
             font: "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase'
@@ -217,6 +219,84 @@ const useText = (isMenuOpen) => {
         }
     ];
 
+    const dropdownDataServices = [
+        {
+            title: {
+                text: t('header.services.section1.subtitle1'),
+                href: `${ROUTE_SERVICES}#${TAG_INVENTIAEXPERIENCE}`
+            },
+            content: [
+                {
+                    text: t('header.services.section1.text1'),
+                    href: ROUTE_SERVICES_INVENTIAEXPERIENCE_RESEARCH
+                },
+                {
+                    text: t('header.services.section1.text2'),
+                    href: ROUTE_SERVICES_INVENTIAEXPERIENCE_PRODUCTDESIGN
+                },
+                {
+                    text: t('header.services.section1.text3'),
+                    href: ROUTE_SERVICES_INVENTIAEXPERIENCE_SERVICEDESIGN
+                }
+            ]
+        },
+        {
+            title: {
+                text: t('header.services.section2.subtitle1'),
+                href: `${ROUTE_SERVICES}#${TAG_INVENTIASOFTWARE}`
+            },
+            content: [
+                {
+                    text: t('header.services.section2.text1'),
+                    href: ROUTE_SERVICES_INVENTIASOFTWARE_FULLSTACKDEVELOPMENT
+                },
+                {
+                    text: t('header.services.section2.text2'),
+                    href: ROUTE_SERVICES_INVENTIASOFTWARE_CLOUDENGINEERING
+                },
+                {
+                    text: t('header.services.section2.text3'),
+                    href: ROUTE_SERVICES_INVENTIASOFTWARE_DEVOPSIMPLEMENTATION
+                }
+            ]
+        },
+    ];
+
+    const dropdownDataSuccessStories = [
+        {
+            title: {
+                text: t('header.successful.section1.subtitle1'),
+                href: ROUTE_SUCCESSSTORIES
+            },
+            content: [
+                {
+                    text: t('header.successful.section1.text1'),
+                    href: ROUTE_SUCCESSSTORIES_BANKINGBBVA
+                },
+                {
+                    text: t('header.successful.section1.text2'),
+                    href: ROUTE_SUCCESSSTORIES_BANKINGGRUPOGENTERA
+                }
+            ]
+        },
+        {
+            title: {
+                text: t('header.successful.section2.subtitle1'),
+                href: ROUTE_SUCCESSSTORIES
+            },
+            content: [
+                {
+                    text: t('header.successful.section2.text1'),
+                    href: ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR
+                },
+                {
+                    text: t('header.successful.section2.text2'),
+                    href: ROUTE_SUCCESSSTORIES_BANKINGION
+                }
+            ]
+        }
+    ];
+
     return {
         servicesText,
         servicesInventiaExperienceText,
@@ -235,7 +315,9 @@ const useText = (isMenuOpen) => {
         successBankingOption2Text,
         successText,
         aboutUsText,
-        contactUsText
+        contactUsText,
+        dropdownDataServices,
+        dropdownDataSuccessStories
     }
 }
 

@@ -1,0 +1,68 @@
+.dropdown {
+    position: relative; /* Contenedor relativo */
+}
+
+.trigger {
+    cursor: pointer; /* Cursor pointer para el trigger */
+}
+
+/* Estilo para los grupos */
+.item {
+    padding: 10px; /* Espaciado interno de los grupos */
+    cursor: pointer; /* Cursor pointer */
+    position: relative; /* Para la línea inferior */
+    border-bottom: 1px solid #ccc; /* Línea inferior */
+}
+
+/* Contenido del dropdown */
+.content {
+    min-width: 150%; /* Ancho del dropdown */
+    max-width: 250%; /* Ancho del dropdown */
+    position: absolute; /* Posicionamiento absoluto */
+    background-color: white; /* Fondo blanco para el dropdown */
+    border: 1px solid #ccc; /* Borde para el dropdown */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    display: block; /* Asegura que se muestre correctamente */
+}
+
+/* Estilo para los subgrupos */
+.subContent {
+    padding-left: 5px; /* Indentado para los subgrupos */
+}
+
+/* Estilo para los elementos de subgrupo */
+.subItem {
+    padding: 5px; /* Espaciado interno de los subgrupos */
+}
+
+/* Efecto hover para los subgrupos */
+.subItem:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Fondo más claro en hover */
+}
+
+/* Línea debajo del título de cada item */
+.titleLine {
+    height: 1px; /* Altura de la línea */
+    background-color: #ccc; /* Color de la línea */
+    margin: 5px 0; /* Espacio superior e inferior */
+}
+
+/* Línea inferior que cubre todo el ancho */
+.item:after {
+    content: '';
+    display: block;
+    width: 100%; /* Cubrir todo el ancho */
+    border-bottom: 1px solid #ccc; /* Línea */
+    position: absolute; /* Posicionamiento absoluto */
+    left: 0; /* Alinear a la izquierda */
+    bottom: -1px; /* Posicionar justo debajo del grupo */
+}
+
+/* Estilo para el enlace dentro del dropdown */
+.link {
+    text-decoration: none; /* Quitar subrayado */
+    color: inherit; /* Usar el color del texto padre */
+    display: block; /* Hacer que ocupe todo el espacio */
+}

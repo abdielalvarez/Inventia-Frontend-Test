@@ -38,3 +38,37 @@
 .fadeinleft.visible {
     transform: translateX(0);
 }
+
+@media (max-width: 768px) {
+    .fadeinup {
+        transform: translateY(10px);
+    }
+    
+    .fadeinup.visible {
+        transform: translateY(0);
+    }
+    
+    .fadeindown {
+        transform: translateY(-10px);
+    }
+    
+    .fadeindown.visible {
+        transform: translateY(0);
+    }
+    
+    .fadeinright {
+        transform: translateX(-10px);
+    }
+    
+    .fadeinright.visible {
+        transform: translateX(0);
+    }
+    
+    .fadeinleft {
+        transform: translateX(10px);
+    }
+    
+    .fadeinleft.visible {
+        transform: translateX(0);
+    }
+}
