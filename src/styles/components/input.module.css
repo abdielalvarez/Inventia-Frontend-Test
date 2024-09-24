@@ -7,6 +7,8 @@
     max-width: 360px;
     height: 40px;
     margin: 0 0 21px;
+    width: 100%;
+    font-size: 20px;
 }
 
 .inputJoinTeam::placeholder {
@@ -22,13 +24,15 @@
 .inputContactUsModule {
     color: white;
     background: rgba(255, 255, 255, 0.21);
-    border: 1px solid #000000;
+    border: 1px solid white;
     border-radius: 4px;
     padding: 25px;
     max-width: 360px;
     height: 82px;
     margin: 0 0 21px;
     -webkit-text-fill-color: white;
+    width: 100%;
+    font-size: 20px;
 }
 
 .inputContactUsModule::placeholder {
@@ -54,6 +58,8 @@
     max-width: 360px;
     height: 82px;
     margin: 0 0 21px;
+    width: 100%;
+    font-size: 20px;
 }
 
 .inputContactUsHome::placeholder {
@@ -66,12 +72,12 @@
     -webkit-text-fill-color: rgba(0, 0, 0, 0.50);
 }
 
-.input {
+/* .input {
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
     box-sizing: border-box;
-}
+} */
 
 .input:focus {
     border-color: #0070f3;

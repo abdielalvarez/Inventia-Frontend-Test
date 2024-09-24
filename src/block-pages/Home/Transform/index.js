@@ -17,28 +17,23 @@ const Transform = () => {
         t('home.block2.text4'),
     ];
 
+    const handleScroll = () => {
+        const viewportThreshold = window.innerHeight * 0.6;
+        textRefs.current.forEach((el, index) => {
+            const rect = el.getBoundingClientRect();
+            const elementCenter = rect.top + rect.height / 2;
+            if (Math.abs(elementCenter - viewportThreshold) < rect.height / 2) {
+                setActiveIndex(index);
+            }
+        });
+    };
+
     useEffect(() => {
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const index = textRefs.current.indexOf(entry.target);
-                    setActiveIndex(index);
-                }
-            });
-        }, observerOptions);
-
-        textRefs.current.forEach((el) => el && observer.observe(el));
-
+        window.addEventListener('scroll', handleScroll);
         return () => {
-            textRefs.current.forEach((el) => el && observer.unobserve(el));
+            window.removeEventListener('scroll', handleScroll);
         };
-    }, [textRefs]);
+    }, []);
 
     return (
         <section className={styles.background}>
@@ -58,8 +53,7 @@ const Transform = () => {
                 ))}
             </div>
         </section>
-
     )
 }
 
-export default Transform
+export default Transform;

@@ -24,7 +24,7 @@ const AboutUs = () => {
         {
             text: t('home.block8.text1'),
             tag: "p",
-            font: "poppinsMedium",
+            font: "poppinsLight",
             size: isResponsive ? 12 : 20,
             color: 'blackBase',
         },
@@ -38,7 +38,7 @@ const AboutUs = () => {
         {
             text: t('home.block8.text3'),
             tag: "p",
-            font: "poppinsMedium",
+            font: "poppinsLight",
             size: isResponsive ? 12 : 20,
             color: 'blackBase',
         }

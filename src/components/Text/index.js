@@ -5,67 +5,27 @@ import Link from 'next/link';
 
 const Text = ({ texts, text, ...rest }) => {
     const determineFont = (font) => {
-        let fontType;
-        switch (font) {
-            case 'poppinsBlack':
-                fontType = styles.poppinsBlack;
-                break;
-            case 'poppinsBlackitalic':
-                fontType = styles.poppinsBlackitalic;
-                break;
-            case 'poppinsBold':
-                fontType = styles.poppinsBold;
-                break;
-            case 'poppinsBolditalic':
-                fontType = styles.poppinsBolditalic;
-                break;
-            case 'poppinsExtrabold':
-                fontType = styles.poppinsExtrabold;
-                break;
-            case 'poppinsExtrabolditalic':
-                fontType = styles.poppinsExtrabolditalic;
-                break;
-            case 'poppinsExtralight':
-                fontType = styles.poppinsExtralight;
-                break;
-            case 'poppinsExtralightitalic':
-                fontType = styles.poppinsExtralightitalic;
-                break;
-            case 'poppinsItalic':
-                fontType = styles.poppinsItalic;
-                break;
-            case 'poppinsLight':
-                fontType = styles.poppinsLight;
-                break;
-            case 'poppinsLightitalic':
-                fontType = styles.poppinsLightitalic;
-                break;
-            case 'poppinsMedium':
-                fontType = styles.poppinsMedium;
-                break;
-            case 'poppinsMediumitalic':
-                fontType = styles.poppinsMediumitalic;
-                break;
-            case 'poppinsRegular':
-                fontType = styles.poppinsRegular;
-                break;
-            case 'poppinsSemibold':
-                fontType = styles.poppinsSemibold;
-                break;
-            case 'poppinsSemibolditalic':
-                fontType = styles.poppinsSemibolditalic;
-                break;
-            case 'poppinsThin':
-                fontType = styles.poppinsThin;
-                break;
-            case 'poppinsThinitalic':
-                fontType = styles.poppinsThinitalic;
-                break;
-            default:
-                fontType = '';
-                break;
-        }
-        return fontType;
+        const fontMap = {
+            poppinsBlack: styles.poppinsBlack,
+            poppinsBlackitalic: styles.poppinsBlackitalic,
+            poppinsBold: styles.poppinsBold,
+            poppinsBolditalic: styles.poppinsBolditalic,
+            poppinsExtrabold: styles.poppinsExtrabold,
+            poppinsExtrabolditalic: styles.poppinsExtrabolditalic,
+            poppinsExtralight: styles.poppinsExtralight,
+            poppinsExtralightitalic: styles.poppinsExtralightitalic,
+            poppinsItalic: styles.poppinsItalic,
+            poppinsLight: styles.poppinsLight,
+            poppinsLightitalic: styles.poppinsLightitalic,
+            poppinsMedium: styles.poppinsMedium,
+            poppinsMediumitalic: styles.poppinsMediumitalic,
+            poppinsRegular: styles.poppinsRegular,
+            poppinsSemibold: styles.poppinsSemibold,
+            poppinsSemibolditalic: styles.poppinsSemibolditalic,
+            poppinsThin: styles.poppinsThin,
+            poppinsThinitalic: styles.poppinsThinitalic,
+        };
+        return fontMap[font] || '';
     };
 
     const getProps = (textObj) => {
@@ -76,26 +36,14 @@ const Text = ({ texts, text, ...rest }) => {
 
         const commonProps = {
             ...rest,
-            className: `${styles.inline} ${font} ${size} ${color} ${rest?.className || ''}`
+            className: `${styles.inline} ${font} ${size} ${color} ${rest.className || ''}`
         };
 
-        if (Tag === "a") {
-            const isInternal = textObj?.href?.startsWith('/') || textObj?.href?.startsWith('#');
-            if (isInternal) {
-                return {
-                    ...commonProps,
-                    href: textObj.href,
-                };
-            } else {
-                const props = {
-                    ...commonProps,
-                    href: textObj.href,
-                    target: '_blank',
-                    rel: 'noopener noreferrer'
-                };
-                if (textObj.ariaLabel) props['aria-label'] = textObj.ariaLabel;
-                return props;
-            }
+        if (textObj.href) {
+            const isInternal = textObj.href.startsWith('/') || textObj.href.startsWith('#');
+            return isInternal 
+                ? { ...commonProps, href: textObj.href, as: Link } 
+                : { ...commonProps, href: textObj.href, target: '_blank', rel: 'noopener noreferrer' };
         }
 
         return commonProps;
@@ -104,14 +52,20 @@ const Text = ({ texts, text, ...rest }) => {
     const renderText = (textObj, index) => {
         const Tag = textObj.tag || "p";
         const props = getProps(textObj);
+        const textContent = textObj.text.split('\n').map((line, lineIndex) => (
+            <Fragment key={lineIndex}>
+                {line}
+                {lineIndex < textObj.text.split('\n').length - 1 && <br />}
+            </Fragment>
+        ));
 
         return textObj.href && textObj.href.startsWith('/') ? (
             <Link {...props} key={index} href={textObj.href}>
-                {textObj.text}
+                {textContent}
             </Link>
         ) : (
             <Tag {...props} key={index}>
-                {textObj.text}
+                {textContent}
             </Tag>
         );
     };

@@ -12,7 +12,7 @@ const Specialize = () => {
     const text = {
         text: t('home.block6.title'),
         tag: "p",
-        font: !isResponsive ? "poppinsMedium" : "poppinsExtrabold",
+        font: "poppinsExtrabold",
         size: !isResponsive ? 96 : 32,
         color: 'whiteBase',
     }

@@ -73,7 +73,7 @@
             "text4": "en las personas."
         },
         "block3": {
-            "text1": "Somos una firma de diseño de experiencia centrado en las personas e ingeniería de software a escala.",
+            "text1": "Somos una firma de diseño de experiencia\n centrado en las personas e ingeniería\n de software a escala.",
             "text2": "¡Hablemos!"
         },
         "block4": {
@@ -101,7 +101,7 @@
             "title": "Nosotros",
             "text1": "Nuestro equipo de especialistas, es nuestra herramienta",
             "text2": "más importante",
-            "text3": "para darte los mejores resultados",
+            "text3": "para darte los mejores resultados.",
             "button": "Ver más"
         },
         "block9": {
