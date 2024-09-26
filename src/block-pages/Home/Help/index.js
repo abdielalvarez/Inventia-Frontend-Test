@@ -59,12 +59,10 @@ const Help = () => {
     return (
         <section className={styles.background}>
             <div className={styles.wrapper}>
-                <FadeInWrapper type='fadeinright' replay={true}>
-                    <div className={styles.column1}>
-                        <Text texts={helpText1} className={styles.text1} />
-                        <Text texts={helpText2} className={styles.text2} />
-                    </div>
-                </FadeInWrapper>
+                <div className={styles.column1}>
+                    <Text texts={helpText1} className={styles.text1} />
+                    <Text texts={helpText2} className={styles.text2} />
+                </div>
                 <div className={styles.column2}>
                     <Text texts={helpText3} className={styles.text3} />
                     <Text texts={helpText4} className={styles.text4} />

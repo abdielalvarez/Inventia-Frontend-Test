@@ -47,7 +47,7 @@
         },
         "address": {
             "title": "Dirección",
-            "text1": "Lisboa #47 Colonia Juárez, C.P 06600, CDMX"
+            "text1": "Av. Santa Fe 94-Torre A - Piso 8,\nSanta Fe, Zedec Sta Fé, Álvaro Obregón\nC.P 01210, Ciudad de México"
         },
         "home": {
             "title": "Inicio",
@@ -87,7 +87,7 @@
             "text2": "conectar emocionalmente con tu cliente.",
             "text3": "Inventia Experience",
             "text4": "Lanza plataformas tecnológicas de software con",
-            "text5": "altos estándares de calidad e innovación",
+            "text5": "altos estándares de calidad e innovación.",
             "text6": "Inventia Software"
         },
         "block6": {
@@ -99,9 +99,9 @@
         },
         "block8": {
             "title": "Nosotros",
-            "text1": "Nuestro equipo de especialistas, es nuestra herramienta",
+            "text1": "Nuestro equipo de especialistas, es nuestra herramienta\n",
             "text2": "más importante",
-            "text3": "para darte los mejores resultados.",
+            "text3": "para darte\nlos mejores resultados.",
             "button": "Ver más"
         },
         "block9": {
@@ -126,16 +126,16 @@
             },
             "block2": {
                 "title": "Inventia Experience",
-                "text1": "UX Design y UX research centrados en las personas para comprender a tus usuarios. Creamos productos y servicios diferenciados que realmente responden a las necesidades de tu organización y de tus clientes",
+                "text1": "UX Design y UX research centrados\nen las personas para comprender\na tus usuarios. Creamos productos y servicios\ndiferenciados que realmente responden\na las necesidades de tu organización\ny de tus clientes",
                 "button": "¡Hablemos!",
-                "text2": "Customer Research e Insights.",
+                "text2": "Customer Research e Insights",
                 "text3": "Product Design and Build",
                 "text4": "Service Design"
             },
             "block3": {
                 "title": "Inventia Software",
-                "text1": "Especialistas en adaptive technology.",
-                "text2": "Nuestro equipo de desarrolladores full-stack proporciona servicios de desarrollo frontend y backend en estrecha colaboración con nuestros diseñadores.",
+                "text1": "Especialistas\nen adaptive technology.",
+                "text2": "Nuestro equipo de desarrolladores full-stack proporciona servicios\nde desarrollo frontend y backend\nen estrecha colaboración\ncon nuestros diseñadores.",
                 "button": "¡Hablemos!"
             },
             "block4": {
@@ -152,8 +152,8 @@
                 "description2": "Pain points, insights, hallazgos como oportunidades para la innovación.",
                 "text3": "ideación",
                 "description3": "Lluvia de ideas, co-creación, sesiones de workshop creativo.",
-                "text4": "prototipado y testeo",
-                "description4": "Mapas de navegación Prototipos Wireframes Mockups Look and feel Layouts Prototipos interactivos Pruebas con usuarios."
+                "text4": "prototipado\ny testeo",
+                "description4": "Mapas de navegación\nPrototipos\nWireframes\nMockups\nLook and feel\nLayouts\nPrototipos interactivos\nPruebas con usuarios."
             }
         },
         "inventiaexperience-research": {
@@ -165,9 +165,9 @@
                 "text3": "interacciones significativas e inclusivas."
             },
             "block2": {
-                "text1": "Comprenderás mejor a tu cliente, sus motivaciones, comportaminetos, emociones y obstáculos.",
-                "text2": "Mejor comunicación y entendimiento de tus productos y servicios.",
-                "text3": "Obtendrás insights y hallazgos sobre tu organzación y competencia."
+                "text1": "Comprenderás mejor a tu cliente,\nsus motivaciones, comportamientos, emociones y obstáculos.",
+                "text2": "Mejor comunicación\ny entendimiento\nde tus productos y servicios.",
+                "text3": "Obtendrás insights y hallazgos\nsobre tu organización y competencia."
             },
             "block3": {
                 "text1": "Basados en Design Thinking, Customer Research e Insights te brindará un amplio conocimiento e información para sentar bases en cualquier proyecto.",
@@ -175,25 +175,25 @@
             },
             "block4": {
                 "title": "Casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Customer Research e Insights."
+                "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen Product Design & Build."
             }
         },
         "inventiaexperience-productdesign": {
             "block1": {
                 "title": "Inventia Experience",
                 "subtitle": "Product Design and Build",
-                "text1": "Diseñamos experiencias inclusivas para cerrar",
-                "text2": "la brecha entre las personas y la tecnología."
+                "text1": "Diseñamos experiencias inclusivas\npara cerrar",
+                "text2": "la brecha entre las personas\ny la tecnología."
             },
             "block2": {
-                "text1": "Aquí es dónde alineamos la",
-                "text2": "visión creativa con la estrategia comercial.",
+                "text1": "Aquí es dónde alineamos\nla",
+                "text2": "visión creativa\ncon la estrategia\ncomercial.",
                 "text3": "Es una",
-                "text4": "interacción directa y constante",
+                "text4": "interacción\n directa y constante",
                 "text5": "con el usuario.",
                 "text6": "Creamos prototipos,",
                 "text7": "probamos continuamente:",
-                "text8": "si funciona bien, si se entiende, si es accesible, si es verdaderamente un buen producto."
+                "text8": "si funciona\nbien, si se entiende,\nsi es accesible,\nsi es verdaderamente\nun buen producto."
             },
             "block3": {
                 "text1": "Product Design se basa en la investigación realizada y en el proceso iterativo de Design Thinking para brindar soluciones que creen impacto.",
@@ -201,7 +201,7 @@
             },
             "block4": {
                 "title": "Casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Product Design."
+                "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen Service design."
             }
         },
         "inventiaexperience-servicedesign": {

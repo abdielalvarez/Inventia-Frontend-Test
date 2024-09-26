@@ -21,7 +21,7 @@
 }
 
 .containerLeft2 {
-    max-width: 336px;
+    max-width: 365px;
     width: 100%;
     margin: 0 0 -70px 50px;
 }
@@ -36,7 +36,15 @@
 }
 
 .textLeft2 {
-    margin: 40px 0 60px;
+    margin: 40px 0 0;
+    letter-spacing: 1.2px;
+    line-height: 23.4px;
+}
+
+.textLeft3 {
+    margin: 0 0 60px;
+    letter-spacing: 1.2px;
+    line-height: 23.4px;
 }
 
 .imgLeft1 {

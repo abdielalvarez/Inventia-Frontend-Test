@@ -24,6 +24,7 @@
 
 .titleContainer {
     margin: 0 0 50px;
+    text-align: end;
 }
 
 .title {
@@ -32,6 +33,7 @@
 
 .descriptionContainer {
     margin: 0 0 50px;
+    text-align: end;
 }
 
 .infoContainer {
@@ -54,6 +56,11 @@
 
 .item {
     line-height: 38px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media (max-width: 768px) {

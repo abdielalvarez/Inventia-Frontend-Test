@@ -20,14 +20,17 @@ const AboutUs = () => {
         color: 'blackBase',
     }
 
-    const descriptionText = [
+    const descriptionText1 = [
         {
             text: t('home.block8.text1'),
             tag: "p",
             font: "poppinsLight",
             size: isResponsive ? 12 : 20,
             color: 'blackBase',
-        },
+        }
+    ]
+
+    const descriptionText2 = [
         {
             text: t('home.block8.text2'),
             tag: "span",
@@ -67,8 +70,8 @@ const AboutUs = () => {
                     <Image
                         src="/images/home/about-us/people1.png"
                         alt="About Us"
-                        width={isResponsive ? 180 : 530}
-                        height={isResponsive ? 180 : 530}
+                        width={isResponsive ? 180 : 564}
+                        height={isResponsive ? 180 : 564}
                         priority
                         className={styles.imgLeft1}
                     />
@@ -77,7 +80,8 @@ const AboutUs = () => {
                             <Text text={aboutText} className={styles.textLeft1} />
                             <div className={styles.containerLeft3}>
                                 <div>
-                                    <Text texts={descriptionText} className={styles.textLeft2} />
+                                    <Text texts={descriptionText1} className={styles.textLeft2} />
+                                    <Text texts={descriptionText2} className={styles.textLeft3} />
                                 </div>
                                 <div>
                                     <AnchorButton href={ROUTE_CONTACTUS} theme="secondary" responsiveBreakpoint="920">

@@ -30,7 +30,7 @@ const Software = () => {
     const description1Text = {
         text: t('services.primary.block3.text1'),
         tag: "p",
-        font: "poppinsLight",
+        font: "poppinsMedium",
         size: isResponsive ? 11 : 20,
         color: 'whiteBase',
     }
@@ -97,7 +97,7 @@ const Software = () => {
                             <div className={styles.descriptionContainer}><Text text={description2Text} className={styles.description2} /></div>
                         </FadeInWrapper>
                         {isResponsive ? null :
-                            <div>
+                            <div className={styles.buttonContainer}>
                                 <AnchorButton
                                     responsiveBreakpoint={768}
                                     theme="tertiary"

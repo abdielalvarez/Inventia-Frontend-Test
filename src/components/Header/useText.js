@@ -1,5 +1,6 @@
 'use client'
 import { useApiContext } from "@/context/wrappers/ContextProvider";
+import useLocation from "@/hooks/useLocation";
 import useResponsive from "@/hooks/useResponsive";
 import {
     ROUTE_ABOUTUS,
@@ -24,13 +25,19 @@ const useText = (isMenuOpen) => {
 
     const { t } = useApiContext()
     const isSmallScreen = useResponsive(768);
+    const location = useLocation()
+
+    const isServices = location?.pathname?.includes(ROUTE_SERVICES)
+    const isSuccessStories = location?.pathname?.includes(ROUTE_SUCCESSSTORIES)
+    const isAboutUs = location?.pathname?.includes(ROUTE_ABOUTUS)
+    const isContactUs = location?.pathname?.includes(ROUTE_CONTACTUS)
 
     const servicesText = [
         {
             text: t('header.services.title'),
             href: null,
             tag: "p",
-            font: "poppinsMedium",
+            font: isServices ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase',
         }
@@ -127,7 +134,7 @@ const useText = (isMenuOpen) => {
             text: t('header.successful.title'),
             href: null,
             tag: "p",
-            font: "poppinsMedium",
+            font: isSuccessStories ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase'
         }
@@ -202,7 +209,7 @@ const useText = (isMenuOpen) => {
             text: t('header.about-us.title'),
             tag: !isMenuOpen ? "a" : "p",
             href: ROUTE_ABOUTUS,
-            font: "poppinsMedium",
+            font: isAboutUs ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase'
         }
@@ -213,7 +220,7 @@ const useText = (isMenuOpen) => {
             text: t('header.contact-us.title'),
             tag: !isMenuOpen ? "a" : "p",
             href: ROUTE_CONTACTUS,
-            font: "poppinsMedium",
+            font: isContactUs ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase'
         }

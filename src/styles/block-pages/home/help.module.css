@@ -9,7 +9,7 @@
 
 .wrapper {
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 1027px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -28,10 +28,12 @@
 .text3 {
     line-height: 55.2px;
     margin: 0 0 50px;
+    letter-spacing: 2.4px;
 }
 
 .text4 {
     line-height: 24.984px;
+    letter-spacing: 1.38px;
 }
 
 .column1 {
@@ -40,7 +42,7 @@
 }
 
 .column2 {
-    max-width: 514px;
+    max-width: 570px;
     width: 100%;
 }
 

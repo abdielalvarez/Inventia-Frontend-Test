@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px 10px 30px;
+    padding: 10px 60px 10px 80px;
     background-color: #F5F5F5;
     position: fixed;
     z-index: 1000;
@@ -34,12 +34,12 @@
 }
 
 .headerlogo {
-    height: 36px;
+    height: 60px;
 }
 
 .headerlabels {
     display: flex;
-    gap: 20px;
+    gap: 46px;
 }
 
 .headerlabel {

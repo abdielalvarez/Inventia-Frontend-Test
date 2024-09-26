@@ -11,8 +11,14 @@
     width: 100%;
 }
 
+.anchor2 {
+    height: 90px;
+}
+
 .infoContainer {
-    margin: 0 0 113px;
+    margin: 0 auto 113px;
+    max-width: 774px;
+    width: 100%;
 }
 
 .buttonContainer {
@@ -25,6 +31,7 @@
     max-width: 350px;
     width: 100%;
     margin: 0;
+    line-height: 50.88px;
 }
 
 .imgContainer {

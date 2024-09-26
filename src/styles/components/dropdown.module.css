@@ -14,10 +14,14 @@
     border-bottom: 1px solid #ccc; /* Línea inferior */
 }
 
+.itemTitle {
+
+}
+
 /* Contenido del dropdown */
 .content {
-    min-width: 150%; /* Ancho del dropdown */
-    max-width: 250%; /* Ancho del dropdown */
+    min-width: 170px;
+    max-width: 170px; /* Ancho del dropdown */
     position: absolute; /* Posicionamiento absoluto */
     background-color: white; /* Fondo blanco para el dropdown */
     border: 1px solid #ccc; /* Borde para el dropdown */
@@ -35,6 +39,7 @@
 /* Estilo para los elementos de subgrupo */
 .subItem {
     padding: 5px; /* Espaciado interno de los subgrupos */
+    line-height: 14.08px;
 }
 
 /* Efecto hover para los subgrupos */
@@ -65,4 +70,12 @@
     text-decoration: none; /* Quitar subrayado */
     color: inherit; /* Usar el color del texto padre */
     display: block; /* Hacer que ocupe todo el espacio */
+}
+
+.textTitle {
+    line-height: 14.08px !important;
+}
+
+.textSubtitle {
+    line-height: 14.08px !important;
 }

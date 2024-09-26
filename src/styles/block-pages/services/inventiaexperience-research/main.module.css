@@ -23,6 +23,11 @@
 
 .title {
     line-height: 45.6px;
+    text-wrap: nowrap;
+}
+
+.title2 {
+    line-height: 45.6px;
 }
 
 .logo {
@@ -30,8 +35,13 @@
 }
 
 .descriptionContainer {
-    max-width: 475px;
+    max-width: 570px;
     width: 100%;
+}
+
+.description {
+    line-height: 28.125px;
+    letter-spacing: 2px;
 }
 
 .textContent {
@@ -53,6 +63,10 @@
     }
 
     .title {
+        line-height: 19px;
+    }
+
+    .title2 {
         line-height: 19px;
     }
 
@@ -81,5 +95,9 @@
     .text {
         max-width: 156px;
         width: 100%;
+    }
+
+    .description {
+        letter-spacing: 0.66px;
     }
 }

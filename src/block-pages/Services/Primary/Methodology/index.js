@@ -234,7 +234,7 @@ const Methodology = () => {
                                 </div> : null
                             }
                         </> : null}
-                    <div className={styles.text4}><Text text={prototypeText} /></div>
+                    <div><Text className={styles.text4} text={prototypeText} /></div>
                 </div>
                 {hover.prototypeHover ?
                     <>

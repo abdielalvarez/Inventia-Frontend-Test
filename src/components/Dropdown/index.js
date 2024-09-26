@@ -35,6 +35,8 @@ const Dropdown = ({ items, children, disappearWhen768 }) => {
         return <div ref={dropdownRef} style={{ position: 'relative' }}>{children}</div>;
     }
 
+    
+
     return (
         <div ref={dropdownRef} style={{ position: 'relative' }}>
             <div onClick={handleToggle} className={styles.trigger}>

@@ -15,7 +15,7 @@ const Help = () => {
         tag: "p",
         font: "poppinsBold",
         size: isResponsive ? 24 : 48,
-        color: 'blackBase',
+        color: isResponsive ? 'blackBase' : 'blackLight',
     }
 
     const helpSubtitle = {

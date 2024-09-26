@@ -21,7 +21,7 @@ const Specialize = () => {
         <section className={styles.background}>
             <div className={styles.wrapper}>
                 <FadeInWrapper type='fadeinright' replay={true}>
-                    <Text text={text} />
+                    <Text className={styles.title} text={text} />
                 </FadeInWrapper>
             </div>
         </section>

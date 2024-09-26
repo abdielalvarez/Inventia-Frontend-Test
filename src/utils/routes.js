@@ -20,3 +20,8 @@ export const ROUTE_FACEBOOK = 'https://facebook.com'
 
 export const TAG_INVENTIAEXPERIENCE = 'inventiaexperience'
 export const TAG_INVENTIASOFTWARE = 'inventiasoftware'
+
+export const EXTERNAL_ROUTE_ION = "https://www.ion.com.mx/"
+export const EXTERNAL_ROUTE_GENTERA = "https://www.gentera.com.mx/gentera/"
+export const EXTERNAL_ROUTE_PODEMOS_PROGRESAR = "https://podemos.mx/"
+export const EXTERNAL_ROUTE_BBVA = "https://www.bbva.mx/"

@@ -95,7 +95,7 @@ const Main = () => {
                                 className={styles.logo}
                             />
                             <div>
-                                <Text text={subtitleText} className={styles.title} />
+                                <Text text={subtitleText} className={styles.title2} />
                             </div>
                         </div>
                         <div className={styles.descriptionContainer}>

@@ -3,7 +3,6 @@ import useResponsive from "@/hooks/useResponsive";
 import Image from "next/image"
 import Text from "../Text";
 import styles from "../../styles/components/footer.module.css"
-import { useApiContext } from "@/context/wrappers/ContextProvider";
 import Link from "next/link";
 import {
     ROUTE_FACEBOOK,
@@ -33,7 +32,7 @@ const Footer = () => {
     } = useText()
 
     return (
-        <div className={styles.footer}>
+        <footer className={styles.footer}>
             <div className={styles.footerContainer1}>
                 {!isSmallScreen ?
                     <div>
@@ -119,7 +118,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

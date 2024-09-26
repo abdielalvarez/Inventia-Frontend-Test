@@ -25,7 +25,7 @@ const useText = () => {
         tag: "a",
         href: "tel:+525555923266",
         ariaLabel: "Call 55 55 92 32 66",
-        font: "poppinsRegular",
+        font: "poppinsLight",
         size: 15,
         color: 'whiteBase',
     }];
@@ -35,7 +35,7 @@ const useText = () => {
         tag: "a",
         href: `mailto:${t('footer.contact-us.email')}`,
         ariaLabel: `Mail to ${t('footer.contact-us.email')}`,
-        font: "poppinsRegular",
+        font: "poppinsLight",
         size: 15,
         color: 'whiteBase',
     }];
@@ -53,7 +53,7 @@ const useText = () => {
         tag: "a",
         href: "https://www.google.com.mx/maps/place/Calle+Lisboa+47,+Ju%C3%A1rez,+Cuauht%C3%A9moc,+06600+Ciudad+de+M%C3%A9xico,+CDMX/@19.429377,-99.1587616,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1ff435db370bf:0xb67eb88678bebb84!8m2!3d19.429377!4d-99.1561867!16s%2Fg%2F11khhhjqbw?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D",
         ariaLabel: `See location in Maps ${t('footer.address.text1')}`,
-        font: "poppinsRegular",
+        font: "poppinsLight",
         size: 15,
         color: 'whiteBase',
     }];
@@ -71,7 +71,7 @@ const useText = () => {
         text: t('footer.home.services'),
         tag: "a",
         href: ROUTE_SERVICES,
-        font: "poppinsRegular",
+        font: "poppinsLight",
         size: 15,
         color: 'whiteBase',
     }];
@@ -80,7 +80,7 @@ const useText = () => {
         text: t('footer.home.successful'),
         tag: "a",
         href: ROUTE_SUCCESSSTORIES,
-        font: "poppinsRegular",
+        font: "poppinsLight",
         size: 15,
         color: 'whiteBase',
     }];
@@ -89,7 +89,7 @@ const useText = () => {
         text: t('footer.home.about-us'),
         tag: "a",
         href: ROUTE_ABOUTUS,
-        font: "poppinsRegular",
+        font: "poppinsLight",
         size: 15,
         color: 'whiteBase',
     }];
@@ -98,7 +98,7 @@ const useText = () => {
         text: t('footer.home.contact-us'),
         tag: "a",
         href: ROUTE_CONTACTUS,
-        font: "poppinsRegular",
+        font: "poppinsLight",
         size: 15,
         color: 'whiteBase',
     }];
@@ -114,7 +114,7 @@ const useText = () => {
     const companyText = [{
         text: t('footer.company.subtitle'),
         tag: "p",
-        font: "poppinsRegular",
+        font: "poppinsLight",
         size: 15,
         color: 'whiteBase',
     }]

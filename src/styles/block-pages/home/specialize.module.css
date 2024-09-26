@@ -3,6 +3,7 @@
     padding: 212px 197px 148px;
     display: flex;
     align-items: center;
+    height: 862px;
 }
 
 .wrapper {
@@ -13,10 +14,12 @@
 
 .title {
     line-height: 91.2px;
+    display: block;
 }
 
 @media (max-width: 920px) {
     .background {
+        height: 305px;
         padding: 130px 20px 109px;
     }
 

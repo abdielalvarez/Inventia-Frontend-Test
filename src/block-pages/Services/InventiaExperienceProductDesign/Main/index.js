@@ -50,7 +50,7 @@ const Main = () => {
         {
             text: t('services.inventiaexperience-productdesign.block2.text1'),
             tag: "p",
-            font: "poppinsMedium",
+            font: "poppinsLight",
             size: isResponsive ? 12 : 20,
             color: 'blackBase',
         },
@@ -67,7 +67,7 @@ const Main = () => {
         {
             text: t('services.inventiaexperience-productdesign.block2.text3'),
             tag: "p",
-            font: "poppinsMedium",
+            font: "poppinsLight",
             size: isResponsive ? 12 : 20,
             color: 'blackBase',
         },
@@ -81,7 +81,7 @@ const Main = () => {
         {
             text: t('services.inventiaexperience-productdesign.block2.text5'),
             tag: "p",
-            font: "poppinsMedium",
+            font: "poppinsLight",
             size: isResponsive ? 12 : 20,
             color: 'blackBase',
         },
@@ -91,7 +91,7 @@ const Main = () => {
         {
             text: t('services.inventiaexperience-productdesign.block2.text6'),
             tag: "p",
-            font: "poppinsMedium",
+            font: "poppinsLight",
             size: isResponsive ? 12 : 20,
             color: 'blackBase',
         },
@@ -105,7 +105,7 @@ const Main = () => {
         {
             text: t('services.inventiaexperience-productdesign.block2.text8'),
             tag: "p",
-            font: "poppinsMedium",
+            font: "poppinsLight",
             size: isResponsive ? 12 : 20,
             color: 'blackBase',
         },
@@ -122,7 +122,7 @@ const Main = () => {
                         <div className={styles.container}>
                             <div className={styles.titleContainer}>
                                 <div>
-                                    <Text text={subtitleText} className={styles.title} />
+                                    <Text text={subtitleText} className={styles.title2} />
                                 </div>
                             </div>
                             <div className={styles.descriptionContainer}>

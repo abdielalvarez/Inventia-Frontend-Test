@@ -1,4 +1,5 @@
 import Text from "@/components/Text";
+import styles from "../../../styles/components/dropdown.module.css"
 
 export const Item = ({ text, href }) => {
     const titleText = [
@@ -13,7 +14,7 @@ export const Item = ({ text, href }) => {
     ];
 
     return (
-        <Text texts={titleText} />
+        <Text className={styles.textTitle} texts={titleText} />
     );
 };
 
@@ -30,6 +31,6 @@ export const SubItem = ({ text, href }) => {
     ];
 
     return (
-        <Text texts={subtitleText} />
+        <Text className={styles.textSubtitle} texts={subtitleText} />
     );
 };

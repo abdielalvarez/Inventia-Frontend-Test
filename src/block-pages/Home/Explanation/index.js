@@ -69,13 +69,13 @@ const Explanation = () => {
                     <Image
                         src="/images/home/explanation/people1.png"
                         alt="Inventia Experience"
-                        width={isSmallScreen ? 180 : 530}
-                        height={isSmallScreen ? 180 : 530}
+                        width={isSmallScreen ? 180 : 536}
+                        height={isSmallScreen ? 180 : 536}
                         priority
                         className={styles.imgLeft1}
                     />
                     <div className={styles.containerLeft2}>
-                        <FadeInWrapper type='fadeinright' replay={true}>
+                        <FadeInWrapper type='fadein' replay={true}>
                             <Text texts={explanationText1} className={styles.textLeft1} />
                         </FadeInWrapper>
                         <Link href={`${ROUTE_SERVICES}/#${TAG_INVENTIAEXPERIENCE}`}>
@@ -98,7 +98,7 @@ const Explanation = () => {
 
                 <div className={styles.containerRight1}>
                     <div className={styles.containerRight2}>
-                        <FadeInWrapper type='fadeinup' replay={true}>
+                        <FadeInWrapper type='fadein' replay={true}>
                             <Text texts={explanationText2} className={styles.textRight1} />
                         </FadeInWrapper>
                         <Link href={`${ROUTE_SERVICES}/#${TAG_INVENTIAEXPERIENCE}`}>
@@ -120,8 +120,8 @@ const Explanation = () => {
                     <Image
                         src="/images/home/explanation/people2.png"
                         alt="Inventia Experience"
-                        width={isSmallScreen ? 180 : 530}
-                        height={isSmallScreen ? 180 : 530}
+                        width={isSmallScreen ? 180 : 536}
+                        height={isSmallScreen ? 180 : 536}
                         priority
                         className={styles.imgRight1}
                     />

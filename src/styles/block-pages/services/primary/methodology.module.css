@@ -16,7 +16,7 @@
     text-align: center;
     max-width: 705px;
     width: 100%;
-    margin: 80px auto 300px;
+    margin: 40px auto 0px;
 }
 
 .container {
@@ -25,22 +25,22 @@
     width: auto;
     max-width: 100%;
     overflow: hidden;
-    height: 504px;
+    height: 904px;
     align-items: center;
 }
 
 .textContainer1 {
     width: 310.534px;
     height: 251.127px;
-    border-radius: 50%;
+    border-radius: 0 50% 50% 0;
     background-color: #EBA058;
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0 10px 0 0;
+    margin: 0 6px 0 0;
     flex-shrink: 0;
     cursor: pointer;
+    padding: 0 0 0 50px;
 }
 
 .textContainer2 {
@@ -52,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10px 0 0;
+    margin: 0 6px 0 0;
     flex-shrink: 0;
     cursor: pointer;
 }
@@ -66,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10px 0 0;
+    margin: 0 6px 0 0;
     flex-shrink: 0;
     cursor: pointer;
 }
@@ -74,34 +74,55 @@
 .textContainer4 {
     width: 501px;
     height: 242px;
-    border-radius: 162.287px;
+    border-radius: 162.287px 0 0 162.287px;
     background: #E77C30;
     position: relative;
     display: flex;
-    justify-content: center;
+    padding: 0 0 0 80px;
     align-items: center;
     flex-shrink: 0;
     cursor: pointer;
+    line-height: 30.4px;
 }
 
 .description1 {
     position: absolute;
-    top: -120px;
+    top: -170px;
+    left: 0;
+    max-width: 456px;
+    min-width: 456px;
+    display: block;
 }
 
 .description2 {
     position: absolute;
     bottom: -117px;
+    left: 0;
+    max-width: 470px;
+    min-width: 470px;
+    display: block;
 }
 
 .description3 {
     position: absolute;
     top: -120px;
+    left: 0;
+    max-width: 486px;
+    min-width: 486px;
+    display: block;
 }
 
 .description4 {
     position: absolute;
-    bottom: -93px;
+    bottom: -320px;
+    left: 0;
+    max-width: 486px;
+    min-width: 486px;
+    display: block;
+}
+
+.text4 {
+    line-height: 30.4px;
 }
 
 @media (max-width: 768px) {
@@ -128,6 +149,7 @@
         flex-direction: column-reverse;
         width: 141px;
         height: 181.459px;
+        justify-content: center;
         border-radius: 0 0 50% 50%;
         padding: 0 0 50px;
         margin: 0 0 10px;
@@ -152,7 +174,10 @@
         width: 135px;
         height: 281px;
         text-align: center;
+        justify-content: center;
         margin: 0 0 10px;
+        border-radius: 162.287px;
+        padding: 0;
     }
 
     .description1 {

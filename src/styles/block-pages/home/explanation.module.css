@@ -7,7 +7,7 @@
 }
 
 .wrapper {
-    max-width: 1000px;
+    max-width: 1082px;
     width: 100%;
     margin: 0 auto;
 }
@@ -19,7 +19,7 @@
 }
 
 .containerLeft2 {
-    max-width: 450px;
+    max-width: 485px;
     width: 100%;
     margin: 0 0 -40px 50px;
 }
@@ -31,6 +31,7 @@
 
 .textLeft1 {
     margin: 0 0 50px;
+    letter-spacing: 2.4px;
 }
 
 .imgLeft2 {
@@ -45,7 +46,7 @@
 }
 
 .containerRight2 {
-    max-width: 450px;
+    max-width: 480px;
     width: 100%;
     margin: 40px 50px 0 0;
 }
@@ -57,6 +58,7 @@
 
 .textRight1 {
     margin: 0 0 50px;
+    letter-spacing: 2.4px;
 }
 
 .imgRight2 {
