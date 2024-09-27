@@ -1,6 +1,6 @@
 import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
-import styles from "../../../../styles/block-pages/services/inventiaexperience-research/explanation.module.css"
+import styles from "../../../../styles/block-pages/services/inventiaexperience-servicedesign/explanation.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import { ROUTE_CONTACTUS } from "@/utils/routes";
 import AnchorButton from "@/components/AnchorButton";
@@ -12,7 +12,7 @@ const Explanation = () => {
     const isResponsive = useResponsive(768)
 
     const descriptionText = {
-        text: t('services.inventiaexperience-research.block3.text1'),
+        text: t('services.inventiaexperience-servicedesign.block3.text1'),
         tag: "p",
         font: "poppinsLight",
         size: isResponsive ? 11 : 24,
@@ -20,7 +20,7 @@ const Explanation = () => {
     }
 
     const buttonText = {
-        text: t('services.inventiaexperience-research.block3.button'),
+        text: t('services.inventiaexperience-servicedesign.block3.button'),
         tag: "p",
         font: "poppinsRegular",
         size: isResponsive ? 10 : 20,

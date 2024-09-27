@@ -1,12 +1,12 @@
 .background {
     background: #B4B3B3;
-    padding: 293px 40px 212px;
+    padding: 283px 40px 385px;
 }
 
 .wrapper {
-    max-width: 1020px;
+    max-width: 486px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 0 134px;
 }
 
 .container {
@@ -29,12 +29,17 @@
     display: flex;
     width: 100%;
     margin: 40px 0 0;
+    justify-content: flex-end;
 }
 
 @media (max-width: 768px) {
 
     .background {
         padding: 70px 40px;
+    }
+
+    .wrapper {
+        margin: 0 auto;
     }
 
     .container {

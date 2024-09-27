@@ -30,8 +30,9 @@
 }
 
 .text {
-    max-width: 272px;
+    max-width: 380px;
     width: 100%;
+    line-height: 49.156px;
 }
 
 .content {
@@ -39,6 +40,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    max-width: 869px;
+    margin: 0 auto;
 }
 
 .contentInfo2 {

@@ -51,7 +51,7 @@ const Main = () => {
                 <div className={styles.titleContainer}>
                     <Text text={titleText} className={styles.title} />
                 </div>
-                <FadeInWrapper type='fadeinright' replay={true}>
+                <FadeInWrapper type='fadeindown' replay={true}>
                     <div className={styles.container}>
                         <div className={styles.titleContainer}>
                             <div>
