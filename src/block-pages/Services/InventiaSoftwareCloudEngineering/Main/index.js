@@ -18,7 +18,7 @@ const Main = () => {
         tag: "p",
         font: "poppinsRegular",
         size: isResponsive ? 16 : 36,
-        color: 'blackBase',
+        color: 'blackCaption',
     }
 
     const subtitleText = {
@@ -105,7 +105,7 @@ const Main = () => {
                     <Image
                         src="/images/services/inventiasoftware-cloudengineering/explanation/circle.svg"
                         alt="Cloud Engineering"
-                        width={isResponsive ? 104 : 312}
+                        width={isResponsive ? 52 : 156}
                         height={isResponsive ? 104 : 312}
                         priority
                     />

@@ -1,5 +1,5 @@
 .background {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     position: relative;
     padding: 498px 0 342px 179px;
     display: flex;
@@ -15,65 +15,57 @@
     line-height: 45.6px;
 }
 
-.optionsCollapsed {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px 10px 30px;
-    background-color: #F5F5F5;
-    position: fixed;
-    z-index: 1000;
-    height: 69px;
-    width: 100%;
-}
-
 .optionsCollider {
     cursor: pointer;
     overflow: hidden;
     margin: 0 0 141px;
+    transition: all 0.3s ease;
+}
+
+.optionsCollider:last-child {
+    margin: 0;
 }
 
 .collapseContent {
     max-height: 0;
-    padding: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
     opacity: 0;
-    transition: max-height 1.5s ease-out, padding 1.5s ease-out, opacity 1.5s ease-out;
-    margin: 0 0 20px;
+    margin: 25px 0 0;
 }
 
-.expand {
-    max-height: 200px;
+.optionsColliderOpen .collapseContent {
     opacity: 1;
-}
-
-.text1 {
-    margin: 70px 0 0;
-}
-
-.text2 {
-    margin: 10px 0;
+    max-height: 1000px;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
 }
 
 .text {
-    margin: 0;
+    margin: 10px 0;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.optionsColliderOpen .text {
+    opacity: 1;
+    transition: opacity 0.6s ease 0.3s;
+}
+
+.img {
+    width: 893px;
+    min-height: 1039px;
+    max-height: 1039px;
 }
 
 @media (max-width: 1150px) {
     .img {
-        height: fit-content;
+        width: 500px;
+        min-height: 750px;
+        max-height: 750px;
     }
 }
 
 @media (max-width: 768px) {
-
-    .text1 {
-        margin: 10px 0;
-    }
-    
-    .text2 {
-        margin: 10px 0;
-    }
-
     .background {
         padding: 135px 0 135px 30px;
     }
@@ -88,8 +80,12 @@
     }
 
     .optionsCollider {
-        cursor: pointer;
-        overflow: hidden;
         margin: 0 0 30px;
+    }
+
+    .img {
+        width: 196px;
+        min-height: 294px;
+        max-height: 294px;
     }
 }

@@ -23,7 +23,7 @@ const Specialize = () => {
             <div className={styles.wrapper}>
                 <FadeInWrapper type='fadeinright' replay={true}>
                     <div className={styles.titleContainer}>
-                        <Text text={titleText} />
+                        <Text text={titleText} className={styles.title} />
                     </div>
                 </FadeInWrapper>
             </div>

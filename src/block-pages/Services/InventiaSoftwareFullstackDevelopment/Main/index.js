@@ -18,7 +18,7 @@ const Main = () => {
         tag: "p",
         font: "poppinsRegular",
         size: isResponsive ? 16 : 36,
-        color: 'blackBase',
+        color: 'blackCaption',
     }
 
     const subtitleText = {
@@ -174,7 +174,7 @@ const Main = () => {
                             />
                             <FadeInWrapper type='fadeinright' replay={true}>
                                 <div className={styles.content}>
-                                    <div className={styles.title}><Text className={styles.text} text={list1Text} /></div>
+                                    <div className={styles.title1}><Text className={styles.textTitle} text={list1Text} /></div>
                                     <div className={styles.text}><Text text={list1Item1Text} /></div>
                                     <div className={styles.text}><Text text={list1Item2Text} /></div>
                                     <div className={styles.text}><Text text={list1Item3Text} /></div>
@@ -192,7 +192,7 @@ const Main = () => {
                             />
                             <FadeInWrapper type='fadeinright' replay={true}>
                                 <div className={styles.content}>
-                                    <div className={styles.title}><Text className={styles.text} text={list2Text} /></div>
+                                    <div className={styles.title1}><Text className={styles.textTitle} text={list2Text} /></div>
                                     <div className={styles.text}><Text text={list2Item1Text} /></div>
                                     <div className={styles.text}><Text text={list2Item2Text} /></div>
                                     <div className={styles.text}><Text text={list2Item3Text} /></div>
@@ -209,7 +209,7 @@ const Main = () => {
                             />
                             <FadeInWrapper type='fadeinright' replay={true}>
                                 <div className={styles.content}>
-                                    <div className={styles.title}><Text className={styles.text} text={list3Text} /></div>
+                                    <div className={styles.title1}><Text className={styles.textTitle} text={list3Text} /></div>
                                     <div className={styles.text}><Text text={list3Item1Text} /></div>
                                     <div className={styles.text}><Text text={list3Item2Text} /></div>
                                     <div className={styles.text}><Text text={list3Item3Text} /></div>

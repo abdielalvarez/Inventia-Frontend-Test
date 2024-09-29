@@ -24,6 +24,15 @@
 
 .text {
     margin: 0 0 50px;
+    text-align: end;
+}
+
+.text1 {
+    line-height: 55.2px;
+}
+
+.text:last-child {
+    margin: 0;
 }
 
 .title {

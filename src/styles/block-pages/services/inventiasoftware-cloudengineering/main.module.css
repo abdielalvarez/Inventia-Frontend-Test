@@ -16,12 +16,18 @@
 }
 
 .titleContainer {
-    max-width: 261px;
+    max-width: 322px;
     width: 100%;
 }
 
 .title {
     line-height: 45.6px;
+    display: block;
+}
+
+.description {
+    line-height: 28.125px;
+    letter-spacing: 2px;
 }
 
 .logo {
@@ -34,12 +40,14 @@
 }
 
 .textContent {
-    margin: 0 0 140px;
+    margin: 0px 0 50px;
 }
 
 .text {
     max-width: 416px;
     width: 100%;
+    line-height: 33.75px;
+    letter-spacing: 2.4px;
 }
 
 .background2 {
@@ -93,9 +101,16 @@
         width: 100%;
     }
 
+    .description {
+        line-height: 15.469px;
+        letter-spacing: 0.99px;
+    }
+
     .text {
-        max-width: 156px;
+        max-width: 235px;
         width: 100%;
+        line-height: 17.761px;
+        letter-spacing: 1.3px;
     }
 
     .textContent {
@@ -109,6 +124,6 @@
     }
 
     .img1 {
-        margin: 0 18% 0 0;
+        margin: 35px 18% 0 0;
     }
 }

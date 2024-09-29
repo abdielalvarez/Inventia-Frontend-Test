@@ -35,7 +35,7 @@ const OurTeam = () => {
     }
 
     const softwareText = {
-        text: t('about-us.block1.text1'),
+        text: t('about-us.block1.text2'),
         tag: "p",
         font: isResponsive ? "poppinsSemibold" : "poppinsBold",
         size: isResponsive ? 24 : 48,
@@ -61,8 +61,8 @@ const OurTeam = () => {
                         <div><Text text={descriptionText} /></div>
                     </div>
                     <div className={styles.container2}>
-                        <div className={styles.text}><Text text={experienceText} /></div>
-                        <div><Text text={softwareText} /></div>
+                        <div className={styles.text}><Text className={styles.text1} text={experienceText} /></div>
+                        <div className={styles.text}><Text className={styles.text1} text={softwareText} /></div>
                     </div>
                 </div>
             </section>

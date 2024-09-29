@@ -20,6 +20,11 @@
     line-height: 91.2px;
 }
 
+.title {
+    display: block;
+    line-height: 95%;
+}
+
 @media (max-width: 768px) {
 
     .background {

@@ -174,7 +174,7 @@
                 "button": "¡Hablemos!"
             },
             "block4": {
-                "title": "Casos de éxito",
+                "title": "casos de éxito",
                 "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen Product Design & Build."
             }
         },
@@ -200,7 +200,7 @@
                 "button": "¡Hablemos!"
             },
             "block4": {
-                "title": "Casos de éxito",
+                "title": "casos de éxito",
                 "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen Service design."
             }
         },
@@ -219,7 +219,7 @@
                 "button": "¡Hablemos!"
             },
             "block4": {
-                "title": "Casos de éxito",
+                "title": "casos de éxito",
                 "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, Fullstack Development."
             }
         },
@@ -228,20 +228,20 @@
                 "title": "Inventia Software",
                 "subtitle": "Full Stack Development",
                 "list1": {
-                    "title1": "Frontend Development",
+                    "title1": "Frontend\nDevelopment",
                     "text1": "Micro front ends",
                     "text2": "Atomic Design",
                     "text3": "PWA (Progressive Web Apps)",
                     "text4": "Frontal architecture"
                 },
                 "list2": {
-                    "title1": "Backend Development",
+                    "title1": "Backend\nDevelopment",
                     "text1": "API and web service development",
                     "text2": "Architecture backend",
                     "text3": "Software integration"
                 },
                 "list3": {
-                    "title1": "Mobile Development",
+                    "title1": "Mobile\nDevelopment",
                     "text1": "Native app development: iOS | Android",
                     "text2": "App porting and migration",
                     "text3": "Hybrid apps development"
@@ -252,8 +252,8 @@
                 "button": "¡Hablemos!"
             },
             "block3": {
-                "title": "Casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Full Stack Development."
+                "title": "casos de éxito",
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Cloud Engineering."
             }
         },
         "inventiasoftware-cloudengineering": {
@@ -264,15 +264,15 @@
                 "text2": "Cloud consulting & strategy:",
                 "text3": "IaaS | PaaS | SaaS",
                 "text4": "Cloud automation",
-                "text5": "Cloud Application test & implementation"
+                "text5": "Cloud Application test\n& implementation"
             },
             "block2": {
                 "text1": "Lanza plataformas tecnológicas de software con altos estándares de calidad e innovación.",
                 "button": "¡Hablemos!"
             },
             "block3": {
-                "title": "Casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Cloud Engineering."
+                "title": "casos de éxito",
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Devops Implementation."
             }
         },
         "inventiasoftware-devopsimplementation": {
@@ -282,8 +282,8 @@
                 "text1": "Es la combinación de prácticas y herramientas diseñadas para aumentar la capacidad de una organización para entregar aplicaciones y servicios más rápido que los procesos tradicionales de desarrollo de software.",
                 "text2": "Automated CI / CD pipeline",
                 "text3": "Managed cloud services",
-                "text4": "DevSecOps - Security integrated",
-                "text5": "Infrastructure as Code (IaC)",
+                "text4": "DevSecOps - Security\nintegrated",
+                "text5": "Infrastructure as Code\n(IaC)",
                 "text6": "DevOps maturity model"
             },
             "block2": {
@@ -291,8 +291,8 @@
                 "button": "¡Hablemos!"
             },
             "block3": {
-                "title": "Casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en DevOps."
+                "title": "casos de éxito",
+                "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen Customer Research e Insights."
             }
         }
     },
@@ -303,7 +303,7 @@
                 "text1": "Transformamos procesos que llevan desde el entendimiento de tu cliente, a ofrecer una solución funcional."
             },
             "block2": {
-                "title": "Nos especializamos en servicios financieros"
+                "title": "Nos especializamos en\nservicios financieros"
             },
             "block3": {
                 "collider1": {
@@ -487,7 +487,7 @@
         },
         "block4": {
             "title": "¡Únete al equipo!",
-            "subtitle": "Déjanos tus datos y nosotros nos pondremos en contacto contigo.",
+            "subtitle": "Déjanos tus datos y nosotros\nnos pondremos en contacto contigo.",
             "input1": "teléfono",
             "input2": "email",
             "input3": "nombre",

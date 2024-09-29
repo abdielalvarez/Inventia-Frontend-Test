@@ -31,6 +31,7 @@ const Software = () => {
             <div className={styles.wrapper}>
                 <FadeInWrapper type='fadeindown' replay={true}>
                     <div className={styles.container1}>
+                        <div className={styles.line} />
                         <Image
                             src="/images/about-us/software/icon1.png"
                             alt="Software"

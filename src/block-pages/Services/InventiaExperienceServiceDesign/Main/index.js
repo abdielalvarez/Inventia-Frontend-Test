@@ -18,7 +18,7 @@ const Main = () => {
         tag: "p",
         font: "poppinsRegular",
         size: isResponsive ? 16 : 36,
-        color: 'blackBase',
+        color: 'blackCaption',
     }
 
     const subtitleText = {

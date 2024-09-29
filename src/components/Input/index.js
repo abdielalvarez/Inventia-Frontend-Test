@@ -27,7 +27,7 @@ const Input = ({
     tag: "p",
     font: "poppinsRegular",
     size: isResponsive ? 14 : 20,
-    color: 'blackBase',
+    color: 'blackCaption',
   };
 
   const dragAndDropText = {
@@ -35,7 +35,7 @@ const Input = ({
     tag: "p",
     font: "poppinsMedium",
     size: isResponsive ? 12 : 16,
-    color: 'blackBase',
+    color: 'blackHalf',
   };
 
   const selectDocumentText = {
@@ -110,7 +110,7 @@ const Input = ({
           className={`${className} ${styles.input} ${styles.customSelect}`}
           {...rest}
         >
-          <option value="" disabled>{placeholder}</option>
+          <option value="" disabled selected>{placeholder}</option>
           {options.map((option, index) => (
             <option key={index} value={option.label}>
               {option.value}

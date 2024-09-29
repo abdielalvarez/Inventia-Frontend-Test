@@ -4,7 +4,7 @@
 }
 
 .wrapper {
-    max-width: 1020px;
+    max-width: 1105px;
     width: 100%;
     margin: 0 auto;
 }
@@ -24,7 +24,7 @@
 }
 
 .titleContainer {
-    max-width: 261px;
+    max-width: 322px;
     width: 100%;
 }
 
@@ -32,12 +32,17 @@
     line-height: 45.6px;
 }
 
+.description {
+    line-height: 25.125px;
+    letter-spacing: 2px;
+}
+
 .logo {
     margin: 0 0 0 -30px;
 }
 
 .descriptionContainer {
-    max-width: 475px;
+    max-width: 616px;
     width: 100%;
 }
 
@@ -46,7 +51,6 @@
 }
 
 .text {
-    max-width: 214px;
     width: 100%;
     text-align: end;
 }
@@ -61,7 +65,7 @@
 }
 
 .img1 {
-    margin: 0 30% 0 0;
+    margin: 0 117px 0 0;
 }
 
 @media (max-width: 768px) {
@@ -72,6 +76,11 @@
 
     .title {
         line-height: 19px;
+    }
+
+    .description {
+        line-height: 15.469px;
+        letter-spacing: 0.99px;
     }
 
     .container {

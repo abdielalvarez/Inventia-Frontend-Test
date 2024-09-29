@@ -2,7 +2,7 @@ import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../../styles/block-pages/services/inventiasoftware-devopsimplementation/success.module.css"
 import useResponsive from "@/hooks/useResponsive";
-import { ROUTE_SUCCESSSTORIES } from "@/utils/routes";
+import { ROUTE_SERVICES_INVENTIAEXPERIENCE_RESEARCH } from "@/utils/routes";
 import Link from "next/link";
 import Image from "next/image";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
@@ -60,7 +60,7 @@ const Success = () => {
                             <Text text={descriptionText} className={styles.description} />
                         </div> : null
                     }
-                    <Link href={ROUTE_SUCCESSSTORIES}>
+                    <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_RESEARCH}>
                         <FadeInWrapper type='fadeinright' replay={true}>
                             <Image
                                 src="/images/services/inventiasoftware-devopsimplementation/success/arrow.svg"
