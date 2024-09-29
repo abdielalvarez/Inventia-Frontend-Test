@@ -6,7 +6,7 @@
     background-color: #F5F5F5;
     position: fixed;
     z-index: 1000;
-    height: 112px;
+    height: 178px;
     width: 100%;
 }
 
@@ -31,10 +31,6 @@
     position: fixed;
     z-index: 1000;
     width: 100%;
-}
-
-.headerlogo {
-    height: 60px;
 }
 
 .headerlabels {
@@ -80,8 +76,6 @@
     overflow: hidden;
 }
 
-.headerColliderOpen {}
-
 .collapseContent {
     max-height: 0;
     padding: 0;
@@ -97,6 +91,10 @@
 
 .headerSubitem {
     padding: 0 0 0 35px;
+}
+
+.headerclose {
+    margin: -5px 0 0px;
 }
 
 @media (max-width: 768px) {

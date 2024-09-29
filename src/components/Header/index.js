@@ -74,7 +74,6 @@ const Header = () => {
           width={!isSmallScreen ? 73 : 36}
           height={!isSmallScreen ? 87 : 43}
           priority
-          className={styles.headerlogo}
         />
       </Link>
     )
@@ -119,7 +118,7 @@ const Header = () => {
             width={43}
             height={43}
             priority
-            className={styles.headerlogo}
+            className={styles.headerclose}
           /> :
           <Image
             src="/images/header/hamburger.svg"
@@ -127,7 +126,6 @@ const Header = () => {
             width={36}
             height={36}
             priority
-            className={styles.headerlogo}
           />
         }
       </div>

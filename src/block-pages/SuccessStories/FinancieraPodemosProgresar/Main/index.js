@@ -18,7 +18,10 @@ const Main = () => {
     }
 
     const subtitleText = {
-        text: t('success-stories.banking-financierapodemosprogresar.block1.subtitle'),
+        text:
+            !isResponsive ?
+            t('success-stories.banking-financierapodemosprogresar.block1.subtitle') :
+            t('success-stories.banking-financierapodemosprogresar.block1.subtitle-mobile'),
         tag: "p",
         font: "poppinsBold",
         size: isResponsive ? 20 : 48,

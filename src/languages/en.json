@@ -397,9 +397,10 @@
         },
         "banking-financierapodemosprogresar": {
             "block1": {
-                "title": "Banking",
+                "title": "Financial Services",
                 "tags": "Inventia Experience | Customer Research e Insights",
-                "subtitle": "Financiera Podemos Progresar",
+                "subtitle": "Financiera\nPodemos\nProgresar",
+                "subtitle-mobile": "Podemos Progresar",
                 "description": "A research done from a human perspective."
             },
             "block2": {
@@ -423,7 +424,7 @@
         },
         "banking-ion": {
             "block1": {
-                "title": "Banking",
+                "title": "Financial Services",
                 "tags1": "Inventia Software | FronEnd Development | BackEnd Development",
                 "tags2": "Inventia Experience | Customer Research e Insights| Product & Service Design.",
                 "subtitle": "ION",
