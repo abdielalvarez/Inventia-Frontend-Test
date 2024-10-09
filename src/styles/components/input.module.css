@@ -186,6 +186,8 @@
     .inputContactUsHome {
         max-width: 243px;
         height: 56px;
+        font-size: 14px;
+        padding: 25px 17px;
     }
 
     .inputContactUsModule {

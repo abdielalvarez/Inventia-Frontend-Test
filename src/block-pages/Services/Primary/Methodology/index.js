@@ -155,11 +155,11 @@ const Methodology = () => {
                         <Text text={empathyText} />
                     </div>
                 </div>
-                {hover.descriptionHover ?
+                {hover.empathyHover ?
                     <>
                         {isResponsive ?
                             <div className={styles.description1}>
-                                <Text text={empathyDescriptionText} />
+                                <Text className={styles.descriptionMobile} text={empathyDescriptionText} />
                             </div> : null
                         }
                     </> : null
@@ -183,11 +183,11 @@ const Methodology = () => {
 
                     <div className={styles.text2}><Text text={definitionText} /></div>
                 </div>
-                {hover.empathyHover ?
+                {hover.descriptionHover ?
                     <>
                         {isResponsive ?
                             <div className={styles.description2}>
-                                <Text text={definitionDescriptionText} />
+                                <Text className={styles.descriptionMobile} text={definitionDescriptionText} />
                             </div> : null
                         }
                     </> : null
@@ -214,7 +214,7 @@ const Methodology = () => {
                     <>
                         {isResponsive ?
                             <div className={styles.description3}>
-                                <Text text={ideaDescriptionText} />
+                                <Text className={styles.descriptionMobile} text={ideaDescriptionText} />
                             </div> : null
                         }
                     </> : null}
@@ -240,7 +240,7 @@ const Methodology = () => {
                     <>
                         {isResponsive ?
                             <div className={styles.description4}>
-                                <Text text={prototypeDescriptionText} />
+                                <Text className={styles.descriptionMobile} text={prototypeDescriptionText} />
                             </div> : null
                         }
                     </> : null}

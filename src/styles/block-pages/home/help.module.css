@@ -49,8 +49,8 @@
 @media (max-width: 768px) {
     .background {
         height: 459px;
-        padding: 67px 12px 0 40px;
-        background-image: url('/images/home/about/background-mobile.jpg');
+        padding: 67px 12px 0 64px;
+        background-image: url('/images/home/help/background-mobile.jpg');
     }
 
     .wrapper {
@@ -75,11 +75,14 @@
     .text3 {
         margin: 0 0 33px;
         line-height: normal;
+        letter-spacing: normal;
     }
     
     .text4 {
-        margin: 0 0 70px;
-        line-height: normal;
+        margin: 0 0 35px;
+        line-height: 13.035px;
+        letter-spacing: 0.72px;
+        max-width: 292px;
     }
 
     .column1 {

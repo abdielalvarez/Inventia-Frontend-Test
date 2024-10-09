@@ -139,28 +139,28 @@ const Header = () => {
           <div className={`${styles.headerCollider} ${colliders.services ? styles.headerColliderOpen : ''}`} onClick={() => toggleCollider('services')}>
             <Text texts={servicesText} />
             <div className={`${styles.collapseContent} ${colliders.services ? styles.expand : ''}`}>
-              <div>
+              <div onClick={toggleMenu}>
                 <Text texts={servicesInventiaExperienceText} />
               </div>
-              <div className={styles.headerSubitem}>
+              <div onClick={toggleMenu} className={styles.headerSubitem}>
                 <Text texts={servicesInventiaExperienceOption1Text} />
               </div>
-              <div className={styles.headerSubitem}>
+              <div onClick={toggleMenu} className={styles.headerSubitem}>
                 <Text texts={servicesInventiaExperienceOption2Text} />
               </div>
-              <div className={styles.headerSubitem}>
+              <div onClick={toggleMenu} className={styles.headerSubitem}>
                 <Text texts={servicesInventiaExperienceOption3Text} />
               </div>
-              <div>
+              <div onClick={toggleMenu}>
                 <Text texts={servicesInventiaSoftwareText} />
               </div>
-              <div className={styles.headerSubitem}>
+              <div onClick={toggleMenu} className={styles.headerSubitem}>
                 <Text texts={servicesInventiaSoftwareOption1Text} />
               </div>
-              <div className={styles.headerSubitem}>
+              <div onClick={toggleMenu} className={styles.headerSubitem}>
                 <Text texts={servicesInventiaSoftwareOption2Text} />
               </div>
-              <div className={styles.headerSubitem}>
+              <div onClick={toggleMenu} className={styles.headerSubitem}>
                 <Text texts={servicesInventiaSoftwareOption3Text} />
               </div>
             </div>
@@ -168,22 +168,22 @@ const Header = () => {
           <div className={`${styles.headerCollider} ${colliders.success ? styles.headerColliderOpen : ''}`} onClick={() => toggleCollider('success')}>
             <Text texts={successText} />
             <div className={`${styles.collapseContent} ${colliders.success ? styles.expand : ''}`}>
-              <div>
+              <div onClick={toggleMenu}>
                 <Text texts={successServiciosFinancierosText} />
               </div>
-              <div className={styles.headerSubitem}>
+              <div onClick={toggleMenu} className={styles.headerSubitem}>
                 <Text texts={successServiciosFinancierosOption1Text} />
               </div>
-              <div className={styles.headerSubitem}>
+              <div onClick={toggleMenu} className={styles.headerSubitem}>
                 <Text texts={successServiciosFinancierosOption2Text} />
               </div>
-              <div>
+              <div onClick={toggleMenu}>
                 <Text texts={successBankingText} />
               </div>
-              <div className={styles.headerSubitem}>
+              <div onClick={toggleMenu} className={styles.headerSubitem}>
                 <Text texts={successBankingOption1Text} />
               </div>
-              <div className={styles.headerSubitem}>
+              <div onClick={toggleMenu} className={styles.headerSubitem}>
                 <Text texts={successBankingOption2Text} />
               </div>
             </div>

@@ -55,6 +55,11 @@
 
 @media (max-width: 768px) {
 
+    .page {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .background {
         padding: 120px 40px;
     }
@@ -64,10 +69,14 @@
     }
 
     .container {
-        margin: 40px 0 80px;
+        margin: 91px 0 80px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .content {
+        flex-direction: row-reverse;
     }
 
     .titleContainer {
@@ -77,13 +86,16 @@
     }
 
     .descriptionContainer {
-        max-width: 245px;
+        max-width: 298px;
         width: 100%;
+        line-height: 15.469px;
+        letter-spacing: 0.99px;
     }
 
     .text {
         max-width: 156px;
         width: 100%;
+        line-height: 15.469px;
     }
 
     .img1 {

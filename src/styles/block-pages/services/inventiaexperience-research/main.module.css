@@ -95,9 +95,15 @@
     .text {
         max-width: 156px;
         width: 100%;
+        line-height: 16.875px;
     }
 
     .description {
+        line-height: 15.909px;
         letter-spacing: 0.66px;
+    }
+
+    .textContent {
+        margin: 0 0 43px;
     }
 }

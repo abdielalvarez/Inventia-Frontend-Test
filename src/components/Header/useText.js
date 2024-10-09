@@ -37,7 +37,7 @@ const useText = (isMenuOpen) => {
             text: t('header.services.title'),
             href: null,
             tag: "p",
-            font: isServices ? "poppinsExtrabold" : "poppinsMedium",
+            font: isServices && !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase',
         }
@@ -46,7 +46,8 @@ const useText = (isMenuOpen) => {
     const servicesInventiaExperienceText = [
         {
             text: t('header.services.section1.subtitle1'),
-            tag: "p",
+            tag: "a",
+            href: `${ROUTE_SERVICES}#${TAG_INVENTIAEXPERIENCE}`,
             font: "poppinsMedium",
             size: 13,
             color: 'blackBase',
@@ -89,7 +90,8 @@ const useText = (isMenuOpen) => {
     const servicesInventiaSoftwareText = [
         {
             text: t('header.services.section2.subtitle1'),
-            tag: "b",
+            tag: "a",
+            href: `${ROUTE_SERVICES}#${TAG_INVENTIASOFTWARE}`,
             font: "poppinsMedium",
             size: 13,
             color: 'blackBase',
@@ -134,7 +136,7 @@ const useText = (isMenuOpen) => {
             text: t('header.successful.title'),
             href: null,
             tag: "p",
-            font: isSuccessStories ? "poppinsExtrabold" : "poppinsMedium",
+            font: isSuccessStories && !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase'
         }
@@ -143,7 +145,8 @@ const useText = (isMenuOpen) => {
     const successServiciosFinancierosText = [
         {
             text: t('header.successful.section1.subtitle1'),
-            tag: "p",
+            tag: "a",
+            href: ROUTE_SUCCESSSTORIES,
             font: "poppinsMedium",
             size: 13,
             color: 'blackBase'
@@ -175,7 +178,8 @@ const useText = (isMenuOpen) => {
     const successBankingText = [
         {
             text: t('header.successful.section2.subtitle1'),
-            tag: "p",
+            tag: "a",
+            href: ROUTE_SUCCESSSTORIES,
             font: "poppinsMedium",
             size: 13,
             color: 'blackBase'
@@ -209,7 +213,7 @@ const useText = (isMenuOpen) => {
             text: t('header.about-us.title'),
             tag: !isMenuOpen ? "a" : "p",
             href: ROUTE_ABOUTUS,
-            font: isAboutUs ? "poppinsExtrabold" : "poppinsMedium",
+            font: isAboutUs && !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase'
         }
@@ -220,7 +224,7 @@ const useText = (isMenuOpen) => {
             text: t('header.contact-us.title'),
             tag: !isMenuOpen ? "a" : "p",
             href: ROUTE_CONTACTUS,
-            font: isContactUs ? "poppinsExtrabold" : "poppinsMedium",
+            font: isContactUs && !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: 'blackBase'
         }

@@ -58,10 +58,18 @@
 
     .titleContainer {
         margin: 0;
+        max-width: 160px;
+        margin: 0 0 20px;
+    }
+
+    .title {
+        line-height: 95%;
     }
 
     .descriptionContainer {
         margin: 0 0 30px;
+        line-height: 15.469px;
+        letter-spacing: 0.99px;
     }
 
     .texts {
@@ -86,6 +94,7 @@
         max-width: 126px;
         width: 100%;
         display: block;
+        line-height: 14.25px;
     }
 
     .infoContainer {

@@ -107,6 +107,8 @@
 
     .textLeft1 {
         margin: 0 0 10px;
+        line-height: 16.875px;
+        letter-spacing: 1.2px;
     }
 
     .imgLeft1 {
@@ -129,8 +131,11 @@
     }
 
     .textRight1 {
-        margin: 0 0 10px;
+        max-width: 250px;
+        margin: 0 0 10px auto;
         text-align: end;
+        line-height: 16.875px;
+        letter-spacing: 1.2px;
     }
 
     .imgRight1 {

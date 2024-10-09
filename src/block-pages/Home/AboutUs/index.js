@@ -70,12 +70,12 @@ const AboutUs = () => {
                     <Image
                         src="/images/home/about-us/people1.png"
                         alt="About Us"
-                        width={isResponsive ? 180 : 564}
-                        height={isResponsive ? 180 : 564}
+                        width={isResponsive ? 234 : 564}
+                        height={isResponsive ? 234 : 564}
                         priority
                         className={styles.imgLeft1}
                     />
-                    <FadeInWrapper type='fadeinright' replay={true}>
+                    <FadeInWrapper className={styles.wrapper1} type='fadeinright' replay={true}>
                         <div className={styles.containerLeft2}>
                             <Text text={aboutText} className={styles.textLeft1} />
                             <div className={styles.containerLeft3}>

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "../../../styles/context/wrappers/fadeinwrapper.module.css";
 
-const FadeInWrapper = ({ children, type = 'fadein', replay = false }) => {
+const FadeInWrapper = ({ children, type = 'fadein', replay = false, ...rest }) => {
     const [isVisible, setIsVisible] = useState(false);
     const wrapperRef = useRef(null);
 
@@ -10,10 +10,8 @@ const FadeInWrapper = ({ children, type = 'fadein', replay = false }) => {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        // Hacer visible cuando entra en la vista
                         setIsVisible(true);
                     } else if (replay) {
-                        // Si sale de la vista y replay es true, reiniciar la visibilidad
                         setIsVisible(false);
                     }
                 });
@@ -33,17 +31,15 @@ const FadeInWrapper = ({ children, type = 'fadein', replay = false }) => {
                 observer.unobserve(currentWrapper);
             }
         };
-    }, [replay]); // Dependencia de replay
+    }, [replay]);
 
-    // Validar tipo
     const validTypes = ['fadein', 'fadeinup', 'fadeinright', 'fadeinleft', 'fadeindown'];
     const finalType = validTypes.includes(type) ? type : 'fadein';
 
-    // Construcción de clase para el wrapper
-    const wrapperClass = `${styles.wrapper} ${styles[finalType]} ${isVisible ? styles.visible : ""}`;
+    const wrapperClass = `${rest?.className ? rest?.className : ''} ${styles.wrapper} ${styles[finalType]} ${isVisible ? styles.visible : ""}`;
 
     return (
-        <div ref={wrapperRef} className={wrapperClass}>
+        <div {...rest} ref={wrapperRef} className={wrapperClass}>
             {children}
         </div>
     );

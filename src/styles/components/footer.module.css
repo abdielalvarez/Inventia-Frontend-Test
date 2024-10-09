@@ -71,6 +71,10 @@
         max-width: 205px;
     }
 
+    .footerContainer1 {
+        padding: 10px 40px 0;
+    }
+
     .footerContainer2 {
         justify-content: center;
     }

@@ -81,16 +81,21 @@
 
     .descriptionContainer {
         margin: 0 0 30px;
+        text-align: left;
     }
 
     .description1 {
-        max-width: 130px;
+        max-width: 165px;
         display: block;
+        line-height: 140.625%;
+        letter-spacing: 0.84px;
     }
 
     .description2 {
-        max-width: 200px;
+        max-width: 230px;
         display: block;
+        line-height: 140.625%;
+        letter-spacing: 0.84px;
     }
 
     .texts {
@@ -103,6 +108,10 @@
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-start;
+    }
+
+    .textContainer2 {
+        margin: 0 0 0 20px;
     }
 
     .textContent {
@@ -118,6 +127,7 @@
         max-width: 126px;
         width: 100%;
         display: block;
+        line-height: 95%;
     }
 
     .button {

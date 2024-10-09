@@ -55,20 +55,22 @@ const Footer = () => {
                         <Text texts={addressTitleText} className={styles.footerTitle} />
                         <Text texts={addressText} className={styles.footerAddress} />
                     </div>
-                    <div className={styles.footerSubInfo}>
-                        <Text texts={homeTitleText} className={styles.footerTitle} />
-                        <Text texts={servicesText} className={styles.footerText1} />
-                        <Text texts={successfulText} className={styles.footerText1} />
-                        <Text texts={aboutUsText} className={styles.footerText1} />
-                        <Text texts={contactUsText} className={styles.footerText1} />
-                    </div>
+                    {!isSmallScreen ?
+                        <div className={styles.footerSubInfo}>
+                            <Text texts={homeTitleText} className={styles.footerTitle} />
+                            <Text texts={servicesText} className={styles.footerText1} />
+                            <Text texts={successfulText} className={styles.footerText1} />
+                            <Text texts={aboutUsText} className={styles.footerText1} />
+                            <Text texts={contactUsText} className={styles.footerText1} />
+                        </div> : null
+                    }
                     <div className={styles.footerSubInfo}>
                         <Text texts={companyTitleText} className={styles.footerTitle} />
                         <Text texts={companyText} className={styles.footerText1} />
                     </div>
                 </div>
             </div>
-            <hr className={styles.footerDivider} />
+            {!isSmallScreen ? <hr className={styles.footerDivider} /> : null}
             <div className={styles.footerContainer2}>
                 <div className={styles.footerIcons}>
                     <a

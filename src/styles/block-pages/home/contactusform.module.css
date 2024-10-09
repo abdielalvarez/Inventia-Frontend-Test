@@ -74,6 +74,14 @@
         margin: 0 0 30px;
     }
 
+    .titleContainer {
+        margin: 0 auto 12px;
+    }
+
+    .subtitleContainer {
+        margin: 0 auto 23px;
+    }
+
     .icon1 {
         display: none;
     }
@@ -88,8 +96,8 @@
     .icon3 {
         display: block;
         position: absolute;
-        top: -510px;
-        left: 75px;
+        top: -472px;
+        left: 145px;
     }
 
     .logoImg {
