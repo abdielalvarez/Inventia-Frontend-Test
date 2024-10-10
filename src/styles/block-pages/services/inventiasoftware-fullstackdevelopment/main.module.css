@@ -1,6 +1,11 @@
 .background {
-    background: #FFFFFF;
+    background: #F5F5F5;
     padding: 178px 40px 0;
+}
+
+.background1 {
+    background: #F5F5F5;
+    padding: 0 40px;
 }
 
 .wrapper {
@@ -10,7 +15,7 @@
 }
 
 .container {
-    margin: 140px 0 150px;
+    padding: 140px 0 150px;
     display: flex;
     align-items: center;
 }
@@ -88,19 +93,25 @@
         padding: 69px 40px 0;
     }
 
+    .background1 {
+        padding: 0 40px 100px;
+    }
+
     .background2 {
         padding: 69px 0 0;
     }
 
     .title {
-        line-height: 19px;
+        line-height: 15.2px;
     }
 
     .title1 {
-        line-height: 19px;
+        line-height: 14.25px;
+        margin: 0 0 14px;
     }
 
     .container {
+        padding: 0;
         margin: 40px 0 0;
         display: flex;
         flex-direction: column;
@@ -112,9 +123,9 @@
     }
 
     .titleContainer {
-        margin: 0 0 20px;
         max-width: 220px;
         width: 100%;
+        margin: 0 0 74px;
     }
 
     .descriptionContainer {
@@ -125,6 +136,8 @@
     .textTitle {
         max-width: 156px;
         width: 100%;
+        line-height: 14.25px;
+        letter-spacing: normal;
     }
 
     .text {
@@ -134,10 +147,14 @@
     }
 
     .content {
-        margin: 100px 0 0 41px;
+        margin: 50px 0 0 41px;
     }
 
     .textContent {
-        margin: 0 0 80px;
+        margin: 0 0 38px;
+    }
+
+    .textContent:last-child {
+        margin: 0;
     }
 }

@@ -91,14 +91,16 @@
     }
 
     .titleContainer {
-        margin: 0 0 20px;
+        margin: 0 0 13px;
         max-width: 220px;
         width: 100%;
     }
 
     .descriptionContainer {
-        max-width: 245px;
+        max-width: 260px;
         width: 100%;
+        line-height: 15.469px;
+        letter-spacing: 0.99px;
     }
 
     .description {
@@ -107,10 +109,11 @@
     }
 
     .text {
-        max-width: 235px;
+        max-width: 188px;
         width: 100%;
         line-height: 17.761px;
         letter-spacing: 1.3px;
+        margin: 0 0 0 25px;
     }
 
     .textContent {

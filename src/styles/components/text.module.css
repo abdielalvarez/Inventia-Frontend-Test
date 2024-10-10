@@ -48,6 +48,10 @@
     color: #abc9ff;
 }
 
+.colorblackUltra {
+    color: #000000;
+}
+
 .colorblackBase {
     color: #323132;
 }
@@ -118,6 +122,10 @@
 
 .fontSize12 {
     font-size: 12px;
+}
+
+.fontSize13 {
+    font-size: 13px;
 }
 
 .fontSize14 {

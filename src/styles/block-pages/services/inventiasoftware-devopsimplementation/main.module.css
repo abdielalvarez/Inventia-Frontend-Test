@@ -84,7 +84,7 @@
     }
 
     .container {
-        margin: 40px 0 80px;
+        margin: 100px 0 80px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -98,11 +98,14 @@
         margin: 0 0 20px;
         max-width: 220px;
         width: 100%;
+        line-height: 95%;
     }
 
     .descriptionContainer {
-        max-width: 245px;
+        max-width: 262px;
         width: 100%;
+        line-height: 15.469px;
+        letter-spacing: 0.99px;
     }
 
     .text {
@@ -111,7 +114,8 @@
     }
 
     .textContent {
-        margin: 0 0 10px;
+        margin: 0 0 14px;
+        line-height: 106.625%;
     }
 
     .explanationContent {

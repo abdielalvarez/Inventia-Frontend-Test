@@ -40,7 +40,7 @@ const Main = () => {
     const list1Item1Text = {
         text: t('services.inventiasoftware-fullstackdevelopment.block1.list1.text1'),
         tag: "p",
-        font: "poppinsRegular",
+        font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 11 : 20,
         color: 'blackBase',
     }
@@ -48,7 +48,7 @@ const Main = () => {
     const list1Item2Text = {
         text: t('services.inventiasoftware-fullstackdevelopment.block1.list1.text2'),
         tag: "p",
-        font: "poppinsRegular",
+        font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 11 : 20,
         color: 'blackBase',
     }
@@ -56,7 +56,7 @@ const Main = () => {
     const list1Item3Text = {
         text: t('services.inventiasoftware-fullstackdevelopment.block1.list1.text3'),
         tag: "p",
-        font: "poppinsRegular",
+        font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 11 : 20,
         color: 'blackBase',
     }
@@ -64,7 +64,7 @@ const Main = () => {
     const list1Item4Text = {
         text: t('services.inventiasoftware-fullstackdevelopment.block1.list1.text4'),
         tag: "p",
-        font: "poppinsRegular",
+        font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 11 : 20,
         color: 'blackBase',
     }
@@ -80,7 +80,7 @@ const Main = () => {
     const list2Item1Text = {
         text: t('services.inventiasoftware-fullstackdevelopment.block1.list2.text1'),
         tag: "p",
-        font: "poppinsRegular",
+        font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 11 : 20,
         color: 'blackBase',
     }
@@ -88,7 +88,7 @@ const Main = () => {
     const list2Item2Text = {
         text: t('services.inventiasoftware-fullstackdevelopment.block1.list2.text2'),
         tag: "p",
-        font: "poppinsRegular",
+        font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 11 : 20,
         color: 'blackBase',
     }
@@ -96,7 +96,7 @@ const Main = () => {
     const list2Item3Text = {
         text: t('services.inventiasoftware-fullstackdevelopment.block1.list2.text3'),
         tag: "p",
-        font: "poppinsRegular",
+        font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 11 : 20,
         color: 'blackBase',
     }
@@ -112,7 +112,7 @@ const Main = () => {
     const list3Item1Text = {
         text: t('services.inventiasoftware-fullstackdevelopment.block1.list3.text1'),
         tag: "p",
-        font: "poppinsRegular",
+        font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 11 : 20,
         color: 'blackBase',
     }
@@ -120,7 +120,7 @@ const Main = () => {
     const list3Item2Text = {
         text: t('services.inventiasoftware-fullstackdevelopment.block1.list3.text2'),
         tag: "p",
-        font: "poppinsRegular",
+        font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 11 : 20,
         color: 'blackBase',
     }
@@ -128,7 +128,7 @@ const Main = () => {
     const list3Item3Text = {
         text: t('services.inventiasoftware-fullstackdevelopment.block1.list3.text3'),
         tag: "p",
-        font: "poppinsRegular",
+        font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 11 : 20,
         color: 'blackBase',
     }
@@ -161,7 +161,7 @@ const Main = () => {
                     </div>
                 </div>
             </section>
-            <section className={styles.background}>
+            <section className={styles.background1}>
                 <div className={styles.wrapper}>
                     <div className={styles.texts}>
                         <div className={styles.textContent}>

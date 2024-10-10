@@ -42,7 +42,7 @@ const Main = () => {
         tag: "p",
         font: "poppinsMedium",
         size: isResponsive ? 13 : 24,
-        color: 'blackBase',
+        color: 'blackUltra',
     }
 
     const explanation2Text = {
@@ -50,7 +50,7 @@ const Main = () => {
         tag: "p",
         font: "poppinsMedium",
         size: isResponsive ? 13 : 24,
-        color: 'blackBase',
+        color: 'blackUltra',
     }
 
     const explanation3Text = {
@@ -58,7 +58,7 @@ const Main = () => {
         tag: "p",
         font: "poppinsMedium",
         size: isResponsive ? 13 : 24,
-        color: 'blackBase',
+        color: 'blackUltra',
     }
 
     const explanation4Text = {
@@ -66,7 +66,7 @@ const Main = () => {
         tag: "p",
         font: "poppinsMedium",
         size: isResponsive ? 13 : 24,
-        color: 'blackBase',
+        color: 'blackUltra',
     }
 
     return (
