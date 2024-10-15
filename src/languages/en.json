@@ -304,7 +304,8 @@
                 "text1": "We transform processes that lead from understanding your customer to offering a functional solution."
             },
             "block2": {
-                "title": "We specialize in financial services"
+                "title": "We specialize in financial services",
+                "title-mobile": "We specialize in financial services"
             },
             "block3": {
                 "collider1": {
@@ -406,6 +407,7 @@
             "block2": {
                 "title": "Brief",
                 "subtitle": "Discover the needs, motivators, barriers, emotions and actors involved in the acquisition journey in the placement process.",
+                "subtitle-mobile": "Discover the needs, motivators, barriers, emotions and actors involved in the acquisition journey in the placement process.",
                 "text": "Using ethnographic interviews conducted in depth with users of Podemos Progresar and research focused on the motivations and obstacles of the members, we achieve:"
             },
             "block3": {
@@ -425,8 +427,10 @@
         "banking-ion": {
             "block1": {
                 "title": "Financial Services",
-                "tags1": "Inventia Software | FronEnd Development | BackEnd Development",
-                "tags2": "Inventia Experience | Customer Research e Insights| Product & Service Design.",
+                "tags1-black": "Inventia Software",
+                "tags2-black": "Inventia Experience",
+                "tags1": "| FronEnd Development | BackEnd Development",
+                "tags2": "| Customer Research e Insights | Product & Service Design.",
                 "subtitle": "ION",
                 "description": "Digital transformation, design and development of new sell channels, management of mortgage products and SME credit."
             },
@@ -434,7 +438,8 @@
                 "title": "Brief",
                 "subtitle": "Establish a DesignOps strategy to manage complex development strategies, methodology, technology architecture and CU design.",
                 "text1": "We design a model of attention requirements based on complexity.",
-                "text2": "We established guidelines for the technology, operations and management teams."
+                "text2": "We established guidelines for the technology, operations and management teams.",
+                "text2-mobile": "We established guidelines for the technology, operations and management teams."
             },
             "block3": {
                 "title": "results",

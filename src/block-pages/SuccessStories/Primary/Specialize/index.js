@@ -11,7 +11,7 @@ const Specialize = () => {
     const is768 = useResponsive(768)
 
     const titleText = {
-        text: t('success-stories.primary.block2.title'),
+        text: is768 ? t('success-stories.primary.block2.title-mobile') : t('success-stories.primary.block2.title'),
         tag: "p",
         font: "poppinsSemibold",
         size: is768 ? 36 : is920 ? 50 : 96,

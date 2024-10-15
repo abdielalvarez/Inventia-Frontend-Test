@@ -67,11 +67,12 @@
 
 @media (max-width: 768px) {
     .background {
-        padding: 135px 0 135px 30px;
+        padding: 207px 0 135px 30px;
     }
 
     .wrapper {
         width: 100%;
+        margin: -80px 0 0px;
     }
 
     .title {
@@ -85,7 +86,12 @@
 
     .img {
         width: 196px;
+        min-width: 196px;
         min-height: 294px;
         max-height: 294px;
+    }
+
+    .collapseContent {
+        margin: 0;
     }
 }

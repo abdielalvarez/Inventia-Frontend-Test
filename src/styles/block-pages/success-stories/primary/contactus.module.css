@@ -56,7 +56,7 @@
 @media (max-width: 768px) {
 
     .background {
-        padding: 128px 40px;
+        padding: 128px 32px;
     }
 
     .title {
@@ -76,7 +76,7 @@
 
     .titleContainer {
         margin: 0 auto 20px;
-        max-width: 265px;
+        max-width: 100%;
         width: 100%;
     }
 

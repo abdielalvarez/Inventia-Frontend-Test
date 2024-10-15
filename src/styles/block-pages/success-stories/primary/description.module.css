@@ -22,6 +22,10 @@
         padding: 168px 0;
     }
 
+    .wrapper {
+        line-height: 15.469px;
+    }
+
     .text {
         max-width: 264px;
     }

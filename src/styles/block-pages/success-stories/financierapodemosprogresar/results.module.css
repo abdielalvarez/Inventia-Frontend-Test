@@ -47,7 +47,7 @@
 @media (max-width: 768px) {
 
     .background {
-        padding: 66px 20px 56px;
+        padding: 0 20px 56px;
     }
 
     .wrapper {
@@ -55,25 +55,33 @@
     }
 
     .titleContainer {
-        margin: 120px 0 50px;
+        margin: 120px 0 38px;
     }
 
     .description1Container {
         max-width: 130px;
-        margin: 0 0 50px;
+        margin: 0 0 30px;
+        line-height: 15.469px;
     }
 
     .description2Container {
         max-width: 130px;
-        margin: 0 0 50px;
+        margin: 0 0 30px;
+        line-height: 15.469px;
     }
     
     .description3Container {
         max-width: 130px;
+        line-height: 15.469px;
+        margin: 0 0 24px;
     }
 
     .img {
         width: 138px;
         height: 181px;
+    }
+
+    .text {
+        line-height: 15.469px;
     }
 }

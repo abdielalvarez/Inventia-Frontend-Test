@@ -43,4 +43,9 @@
     .img {
         margin: 0 16px 0 0;
     }
+
+    .title {
+        max-width: 147px;
+        line-height: 19px;
+    }
 }

@@ -68,7 +68,15 @@
 
     .img {
         position: absolute;
-        top: 33%;
+        top: 31%;
         right: 0;
+    }
+
+    .subtitleContainer {
+        line-height: 15.469px;
+    }
+
+    .description1Container {
+        line-height: 15.469px;
     }
 }

@@ -29,15 +29,17 @@ const Brief = () => {
     const description1Text = {
         text: t('success-stories.banking-ion.block2.text1'),
         tag: "p",
-        font: "poppinsMedium",
+        font: isResponsive ? "poppinsLight" : "poppinsMedium",
         size: isResponsive ? 11 : 23,
         color: 'blackCaption',
     }
 
     const description2Text = {
-        text: t('success-stories.banking-ion.block2.text2'),
+        text: isResponsive ?
+            t('success-stories.banking-ion.block2.text2-mobile') :
+            t('success-stories.banking-ion.block2.text2'),
         tag: "p",
-        font: "poppinsMedium",
+        font: isResponsive ? "poppinsLight" : "poppinsMedium",
         size: isResponsive ? 11 : 23,
         color: 'blackCaption',
     }

@@ -13,8 +13,8 @@ const Main = () => {
         text: t('success-stories.banking-financierapodemosprogresar.block1.title'),
         tag: "p",
         font: "poppinsRegular",
-        size: isResponsive ? 20 : 36,
-        color: 'blackBase',
+        size: isResponsive ? 16 : 36,
+        color: 'blackCaption',
     }
 
     const subtitleText = {

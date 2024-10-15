@@ -44,4 +44,20 @@
         flex-direction: column;
         margin: 37px 0 17px;
     }
+
+    .titleContainer {
+        line-height: 15.2px;
+    }
+
+    .title {
+        line-height: 15.2px;
+    }
+
+    .descriptionContainer {
+        line-height: 15.469px;
+    }
+
+    .tagsContainer {
+        line-height: 15.469px;
+    }
 }

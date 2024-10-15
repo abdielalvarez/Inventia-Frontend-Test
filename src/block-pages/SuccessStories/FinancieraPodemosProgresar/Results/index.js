@@ -57,13 +57,13 @@ const Results = () => {
                         <Text text={titleText} />
                     </div>
                     <div className={styles.description1Container}>
-                        <Text text={description1Text} />
+                        <Text className={styles.text} text={description1Text} />
                     </div>
                     <div className={styles.description2Container}>
-                        <Text text={description2Text} />
+                        <Text className={styles.text} text={description2Text} />
                     </div>
                     <div className={styles.description3Container}>
-                        <Text text={description3Text} />
+                        <Text className={styles.text} text={description3Text} />
                     </div>
                 </div>
             </div>

@@ -13,8 +13,8 @@ const Main = () => {
         text: t('success-stories.banking-ion.block1.title'),
         tag: "p",
         font: "poppinsRegular",
-        size: isResponsive ? 20 : 36,
-        color: 'blackBase',
+        size: isResponsive ? 16 : 36,
+        color: 'blackCaption',
     }
 
     const subtitleText = {
@@ -33,32 +33,50 @@ const Main = () => {
         color: 'blueBase',
     }
 
-    const tags1Text = {
-        text: t('success-stories.banking-ion.block1.tags1'),
-        tag: "p",
-        font: "poppinsLight",
-        size: isResponsive ? 11 : 20,
-        color: 'blackBase',
-    }
+    const tags1Text = [
+        {
+            text: t('success-stories.banking-ion.block1.tags1-black'),
+            tag: "p",
+            font: isResponsive ? "poppinsMedium" : "poppinsLight",
+            size: isResponsive ? 11 : 20,
+            color: 'blackBase',
+        },
+        {
+            text: t('success-stories.banking-ion.block1.tags1'),
+            tag: "p",
+            font: "poppinsLight",
+            size: isResponsive ? 11 : 20,
+            color: 'blackBase',
+        }
+    ]
 
-    const tags2Text = {
-        text: t('success-stories.banking-ion.block1.tags2'),
-        tag: "p",
-        font: "poppinsLight",
-        size: isResponsive ? 11 : 20,
-        color: 'blackBase',
-    }
+    const tags2Text = [
+        {
+            text: t('success-stories.banking-ion.block1.tags2-black'),
+            tag: "p",
+            font: isResponsive ? "poppinsMedium" : "poppinsLight",
+            size: isResponsive ? 11 : 20,
+            color: 'blackBase',
+        },
+        {
+            text: t('success-stories.banking-ion.block1.tags2'),
+            tag: "p",
+            font: "poppinsLight",
+            size: isResponsive ? 11 : 20,
+            color: 'blackBase',
+        }
+    ]
 
     return (
         <div className={styles.background}>
             <div className={styles.wrapper}>
                 <div className={styles.titleContainer}>
-                    <Text text={titleText} />
+                    <Text className={styles.title} text={titleText} />
                 </div>
                 {!isResponsive ?
                     <div className={styles.tagsContainer}>
-                        <Text text={tags1Text} /><br />
-                        <Text text={tags2Text} />
+                        <Text texts={tags1Text} />
+                        <Text texts={tags2Text} />
                     </div> : null
                 }
                 <FadeInWrapper type='fadeinright' replay={true}>
@@ -73,8 +91,8 @@ const Main = () => {
                 </FadeInWrapper>
                 {isResponsive ?
                     <div className={styles.tagsContainer}>
-                        <Text text={tags1Text} /><br />
-                        <Text text={tags2Text} />
+                        <Text className={styles.tagText} texts={tags1Text} />
+                        <Text className={styles.tagText} texts={tags2Text} />
                     </div> : null
                 }
             </div>

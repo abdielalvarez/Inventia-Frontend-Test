@@ -10,7 +10,7 @@ const AnchorButton = ({ href, children, theme = 'primary', responsiveBreakpoint 
   const responsiveClass = responsiveBreakpoint === 728 ? styles.responsive728 : styles.responsive920;
   const isInternal = href?.startsWith('/') || href?.startsWith('#');
 
-  const generalStyles = `${styles.button} ${themeClass} ${responsiveClass} ${expandWidth ? styles.buttonWidth100per : ''}`
+  const generalStyles = `${styles.button} ${themeClass} ${responsiveClass} ${expandWidth ? styles.buttonWidth100per : ''} ${props.className}`
 
   if (href && !isInternal) {
     return (
@@ -28,8 +28,8 @@ const AnchorButton = ({ href, children, theme = 'primary', responsiveBreakpoint 
     return (
       <Link
         href={href}
-        className={generalStyles}
         {...props}
+        className={generalStyles}
       >
         {children}
       </Link>

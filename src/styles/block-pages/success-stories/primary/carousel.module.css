@@ -120,7 +120,7 @@
 
     .title {
         text-align: start;
-        margin: 0 0 47px 60px;
+        margin: 0 0 -39px 60px;
     }
     
     .bullets {
@@ -129,5 +129,15 @@
 
     .arrow {
         top: 90px;
+    }
+
+    .carousel {
+        height: 230px
+    }
+
+    .bullet {
+        width: 8px;
+        height: 8px;
+        margin: 0 6px;
     }
 }

@@ -37,6 +37,7 @@ const ContactUs = () => {
                 </FadeInWrapper>
                 <div className={styles.buttonContainer}>
                     <AnchorButton
+                        className={styles.buttonItem}
                         href={ROUTE_CONTACTUS}
                         responsiveBreakpoint={768}
                         theme="secondary"

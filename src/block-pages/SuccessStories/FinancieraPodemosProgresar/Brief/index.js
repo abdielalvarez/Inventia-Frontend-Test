@@ -19,7 +19,9 @@ const Brief = () => {
     }
 
     const subtitleText = {
-        text: t('success-stories.banking-financierapodemosprogresar.block2.subtitle'),
+        text: isResponsive ?
+            t('success-stories.banking-financierapodemosprogresar.block2.subtitle-mobile') :
+            t('success-stories.banking-financierapodemosprogresar.block2.subtitle'),
         tag: "p",
         font: "poppinsLight",
         size: isResponsive ? 11 : 20,
@@ -29,7 +31,7 @@ const Brief = () => {
     const description1Text = {
         text: t('success-stories.banking-financierapodemosprogresar.block2.text'),
         tag: "p",
-        font: "poppinsMedium",
+        font: isResponsive ? "poppinsLight" :"poppinsMedium",
         size: isResponsive ? 11 : 23,
         color: 'blackCaption',
     }
