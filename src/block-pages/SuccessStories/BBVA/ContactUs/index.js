@@ -15,7 +15,7 @@ const ContactUs = () => {
         text: t('success-stories.banking-bbva.block4.title'),
         tag: "p",
         font: "poppinsLight",
-        size: isResponsive ? 14 : 24,
+        size: isResponsive ? 13 : 24,
         color: 'blackBase',
     }
 
@@ -40,6 +40,7 @@ const ContactUs = () => {
                         href={ROUTE_CONTACTUS}
                         responsiveBreakpoint={768}
                         theme="secondary"
+                        className={styles.buttonItem}
                     >
                         <Text text={buttonText} />
                     </AnchorButton>

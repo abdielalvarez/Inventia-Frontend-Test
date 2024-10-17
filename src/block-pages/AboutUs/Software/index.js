@@ -71,7 +71,11 @@ const Software = () => {
                     <div className={styles.text}><Text text={itemSoftware8Text} /></div>
                     <div className={styles.text}><Text text={itemSoftware9Text} /></div>
                     <div className={styles.button}>
-                        <AnchorButton theme="secondary" href={ROUTE_ABOUTUS}>
+                        <AnchorButton
+                            className={styles.buttonItem}
+                            href={ROUTE_ABOUTUS}
+                            theme="secondary"
+                        >
                             <Text text={buttonSoftwareText} />
                         </AnchorButton>
                     </div>

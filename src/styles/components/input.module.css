@@ -181,6 +181,7 @@
 @media (max-width: 768px) {
     .inputJoinTeam {
         max-width: 243px;
+        font-size: 13px;
     }
 
     .inputContactUsHome {
@@ -193,5 +194,7 @@
     .inputContactUsModule {
         max-width: 243px;
         height: 56px;
+        font-size: 14px;
+        padding: 14px 17px;
     }
 }

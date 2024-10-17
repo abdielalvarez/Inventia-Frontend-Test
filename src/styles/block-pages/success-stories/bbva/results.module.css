@@ -34,7 +34,7 @@
 @media (max-width: 768px) {
 
     .background {
-        padding: 0 20px 56px;
+        padding: 0 20px 61px;
     }
 
     .wrapper {
@@ -42,16 +42,18 @@
     }
 
     .titleContainer {
-        margin: 120px 0 50px;
+        margin: 120px 0 23px;
     }
 
     .description1Container {
         max-width: 130px;
-        margin: 0 0 50px;
+        margin: 0 0 20px;
+        line-height: 15.469px;
     }
     
     .description2Container {
         max-width: 130px;
+        line-height: 15.469px;
     }
 
     .img {

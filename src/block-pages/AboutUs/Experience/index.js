@@ -18,10 +18,6 @@ const Experience = () => {
         itemExperience4Text,
         itemExperience5Text,
         itemExperience6Text,
-        itemExperience7Text,
-        itemExperience8Text,
-        itemExperience9Text,
-        itemExperience10Text,
         buttonExperienceText,
     } = useText()
 
@@ -62,18 +58,16 @@ const Experience = () => {
                 <div className={styles.container2}>
                     <div className={styles.title}><Text text={titleExperienceText} /></div>
                     <div className={styles.subtitle}><Text text={subtitleExperienceText} /></div>
-                    <div className={styles.text}><Text text={itemExperience1Text} /></div>
-                    <div className={styles.text}><Text text={itemExperience2Text} /></div>
-                    <div className={styles.text}><Text text={itemExperience3Text} /></div>
-                    <div className={styles.text}><Text text={itemExperience4Text} /></div>
-                    <div className={styles.text}><Text text={itemExperience5Text} /></div>
-                    <div className={styles.text}><Text text={itemExperience6Text} /></div>
-                    <div className={styles.text}><Text text={itemExperience7Text} /></div>
-                    <div className={styles.text}><Text text={itemExperience8Text} /></div>
-                    <div className={styles.text}><Text text={itemExperience9Text} /></div>
-                    <div className={styles.text}><Text text={itemExperience10Text} /></div>
+                    <div className={styles.box}>
+                        <div className={styles.text}><Text text={itemExperience1Text} /></div>
+                        <div className={styles.text}><Text text={itemExperience2Text} /></div>
+                        <div className={styles.text}><Text text={itemExperience3Text} /></div>
+                        <div className={styles.text}><Text text={itemExperience4Text} /></div>
+                        <div className={styles.text}><Text text={itemExperience5Text} /></div>
+                        <div className={styles.text}><Text text={itemExperience6Text} /></div>
+                    </div>
                     <div className={styles.button}>
-                        <AnchorButton href={ROUTE_ABOUTUS}>
+                        <AnchorButton className={styles.buttonItem} href={ROUTE_ABOUTUS}>
                             <Text text={buttonExperienceText} />
                         </AnchorButton>
                     </div>

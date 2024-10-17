@@ -29,7 +29,7 @@ const Brief = () => {
     const description1Text = {
         text: t('success-stories.banking-grupogentera.block2.text'),
         tag: "p",
-        font: "poppinsMedium",
+        font: isResponsive ? "poppinsLight" : "poppinsMedium",
         size: isResponsive ? 11 : 23,
         color: 'blackCaption',
     }

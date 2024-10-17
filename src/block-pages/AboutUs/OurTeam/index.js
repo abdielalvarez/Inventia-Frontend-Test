@@ -58,7 +58,7 @@ const OurTeam = () => {
                 <div className={styles.wrapper}>
                     <div className={styles.container1}>
                         <div className={styles.title}><Text text={titleText} /></div>
-                        <div><Text text={descriptionText} /></div>
+                        <div className={styles.description}><Text text={descriptionText} /></div>
                     </div>
                     <div className={styles.container2}>
                         <div className={styles.text}><Text className={styles.text1} text={experienceText} /></div>

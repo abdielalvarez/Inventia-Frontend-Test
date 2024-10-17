@@ -55,21 +55,24 @@
     }
 
     .titleContainer {
-        margin: 120px 0 50px;
+        margin: 120px 0 24px;
     }
 
     .description1Container {
         max-width: 130px;
-        margin: 0 0 50px;
+        margin: 0 0 37px;
+        line-height: 15.469px;
     }
 
     .description2Container {
         max-width: 130px;
-        margin: 0 0 50px;
+        margin: 0 0 37px;
+        line-height: 15.469px;
     }
     
     .description3Container {
         max-width: 130px;
+        line-height: 15.469px;
     }
 
     .img {

@@ -1,14 +1,18 @@
+import useResponsive from "@/hooks/useResponsive";
 import styles from "../../../../styles/block-pages/success-stories/bbva/cover.module.css"
 import Image from "next/image";
 
 const Cover = () => {
+
+    const is768 = useResponsive(768);
+
     return (
         <div className={styles.background}>
             <Image
                 src="/images/success-stories/banking-bbva/main/background.jpg"
                 alt="BBVA"
-                width={1920}
-                height={1080}
+                width={is768 ? 544 : 1920}
+                height={is768 ? 155 : 1080}
                 priority
                 layout="responsive"
             />

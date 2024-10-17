@@ -61,12 +61,25 @@
 
     .container2 {
         padding: 117px 0;
-        max-width: 265px;
+        max-width: 281px;
     }
 
     .img {
         position: absolute;
         top: 36%;
         right: 0;
+    }
+
+    .titleContainer {
+        margin: 0 0 6px;
+        line-height: 14.25px;
+    }
+
+    .subtitleContainer {
+        line-height: 15.469px;
+    }
+
+    .description1Container {
+        line-height: 16.875px;
     }
 }

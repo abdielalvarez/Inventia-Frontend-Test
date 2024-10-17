@@ -52,6 +52,14 @@
     z-index: -1;
 }
 
+.box {
+    max-width: 128px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 0 auto;
+}
+
 @media (max-width: 768px) {
     .background {
         padding: 77px 20px;
@@ -73,6 +81,15 @@
         margin: 0 0 20px;
         max-width: 257px;
         width: 100%;
+        line-height: 22.8px;
+    }
+
+    .text {
+        line-height: 18.281px;
+    }
+
+    .subtitle {
+        line-height: 18.281px;
     }
 
     .button {
@@ -87,5 +104,14 @@
     .line {
         left: auto;
         right: 45px;
+    }
+
+    .box {
+        margin: 0; 
+    }
+
+    .buttonItem {
+        width: 151px !important;
+        height: 30px !important;
     }
 }

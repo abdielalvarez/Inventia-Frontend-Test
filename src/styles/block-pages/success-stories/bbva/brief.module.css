@@ -69,4 +69,13 @@
         top: 40%;
         right: 0;
     }
+
+    .subtitleContainer {
+        line-height: 15.469px;
+    }
+
+    .description1Container {
+        max-width: 244px;
+        line-height: 15.469px;
+    }
 }

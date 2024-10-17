@@ -28,7 +28,7 @@ const Results = () => {
         {
             text: t('success-stories.banking-bbva.block3.text2'),
             tag: "p",
-            font: "poppinsLight",
+            font: "poppinsMedium",
             size: isResponsive ? 11 : 23,
             color: 'blackBase',
         },

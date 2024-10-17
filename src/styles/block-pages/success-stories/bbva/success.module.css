@@ -37,10 +37,16 @@
     }
 
     .container {
-        margin: 0 0 10px;
+        margin: 0 auto 10px;
+        max-width: 265px;
     }
 
     .img {
         margin: 0 16px 0 0;
+    }
+
+    .title {
+        max-width: 120px;
+        line-height: 19px;
     }
 }

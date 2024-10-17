@@ -61,7 +61,7 @@
     }
 
     .title {
-        line-height: 19px;
+        line-height: 18.281px;
     }
 
     .container {
@@ -79,6 +79,7 @@
         margin: 0 auto 20px;
         max-width: 311px;
         width: 100%;
+        line-height: 18.281px;
     }
 
     .descriptionContainer {
@@ -89,5 +90,10 @@
     .text {
         max-width: 156px;
         width: 100%;
+    }
+
+    .buttonItem {
+        width: 126.131px !important;
+        height: 30.079px !important;
     }
 }

@@ -65,7 +65,16 @@
     }
 
     .text {
-        margin: 0 0 20px;
+        margin: 0 0 31px;
+        line-height: 22.8px;
+    }
+
+    .text1 {
+        line-height: 22.8px;
+    }
+
+    .text:last-child {
+        line-height: 22.8px;
     }
 
     .title {
@@ -76,5 +85,9 @@
         position: absolute;
         left: 0;
         top: 60%;
+    }
+
+    .description {
+        line-height: 18.281px;
     }
 }

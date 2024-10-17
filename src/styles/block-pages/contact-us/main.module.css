@@ -68,12 +68,11 @@
 @media (max-width: 768px) {
 
     .background {
-        padding: 170px 40px 100px;
+        padding: 170px 10px 100px 40px;
     }
 
     .formContainer {
         width: 100%;
-        max-width: 243px;
     }
 
     .inputContainer {
@@ -98,7 +97,19 @@
 
     .subtitle {
         display: block;
-        max-width: 257px;
+        max-width: 286px;
         width: 100%;
+    }
+
+    .buttonContainer {
+        max-width: 243px;
+    }
+
+    .buttonContainer button {
+        height: 48px;
+    }
+
+    .subtitleContainer {
+        line-height: 21.094px;
     }
 }

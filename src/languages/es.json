@@ -345,13 +345,13 @@
             "block1": {
                 "title": "Banking",
                 "subtitle": "BBVA",
-                "description": "Servicios de consultoría de diseño de productos y servicios, para diferentes canales de venta o atención al cliente.",
+                "description": "Servicios de consultoría de diseño de productos\ny servicios, para diferentes canales de venta o atención al cliente.",
                 "tags": "Inventia Experience | Customer Research e Insights | Product & Service Design."
             },
             "block2": {
                 "title": "Brief",
                 "subtitle": "Resolver soluciones multiplataforma, problemas de comunicación, navegación, conversión y venta de servicios y productos BBVA.",
-                "text": "Mejora sustancial de los productos y servicios digitales en la comunicación, usabilidad y navegación, así como la tasa de conversión del uso de las aplicaciones en sus canales."
+                "text": "Mejora sustancial de los productos\ny servicios digitales en la comunicación, usabilidad y navegación, así como la tasa de conversión del uso de las aplicaciones en sus canales."
             },
             "block3": {
                 "title": "resultados",
@@ -370,13 +370,13 @@
         "banking-grupogentera": {
             "block1": {
                 "title": "Banking",
-                "tags": "Inventia Experience | Customer Research e Insights| Product & Service Design.",
+                "tags": "Inventia Experience | Customer Research e Insights | Product & Service Design.",
                 "subtitle": "Grupo Gentera",
                 "description": "Estrategia y modelo comercial del laboratorio de innovación de Grupo Gentera."
             },
             "block2": {
                 "title": "Brief",
-                "subtitle": "Estrategia y modelo comercial del laboratorio de innovación de Grupo Gentera.",
+                "subtitle": "Diseñar la estrategia tecnológica para\nlos próximos 3 años, basado en el desarrollo\nde productos y servicios para propiciar\nla inclusión financiera del sector\nno bancarizado en México.",
                 "text": "Diseñamos a través de técnicas de service design, la estrategia, modelo de negocio, cadena de valor y service blueprint para implementar los proyectos que serían más rentables para Gentera."
             },
             "block3": {
@@ -465,17 +465,13 @@
         "block2": {
             "title": "Equipo Inventia Experience",
             "subtitle": "Tenemos en nuestro equipo a:",
-            "text1": "UX",
-            "text2": "Research",
-            "text3": "Data",
-            "text4": "Analyst",
-            "text5": "Content",
-            "text6": "Strategist",
-            "text7": "Product",
-            "text8": "Designer",
-            "text9": "Service",
-            "text10": "Visual Designer",
-            "button": "Únete al equipo"
+            "text1": "UX Research",
+            "text2": "Data Analyst",
+            "text3": "Content Strategist",
+            "text4": "Product Designer",
+            "text5": "Service Designer",
+            "text6": "Visual Designer",
+            "button": "únete al equipo"
         },
         "block3": {
             "title": "Equipo Inventia Software",
@@ -489,7 +485,7 @@
             "text7": "Arquitecto Empresarial",
             "text8": "Devops Engineer",
             "text9": "Tester Automation",
-            "button": "Únete al equipo"
+            "button": "únete al equipo"
         },
         "block4": {
             "title": "¡Únete al equipo!",
@@ -504,8 +500,9 @@
     "contact-us": {
         "block1": {
             "title": "¿Te gustaría realizar un proyecto con nosotros?",
+            "title-mobile": "¿Te gustaría\nrealizar\nun proyecto\ncon nosotros?",
             "subtitle": "¡Hablemos!",
-            "description": "Déjanos tus datos y nosotros nos pondremos en contacto contigo.",
+            "description": "Déjanos tus datos y nosotros\nnos pondremos en contacto contigo.",
             "input1": "teléfono",
             "input2": "email",
             "input3": "nombre",

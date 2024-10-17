@@ -70,43 +70,11 @@ const useText = () => {
         color: 'blackBase',
     }
 
-    const itemExperience7Text = {
-        text: t('about-us.block2.text7'),
-        tag: "p",
-        font: "poppinsLight",
-        size: isResponsive ? 13 : 24,
-        color: 'blackBase',
-    }
-
-    const itemExperience8Text = {
-        text: t('about-us.block2.text8'),
-        tag: "p",
-        font: "poppinsLight",
-        size: isResponsive ? 13 : 24,
-        color: 'blackBase',
-    }
-
-    const itemExperience9Text = {
-        text: t('about-us.block2.text9'),
-        tag: "p",
-        font: "poppinsLight",
-        size: isResponsive ? 13 : 24,
-        color: 'blackBase',
-    }
-
-    const itemExperience10Text = {
-        text: t('about-us.block2.text10'),
-        tag: "p",
-        font: "poppinsLight",
-        size: isResponsive ? 13 : 24,
-        color: 'blackBase',
-    }
-
     const buttonExperienceText = {
         text: t('about-us.block2.button'),
         tag: "p",
         font: "poppinsRegular",
-        size: isResponsive ? 10 : 20,
+        size: isResponsive ? 13 : 20,
         color: 'whiteBase',
     }
 
@@ -210,7 +178,7 @@ const useText = () => {
         text: t('about-us.block3.button'),
         tag: "p",
         font: "poppinsRegular",
-        size: isResponsive ? 10 : 20,
+        size: isResponsive ? 13 : 20,
         color: 'whiteBase',
     }
 
@@ -223,10 +191,6 @@ const useText = () => {
         itemExperience4Text,
         itemExperience5Text,
         itemExperience6Text,
-        itemExperience7Text,
-        itemExperience8Text,
-        itemExperience9Text,
-        itemExperience10Text,
         buttonExperienceText,
         titleSoftwareText,
         subtitleSoftwareText,

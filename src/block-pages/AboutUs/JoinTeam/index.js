@@ -148,11 +148,11 @@ const JoinTeamForm = () => {
                             />
                         </div>
                         <AnchorButton
+                            className={styles.buttonItem}
                             disabled={loading || success}
                             expandWidth={true}
-                            responsiveBreakpoint={768}
-                            theme="primary"
                             type="submit"
+                            theme="primary"
                         >
                             <Text text={buttonText} />
                         </AnchorButton>

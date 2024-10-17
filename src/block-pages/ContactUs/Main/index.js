@@ -41,7 +41,7 @@ const Main = () => {
     const { formData, handleChange, handleSubmit } = useContactUsForm(onSubmit)
 
     const explanationText = {
-        text: t('contact-us.block1.title'),
+        text: isResponsive ? t('contact-us.block1.title-mobile') : t('contact-us.block1.title'),
         tag: "p",
         font: "poppinsBold",
         size: isResponsive ? 32 : 64,
@@ -57,7 +57,7 @@ const Main = () => {
     }
 
     const descriptionText = {
-        text: t('home.block9.text1'),
+        text: t('contact-us.block1.description'),
         tag: "p",
         font: isResponsive ? "poppinsLight" : "poppinsRegular",
         size: isResponsive ? 15 : 20,

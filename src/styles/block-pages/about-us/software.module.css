@@ -89,4 +89,13 @@
         left: 45px;
         right: auto;
     }
+
+    .text {
+        line-height: 18.281px;
+    }
+
+    .buttonItem {
+        width: 151px !important;
+        height: 30px !important;
+    }
 }

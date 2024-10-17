@@ -37,12 +37,26 @@
     }
 
     .wrapper {
-        max-width: 265px;
+        max-width: 309px;
         width: 100%;
     }
 
     .container {
         flex-direction: column;
         margin: 37px 0 17px;
+    }
+
+    .titleContainer {
+        line-height: 15.2px;
+    }
+
+    .descriptionContainer {
+        line-height: 15.469px;
+        max-width: 309px;
+    }
+
+    .tagsContainer {
+        line-height: 15.469px;
+        max-width: 277px;
     }
 }

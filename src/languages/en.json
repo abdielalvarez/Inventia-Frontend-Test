@@ -371,7 +371,7 @@
         "banking-grupogentera": {
             "block1": {
                 "title": "Banking",
-                "tags": "Inventia Experience | Customer Research e Insights| Product & Service Design.",
+                "tags": "Inventia Experience | Customer Research e Insights | Product & Service Design.",
                 "subtitle": "Gentera Group",
                 "description": "Strategy and business model of Grupo Genera's innovation laboratory. "
             },
@@ -466,16 +466,12 @@
         "block2": {
             "title": "Inventia Experience Team",
             "subtitle": "We have in our team:",
-            "text1": "UX",
-            "text2": "Research",
-            "text3": "Data",
-            "text4": "Analyst",
-            "text5": "Content",
-            "text6": "Strategist",
-            "text7": "Product",
-            "text8": "Designer",
-            "text9": "Service",
-            "text10": "Visual Designer",
+            "text1": "UX Research",
+            "text2": "Data Analyst",
+            "text3": "Content Strategist",
+            "text4": "Product Designer",
+            "text5": "Service Designer",
+            "text6": "Visual Designer",
             "button": "join our team"
         },
         "block3": {
@@ -505,6 +501,7 @@
     "contact-us": {
         "block1": {
             "title": "Would you like to carry out a project with us?",
+            "title-mobile": "Would you like to carry out a project with us?",
             "subtitle": "Let’s talk!",
             "description": "Leave us your information and we will contact you.",
             "input1": "phone number",

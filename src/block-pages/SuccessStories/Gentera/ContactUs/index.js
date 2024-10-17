@@ -39,6 +39,7 @@ const ContactUs = () => {
                     <AnchorButton
                         href={ROUTE_CONTACTUS}
                         responsiveBreakpoint={768}
+                        className={styles.buttonItem}
                     >
                         <Text text={buttonText} />
                     </AnchorButton>
