@@ -70,13 +70,23 @@ const AboutUs = () => {
                     <Image
                         src="/images/home/about-us/people1.png"
                         alt="About Us"
-                        width={isResponsive ? 234 : 564}
-                        height={isResponsive ? 234 : 564}
+                        width={isResponsive ? 234 : 565}
+                        height={isResponsive ? 234 : 565}
                         priority
                         className={styles.imgLeft1}
                     />
                     <FadeInWrapper className={styles.wrapper1} type='fadeinright' replay={true}>
                         <div className={styles.containerLeft2}>
+                            {!isResponsive ?
+                                <Image
+                                    src="/images/home/about-us/line-4.svg"
+                                    alt="About Us"
+                                    width={185}
+                                    height={1}
+                                    priority
+                                    className={styles.icon1}
+                                /> : null
+                            }
                             <Text text={aboutText} className={styles.textLeft1} />
                             <div className={styles.containerLeft3}>
                                 <div>

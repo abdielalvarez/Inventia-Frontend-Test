@@ -3,6 +3,7 @@ import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../styles/block-pages/home/welcome.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
+import Image from "next/image";
 
 const Welcome = () => {
 
@@ -16,14 +17,7 @@ const Welcome = () => {
             font: !isResponsive ? "poppinsSemiBold" : "poppinsBold",
             size: !isResponsive ? 32 : 20,
             color: 'whiteBase',
-        },
-        {
-            text: t('home.block1.inventia'),
-            tag: "span",
-            font: !isResponsive ? "poppinsBold" : "poppinsExtrabold",
-            size: !isResponsive ? 96 : 40,
-            color: 'whiteBase',
-        },
+        }
     ];
 
     return (
@@ -31,6 +25,14 @@ const Welcome = () => {
             <div className={styles.wrapper}>
                 <FadeInWrapper type="fadein">
                     <Text texts={welcomeText} className={styles.title} />
+                    <div className={styles.inventia}>
+                        <Image
+                            src="/images/home/welcome/main-logo.png"
+                            alt="Inventia Lab"
+                            width={isResponsive ? 210 : 555}
+                            height={isResponsive ? 31 : 100}
+                        />
+                    </div>
                 </FadeInWrapper>
             </div>
         </section>

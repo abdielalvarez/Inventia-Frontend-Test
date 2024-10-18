@@ -40,6 +40,14 @@
 
 .headerlabel {
     cursor: pointer;
+    display: flex;
+    align-items: center;    
+}
+
+.headerbox {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 5px;
 }
 
 .headermenuIcon {

@@ -48,7 +48,7 @@
 
 @media (max-width: 768px) {
     .background {
-        height: 459px;
+        height: 638px;
         padding: 67px 12px 0 64px;
         background-image: url('/images/home/help/background-mobile.jpg');
     }
@@ -91,5 +91,11 @@
     
     .column2 {
         max-width: inherit;
+    }
+}
+
+@media (max-width: 450px) {
+    .background {
+        height: 459px;
     }
 }

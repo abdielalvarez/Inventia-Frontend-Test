@@ -41,7 +41,7 @@
 
 .imgLeft2 {
     position: absolute;
-    top: 797px;
+    top: 882px;
     left: -112px;
     height: 312px;
 }
@@ -50,6 +50,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin: 200px 0 0;
 }
 
 .text1 {

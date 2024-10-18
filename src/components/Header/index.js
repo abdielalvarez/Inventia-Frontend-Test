@@ -8,9 +8,11 @@ import useResponsive from '@/hooks/useResponsive';
 import Link from 'next/link';
 import { ROUTE_HOME } from '@/utils/routes';
 import Dropdown from '../Dropdown';
+import { useApiContext } from '@/context/wrappers/ContextProvider';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const { setLang, state } = useApiContext()
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -53,6 +55,7 @@ const Header = () => {
     successText,
     aboutUsText,
     contactUsText,
+    langText,
     dropdownDataServices,
     dropdownDataSuccessStories
   } = useText(isMenuOpen, colliders)
@@ -77,6 +80,15 @@ const Header = () => {
         />
       </Link>
     )
+  }
+
+  const handleChangeLanguage = (e) => {
+    e && e.preventDefault()
+    const lang =
+      !state?.language ||
+      state?.language === 'en' ?
+      'es' : 'en'
+    setLang(lang)
   }
 
   return (
@@ -109,6 +121,17 @@ const Header = () => {
         <div className={styles.headerlabel}>
           <Text texts={contactUsText} />
         </div>
+        <div onClick={handleChangeLanguage} className={styles.headerlabel}>
+          <Text texts={langText} />
+          <div className={styles.headerbox}>
+            <Image
+              src="/images/header/world.png"
+              alt="Close"
+              width={18}
+              height={18}
+            />
+          </div>
+        </div>
       </div>
       <div className={styles.headermenuIcon} onClick={toggleMenu}>
         {isMenuOpen ?
@@ -135,6 +158,17 @@ const Header = () => {
             {isMenuOpen ?
               <MainLogo /> : null
             }
+          </div>
+          <div className={styles.headerlabel} onClick={handleChangeLanguage}>
+            <Text texts={langText} />
+            <div className={styles.headerbox}>
+              <Image
+                src="/images/header/world.png"
+                alt="Close"
+                width={18}
+                height={18}
+              />
+            </div>
           </div>
           <div className={`${styles.headerCollider} ${colliders.services ? styles.headerColliderOpen : ''}`} onClick={() => toggleCollider('services')}>
             <Text texts={servicesText} />

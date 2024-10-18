@@ -31,11 +31,26 @@
 }
 
 .footerTitle {
-    margin: 0 0 8px;
+    margin: 0 0 16px;
+    line-height: 24px;
+    letter-spacing: -0.225px;
 }
 
 .footerText {
     margin: 0 0 8px;
+    line-height: 24px;
+    letter-spacing: -0.225px;
+}
+
+.footerText1 {
+    line-height: 24px;
+    letter-spacing: -0.225px;
+}
+
+.footerText2 {
+    margin: 0 0 16px;
+    line-height: 24px;
+    letter-spacing: -0.225px;
 }
 
 .footerImg {
@@ -61,6 +76,11 @@
     }
 
     .footerText1 {
+        margin: 0 0 8px;
+        text-align: center;
+    }
+
+    .footerText2 {
         margin: 0 0 8px;
         text-align: center;
     }

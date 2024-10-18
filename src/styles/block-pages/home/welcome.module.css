@@ -19,6 +19,11 @@
     width: 100%;
     display: block;
     line-height: 34px;
+    letter-spacing: 4.8px;
+}
+
+.inventia {
+    margin: 20px 0 0;
 }
 
 @media (max-width: 768px) {
@@ -33,5 +38,11 @@
     .title {
         max-width: 300px;
         line-height: 23px;
+        letter-spacing: 1px;
+        margin: 96px 0 0;
+    }
+
+    .inventia {
+        margin: 18px 0 0;
     }
 }

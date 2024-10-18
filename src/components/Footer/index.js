@@ -58,10 +58,10 @@ const Footer = () => {
                     {!isSmallScreen ?
                         <div className={styles.footerSubInfo}>
                             <Text texts={homeTitleText} className={styles.footerTitle} />
-                            <Text texts={servicesText} className={styles.footerText1} />
-                            <Text texts={successfulText} className={styles.footerText1} />
-                            <Text texts={aboutUsText} className={styles.footerText1} />
-                            <Text texts={contactUsText} className={styles.footerText1} />
+                            <Text texts={servicesText} className={styles.footerText2} />
+                            <Text texts={successfulText} className={styles.footerText2} />
+                            <Text texts={aboutUsText} className={styles.footerText2} />
+                            <Text texts={contactUsText} className={styles.footerText2} />
                         </div> : null
                     }
                     <div className={styles.footerSubInfo}>

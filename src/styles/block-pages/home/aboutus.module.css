@@ -50,6 +50,8 @@
 .imgLeft1 {
     position: relative;
     z-index: 1;
+    width: 100%;
+    max-width: 565px;
 }
 
 .imgLeft2 {
@@ -57,6 +59,13 @@
     top: 0;
     height: 413px;
     right: -115px;
+}
+
+.icon1 {
+    position: absolute;
+    left: -135px;
+    top: 37px;
+    z-index: 0;
 }
 
 @media (max-width: 768px) {
@@ -102,6 +111,7 @@
     }
 
     .imgLeft1 {
+        max-width: 234px;
         margin: 0 30px 0 0;
     }
 

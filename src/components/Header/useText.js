@@ -230,6 +230,16 @@ const useText = (isMenuOpen) => {
         }
     ];
 
+    const langText = [
+        {
+            text: t('header.lang.title'),
+            tag: "p",
+            font: !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
+            size: !isSmallScreen ? 20 : 22,
+            color: 'blackBase'
+        }
+    ];
+
     const dropdownDataServices = [
         {
             title: {
@@ -327,6 +337,7 @@ const useText = (isMenuOpen) => {
         successText,
         aboutUsText,
         contactUsText,
+        langText,
         dropdownDataServices,
         dropdownDataSuccessStories
     }
