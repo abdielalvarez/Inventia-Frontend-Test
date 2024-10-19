@@ -129,11 +129,13 @@
 
     .background {
         padding: 60px 0 180px;
+        background: #F5F5F5;
     }
 
     .descriptionContainer {
         max-width: 265px;
         margin: 30px auto 60px;
+        line-height: 15.469px;
     }
 
     .container {
@@ -147,84 +149,93 @@
 
     .textContainer1 {
         flex-direction: column-reverse;
-        width: 141px;
-        height: 181.459px;
+        width: 174px;
+        height: 200px;
         justify-content: center;
-        border-radius: 0 0 50% 50%;
+        border-radius: 0 0 45% 45%;
         padding: 0 0 50px;
         margin: 0 0 10px;
     }
 
     .textContainer2 {
         flex-direction: column-reverse;
-        width: 133px;
-        height: 133px;
+        width: 174px;
+        height: 174px;
         margin: 0 0 10px;
     }
 
     .textContainer3 {
         flex-direction: column-reverse;
-        width: 135px;
-        height: 195px;
+        width: 174px;
+        height: 238px;
         margin: 0 0 10px;
     }
 
     .textContainer4 {
         flex-direction: column-reverse;
-        width: 135px;
-        height: 281px;
+        width: 174px;
+        height: 320px;
         text-align: center;
         justify-content: center;
         margin: 0 0 10px;
         border-radius: 162.287px;
         padding: 0;
+        line-height: 95%;
     }
 
     .description1 {
         position: relative;
         top: inherit;
         bottom: inherit;
-        margin: 4px 0;
+        margin: 4px 0 12px;
         max-width: 270px;
         min-width: 270px;
         width: 100%;
         text-align: center;
+        line-height: 13.95px;
     }
     
     .description2 {
         position: relative;
         top: inherit;
         bottom: inherit;
-        margin: 4px 0;
+        margin: 4px 0 12px;
         max-width: 270px;
         min-width: 270px;
         width: 100%;
         text-align: center;
+        line-height: 13.95px;
     }
     
     .description3 {
         position: relative;
         top: inherit;
         bottom: inherit;
-        margin: 4px 0;
+        margin: 4px 0 12px;
         max-width: 270px;
         min-width: 270px;
         width: 100%;
         text-align: center;
+        line-height: 13.95px;
     }
     
     .description4 {
         position: relative;
         top: inherit;
         bottom: inherit;
-        margin: 4px 0;
+        margin: 4px 0 12px;
         max-width: 270px;
         min-width: 270px;
         width: 100%;
         text-align: center;
+        line-height: 13.95px;
+    }
+
+    .text4 {
+        line-height: 95%;
     }
 
     .descriptionMobile {
-        line-height: 93%;
+        line-height: 13.95px;
     }
 }

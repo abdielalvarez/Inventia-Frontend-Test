@@ -30,7 +30,10 @@ const Main = () => {
     }
 
     const descriptionText = {
-        text: t('services.inventiasoftware-devopsimplementation.block1.text1'),
+        text:
+            isResponsive ?
+            t('services.inventiasoftware-devopsimplementation.block1.text1-mobile') :
+            t('services.inventiasoftware-devopsimplementation.block1.text1'),
         tag: "p",
         font: "poppinsLight",
         size: isResponsive ? 11 : 20,
@@ -38,7 +41,10 @@ const Main = () => {
     }
 
     const explanation1Text = {
-        text: t('services.inventiasoftware-devopsimplementation.block1.text2'),
+        text:
+            isResponsive ?
+            t('services.inventiasoftware-devopsimplementation.block1.text2-mobile') :
+            t('services.inventiasoftware-devopsimplementation.block1.text2'),
         tag: "p",
         font: "poppinsSemibold",
         size: isResponsive ? 12 : 25,
@@ -46,7 +52,10 @@ const Main = () => {
     }
 
     const explanation2Text = {
-        text: t('services.inventiasoftware-devopsimplementation.block1.text3'),
+        text:
+            isResponsive ?
+            t('services.inventiasoftware-devopsimplementation.block1.text3-mobile') :
+            t('services.inventiasoftware-devopsimplementation.block1.text3'),
         tag: "p",
         font: "poppinsSemibold",
         size: isResponsive ? 12 : 25,
@@ -54,7 +63,10 @@ const Main = () => {
     }
 
     const explanation3Text = {
-        text: t('services.inventiasoftware-devopsimplementation.block1.text4'),
+        text:
+            isResponsive ?
+            t('services.inventiasoftware-devopsimplementation.block1.text4-mobile') :
+            t('services.inventiasoftware-devopsimplementation.block1.text4'),
         tag: "p",
         font: "poppinsSemibold",
         size: isResponsive ? 12 : 25,
@@ -62,7 +74,10 @@ const Main = () => {
     }
 
     const explanation4Text = {
-        text: t('services.inventiasoftware-devopsimplementation.block1.text5'),
+        text:
+            isResponsive ?
+            t('services.inventiasoftware-devopsimplementation.block1.text5-mobile') :
+            t('services.inventiasoftware-devopsimplementation.block1.text5'),
         tag: "p",
         font: "poppinsSemibold",
         size: isResponsive ? 12 : 25,
@@ -70,7 +85,10 @@ const Main = () => {
     }
 
     const explanation5Text = {
-        text: t('services.inventiasoftware-devopsimplementation.block1.text6'),
+        text:
+            isResponsive ?
+            t('services.inventiasoftware-devopsimplementation.block1.text6-mobile') :
+            t('services.inventiasoftware-devopsimplementation.block1.text6'),
         tag: "p",
         font: "poppinsSemibold",
         size: isResponsive ? 12 : 25,

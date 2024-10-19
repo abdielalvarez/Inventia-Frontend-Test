@@ -4,7 +4,7 @@
 }
 
 .wrapper {
-    max-width: 1020px;
+    max-width: 754px;
     width: 100%;
     margin: 0 auto;
 }
@@ -68,7 +68,11 @@
 @media (max-width: 768px) {
 
     .background {
-        padding: 110px 40px 70px;
+        padding: 110px 13px 70px;
+    }
+
+    .wrapper {
+        max-width: 319px;
     }
 
     .title {
@@ -103,7 +107,7 @@
     }
 
     .text {
-        max-width: 156px;
+        max-width: 166px;
         width: 100%;
         line-height: 15.469px;
     }

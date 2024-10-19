@@ -9,7 +9,7 @@
             "section1": {
                 "subtitle1": "Inventia Experience",
                 "text1": "Costumer Research and Insights",
-                "text2": "Product Design",
+                "text2": "Product Design & Build",
                 "text3": "Service Design"
             },
             "section2": {
@@ -171,7 +171,9 @@
             "block2": {
                 "text1": "You will understand your customer better, their motivations, behaviorst, emotions and obstacles.",
                 "text2": "Better communication and comprehension of your products and services.",
-                "text3": "You will obtain insights and findings about your organization and competitors."
+                "text2-mobile": "Better communication and comprehension of your products and services.",
+                "text3": "You will obtain insights and findings about your organization and competitors.",
+                "text3-mobile": "You will obtain insights and findings about your organization and competitors."
             },
             "block3": {
                 "text1": "Based on Design Thinking, Costumer Research and insights will provide you with extensive knowledge and information to lay the foundations for any project.",
@@ -284,11 +286,17 @@
                 "title": "Inventia Software",
                 "subtitle": "DevOps Implementation",
                 "text1": "It is the combination of practices and tools designed to increase an organization’s ability to deliver applications and services faster than traditional software development processes.",
+                "text1-mobile": "It is the combination of practices and tools designed to increase an organization’s ability to deliver applications and services faster than traditional software development processes.",
                 "text2": "Automated CI / CD pipeline",
+                "text2-mobile": "Automated CI / CD\npipeline",
                 "text3": "Managed cloud services",
-                "text4": "DevSecOps - Security integrated",
-                "text5": "Infrastructure as Code (IaC)",
-                "text6": "DevOps maturity model"
+                "text3-mobile": "Managed cloud\nservices",
+                "text4": "DevSecOps - Security\nintegrated",
+                "text4-mobile": "DevSecOps -\nSecurity integrated",
+                "text5": "Infrastructure as Code\n(IaC)",
+                "text5-mobile": "Infrastructure as\nCode (IaC)",
+                "text6": "DevOps maturity model",
+                "text6-mobile": "DevOps maturity\nmodel"
             },
             "block2": {
                 "text1": "Deploy software technology platforms with high standards of quality and innovation.",
@@ -336,7 +344,7 @@
                     "author": "-Nombre Apellido 2."
                 },
                 "slide3": {
-                    "message": "“Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
+                    "message": "“Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum...”",
                     "author": "-Nombre Apellido 3."
                 }
             },

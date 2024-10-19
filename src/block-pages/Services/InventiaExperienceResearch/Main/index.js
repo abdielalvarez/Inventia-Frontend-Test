@@ -62,7 +62,10 @@ const Main = () => {
     }
 
     const explanation2Text = {
-        text: t('services.inventiaexperience-research.block2.text2'),
+        text:
+            isResponsive ?
+            t('services.inventiaexperience-research.block2.text2-mobile') :
+            t('services.inventiaexperience-research.block2.text2'),
         tag: "p",
         font: "poppinsMedium",
         size: isResponsive ? 12 : 20,
@@ -70,7 +73,9 @@ const Main = () => {
     }
 
     const explanation3Text = {
-        text: t('services.inventiaexperience-research.block2.text3'),
+        text: isResponsive ?
+            t('services.inventiaexperience-research.block2.text3-mobile') :
+            t('services.inventiaexperience-research.block2.text3'),
         tag: "p",
         font: "poppinsMedium",
         size: isResponsive ? 12 : 20,
@@ -128,7 +133,7 @@ const Main = () => {
                             <div className={styles.text}><Text text={explanation2Text} /></div>
                         </div>
                     </FadeInWrapper>
-                    <FadeInWrapper type='fadeinup' replay={true}>
+                    <FadeInWrapper className={styles.lastChild} type='fadeinup' replay={true}>
                         <div className={styles.textContent}>
                             <Image
                                 src="/images/services/inventiaexperience-research/explanation/light.svg"

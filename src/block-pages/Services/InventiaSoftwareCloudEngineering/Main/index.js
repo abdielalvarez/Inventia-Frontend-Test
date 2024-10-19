@@ -40,7 +40,7 @@ const Main = () => {
     const explanation1Text = {
         text: t('services.inventiasoftware-cloudengineering.block1.text2'),
         tag: "p",
-        font: "poppinsMedium",
+        font: "poppinsRegular",
         size: isResponsive ? 13 : 24,
         color: 'blackUltra',
     }
@@ -48,7 +48,7 @@ const Main = () => {
     const explanation2Text = {
         text: t('services.inventiasoftware-cloudengineering.block1.text3'),
         tag: "p",
-        font: "poppinsMedium",
+        font: "poppinsRegular",
         size: isResponsive ? 13 : 24,
         color: 'blackUltra',
     }
@@ -56,7 +56,7 @@ const Main = () => {
     const explanation3Text = {
         text: t('services.inventiasoftware-cloudengineering.block1.text4'),
         tag: "p",
-        font: "poppinsMedium",
+        font: "poppinsRegular",
         size: isResponsive ? 13 : 24,
         color: 'blackUltra',
     }
@@ -64,7 +64,7 @@ const Main = () => {
     const explanation4Text = {
         text: t('services.inventiasoftware-cloudengineering.block1.text5'),
         tag: "p",
-        font: "poppinsMedium",
+        font: "poppinsRegular",
         size: isResponsive ? 13 : 24,
         color: 'blackUltra',
     }

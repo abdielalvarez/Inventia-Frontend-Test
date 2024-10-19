@@ -61,4 +61,8 @@
         line-height: 15.469px;
         margin: 0 0 20px;
     }
+
+    .descriptionContainer p {
+        line-height: 15.469px;
+    }
 }

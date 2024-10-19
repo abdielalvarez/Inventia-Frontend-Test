@@ -155,6 +155,7 @@ const Experience = () => {
                     <AnchorButton
                         responsiveBreakpoint={768}
                         theme="tertiary"
+                        width110={true}
                     >
                         <Text text={buttonText} />
                     </AnchorButton>

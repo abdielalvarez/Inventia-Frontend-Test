@@ -170,7 +170,9 @@
             "block2": {
                 "text1": "Comprenderás mejor a tu cliente,\nsus motivaciones, comportamientos, emociones y obstáculos.",
                 "text2": "Mejor comunicación\ny entendimiento\nde tus productos y servicios.",
-                "text3": "Obtendrás insights y hallazgos\nsobre tu organización y competencia."
+                "text2-mobile": "Mejor comunicación\ny entendimiento\nde tus productos\ny servicios.",
+                "text3": "Obtendrás insights y hallazgos\nsobre tu organización y competencia.",
+                "text3-mobile": "Obtendrás insights\ny hallazgos\nsobre tu organización\ny competencia."
             },
             "block3": {
                 "text1": "Basados en Design Thinking, Customer Research e Insights te brindará un amplio conocimiento e información para sentar bases en cualquier proyecto.",
@@ -193,9 +195,9 @@
                 "text2": "visión creativa\ncon la estrategia\ncomercial.",
                 "text3": "Es una",
                 "text4": "interacción\n directa y constante",
-                "text5": "con el usuario.",
+                "text5": "\ncon el usuario.",
                 "text6": "Creamos prototipos,",
-                "text7": "probamos continuamente:",
+                "text7": "\nprobamos\ncontinuamente:",
                 "text8": "si funciona\nbien, si se entiende,\nsi es accesible,\nsi es verdaderamente\nun buen producto."
             },
             "block3": {
@@ -283,11 +285,17 @@
                 "title": "Inventia Software",
                 "subtitle": "DevOps Implementation",
                 "text1": "Es la combinación de prácticas y herramientas diseñadas para aumentar la capacidad de una organización para entregar aplicaciones y servicios más rápido que los procesos tradicionales de desarrollo de software.",
+                "text1-mobile": "Es la combinación de prácticas\ny herramientas diseñadas para aumentar\nla capacidad de una organización\npara entregar aplicaciones y servicios\nmás rápido que los procesos tradicionales\nde desarrollo de software.",
                 "text2": "Automated CI / CD pipeline",
+                "text2-mobile": "Automated CI / CD\npipeline",
                 "text3": "Managed cloud services",
+                "text3-mobile": "Managed cloud\nservices",
                 "text4": "DevSecOps - Security\nintegrated",
+                "text4-mobile": "DevSecOps -\nSecurity integrated",
                 "text5": "Infrastructure as Code\n(IaC)",
-                "text6": "DevOps maturity model"
+                "text5-mobile": "Infrastructure as\nCode (IaC)",
+                "text6": "DevOps maturity model",
+                "text6-mobile": "DevOps maturity\nmodel"
             },
             "block2": {
                 "text1": "Lanza plataformas tecnológicas de software con altos estándares de calidad e innovación.",
@@ -335,7 +343,7 @@
                     "author": "-Nombre Apellido 2."
                 },
                 "slide3": {
-                    "message": "“Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
+                    "message": "“Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum...”",
                     "author": "-Nombre Apellido 3."
                 }
             },
@@ -434,7 +442,7 @@
                 "tags1": "| FronEnd Development | BackEnd Development",
                 "tags2": "| Customer Research e Insights | Product & Service Design.",
                 "subtitle": "ION",
-                "description": "Transformación digital, diseño y desarrollo de nuevos canales de venta, gestión de productos hipotecarios y crédito pyme."
+                "description": "Transformación digital, diseño y desarrollo\nde nuevos canales de venta, gestión de productos hipotecarios y crédito pyme."
             },
             "block2": {
                 "title": "Brief",
@@ -445,7 +453,7 @@
             },
             "block3": {
                 "title": "resultados",
-                "text1": "Onboarding de cliente intuitivo y automatizado con los sistemas BackEnd, incrementando las ventas.",
+                "text1": "Onboarding de cliente intuitivo y automatizado con los sistemas backend, incrementando las ventas.",
                 "text2": "Se logró la transformación digital del canal de ventas.",
                 "text3": "Se cumplió con la regulación establecida por CNBV."
             },

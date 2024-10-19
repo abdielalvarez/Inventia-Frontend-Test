@@ -159,17 +159,6 @@ const Header = () => {
               <MainLogo /> : null
             }
           </div>
-          <div className={styles.headerlabel} onClick={handleChangeLanguage}>
-            <Text texts={langText} />
-            <div className={styles.headerbox}>
-              <Image
-                src="/images/header/world.png"
-                alt="Close"
-                width={18}
-                height={18}
-              />
-            </div>
-          </div>
           <div className={`${styles.headerCollider} ${colliders.services ? styles.headerColliderOpen : ''}`} onClick={() => toggleCollider('services')}>
             <Text texts={servicesText} />
             <div className={`${styles.collapseContent} ${colliders.services ? styles.expand : ''}`}>
@@ -227,6 +216,17 @@ const Header = () => {
           </div>
           <div className={styles.headerlabel} onClick={toggleMenu}>
             <Text texts={contactUsText} />
+          </div>
+          <div className={styles.headerlabel} onClick={handleChangeLanguage}>
+            <Text texts={langText} />
+            <div className={styles.headerbox}>
+              <Image
+                src="/images/header/world.png"
+                alt="Close"
+                width={18}
+                height={18}
+              />
+            </div>
           </div>
         </div>
       </div>

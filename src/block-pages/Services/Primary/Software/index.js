@@ -167,6 +167,7 @@ const Software = () => {
                         responsiveBreakpoint={768}
                         href={ROUTE_CONTACTUS}
                         theme="tertiary"
+                        width110={true}
                     >
                         <Text text={buttonText} />
                     </AnchorButton>
