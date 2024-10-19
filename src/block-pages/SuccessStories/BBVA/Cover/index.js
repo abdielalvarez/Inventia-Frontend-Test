@@ -9,10 +9,10 @@ const Cover = () => {
     return (
         <div className={styles.background}>
             <Image
-                src="/images/success-stories/banking-bbva/main/background.jpg"
+                src="/images/success-stories/banking-bbva/main/background.png"
                 alt="BBVA"
                 width={is768 ? 544 : 1920}
-                height={is768 ? 155 : 1080}
+                height={is768 ? 170 : 1080}
                 priority
                 layout="responsive"
             />
