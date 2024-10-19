@@ -38,8 +38,8 @@ const ContactUs = () => {
                     <Text texts={contactText} className={styles.title} />
                 </FadeInWrapper>
                 <div className={styles.buttonContainer}>
-                    <AnchorButton href={ROUTE_CONTACTUS}>
-                        <Text texts={buttonText} />
+                    <AnchorButton width110={true} href={ROUTE_CONTACTUS}>
+                        <Text className={styles.buttonText} texts={buttonText} />
                     </AnchorButton>
                 </div>
             </div>

@@ -76,7 +76,7 @@
     flex-direction: column;
     height: 105%;
     gap: 20px;
-    padding: 80px 30px 30px 30px
+    padding: 80px 30px 30px 30px;
 }
 
 .headerCollider {
@@ -86,19 +86,29 @@
 
 .collapseContent {
     max-height: 0;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     opacity: 0;
-    transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.5s ease-out;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.5s ease-out;
+    overflow: hidden;
 }
 
 .expand {
     max-height: 600px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     opacity: 1;
 }
 
 .headerSubitem {
-    padding: 5px 0 5px 35px;
+    padding: 5px 0;
+    padding-left: 35px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.expand .headerSubitem {
+    opacity: 1;
 }
 
 .headerclose {

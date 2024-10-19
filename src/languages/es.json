@@ -211,7 +211,7 @@
             "block1": {
                 "title": "Inventia Experience",
                 "subtitle": "Service Design",
-                "text1": "UX aplicado a lo largo de todos sus servicios. Comprenda e interactúe con sus clientes creando y brindando servicios efectivos y diferenciados."
+                "text1": "UX aplicado a lo largo de todos sus servicios. Comprenda e interactúe con sus clientes creando y brindando servicios efectivos\ny diferenciados."
             },
             "block2": {
                 "text1": "Es ir más allá de las pantallas para crear experiencias e interacciones intencionales\ny significativas a lo largo\ndel customer journey."
@@ -256,14 +256,14 @@
             },
             "block3": {
                 "title": "casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Cloud Engineering."
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados\nen Cloud Engineering."
             }
         },
         "inventiasoftware-cloudengineering": {
             "block1": {
                 "title": "Inventia Software",
                 "subtitle": "Cloud Engineering",
-                "text1": "“Propone un acercamiento sistemático a temas de comercialización, estandarización, y gobernabilidad en la nube.”",
+                "text1": "“Propone un acercamiento sistemático\na temas de comercialización,\nestandarización, y gobernabilidad en la nube.”",
                 "text2": "Cloud consulting & strategy:",
                 "text3": "IaaS | PaaS | SaaS",
                 "text4": "Cloud automation",
@@ -275,7 +275,7 @@
             },
             "block3": {
                 "title": "casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Devops Implementation."
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados\nen Devops Implementation."
             }
         },
         "inventiasoftware-devopsimplementation": {

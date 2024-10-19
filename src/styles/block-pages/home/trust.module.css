@@ -72,4 +72,13 @@
     .anchor2 {
         height: 33px;
     }
+
+    .buttonItem {
+        width: 110px !important;
+        height: 30px !important;
+    }
+
+    .buttonText {
+        display: flex;
+    }
 }

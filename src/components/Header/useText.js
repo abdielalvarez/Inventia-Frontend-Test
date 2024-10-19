@@ -47,7 +47,7 @@ const useText = (isMenuOpen) => {
         {
             text: t('header.services.section1.subtitle1'),
             tag: "a",
-            href: `${ROUTE_SERVICES}#${TAG_INVENTIAEXPERIENCE}`,
+            href: `${ROUTE_SERVICES}`,
             font: "poppinsMedium",
             size: 13,
             color: 'blackBase',
@@ -91,7 +91,7 @@ const useText = (isMenuOpen) => {
         {
             text: t('header.services.section2.subtitle1'),
             tag: "a",
-            href: `${ROUTE_SERVICES}#${TAG_INVENTIASOFTWARE}`,
+            href: `${ROUTE_SERVICES}`,
             font: "poppinsMedium",
             size: 13,
             color: 'blackBase',
@@ -244,7 +244,7 @@ const useText = (isMenuOpen) => {
         {
             title: {
                 text: t('header.services.section1.subtitle1'),
-                href: `${ROUTE_SERVICES}#${TAG_INVENTIAEXPERIENCE}`
+                href: `${ROUTE_SERVICES}`
             },
             content: [
                 {
@@ -264,7 +264,7 @@ const useText = (isMenuOpen) => {
         {
             title: {
                 text: t('header.services.section2.subtitle1'),
-                href: `${ROUTE_SERVICES}#${TAG_INVENTIASOFTWARE}`
+                href: `${ROUTE_SERVICES}`
             },
             content: [
                 {

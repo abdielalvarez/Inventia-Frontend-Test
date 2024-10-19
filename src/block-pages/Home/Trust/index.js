@@ -3,10 +3,15 @@ import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../styles/block-pages/home/trust.module.css";
 import useResponsive from "@/hooks/useResponsive";
 import AnchorButton from "@/components/AnchorButton";
-import { EXTERNAL_ROUTE_BBVA, EXTERNAL_ROUTE_GENTERA, EXTERNAL_ROUTE_ION, EXTERNAL_ROUTE_PODEMOS_PROGRESAR, ROUTE_CONTACTUS } from "@/utils/routes";
+import {
+    EXTERNAL_ROUTE_BBVA,
+    EXTERNAL_ROUTE_GENTERA,
+    EXTERNAL_ROUTE_ION,
+    EXTERNAL_ROUTE_PODEMOS_PROGRESAR,
+    ROUTE_CONTACTUS
+} from "@/utils/routes";
 import Image from "next/image";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
-import Link from "next/link";
 
 const Trust = () => {
     const { t } = useApiContext();
@@ -38,8 +43,11 @@ const Trust = () => {
                 <div className={styles.infoContainer}>
                     <Text texts={contactText} className={styles.title} />
                     <div className={styles.buttonContainer}>
-                        <AnchorButton href={ROUTE_CONTACTUS}>
-                            <Text texts={buttonText} />
+                        <AnchorButton
+                            href={ROUTE_CONTACTUS}
+                            width110={true}
+                        >
+                            <Text className={styles.buttonText} texts={buttonText} />
                         </AnchorButton>
                     </div>
                 </div>

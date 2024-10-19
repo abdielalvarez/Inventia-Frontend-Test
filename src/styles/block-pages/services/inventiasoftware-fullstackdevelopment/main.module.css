@@ -50,13 +50,14 @@
 }
 
 .textContent:last-child {
-    margin: 0 0 416px;
+    padding: 0 0 416px;
+    margin: 0;
 }
 
 .textTitle {
     max-width: 380px;
     width: 100%;
-    line-height: 28.125px;
+    line-height: 34.2px;
     letter-spacing: 2px;
 }
 
@@ -156,5 +157,6 @@
 
     .textContent:last-child {
         margin: 0;
+        padding: 0;
     }
 }

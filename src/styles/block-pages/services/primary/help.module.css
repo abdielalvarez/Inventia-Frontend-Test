@@ -91,6 +91,10 @@
         width: 100%;
     }
 
+    .wrapper2 {
+        margin: 100px 0 0;
+    }
+
     .containerLeft1 {
         margin: 0;
         flex-direction: column;

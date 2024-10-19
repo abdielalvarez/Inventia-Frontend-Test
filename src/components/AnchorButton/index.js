@@ -2,15 +2,24 @@ import React from 'react';
 import styles from '../../styles/components/anchorbutton.module.css';
 import Link from 'next/link';
 
-const AnchorButton = ({ href, children, theme = 'primary', responsiveBreakpoint = 920, expandWidth, ...props }) => {
+const AnchorButton = ({
+  width110,
+  href,
+  children,
+  theme = 'primary',
+  responsiveBreakpoint = 920,
+  expandWidth,
+  ...props
+}) => {
   const themeClass =
     theme === 'tertiary' ? styles.tertiary :
     theme === 'secondary' ? styles.secondary :
     styles.primary;
-  const responsiveClass = responsiveBreakpoint === 728 ? styles.responsive728 : styles.responsive920;
+  const responsiveClass =
+    responsiveBreakpoint === 728 ? styles.responsive728 : styles.responsive920;
   const isInternal = href?.startsWith('/') || href?.startsWith('#');
 
-  const generalStyles = `${styles.button} ${themeClass} ${responsiveClass} ${expandWidth ? styles.buttonWidth100per : ''} ${props.className}`
+  const generalStyles = `${width110 ? styles.button110 : styles.button} ${themeClass} ${responsiveClass} ${expandWidth ? styles.buttonWidth100per : ''} ${props.className}`
 
   if (href && !isInternal) {
     return (

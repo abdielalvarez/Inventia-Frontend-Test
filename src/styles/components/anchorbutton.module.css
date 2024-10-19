@@ -27,6 +27,24 @@
     background-color: #005bb5;
 }
 
+.button110 {
+    width: 181px;
+    height: 54px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px rgba(32, 5, 192, 0.00);
+    background-color: #E77C30;
+}
+
+.button110:hover {
+    background-color: #005bb5;
+}
+
 .buttonWidth100per {
     width: 100%;
     height: 82px;
@@ -53,6 +71,11 @@
         height: 30px;
     }
 
+    .button110 {
+        width: 126px;
+        height: 30px;
+    }
+
     .buttonWidth100per {
         width: 100%;
     }
@@ -62,6 +85,11 @@
     .button {
         width: 98px;
         height: 21px;
+    }
+
+    .button110 {
+        width: 110px;
+        height: 30px;
     }
 
     .buttonWidth100per {
