@@ -4,6 +4,12 @@
 }
 
 .wrapper {
+    max-width: 953px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper1 {
     max-width: 754px;
     width: 100%;
     margin: 0 auto;
@@ -35,7 +41,7 @@
 }
 
 .descriptionContainer {
-    max-width: 570px;
+    max-width: 486px;
     width: 100%;
 }
 
@@ -72,6 +78,10 @@
     }
 
     .wrapper {
+        max-width: 319px;
+    }
+
+    .wrapper1 {
         max-width: 319px;
     }
 

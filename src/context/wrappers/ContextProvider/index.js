@@ -1,5 +1,5 @@
-"use client"
-import React, { createContext, useReducer, useContext } from 'react';
+"use client";
+import React, { createContext, useReducer, useContext, useEffect } from 'react';
 import { actionsFn } from '@/context/actions';
 import { apiReducer } from '@/context/reducers';
 import { translate } from '@/context/actions/utils';
@@ -9,7 +9,7 @@ export const initialState = {
   data: null,
   loading: false,
   error: null,
-  language: 'es'
+  language: 'es',
 };
 
 export const ApiContext = createContext();
@@ -17,18 +17,21 @@ export const ApiContext = createContext();
 export function ContextProvider({ children }) {
   const [state, dispatch] = useReducer(apiReducer, initialState);
 
-  const actions = (type, data) => actionsFn(dispatch, type, data)
+  useEffect(() => {
+    const savedState = localStorage.getItem('appState');
+    if (savedState) {
+      dispatch({ type: ACTIONS.RESTORE_STATE, payload: JSON.parse(savedState) });
+    }
+  }, []);
 
-  const t = (key) => {
-    return translate(state.language, key);
-  };
+  const actions = (type, data) => actionsFn(dispatch, type, data);
+
+  const t = (key) => translate(state.language, key);
 
   const setLang = (lang) => {
-    dispatch({
-      type: ACTIONS.SET_LANGUAGE,
-      payload: lang
-    })
-  }
+    dispatch({ type: ACTIONS.SET_LANGUAGE, payload: lang });
+    localStorage.setItem('appState', JSON.stringify({ ...state, language: lang }));
+  };
 
   return (
     <ApiContext.Provider value={{ state, actions, t, setLang }}>

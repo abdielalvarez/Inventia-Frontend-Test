@@ -5,6 +5,8 @@ export function apiReducer(state, action) {
     switch (action.type) {
         case ACTIONS.RESET:
             return initialState
+        case ACTIONS.RESTORE_STATE:
+            return { ...state, ...action.payload };
         case ACTIONS.SET_DATA:
             return { ...state, data: action.payload, loading: false };
         case ACTIONS.SET_LOADING:

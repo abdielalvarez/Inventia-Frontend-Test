@@ -32,7 +32,7 @@
 .textContainer1 {
     width: 310.534px;
     height: 251.127px;
-    border-radius: 0 50% 50% 0;
+    border-radius: 0 45% 45% 0;
     background-color: #EBA058;
     position: relative;
     display: flex;
@@ -72,7 +72,7 @@
 }
 
 .textContainer4 {
-    width: 501px;
+    width: 352px;
     height: 242px;
     border-radius: 162.287px 0 0 162.287px;
     background: #E77C30;

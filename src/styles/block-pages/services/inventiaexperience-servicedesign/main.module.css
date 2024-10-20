@@ -20,13 +20,17 @@
     width: 100%;
 }
 
-.title {
-    line-height: 45.6px;
+.titleContainer p {
+    line-height: 95%;
 }
 
 .descriptionContainer {
     max-width: 475px;
     width: 100%;
+}
+
+.descriptionContainer p {
+    line-height: 140.625%;
 }
 
 .text {

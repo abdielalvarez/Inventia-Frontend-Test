@@ -129,10 +129,10 @@
             },
             "block2": {
                 "title": "Inventia Experience",
-                "text1": "UX Design and UX research focused to understand your users. We create differentiated products and services that truly respond to the needs of your organization and customers.",
+                "text1": "UX Design and UX research focused to understand your users. We create differentiated products and services that truly respond to the needs of your organization\nand customers.",
                 "button": "Let’s talk!",
                 "text2": "Customer Research e Insights.",
-                "text3": "Product Design and Build",
+                "text3": "Product Design\nand Build",
                 "text4": "Service Design"
             },
             "block3": {
@@ -149,14 +149,14 @@
             "block5": {
                 "title": "Methodology",
                 "subtitle": "We base our methodology on the iterative and creative process of Design Thinking, in other words, focusing on the user. Obtaining really functional results. ",
-                "text1": "empaty",
-                "description1": "We connect with the current situation, deeply understanding your users' needs and your organization's goals.",
+                "text1": "empathy",
+                "description1": "Research & approach to the current situation. Comprehension of user needs and the objectives of the organization",
                 "text2": "definition",
-                "description2": "We identify key pain points and discover insights that turn into opportunities for innovation.",
-                "text3": "idation",
-                "description3": "We generate high-impact ideas through creative and collaborative sessions like co-creation workshops and brainstorming.",
-                "text4": "prototyping and testing",
-                "description4": "We create and refine concepts with navigation maps, prototypes, wireframes, mockups, and interactive user testing."
+                "description2": "Pain points, insights, findings as innovation opportunities",
+                "text3": "ideation",
+                "description3": "Brainstorming, co-creation, creative workshops sessions",
+                "text4": "prototyping\nand testing",
+                "description4": "Navegation maps\nPrototypes\nWireframes\nMockups\nLook and feel\nLayouts\nInteractive prototypes\nUser testing"
             }
         },
         "inventiaexperience-research": {
@@ -165,13 +165,12 @@
                 "subtitle": "Customer Research e Insights.",
                 "text1": "By having the user, research and empathy at the center of the process, you can translate the",
                 "text2": "customer’s core needs",
-                "text3": "into",
-                "text4": "meaningful and inclusive interactions."
+                "text3": "into meaningful and inclusive interactions."
             },
             "block2": {
-                "text1": "You will understand your customer better, their motivations, behaviorst, emotions and obstacles.",
-                "text2": "Better communication and comprehension of your products and services.",
-                "text2-mobile": "Better communication and comprehension of your products and services.",
+                "text1": "You will understand your customer better, their motivations, behaviors, emotions and obstacles.",
+                "text2": "Better communication and comprehension of your products\nand services.",
+                "text2-mobile": "Better communication and comprehension of your products\nand services.",
                 "text3": "You will obtain insights and findings about your organization and competitors.",
                 "text3-mobile": "You will obtain insights and findings about your organization and competitors."
             },
@@ -181,7 +180,7 @@
             },
             "block4": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with them focused on Customer Research and Insights."
+                "text1": "Meet our clients and the projects we have done with them focused on Product Design & Build."
             }
         },
         "inventiaexperience-productdesign": {
@@ -193,13 +192,13 @@
             },
             "block2": {
                 "text1": "This is where we alight the",
-                "text2": "creative vision with the commercial strategy.",
+                "text2": "\ncreative vision with the commercial strategy.",
                 "text3": "It is a",
-                "text4": "direct and constant interaction",
-                "text5": "with the user.",
+                "text4": "direct and\nconstant interaction",
+                "text5": "\nwith the user.",
                 "text6": "We create prototypes, we",
-                "text7": "test continuously",
-                "text8": ": if it works properly, if it is understandable, if its accessible, if it is really a good product."
+                "text7": "\ntest continuously:",
+                "text8": "\nif it works properly,\nif it is understandable,\nif its accessible, if it is really\na good product."
             },
             "block3": {
                 "text1": "Product Design is based on the conducted research and the iterative process of Design Thinking to provide meaningful solutions.",
@@ -207,7 +206,7 @@
             },
             "block4": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with them focused on Product Design"
+                "text1": "Meet our clients and the projects we have done with them focused on Service design."
             }
         },
         "inventiaexperience-servicedesign": {
@@ -226,7 +225,7 @@
             },
             "block4": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with them focused on Service Design."
+                "text1": "Meet our clients and the projects we have done with them focused on Full Stack Development."
             }
         },
         "inventiasoftware-fullstackdevelopment": {
@@ -259,7 +258,7 @@
             },
             "block3": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with them focused on Full Stack Development"
+                "text1": "Meet our clients and the projects we have done with them focused on Cloud Engineering."
             }
         },
         "inventiasoftware-cloudengineering": {
@@ -278,7 +277,7 @@
             },
             "block3": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with them focused on Cloud Engineering"
+                "text1": "Meet our clients and the projects we have done with them focused on Devops Implementation."
             }
         },
         "inventiasoftware-devopsimplementation": {
@@ -304,7 +303,7 @@
             },
             "block3": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with then focused on DevOps."
+                "text1": "Meet our clients and the projects we have done with then focused on Customer Research e Insights."
             }
         }
     },
@@ -334,7 +333,7 @@
                 "text1": "We offer product and service design consulting services for different sales or costumer service channels."
             },
             "block5": {
-                "title": "Testimonios",
+                "title": "Testimonials",
                 "slide1": {
                     "message": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
                     "author": "-Nombre Apellido 1."

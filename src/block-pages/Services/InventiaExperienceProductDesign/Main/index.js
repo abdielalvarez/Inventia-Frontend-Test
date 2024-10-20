@@ -143,7 +143,7 @@ const Main = () => {
                 />
             </div>
             <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
-                <div className={styles.wrapper}>
+                <div className={styles.wrapper1}>
                     <div className={styles.texts}>
                         <FadeInWrapper type='fadeinup' replay={true}>
                             <div className={styles.textContent}>
