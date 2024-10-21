@@ -22,8 +22,8 @@
     margin: 0 0 92px;
 }
 
-.title {
-    line-height: 45.6px;
+.titleContainer p {
+    line-height: 140.625%; /* 33.75px */
 }
 
 .logo {

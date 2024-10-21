@@ -17,6 +17,11 @@
     text-align: center;
 }
 
+.text p {
+    line-height: 140.625%; /* 28.125px */
+    letter-spacing: 2px;
+}
+
 @media (max-width: 768px) {
     .background {
         padding: 168px 0;
@@ -28,5 +33,9 @@
 
     .text {
         max-width: 264px;
+    }
+
+    .text p {
+        letter-spacing: normal;
     }
 }

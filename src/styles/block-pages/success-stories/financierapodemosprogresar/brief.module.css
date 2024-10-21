@@ -47,6 +47,10 @@
     text-align: center;
 }
 
+.description1Container p {
+    line-height: 140.625%; /* 33.75px */
+}
+
 .img {
     position: absolute;
     top: 38%;
@@ -76,7 +80,7 @@
         line-height: 15.469px;
     }
 
-    .description1Container {
+    .description1Container p {
         line-height: 15.469px;
     }
 }

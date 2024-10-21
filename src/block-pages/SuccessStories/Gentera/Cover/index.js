@@ -5,7 +5,7 @@ const Cover = () => {
     return (
         <div className={styles.background}>
             <Image
-                src="/images/success-stories/banking-grupogentera/main/background.jpg"
+                src="/images/success-stories/banking-grupogentera/main/background.png"
                 alt="Gentera"
                 width={1920}
                 height={1080}

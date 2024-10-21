@@ -31,7 +31,7 @@ const Brief = () => {
     const description1Text = {
         text: t('success-stories.banking-financierapodemosprogresar.block2.text'),
         tag: "p",
-        font: isResponsive ? "poppinsLight" :"poppinsMedium",
+        font: "poppinsLight",
         size: isResponsive ? 11 : 23,
         color: 'blackCaption',
     }

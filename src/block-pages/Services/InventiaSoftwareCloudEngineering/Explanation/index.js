@@ -14,7 +14,7 @@ const Explanation = () => {
     const descriptionText = {
         text: t('services.inventiasoftware-cloudengineering.block2.text1'),
         tag: "p",
-        font: "poppinsLight",
+        font: "poppinsRegular",
         size: isResponsive ? 11 : 24,
         color: 'whiteBase',
     }

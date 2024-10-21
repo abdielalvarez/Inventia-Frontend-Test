@@ -16,7 +16,7 @@
                 "subtitle1": "Inventia Software",
                 "text1": "Full Stack Development",
                 "text2": "Cloud Engineering",
-                "text3": "DevOps Development"
+                "text3": "DevOps Implementation"
             }
         },
         "successful": {
@@ -131,7 +131,7 @@
                 "title": "Inventia Experience",
                 "text1": "UX Design and UX research focused to understand your users. We create differentiated products and services that truly respond to the needs of your organization\nand customers.",
                 "button": "Let’s talk!",
-                "text2": "Customer Research e Insights.",
+                "text2": "Customer Research and Insights.",
                 "text3": "Product Design\nand Build",
                 "text4": "Service Design"
             },
@@ -162,7 +162,7 @@
         "inventiaexperience-research": {
             "block1": {
                 "title": "Inventia Experience",
-                "subtitle": "Customer Research e Insights.",
+                "subtitle": "Customer Research and Insights.",
                 "text1": "By having the user, research and empathy at the center of the process, you can translate the",
                 "text2": "customer’s core needs",
                 "text3": "into meaningful and inclusive interactions."
@@ -219,8 +219,8 @@
                 "text1": "It’s about going beyond the screens to create intentional and meaningful experiences and interactions throughout the costumer journey."
             },
             "block3": {
-                "text1": "We design strategies and process.",
-                "text2": "We work to make the complete service truly functional.",
+                "text1": "We design strategies and process.\nWe work to make the complete service truly functional.",
+                "text2": "",
                 "button": "Let’s talk!"
             },
             "block4": {
@@ -233,20 +233,20 @@
                 "title": "Inventia Software",
                 "subtitle": "Full Stack Development",
                 "list1": {
-                    "title1": "Frontend Development",
+                    "title1": "Frontend\nDevelopment",
                     "text1": "Micro front ends",
                     "text2": "Atomic Design",
                     "text3": "PWA (Progressive Web Apps)",
                     "text4": "Frontal architecture"
                 },
                 "list2": {
-                    "title1": "Backend Development",
+                    "title1": "Backend\nDevelopment",
                     "text1": "API and web service development",
                     "text2": "Architecture backend",
                     "text3": "Software integration"
                 },
                 "list3": {
-                    "title1": "Mobile Development",
+                    "title1": "Mobile\nDevelopment",
                     "text1": "Native app development: iOS | Android",
                     "text2": "App porting and migration",
                     "text3": "Hybrid apps development"
@@ -284,7 +284,7 @@
             "block1": {
                 "title": "Inventia Software",
                 "subtitle": "DevOps Implementation",
-                "text1": "It is the combination of practices and tools designed to increase an organization’s ability to deliver applications and services faster than traditional software development processes.",
+                "text1": "It is the combination of practices and tools designed to increase an organization’s ability\nto deliver applications and services faster than traditional software development processes.",
                 "text1-mobile": "It is the combination of practices and tools designed to increase an organization’s ability to deliver applications and services faster than traditional software development processes.",
                 "text2": "Automated CI / CD pipeline",
                 "text2-mobile": "Automated CI / CD\npipeline",
@@ -303,7 +303,7 @@
             },
             "block3": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with then focused on Customer Research e Insights."
+                "text1": "Meet our clients and the projects we have done with then focused on Customer Research and Insights."
             }
         }
     },
@@ -357,7 +357,7 @@
                 "title": "Banking",
                 "subtitle": "BBVA",
                 "description": "Product and service design consulting services for different sales or customer service channels.",
-                "tags": "Inventia Experience | Customer Research e Insights | Product & Service Design."
+                "tags": "Inventia Experience | Customer Research and Insights | Product & Service Design."
             },
             "block2": {
                 "title": "Brief",
@@ -381,7 +381,7 @@
         "banking-grupogentera": {
             "block1": {
                 "title": "Banking",
-                "tags": "Inventia Experience | Customer Research e Insights | Product & Service Design.",
+                "tags": "Inventia Experience | Customer Research and Insights | Product & Service Design.",
                 "subtitle": "Gentera Group",
                 "description": "Strategy and business model of Grupo Genera's innovation laboratory. "
             },
@@ -392,10 +392,10 @@
             },
             "block3": {
                 "title": "results",
-                "text1": "Investment spending on innovation was",
-                "text2": "optimized,",
+                "text1": "Investment spending on\ninnovation was",
+                "text2": "\noptimized,",
                 "text3": "eliminating initiatives that did not generate value.",
-                "text4": "Prioritizing resources in projects with high income potential.",
+                "text4": "Prioritizing resources\nin projects with high income potential.",
                 "text5": "The business and service model of the new initiative was established."
             },
             "block4": {
@@ -409,7 +409,7 @@
         "banking-financierapodemosprogresar": {
             "block1": {
                 "title": "Financial Services",
-                "tags": "Inventia Experience | Customer Research e Insights",
+                "tags": "Inventia Experience | Customer Research and Insights",
                 "subtitle": "Financiera\nPodemos\nProgresar",
                 "subtitle-mobile": "Podemos Progresar",
                 "description": "A research done from a human perspective."
@@ -440,7 +440,7 @@
                 "tags1-black": "Inventia Software",
                 "tags2-black": "Inventia Experience",
                 "tags1": "| FronEnd Development | BackEnd Development",
-                "tags2": "| Customer Research e Insights | Product & Service Design.",
+                "tags2": "| Customer Research and Insights | Product & Service Design.",
                 "subtitle": "ION",
                 "description": "Digital transformation, design and development of new sell channels, management of mortgage products and SME credit."
             },
@@ -474,7 +474,7 @@
             "text2": "Inventia Software"
         },
         "block2": {
-            "title": "Inventia Experience Team",
+            "title": "Team Inventia Experience",
             "subtitle": "We have in our team:",
             "text1": "UX Research",
             "text2": "Data Analyst",
@@ -485,7 +485,7 @@
             "button": "join our team"
         },
         "block3": {
-            "title": "Equipo Inventia Software",
+            "title": "Team Inventia Software",
             "subtitle": "We have in our team:",
             "text1": "Agile Coach",
             "text2": "Scrum Masters",

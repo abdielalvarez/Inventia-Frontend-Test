@@ -24,7 +24,7 @@
 }
 
 .title {
-    line-height: 45.6px;
+    line-height: 140.625%; /* 33.75px */
     text-align: center;
 }
 
@@ -61,7 +61,7 @@
     }
 
     .title {
-        line-height: 19px;
+        line-height: 140.625%; /* 18.281px */
     }
 
     .container {

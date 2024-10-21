@@ -1,6 +1,6 @@
 .background {
     position: relative;
-    padding: 257px 139px 416px;
+    padding: 257px 139px 233px;
 }
 
 .wrapper {
@@ -13,11 +13,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 80px 0 0;
+    margin: 264px 0 0;
 }
 
 .titleContainer {
-    margin: 0 0 20px;
+    margin: 0 0 64px;
 }
 
 .subtitleContainer {
