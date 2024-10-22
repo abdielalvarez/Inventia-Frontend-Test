@@ -60,6 +60,10 @@
     display: none;
 }
 
+.icon3En {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     .background {
@@ -97,6 +101,13 @@
         display: block;
         position: absolute;
         top: -472px;
+        left: 145px;
+    }
+
+    .icon3En {
+        display: block;
+        position: absolute;
+        top: -420px;
         left: 145px;
     }
 

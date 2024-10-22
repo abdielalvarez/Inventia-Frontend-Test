@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styles from '../../styles/components/input.module.css';
 import Text from '../Text';
 import { useApiContext } from '@/context/wrappers/ContextProvider';
@@ -31,7 +30,7 @@ const Input = ({
   };
 
   const dragAndDropText = {
-    text: 'Arrastra y suelta o',
+    text: t('upload.text1'),
     tag: "p",
     font: "poppinsMedium",
     size: isResponsive ? 12 : 16,
@@ -39,7 +38,7 @@ const Input = ({
   };
 
   const selectDocumentText = {
-    text: 'selecciona tus documentos',
+    text: t('upload.text2'),
     tag: "p",
     font: "poppinsMedium",
     size: isResponsive ? 12 : 16,
@@ -47,7 +46,7 @@ const Input = ({
   };
 
   const extensionsText = {
-    text: 'PDF, JPG o PNG',
+    text: t('upload.text3'),
     tag: "p",
     font: "poppinsRegular",
     size: isResponsive ? 10 : 12,

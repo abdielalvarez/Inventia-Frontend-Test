@@ -14,7 +14,8 @@ import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
 const ContactUsForm = () => {
 
-    const { t } = useApiContext()
+    const { t, state } = useApiContext()
+    const lang = state?.language
     const isResponsive = useResponsive(768)
 
     const [loading, setLoading] = useState(false)
@@ -97,7 +98,11 @@ const ContactUsForm = () => {
                             width={1}
                             height={113}
                             priority
-                            className={styles.icon3}
+                            className={
+                                lang === 'en' ?
+                                styles.icon3En :
+                                styles.icon3
+                            }
                         />
                         <FadeInWrapper type='fadeindown' replay={true}>
                             <Image

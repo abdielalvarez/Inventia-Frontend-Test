@@ -179,6 +179,11 @@
 }
 
 @media (max-width: 768px) {
+
+    .fileLabel {
+        padding: 20px 62px;
+    }
+
     .inputJoinTeam {
         max-width: 243px;
         font-size: 13px;

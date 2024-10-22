@@ -3,6 +3,11 @@
         "test": "es"
     },
     "change-to": "es",
+    "upload": {
+        "text1": "Arrastra y suelta o",
+        "text2": "selecciona tus documentos",
+        "text3": "PDF, JPG o PNG"
+    },
     "header": {
         "services": {
             "title": "Servicios",

@@ -2,7 +2,7 @@ import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../../styles/block-pages/success-stories/ion/success.module.css"
 import useResponsive from "@/hooks/useResponsive";
-import { ROUTE_SERVICES_INVENTIAEXPERIENCE_SERVICEDESIGN } from "@/utils/routes";
+import { ROUTE_SUCCESSSTORIES_BANKINGBBVA } from "@/utils/routes";
 import Link from "next/link";
 import Image from "next/image";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
@@ -46,7 +46,7 @@ const Success = () => {
                                     <Text text={titleText} className={styles.title} />
                                 </div> : null
                             }
-                            <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_SERVICEDESIGN}>
+                            <Link href={ROUTE_SUCCESSSTORIES_BANKINGBBVA}>
                                 <FadeInWrapper type='fadeinright' replay={true}>
                                     <Image
                                         src="/images/success-stories/banking-ion/success/arrow.svg"

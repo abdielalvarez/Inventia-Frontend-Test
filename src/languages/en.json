@@ -3,6 +3,11 @@
         "test": "en"
     },
     "change-to": "en",
+    "upload": {
+        "text1": "Drop and drag",
+        "text2": "or choose your files",
+        "text3": "PDF, JPG or PNG"
+    },
     "header": {
         "services": {
             "title": "Services",
