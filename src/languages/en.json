@@ -8,6 +8,10 @@
         "text2": "or choose your files",
         "text3": "PDF, JPG or PNG"
     },
+    "button": {
+        "loading": "It is being submitted",
+        "success": "Already sent it!"
+    },
     "header": {
         "services": {
             "title": "Services",
@@ -367,7 +371,8 @@
             "block2": {
                 "title": "Brief",
                 "subtitle": "We create multiplatform solutions to communication, navigation, conversion and sale problems of BBVA services and products.",
-                "text": "Substantial improvement of digital products and services in communication, usability and navigation. As well, the conversion rate of the use of applications in their channels."
+                "text": "Substantial improvement of digital products and services in communication, usability and navigation. As well, the conversion rate of the use of applications in their channels.",
+                "text-mobile": "Substantial improvement of digital products and services in communication, usability and navigation. As well, the conversion rate of the use of applications in their channels."
             },
             "block3": {
                 "title": "results",

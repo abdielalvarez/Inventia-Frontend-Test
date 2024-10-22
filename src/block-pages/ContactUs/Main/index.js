@@ -66,8 +66,8 @@ const Main = () => {
 
     const buttonText = {
         text:
-            loading ? 'Está siendo enviado' :
-                success && !loading ? 'Ya lo enviamos' :
+            loading ? t('button.loading') :
+                success && !loading ? t('button.success') :
                     t('home.block9.button'),
         tag: "p",
         font: "poppinsRegular",

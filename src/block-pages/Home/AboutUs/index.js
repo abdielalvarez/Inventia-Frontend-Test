@@ -93,8 +93,8 @@ const AboutUs = () => {
                                     <Text texts={descriptionText1} className={styles.textLeft2} />
                                     <Text texts={descriptionText2} className={styles.textLeft3} />
                                 </div>
-                                <div>
-                                    <AnchorButton href={ROUTE_CONTACTUS} theme="secondary" responsiveBreakpoint="920">
+                                <div className={styles.buttonContainer}>
+                                    <AnchorButton href={ROUTE_CONTACTUS} theme="secondary">
                                         <Text text={buttonText} />
                                     </AnchorButton>
                                 </div>

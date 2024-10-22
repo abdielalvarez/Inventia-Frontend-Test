@@ -8,6 +8,10 @@
         "text2": "selecciona tus documentos",
         "text3": "PDF, JPG o PNG"
     },
+    "button": {
+        "loading": "Está siendo enviado",
+        "success": "¡Ya lo enviamos!"
+    },
     "header": {
         "services": {
             "title": "Servicios",
@@ -367,7 +371,8 @@
             "block2": {
                 "title": "Brief",
                 "subtitle": "Resolver soluciones multiplataforma, problemas de comunicación, navegación, conversión y venta de servicios y productos BBVA.",
-                "text": "Mejora sustancial de los productos\ny servicios digitales en la comunicación, usabilidad y navegación, así como la tasa de conversión del uso de las aplicaciones en sus canales."
+                "text": "Mejora sustancial de los productos\ny servicios digitales en la comunicación, usabilidad y navegación,\nasí como la tasa de conversión del uso de las aplicaciones en sus canales.",
+                "text-mobile": "Mejora sustancial de los productos\ny servicios digitales en la comunicación, usabilidad y navegación, así como la tasa de conversión del uso de las aplicaciones en sus canales."
             },
             "block3": {
                 "title": "resultados",
@@ -423,7 +428,7 @@
                 "title": "Brief",
                 "subtitle": "Descubrir las necesidades, motivadores, barreras, emociones y actores involucrados en el journey de adquisición en el proceso de colocación.",
                 "subtitle-mobile": "Descubrir las necesidades, motivadores, barreras,\nemociones y actores involucrados\nen el journey de adquisición en el proceso de\ncolocación.",
-                "text": "A través de entrevistas etnográficas realizadas a profundidad con usuarios de Podemos Progresar e investigación enfocada a las motivaciones y obstáculos de las integrantes logramos:"
+                "text": "A través de entrevistas etnográficas realizadas\na profundidad con usuarios\nde Podemos Progresar e investigación enfocada\na las motivaciones y obstáculos de las integrantes logramos:"
             },
             "block3": {
                 "title": "resultados",

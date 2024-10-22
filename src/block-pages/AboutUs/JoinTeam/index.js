@@ -65,7 +65,9 @@ const JoinTeamForm = () => {
     };
 
     const buttonText = {
-        text: success ? '¡Ya lo enviamos!' : t('about-us.block4.button'),
+        text:
+            loading ? t('button.loading') :
+            success && !loading ? t('button.success') : t('about-us.block4.button'),
         tag: "p",
         font: "poppinsRegular",
         size: isResponsive ? 15 : 18,
