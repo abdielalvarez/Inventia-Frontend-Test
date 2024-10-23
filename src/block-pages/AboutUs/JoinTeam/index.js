@@ -9,7 +9,7 @@ import inputStyles from "../../../styles/components/input.module.css";
 import Image from "next/image";
 import ApiService from "@/services";
 import { joinTeamOptions } from "@/utils/constants";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import envs from "@/config/envs";
 
 const JoinTeamForm = () => {
@@ -73,6 +73,18 @@ const JoinTeamForm = () => {
         size: isResponsive ? 15 : 18,
         color: 'whiteBase',
     };
+
+    const enabled = useMemo(() => {
+        const dataExists =
+            Boolean(
+                formData?.['jointeam-phone'] &&
+                formData?.['jointeam-email'] &&
+                formData?.['jointeam-name'] &&
+                formData?.['jointeam-position']
+            )
+        const filesExists = Array.isArray(formData?.['jointeam-files'])
+        return dataExists && filesExists && formData?.['jointeam-files']?.length
+    }, [formData])
 
     return (
         <section id="join-team" className={styles.background}>
@@ -151,7 +163,7 @@ const JoinTeamForm = () => {
                         </div>
                         <AnchorButton
                             className={styles.buttonItem}
-                            disabled={loading || success}
+                            disabled={!enabled || loading || success}
                             expandWidth={true}
                             type="submit"
                             theme="primary"

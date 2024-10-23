@@ -53,6 +53,10 @@
     border: none;
 }
 
+.buttonItem:disabled {
+    cursor: not-allowed;
+}
+
 @media (max-width: 768px) {
 
     .background {
