@@ -75,7 +75,7 @@ const JoinTeamForm = () => {
     };
 
     return (
-        <section className={styles.background}>
+        <section id="join-team" className={styles.background}>
             <div className={styles.wrapper}>
                 <div>
                     <div className={styles.infoContent}>

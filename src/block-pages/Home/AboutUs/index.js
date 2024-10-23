@@ -2,7 +2,7 @@ import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../styles/block-pages/home/aboutus.module.css"
 import useResponsive from "@/hooks/useResponsive";
-import { ROUTE_CONTACTUS } from "@/utils/routes";
+import { ROUTE_ABOUTUS } from "@/utils/routes";
 import Image from "next/image";
 import AnchorButton from "@/components/AnchorButton";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
@@ -94,7 +94,7 @@ const AboutUs = () => {
                                     <Text texts={descriptionText2} className={styles.textLeft3} />
                                 </div>
                                 <div className={styles.buttonContainer}>
-                                    <AnchorButton href={ROUTE_CONTACTUS} theme="secondary">
+                                    <AnchorButton href={ROUTE_ABOUTUS} theme="secondary">
                                         <Text text={buttonText} />
                                     </AnchorButton>
                                 </div>

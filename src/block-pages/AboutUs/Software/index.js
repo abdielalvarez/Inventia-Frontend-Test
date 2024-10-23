@@ -3,7 +3,7 @@ import styles from "../../../styles/block-pages/about-us/software.module.css"
 import Image from "next/image";
 import useText from "../useText";
 import AnchorButton from "@/components/AnchorButton";
-import { ROUTE_ABOUTUS } from "@/utils/routes";
+import { ROUTE_ABOUTUS, TAG_JOIN_TEAM } from "@/utils/routes";
 import useResponsive from "@/hooks/useResponsive";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
@@ -73,7 +73,7 @@ const Software = () => {
                     <div className={styles.button}>
                         <AnchorButton
                             className={styles.buttonItem}
-                            href={ROUTE_ABOUTUS}
+                            href={`${ROUTE_ABOUTUS}#${TAG_JOIN_TEAM}`}
                             theme="secondary"
                         >
                             <Text text={buttonSoftwareText} />

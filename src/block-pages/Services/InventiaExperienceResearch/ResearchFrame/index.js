@@ -31,6 +31,7 @@ const ResearchFrame = () => {
         autoPlay
         muted
         loop
+        playsInline
         className={`${styles.videoFullScreen} ${fadeOut ? styles.videoFadeOut : ''}`}
       >
         <source

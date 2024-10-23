@@ -14,12 +14,13 @@ export const ROUTE_SUCCESSSTORIES_BANKINGION = `${ROUTE_SUCCESSSTORIES}/ion`
 export const ROUTE_ABOUTUS = '/about-us'
 export const ROUTE_CONTACTUS = '/contact-us'
 
-export const ROUTE_LINKEDIN = 'https://linkedin.com'
-export const ROUTE_INSTAGRAM = 'https://instagram.com'
-export const ROUTE_FACEBOOK = 'https://facebook.com'
+export const ROUTE_LINKEDIN = 'https://www.linkedin.com/company/inventialab/'
+export const ROUTE_INSTAGRAM = 'https://www.instagram.com/inventialab/?igshid=YmMyMTA2M2Y%3D'
+export const ROUTE_FACEBOOK = 'https://www.facebook.com/profile.php?id=100077417485517'
 
 export const TAG_INVENTIAEXPERIENCE = 'inventiaexperience'
 export const TAG_INVENTIASOFTWARE = 'inventiasoftware'
+export const TAG_JOIN_TEAM = 'join-team'
 
 export const EXTERNAL_ROUTE_ION = "https://www.ion.com.mx/"
 export const EXTERNAL_ROUTE_GENTERA = "https://www.gentera.com.mx/gentera/"

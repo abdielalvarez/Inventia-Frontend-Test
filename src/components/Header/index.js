@@ -148,7 +148,6 @@ const Header = () => {
             alt="Hamburger Menu"
             width={36}
             height={36}
-            priority
           />
         }
       </div>

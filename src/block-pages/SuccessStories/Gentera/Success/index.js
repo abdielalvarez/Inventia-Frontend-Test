@@ -2,7 +2,7 @@ import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../../styles/block-pages/success-stories/gentera/success.module.css"
 import useResponsive from "@/hooks/useResponsive";
-import { ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR } from "@/utils/routes";
+import { ROUTE_SUCCESSSTORIES } from "@/utils/routes";
 import Link from "next/link";
 import Image from "next/image";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
@@ -46,7 +46,7 @@ const Success = () => {
                                     <Text text={titleText} className={styles.title} />
                                 </div> : null
                             }
-                            <Link href={ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR}>
+                            <Link href={ROUTE_SUCCESSSTORIES}>
                                 <FadeInWrapper type='fadeinright' replay={true}>
                                     <Image
                                         src="/images/success-stories/banking-grupogentera/success/arrow.svg"

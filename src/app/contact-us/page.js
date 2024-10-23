@@ -1,11 +1,18 @@
 'use client'
 import Main from "@/block-pages/ContactUs/Main";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function ContactUs() {
+
+  useEffect(() => {
+    document.title = "Nosotros";
+  }, []);
+
   return (
-    <main>
-      <Main />
-    </main>
+    <>
+      <main>
+        <Main />
+      </main>
+    </>
   );
 }
