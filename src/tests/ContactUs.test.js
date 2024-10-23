@@ -1,4 +1,4 @@
-import Home from '@/app/page';
+import ContactUs from '@/app/contact-us/page';
 import { ContextProvider } from '@/context/wrappers/ContextProvider';
 import { ThemeProvider } from '@/context/wrappers/ThemeSwitcher';
 import { render, screen } from '@testing-library/react';
@@ -26,16 +26,23 @@ global.matchMedia = jest.fn().mockImplementation(query => ({
   dispatchEvent: jest.fn(),
 }));
 
-describe('Home Page', () => {
-  it('renders all the sections correctly', () => {
-    render(
-      <ContextProvider>
-        <ThemeProvider>
-          <Home />
-        </ThemeProvider>
-      </ContextProvider>
-    );
+const Wrapper = ({ children }) => {
+  return (
+    <ContextProvider>
+      <ThemeProvider>
+        {children}
+      </ThemeProvider>
+    </ContextProvider>
+  );
+};
 
-    expect(screen.getByText(/Bienvenido/i)).toBeInTheDocument();
+describe('Contact Us Page', () => {
+  it('renders about us page correctly', () => {
+    render(
+      <Wrapper>
+        <ContactUs />
+      </Wrapper>
+    );
+    expect(screen.getByText(/¡Enviar!/i)).toBeInTheDocument();
   });
 });

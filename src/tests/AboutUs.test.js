@@ -1,7 +1,7 @@
-import Home from '@/app/page';
+import AboutUs from '@/app/about-us/page';
 import { ContextProvider } from '@/context/wrappers/ContextProvider';
 import { ThemeProvider } from '@/context/wrappers/ThemeSwitcher';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 
 global.IntersectionObserver = class {
   constructor(callback) {
@@ -26,16 +26,26 @@ global.matchMedia = jest.fn().mockImplementation(query => ({
   dispatchEvent: jest.fn(),
 }));
 
-describe('Home Page', () => {
-  it('renders all the sections correctly', () => {
-    render(
-      <ContextProvider>
-        <ThemeProvider>
-          <Home />
-        </ThemeProvider>
-      </ContextProvider>
-    );
+const Wrapper = ({ children }) => {
+  return (
+    <ContextProvider>
+      <ThemeProvider>
+        {children}
+      </ThemeProvider>
+    </ContextProvider>
+  );
+};
 
-    expect(screen.getByText(/Bienvenido/i)).toBeInTheDocument();
+describe('About Us Page', () => {
+  beforeEach(() => {
+    render(
+      <Wrapper>
+        <AboutUs />
+      </Wrapper>
+    );
+  });
+
+  it('renders about us page correctly', () => {
+    expect(screen.getByText(/¡Enviar!/i)).toBeInTheDocument();
   });
 });
