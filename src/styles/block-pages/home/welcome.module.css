@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 178px 40px 0;
+    padding: 0 40px;
     height: 868px;
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@
         max-width: 300px;
         line-height: 23px;
         letter-spacing: 1px;
-        margin: 96px 0 0;
+        margin: 48px 0 0;
     }
 
     .inventia {
