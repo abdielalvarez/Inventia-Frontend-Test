@@ -63,8 +63,7 @@ const Header = () => {
     dropdownDataAboutUs,
     isServices,
     isSuccessStories,
-    isAboutUs,
-    isContactUs,
+    isAboutUs
   } = useText(isMenuOpen, colliders)
 
   const isSmallScreen = useResponsive(768);
@@ -93,9 +92,13 @@ const Header = () => {
     e && e.preventDefault()
     const lang =
       !state?.language ||
-      state?.language === 'en' ?
-      'es' : 'en'
+        state?.language === 'en' ?
+        'es' : 'en'
     setLang(lang)
+  }
+
+  const handleFastRedirection = (e) => {
+    e.stopPropagation()
   }
 
   return (
@@ -114,12 +117,12 @@ const Header = () => {
       <div className={styles.headerlabels}>
         <Dropdown items={dropdownDataServices} disappearWhen768>
           <div className={styles.headerlabel}>
-            <Text texts={servicesText} />
+            <Text texts={servicesText} onClick={handleFastRedirection} />
             <Image
               src={
                 !isSmallScreen && !isServices ?
-                '/images/header/arrow-gray.svg' :
-                '/images/header/arrow-black.svg'
+                  '/images/header/arrow-gray.svg' :
+                  '/images/header/arrow-black.svg'
               }
               alt="Services"
               width={12}
@@ -130,12 +133,12 @@ const Header = () => {
         </Dropdown>
         <Dropdown items={dropdownDataSuccessStories} disappearWhen768>
           <div className={styles.headerlabel}>
-            <Text texts={successText} />
+            <Text texts={successText} onClick={handleFastRedirection} />
             <Image
               src={
                 !isSmallScreen && !isSuccessStories ?
-                '/images/header/arrow-gray.svg' :
-                '/images/header/arrow-black.svg'
+                  '/images/header/arrow-gray.svg' :
+                  '/images/header/arrow-black.svg'
               }
               alt="Success"
               width={12}
@@ -146,12 +149,12 @@ const Header = () => {
         </Dropdown>
         <Dropdown items={dropdownDataAboutUs} disappearWhen768>
           <div className={styles.headerlabel}>
-            <Text texts={aboutUsText} />
+            <Text texts={aboutUsText} onClick={handleFastRedirection} />
             <Image
               src={
                 !isSmallScreen && !isAboutUs ?
-                '/images/header/arrow-gray.svg' :
-                '/images/header/arrow-black.svg'
+                  '/images/header/arrow-gray.svg' :
+                  '/images/header/arrow-black.svg'
               }
               alt="About Us"
               width={12}
@@ -168,7 +171,7 @@ const Header = () => {
           <div className={styles.headerbox}>
             <Image
               src="/images/header/world-gray.png"
-              alt="Close"
+              alt="Language"
               width={18}
               height={18}
             />
@@ -176,7 +179,17 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.headermenuIcon} onClick={toggleMenu}>
-        {isMenuOpen ?
+        {!isMenuOpen ?
+          <Image
+            src="/images/header/hamburger.svg"
+            alt="Hamburger Menu"
+            width={36}
+            height={36}
+          /> : null
+        }
+      </div>
+      <div className={`${styles.headermenu} ${isMenuOpen ? styles.headeropen : ''}`}>
+        <div className={styles.headermenuContent}>
           <Image
             src="/images/header/close.svg"
             alt="Close"
@@ -184,17 +197,8 @@ const Header = () => {
             height={43}
             priority
             className={styles.headerclose}
-          /> :
-          <Image
-            src="/images/header/hamburger.svg"
-            alt="Hamburger Menu"
-            width={36}
-            height={36}
+            onClick={toggleMenu}
           />
-        }
-      </div>
-      <div className={`${styles.headermenu} ${isMenuOpen ? styles.headeropen : ''}`}>
-        <div className={styles.headermenuContent}>
           <div className={styles.headerlabel} onClick={toggleMenu}>
             {isMenuOpen ?
               <MainLogo /> : null
@@ -229,54 +233,60 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className={`${styles.headerCollider} ${colliders.success ? styles.headerColliderOpen : ''}`} onClick={() => toggleCollider('success')}>
-            <Text texts={successText} />
-            <div className={`${styles.collapseContent} ${colliders.success ? styles.expand : ''}`}>
-              <div onClick={toggleMenu}>
-                <Text texts={successServiciosFinancierosText} />
-              </div>
-              <div onClick={toggleMenu} className={styles.headerSubitem}>
-                <Text texts={successServiciosFinancierosOption1Text} />
-              </div>
-              <div onClick={toggleMenu} className={styles.headerSubitem}>
-                <Text texts={successServiciosFinancierosOption2Text} />
-              </div>
-              <div onClick={toggleMenu}>
-                <Text texts={successBankingText} />
-              </div>
-              <div onClick={toggleMenu} className={styles.headerSubitem}>
-                <Text texts={successBankingOption1Text} />
-              </div>
-              <div onClick={toggleMenu} className={styles.headerSubitem}>
-                <Text texts={successBankingOption2Text} />
-              </div>
-            </div>
-          </div>
-
-          <div className={`${styles.headerCollider} ${colliders.aboutUs ? styles.headerColliderOpen : ''}`} onClick={() => toggleCollider('aboutUs')}>
-            <Text texts={aboutUsText} />
-            <div className={`${styles.collapseContent} ${colliders.aboutUs ? styles.expand : ''}`}>
-              <div onClick={toggleMenu}>
-                <Text texts={aboutUsFirstText} />
-              </div>
-              <div onClick={toggleMenu}>
-                <Text texts={aboutUsSecondText} />
+          <div className={isMenuOpen ? styles.headerMenuUp : styles.void}>
+            <div className={`${styles.headerCollider} ${colliders.success ? styles.headerColliderOpen : ''}`} onClick={() => toggleCollider('success')}>
+              <Text texts={successText} />
+              <div className={`${styles.collapseContent} ${colliders.success ? styles.expand : ''}`}>
+                <div onClick={toggleMenu}>
+                  <Text texts={successServiciosFinancierosText} />
+                </div>
+                <div onClick={toggleMenu} className={styles.headerSubitem}>
+                  <Text texts={successServiciosFinancierosOption1Text} />
+                </div>
+                <div onClick={toggleMenu} className={styles.headerSubitem}>
+                  <Text texts={successServiciosFinancierosOption2Text} />
+                </div>
+                <div onClick={toggleMenu}>
+                  <Text texts={successBankingText} />
+                </div>
+                <div onClick={toggleMenu} className={styles.headerSubitem}>
+                  <Text texts={successBankingOption1Text} />
+                </div>
+                <div onClick={toggleMenu} className={styles.headerSubitem}>
+                  <Text texts={successBankingOption2Text} />
+                </div>
               </div>
             </div>
           </div>
-
-          <div className={styles.headerlabel} onClick={toggleMenu}>
-            <Text texts={contactUsText} />
+          <div className={isMenuOpen ? styles.headerMenuUp2 : styles.void}>
+            <div className={`${styles.headerCollider} ${colliders.aboutUs ? styles.headerColliderOpen : ''}`} onClick={() => toggleCollider('aboutUs')}>
+              <Text texts={aboutUsText} />
+              <div className={`${styles.collapseContent} ${colliders.aboutUs ? styles.expand : ''}`}>
+                <div onClick={toggleMenu}>
+                  <Text texts={aboutUsFirstText} />
+                </div>
+                <div onClick={toggleMenu}>
+                  <Text texts={aboutUsSecondText} />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className={styles.headerlabel} onClick={handleChangeLanguage}>
-            <Text texts={langText} />
-            <div className={styles.headerbox}>
-              <Image
-                src="/images/header/world-black.png"
-                alt="Close"
-                width={18}
-                height={18}
-              />
+          <div className={isMenuOpen ? styles.headerMenuUp3 : styles.void}>
+            <div className={styles.headerlabel} onClick={toggleMenu}>
+              <Text texts={contactUsText} />
+            </div>
+          </div>
+          <div className={isMenuOpen ? styles.headerMenuUp4 : styles.void}>
+            <div className={styles.headerlabel} onClick={handleChangeLanguage}>
+              <Text texts={langText} />
+              <div className={styles.headerbox}>
+                <Image
+                  src="/images/header/world-black.png"
+                  alt="Language"
+                  width={18}
+                  height={18}
+                />
+              </div>
             </div>
           </div>
         </div>

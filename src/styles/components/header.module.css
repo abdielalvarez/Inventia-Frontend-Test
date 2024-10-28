@@ -7,7 +7,6 @@
     z-index: 1000;
     height: 178px;
     width: 100%;
-    /* position: fixed; */
     position: sticky;
     top: 0px;
 }
@@ -21,7 +20,6 @@
     z-index: 1000;
     height: 69px;
     width: 100%;
-    /* position: fixed; */
     position: sticky;
     top: 0px;
 }
@@ -34,7 +32,6 @@
     background-color: #F5F5F5;
     z-index: 1000;
     width: 100%;
-    /* position: fixed; */
     position: sticky;
     top: 0px;
 }
@@ -63,18 +60,17 @@
 
 .headermenu {
     position: absolute;
-    top: 100px;
+    top: 0;
     right: 0;
     background-color: #F5F5F5;
-    width: 100%;
-    height: 0;
-    min-height: 0;
     overflow: hidden;
-    transition: min-height 0.3s ease;
+    width: 0;
+    min-height: 100vh;
+    transition: width 0.3s ease;
 }
 
 .headermenu.headeropen {
-    min-height: 100vh;
+    width: 100%;
 }
 
 .headermenuContent {
@@ -82,7 +78,7 @@
     flex-direction: column;
     height: 112%;
     gap: 20px;
-    padding: 80px 30px 30px 30px;
+    padding: 62px 24px 30px 48px;
 }
 
 .headerCollider {
@@ -118,11 +114,73 @@
 }
 
 .headerclose {
-    margin: -5px 0 0px;
+    margin: 0 0 60px auto;
 }
 
 .headerarrow {
     margin: 0 0 0 4px;
+    padding: 4px;
+    box-sizing: content-box;
+}
+
+@keyframes scrollUpNav {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes scrollUpNav2 {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }    
+}
+
+@keyframes scrollUpNav3 {
+    0% {
+        transform: translateY(150px);
+    }
+    100% {
+        transform: translateY(0);
+    }    
+}
+
+@keyframes scrollUpNav4 {
+    0% {
+        transform: translateY(200px);
+    }
+    100% {
+        transform: translateY(0);
+    }    
+}
+
+.headerMenuUp{
+    animation-name: scrollUpNav;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.headerMenuUp2{
+    animation-name: scrollUpNav2;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.headerMenuUp3{
+    animation-name: scrollUpNav3;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.headerMenuUp4{
+    animation-name: scrollUpNav4;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 @media (max-width: 768px) {

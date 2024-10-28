@@ -34,8 +34,8 @@ const useText = (isMenuOpen) => {
     const servicesText = [
         {
             text: t('header.services.title'),
-            href: null,
-            tag: "p",
+            href: !isMenuOpen ? ROUTE_SERVICES : null,
+            tag: !isMenuOpen ? "a" : "p",
             font: isServices && !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: !isSmallScreen && !isServices ? 'blackCaption' : 'blackBase',
@@ -133,8 +133,8 @@ const useText = (isMenuOpen) => {
     const successText = [
         {
             text: t('header.successful.title'),
-            href: null,
-            tag: "p",
+            href: !isMenuOpen ? ROUTE_SUCCESSSTORIES : null,
+            tag: !isMenuOpen ? "a" : "p",
             font: isSuccessStories && !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: !isSmallScreen && !isSuccessStories ? 'blackCaption' : 'blackBase',
@@ -210,8 +210,8 @@ const useText = (isMenuOpen) => {
     const aboutUsText = [
         {
             text: t('header.about-us.title'),
-            href: null,
-            tag: "p",
+            href: !isMenuOpen ? ROUTE_ABOUTUS : null,
+            tag: !isMenuOpen ? "a" : "p",
             font: isAboutUs && !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
             color: !isSmallScreen && !isAboutUs ? 'blackCaption' : 'blackBase',
