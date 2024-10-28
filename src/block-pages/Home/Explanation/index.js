@@ -2,7 +2,7 @@ import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../styles/block-pages/home/explanation.module.css"
 import useResponsive from "@/hooks/useResponsive";
-import { ROUTE_SERVICES, TAG_INVENTIAEXPERIENCE } from "@/utils/routes";
+import { ROUTE_SERVICES, TAG_INVENTIAEXPERIENCE, TAG_INVENTIASOFTWARE } from "@/utils/routes";
 import Image from "next/image";
 import Link from "next/link";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
@@ -65,7 +65,7 @@ const Explanation = () => {
     return (
         <section className={styles.background}>
             <div className={styles.wrapper}>
-                <div className={styles.containerLeft1}>
+                <div id={TAG_INVENTIAEXPERIENCE} className={styles.containerLeft1}>
                     <Image
                         src="/images/home/explanation/people1.png"
                         alt="Inventia Experience"
@@ -75,10 +75,10 @@ const Explanation = () => {
                         className={styles.imgLeft1}
                     />
                     <div className={styles.containerLeft2}>
-                        <FadeInWrapper type='fadein' replay={true}>
+                        <FadeInWrapper type='fadeinright' replay={true}>
                             <Text texts={explanationText1} className={styles.textLeft1} />
                         </FadeInWrapper>
-                        <Link href={`${ROUTE_SERVICES}/#${TAG_INVENTIAEXPERIENCE}`}>
+                        <Link href={ROUTE_SERVICES}>
                             <div className={styles.containerLeft3}>
                                 <Text text={experienceText1} className={styles.textLeft2} />
                                 <FadeInWrapper type='fadeinright' replay={true}>
@@ -96,18 +96,18 @@ const Explanation = () => {
                     </div>
                 </div>
 
-                <div className={styles.containerRight1}>
+                <div id={TAG_INVENTIASOFTWARE} className={styles.containerRight1}>
                     <div className={styles.containerRight2}>
-                        <FadeInWrapper type='fadein' replay={true}>
+                        <FadeInWrapper type='fadeinup' replay={true}>
                             <Text texts={explanationText2} className={styles.textRight1} />
                         </FadeInWrapper>
-                        <Link href={`${ROUTE_SERVICES}/#${TAG_INVENTIAEXPERIENCE}`}>
+                        <Link href={ROUTE_SERVICES}>
                             <div className={styles.containerRight3}>
                                 <Text text={softwareText1} className={styles.textRight2} />
                                 <FadeInWrapper type='fadeinright' replay={true}>
                                     <Image
                                         src="/images/home/explanation/blue-arrow.svg"
-                                        alt="Inventia Experience"
+                                        alt="Inventia Software"
                                         width={isSmallScreen ? 42 : 50}
                                         height={isSmallScreen ? 42 : 50}
                                         priority
@@ -119,7 +119,7 @@ const Explanation = () => {
                     </div>
                     <Image
                         src="/images/home/explanation/people2.png"
-                        alt="Inventia Experience"
+                        alt="Inventia Software"
                         width={isSmallScreen ? 180 : 536}
                         height={isSmallScreen ? 180 : 536}
                         priority

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styles from '../../styles/components/input.module.css';
 import Text from '../Text';
 import { useApiContext } from '@/context/wrappers/ContextProvider';
@@ -20,6 +21,23 @@ const Input = ({
 
   const { t } = useApiContext();
   const isResponsive = useResponsive(768);
+  const [isDragging, setIsDragging] = useState(false);
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    setIsDragging(true);
+  };
+
+  const handleDragLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    setIsDragging(false);
+    const files = Array.from(e.dataTransfer.files);
+    onChange({ target: { files } });
+  };
 
   const uploadTitle = {
     text: placeholder,
@@ -57,7 +75,12 @@ const Input = ({
     return (
       <>
         <div className={styles.filePlaceholder}><Text text={uploadTitle} /></div>
-        <div className={styles.fileInputContainer}>
+        <div
+          className={`${styles.fileInputContainer} ${isDragging ? styles.dragging : ''}`}
+          onDragOver={handleDragOver}
+          onDragLeave={handleDragLeave}
+          onDrop={handleDrop}
+        >
           <label className={styles.fileLabel} htmlFor={id}>
             <input
               type="file"
@@ -81,7 +104,7 @@ const Input = ({
             <div><Text text={extensionsText} className={styles.fileText3} /></div>
           </label>
         </div>
-        {value && value?.length > 0 ?
+        {value && value?.length > 0 ? (
           <ul>
             {value?.map((file, index) => (
               <ItemUploaded
@@ -92,8 +115,8 @@ const Input = ({
                 name={name}
               />
             ))}
-          </ul> : null
-        }
+          </ul>
+        ) : null}
       </>
     );
   }

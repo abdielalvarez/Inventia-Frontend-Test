@@ -84,7 +84,7 @@ const ContactUsForm = () => {
             <div className={styles.wrapper}>
                 <div>
                     <div className={styles.infoContent}>
-                        <FadeInWrapper type='fadeindown' replay={true}>
+                        <FadeInWrapper animationSize="big" speed=".5s" type='fadeindown' replay={true}>
                             <Image
                                 src="/images/home/lets-talk/line-1.svg"
                                 alt="Let's talk"
@@ -92,6 +92,14 @@ const ContactUsForm = () => {
                                 height={575}
                                 priority
                                 className={styles.icon1}
+                            />
+                            <Image
+                                src="/images/home/lets-talk/logo.svg"
+                                alt="Inventia"
+                                width={isResponsive ? 46 : 85}
+                                height={isResponsive ? 56 : 103}
+                                priority
+                                className={styles.logoImg}
                             />
                         </FadeInWrapper>
                         <Image
@@ -114,7 +122,7 @@ const ContactUsForm = () => {
                                 styles.icon3
                             }
                         />
-                        <FadeInWrapper type='fadeindown' replay={true}>
+                        {/* <FadeInWrapper speed=".2s" type='fadeindown' replay={true}>
                             <Image
                                 src="/images/home/lets-talk/logo.svg"
                                 alt="Inventia"
@@ -123,7 +131,7 @@ const ContactUsForm = () => {
                                 priority
                                 className={styles.logoImg}
                             />
-                        </FadeInWrapper>
+                        </FadeInWrapper> */}
                         <div className={styles.titleContainer}>
                             <Text text={titleText} className={styles.title} />
                         </div>

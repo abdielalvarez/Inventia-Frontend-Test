@@ -3,7 +3,7 @@ import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../styles/block-pages/home/help.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import {
-    ROUTE_SERVICES,
+    ROUTE_HOME,
     TAG_INVENTIAEXPERIENCE,
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
@@ -18,7 +18,7 @@ const Help = () => {
         {
             text: t('home.block4.text1'),
             tag: "a",
-            href: `${ROUTE_SERVICES}/#${TAG_INVENTIAEXPERIENCE}`,
+            href: `${ROUTE_HOME}/#${TAG_INVENTIAEXPERIENCE}`,
             font: "poppinsSemibold",
             size: isResponsive ? 15 : 40,
             color: 'whiteBase',
@@ -29,7 +29,7 @@ const Help = () => {
         {
             text: t('home.block4.text2'),
             tag: "a",
-            href: `${ROUTE_SERVICES}/#${TAG_INVENTIASOFTWARE}`,
+            href: `${ROUTE_HOME}/#${TAG_INVENTIASOFTWARE}`,
             font: "poppinsSemibold",
             size: isResponsive ? 15 : 40,
             color: 'whiteBase',
@@ -60,8 +60,10 @@ const Help = () => {
         <section className={styles.background}>
             <div className={styles.wrapper}>
                 <div className={styles.column1}>
-                    <Text texts={helpText1} className={styles.text1} />
-                    <Text texts={helpText2} className={styles.text2} />
+                    <FadeInWrapper type='fadeinright' replay={true}>
+                        <Text texts={helpText1} className={styles.text1} />
+                        <Text texts={helpText2} className={styles.text2} />
+                    </FadeInWrapper>
                 </div>
                 <div className={styles.column2}>
                     <Text texts={helpText3} className={styles.text3} />

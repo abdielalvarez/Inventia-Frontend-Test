@@ -4,13 +4,14 @@ import useResponsive from "@/hooks/useResponsive";
 import AnchorButton from "@/components/AnchorButton";
 import useJoinTeamForm from "@/hooks/useJoinTeamForm";
 import Input from "@/components/Input";
-import styles from "../../../styles/block-pages/about-us/jointeamform.module.css";
-import inputStyles from "../../../styles/components/input.module.css";
 import Image from "next/image";
 import ApiService from "@/services";
 import { joinTeamOptions } from "@/utils/constants";
 import { useMemo, useState } from "react";
 import envs from "@/config/envs";
+import { TAG_JOIN_TEAM } from "@/utils/routes";
+import styles from "../../../styles/block-pages/about-us/jointeamform.module.css";
+import inputStyles from "../../../styles/components/input.module.css";
 
 const JoinTeamForm = () => {
     const { t } = useApiContext();
@@ -87,7 +88,7 @@ const JoinTeamForm = () => {
     }, [formData])
 
     return (
-        <section id="join-team" className={styles.background}>
+        <section className={styles.background}>
             <div className={styles.wrapper}>
                 <div>
                     <div className={styles.infoContent}>
@@ -101,7 +102,7 @@ const JoinTeamForm = () => {
                                 className={styles.logoImg}
                             /> : null
                         }
-                        <div className={styles.titleContainer}>
+                        <div id={TAG_JOIN_TEAM} className={styles.titleContainer}>
                             <Text text={titleText} className={styles.title} />
                         </div>
                         <div className={styles.subtitleContainer}>

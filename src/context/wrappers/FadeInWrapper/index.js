@@ -1,7 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "../../../styles/context/wrappers/fadeinwrapper.module.css";
 
-const FadeInWrapper = ({ children, type = 'fadein', replay = false, ...rest }) => {
+const FadeInWrapper = ({
+    children,
+    type = 'fadein',
+    replay = false,
+    speed = '1s',
+    animationSize = 'normal',
+    ...rest
+}) => {
     const [isVisible, setIsVisible] = useState(false);
     const wrapperRef = useRef(null);
 
@@ -35,8 +42,10 @@ const FadeInWrapper = ({ children, type = 'fadein', replay = false, ...rest }) =
 
     const validTypes = ['fadein', 'fadeinup', 'fadeinright', 'fadeinleft', 'fadeindown'];
     const finalType = validTypes.includes(type) ? type : 'fadein';
-
-    const wrapperClass = `${rest?.className ? rest?.className : ''} ${styles.wrapper} ${styles[finalType]} ${isVisible ? styles.visible : ""}`;
+    const speedStyles =
+        speed === '.2s' ? styles.speed02s :
+            speed === '.5s' ? styles.speed05s : styles.speed1s
+    const wrapperClass = `${rest?.className ? rest?.className : ''} ${speedStyles} ${styles.wrapper} ${styles[`${finalType}${animationSize}`]} ${isVisible ? styles.visible : ""}`;
 
     return (
         <div {...rest} ref={wrapperRef} className={wrapperClass}>

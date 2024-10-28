@@ -3,7 +3,7 @@ import { useApiContext } from "@/context/wrappers/ContextProvider";
 import styles from "../../../../styles/block-pages/services/primary/methodology.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import {
-    TAG_INVENTIASOFTWARE
+    TAG_METHODOLOGY
 } from "@/utils/routes";
 import { useState } from "react";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
@@ -122,10 +122,10 @@ const Methodology = () => {
     }
 
     return (
-        <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
+        <section className={styles.background}>
             <div className={styles.wrapper}>
                 <div className={styles.titleContainer}>
-                    <Text text={titleText} className={styles.title} />
+                    <Text id={TAG_METHODOLOGY} text={titleText} className={styles.title} />
                 </div>
                 <FadeInWrapper type='fadeinright' replay={true}>
                     <div className={styles.descriptionContainer}>

@@ -54,10 +54,17 @@ const Header = () => {
     successBankingOption2Text,
     successText,
     aboutUsText,
+    aboutUsFirstText,
+    aboutUsSecondText,
     contactUsText,
     langText,
     dropdownDataServices,
-    dropdownDataSuccessStories
+    dropdownDataSuccessStories,
+    dropdownDataAboutUs,
+    isServices,
+    isSuccessStories,
+    isAboutUs,
+    isContactUs,
   } = useText(isMenuOpen, colliders)
 
   const isSmallScreen = useResponsive(768);
@@ -108,16 +115,51 @@ const Header = () => {
         <Dropdown items={dropdownDataServices} disappearWhen768>
           <div className={styles.headerlabel}>
             <Text texts={servicesText} />
+            <Image
+              src={
+                !isSmallScreen && !isServices ?
+                '/images/header/arrow-gray.svg' :
+                '/images/header/arrow-black.svg'
+              }
+              alt="Services"
+              width={12}
+              height={8}
+              className={styles.headerarrow}
+            />
           </div>
         </Dropdown>
         <Dropdown items={dropdownDataSuccessStories} disappearWhen768>
           <div className={styles.headerlabel}>
             <Text texts={successText} />
+            <Image
+              src={
+                !isSmallScreen && !isSuccessStories ?
+                '/images/header/arrow-gray.svg' :
+                '/images/header/arrow-black.svg'
+              }
+              alt="Success"
+              width={12}
+              height={8}
+              className={styles.headerarrow}
+            />
           </div>
         </Dropdown>
-        <div className={styles.headerlabel}>
-          <Text texts={aboutUsText} />
-        </div>
+        <Dropdown items={dropdownDataAboutUs} disappearWhen768>
+          <div className={styles.headerlabel}>
+            <Text texts={aboutUsText} />
+            <Image
+              src={
+                !isSmallScreen && !isAboutUs ?
+                '/images/header/arrow-gray.svg' :
+                '/images/header/arrow-black.svg'
+              }
+              alt="About Us"
+              width={12}
+              height={8}
+              className={styles.headerarrow}
+            />
+          </div>
+        </Dropdown>
         <div className={styles.headerlabel}>
           <Text texts={contactUsText} />
         </div>
@@ -125,7 +167,7 @@ const Header = () => {
           <Text texts={langText} />
           <div className={styles.headerbox}>
             <Image
-              src="/images/header/world.png"
+              src="/images/header/world-gray.png"
               alt="Close"
               width={18}
               height={18}
@@ -210,9 +252,19 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className={styles.headerlabel} onClick={toggleMenu}>
+
+          <div className={`${styles.headerCollider} ${colliders.aboutUs ? styles.headerColliderOpen : ''}`} onClick={() => toggleCollider('aboutUs')}>
             <Text texts={aboutUsText} />
+            <div className={`${styles.collapseContent} ${colliders.aboutUs ? styles.expand : ''}`}>
+              <div onClick={toggleMenu}>
+                <Text texts={aboutUsFirstText} />
+              </div>
+              <div onClick={toggleMenu}>
+                <Text texts={aboutUsSecondText} />
+              </div>
+            </div>
           </div>
+
           <div className={styles.headerlabel} onClick={toggleMenu}>
             <Text texts={contactUsText} />
           </div>
@@ -220,7 +272,7 @@ const Header = () => {
             <Text texts={langText} />
             <div className={styles.headerbox}>
               <Image
-                src="/images/header/world.png"
+                src="/images/header/world-black.png"
                 alt="Close"
                 width={18}
                 height={18}

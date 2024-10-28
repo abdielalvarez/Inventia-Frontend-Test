@@ -35,8 +35,6 @@ const Dropdown = ({ items, children, disappearWhen768 }) => {
         return <div ref={dropdownRef} style={{ position: 'relative' }}>{children}</div>;
     }
 
-    
-
     return (
         <div ref={dropdownRef} style={{ position: 'relative' }}>
             <div onClick={handleToggle} className={styles.trigger}>
@@ -49,14 +47,18 @@ const Dropdown = ({ items, children, disappearWhen768 }) => {
                             <div className={styles.itemTitle} onClick={handleItemClick}>
                                 <Item text={item.title.text} href={item.title.href} />
                             </div>
-                            <div className={styles.titleLine}></div>
-                            <div className={styles.subContent}>
-                                {item.content.map((text, i) => (
-                                    <div key={i} className={styles.subItem} onClick={handleItemClick}>
-                                        <SubItem text={text.text} href={text.href} />
-                                    </div>
-                                ))}
-                            </div>
+                            {item?.content?.length > 0 ?
+                                <div className={styles.titleLine} /> : null
+                            }
+                            {item?.content?.length > 0 ?
+                                <div className={styles.subContent}>
+                                    {item.content.map((text, i) => (
+                                        <div key={i} className={styles.subItem} onClick={handleItemClick}>
+                                            <SubItem text={text.text} href={text.href} />
+                                        </div>
+                                    ))}
+                                </div> : null
+                            }
                         </div>
                     ))}
                 </div>

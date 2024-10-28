@@ -4,10 +4,12 @@
     align-items: center;
     padding: 10px 60px 10px 80px;
     background-color: #F5F5F5;
-    position: fixed;
     z-index: 1000;
     height: 178px;
     width: 100%;
+    /* position: fixed; */
+    position: sticky;
+    top: 0px;
 }
 
 .headerCollapsed {
@@ -16,10 +18,12 @@
     align-items: center;
     padding: 10px 20px 10px 30px;
     background-color: #F5F5F5;
-    position: fixed;
     z-index: 1000;
     height: 69px;
     width: 100%;
+    /* position: fixed; */
+    position: sticky;
+    top: 0px;
 }
 
 .headerExtended {
@@ -28,9 +32,11 @@
     align-items: center;
     padding: 60px 20px 10px 30px;
     background-color: #F5F5F5;
-    position: fixed;
     z-index: 1000;
     width: 100%;
+    /* position: fixed; */
+    position: sticky;
+    top: 0px;
 }
 
 .headerlabels {
@@ -47,7 +53,7 @@
 .headerbox {
     display: flex;
     align-items: center;
-    margin: 0 0 0 5px;
+    margin: 0 0 2px 5px;
 }
 
 .headermenuIcon {
@@ -113,6 +119,10 @@
 
 .headerclose {
     margin: -5px 0 0px;
+}
+
+.headerarrow {
+    margin: 0 0 0 4px;
 }
 
 @media (max-width: 768px) {

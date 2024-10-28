@@ -75,7 +75,12 @@ const AboutUs = () => {
                         priority
                         className={styles.imgLeft1}
                     />
-                    <FadeInWrapper className={styles.wrapper1} type='fadeinright' replay={true}>
+                    <FadeInWrapper
+                        speed=".5s"
+                        className={styles.wrapper1}
+                        type='fadeinright'
+                        replay={true}
+                    >
                         <div className={styles.containerLeft2}>
                             {!isResponsive ?
                                 <Image

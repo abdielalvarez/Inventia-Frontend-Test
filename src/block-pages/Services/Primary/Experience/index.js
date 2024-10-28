@@ -96,7 +96,7 @@ const Experience = () => {
                     <div className={styles.texts}>
                         <div className={styles.textContent}>
                             <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_RESEARCH}>
-                                <FadeInWrapper type='fadeindown' replay={true}>
+                                <FadeInWrapper type='fadeinup' replay={true}>
                                     <div className={styles.text}><Text text={option1Text} className={styles.item} /></div>
                                 </FadeInWrapper>
                                 <FadeInWrapper type='fadeinright' replay={true}>
@@ -112,7 +112,7 @@ const Experience = () => {
                         </div>
                         <div className={styles.textContent}>
                             <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_PRODUCTDESIGN}>
-                                <FadeInWrapper type='fadeindown' replay={true}>
+                                <FadeInWrapper type='fadeinup' replay={true}>
                                     <div className={styles.text}><Text text={option2Text} className={styles.item} /></div>
                                 </FadeInWrapper>
                                 <FadeInWrapper type='fadeinright' replay={true}>
@@ -128,7 +128,7 @@ const Experience = () => {
                         </div>
                         <div>
                             <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_SERVICEDESIGN}>
-                                <FadeInWrapper type='fadeindown' replay={true}>
+                                <FadeInWrapper type='fadeinup' replay={true}>
                                     <div className={styles.text}><Text text={option3Text} className={styles.item} /></div>
                                 </FadeInWrapper>
                                 <FadeInWrapper type='fadeinright' replay={true}>

@@ -26,11 +26,10 @@
     background: rgba(255, 255, 255, 0.21);
     border: 1px solid white;
     border-radius: 4px;
-    padding: 25px;
-    max-width: 360px;
-    height: 82px;
+    padding: 0 16px;
+    max-width: 440px;
+    height: 40px;
     margin: 0 0 21px;
-    -webkit-text-fill-color: white;
     width: 100%;
     font-size: 20px;
 }
@@ -39,10 +38,7 @@
     color: white;
 }
 
-.inputContactUsModule:-webkit-autofill,
-.inputContactUsModule:-webkit-autofill:hover, 
-.inputContactUsModule:-webkit-autofill:focus, 
-.inputContactUsModule:-webkit-autofill:active {
+.inputContactUsModule:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.21) inset !important;
     box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.21) inset !important;
     -webkit-text-fill-color: white !important;
@@ -54,9 +50,9 @@
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 4px;
-    padding: 25px;
-    max-width: 360px;
-    height: 82px;
+    padding: 0 16px;
+    max-width: 440px;
+    height: 40px;
     margin: 0 0 21px;
     width: 100%;
     font-size: 20px;
@@ -191,15 +187,11 @@
 
     .inputContactUsHome {
         max-width: 243px;
-        height: 56px;
-        font-size: 14px;
-        padding: 25px 17px;
+        font-size: 13px;
     }
 
     .inputContactUsModule {
         max-width: 243px;
-        height: 56px;
-        font-size: 14px;
-        padding: 14px 17px;
+        font-size: 13px;
     }
 }

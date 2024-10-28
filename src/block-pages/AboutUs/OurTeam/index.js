@@ -4,6 +4,8 @@ import styles from "../../../styles/block-pages/about-us/ourteam.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import Image from "next/image";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
+import Link from "next/link";
+import { ROUTE_ABOUTUS, TAG_INVENTIAEXPERIENCE, TAG_INVENTIASOFTWARE } from "@/utils/routes";
 
 const OurTeam = () => {
 
@@ -61,8 +63,16 @@ const OurTeam = () => {
                         <div className={styles.description}><Text text={descriptionText} /></div>
                     </div>
                     <div className={styles.container2}>
-                        <div className={styles.text}><Text className={styles.text1} text={experienceText} /></div>
-                        <div className={styles.text}><Text className={styles.text1} text={softwareText} /></div>
+                        <div className={styles.text}>
+                            <Link href={`${ROUTE_ABOUTUS}#${TAG_INVENTIAEXPERIENCE}`}>
+                                <Text className={styles.text1} text={experienceText} />
+                            </Link>
+                        </div>
+                        <div className={styles.text}>
+                            <Link href={`${ROUTE_ABOUTUS}#${TAG_INVENTIASOFTWARE}`}>
+                                <Text className={styles.text1} text={softwareText} />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>

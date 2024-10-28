@@ -20,6 +20,7 @@ export const ROUTE_FACEBOOK = 'https://www.facebook.com/profile.php?id=100077417
 
 export const TAG_INVENTIAEXPERIENCE = 'inventiaexperience'
 export const TAG_INVENTIASOFTWARE = 'inventiasoftware'
+export const TAG_METHODOLOGY = 'methodology'
 export const TAG_JOIN_TEAM = 'join-team'
 
 export const EXTERNAL_ROUTE_ION = "https://www.ion.com.mx/"

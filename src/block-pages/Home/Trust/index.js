@@ -41,7 +41,9 @@ const Trust = () => {
         <section className={styles.background}>
             <div className={styles.wrapper}>
                 <div className={styles.infoContainer}>
+                <FadeInWrapper type='fadeinright' replay={true}>
                     <Text texts={contactText} className={styles.title} />
+                </FadeInWrapper>
                     <div className={styles.buttonContainer}>
                         <AnchorButton
                             href={ROUTE_CONTACTUS}
@@ -51,12 +53,12 @@ const Trust = () => {
                         </AnchorButton>
                     </div>
                 </div>
-                <FadeInWrapper type='fadeinup' replay={true}>
+                <FadeInWrapper speed=".5s" type='fadeinup' replay={true}>
                     <div className={styles.imgContainer}>
-                        <a
-                            href={EXTERNAL_ROUTE_BBVA}
-                            target='_blank'
-                            rel='noopener noreferrer'
+                        <p
+                            // href={EXTERNAL_ROUTE_BBVA}
+                            // target='_blank'
+                            // rel='noopener noreferrer'
                             className={styles.anchor1}
                         >
                             <Image
@@ -66,11 +68,11 @@ const Trust = () => {
                                 height={isResponsive ? 33 : 112}
                                 priority
                             />
-                        </a>
-                        <a
-                            href={EXTERNAL_ROUTE_GENTERA}
-                            target='_blank'
-                            rel='noopener noreferrer'
+                        </p>
+                        <p
+                            // href={EXTERNAL_ROUTE_GENTERA}
+                            // target='_blank'
+                            // rel='noopener noreferrer'
                             className={styles.anchor2}
                         >
                             <Image
@@ -80,11 +82,11 @@ const Trust = () => {
                                 height={isResponsive ? 19 : 42}
                                 priority
                             />
-                        </a>
-                        <a
-                            href={EXTERNAL_ROUTE_ION}
-                            target='_blank'
-                            rel='noopener noreferrer'
+                        </p>
+                        <p
+                            // href={EXTERNAL_ROUTE_ION}
+                            // target='_blank'
+                            // rel='noopener noreferrer'
                             className={styles.anchor3}
                         >
                             <Image
@@ -94,11 +96,11 @@ const Trust = () => {
                                 height={isResponsive ? 53 : 134}
                                 priority
                             />
-                        </a>
-                        <a
-                            href={EXTERNAL_ROUTE_PODEMOS_PROGRESAR}
-                            target='_blank'
-                            rel='noopener noreferrer'
+                        </p>
+                        <p
+                            // href={EXTERNAL_ROUTE_PODEMOS_PROGRESAR}
+                            // target='_blank'
+                            // rel='noopener noreferrer'
                             className={styles.anchor4}
                         >
                             <Image
@@ -108,7 +110,7 @@ const Trust = () => {
                                 height={isResponsive ? 30 : 87}
                                 priority
                             />
-                        </a>
+                        </p>
                     </div>
                 </FadeInWrapper>
             </div>

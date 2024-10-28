@@ -1,74 +1,150 @@
 .wrapper {
     opacity: 0;
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.speed1s {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.speed02s {
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.speed05s {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .visible {
     opacity: 1;
 }
 
-.fadeinup {
-    transform: translateY(50px);
+.fadeinupbig {
+    transform: translateY(100px);
 }
 
-.fadeinup.visible {
+.fadeinupbig.visible {
     transform: translateY(0);
 }
 
-.fadeindown {
-    transform: translateY(-50px);
+.fadeindownbig {
+    transform: translateY(-100px);
 }
 
-.fadeindown.visible {
+.fadeindownbig.visible {
     transform: translateY(0);
 }
 
-.fadeinright {
-    transform: translateX(-50px);
+.fadeinrightbig {
+    transform: translateX(-100px);
 }
 
-.fadeinright.visible {
+.fadeinrightbig.visible {
     transform: translateX(0);
 }
 
-.fadeinleft {
+.fadeinleftbig {
+    transform: translateX(100px);
+}
+
+.fadeinleftbig.visible {
+    transform: translateX(0);
+}
+
+.fadeinupnormal {
+    transform: translateY(50px);
+}
+
+.fadeinupnormal.visible {
+    transform: translateY(0);
+}
+
+.fadeindownnormal {
+    transform: translateY(-50px);
+}
+
+.fadeindownnormal.visible {
+    transform: translateY(0);
+}
+
+.fadeinrightnormal {
+    transform: translateX(-50px);
+}
+
+.fadeinrightnormal.visible {
+    transform: translateX(0);
+}
+
+.fadeinleftnormal {
     transform: translateX(50px);
 }
 
-.fadeinleft.visible {
+.fadeinleftnormal.visible {
     transform: translateX(0);
 }
 
 @media (max-width: 768px) {
-    .fadeinup {
+    .fadeinupbig {
         transform: translateY(10px);
     }
     
-    .fadeinup.visible {
+    .fadeinupbig.visible {
         transform: translateY(0);
     }
     
-    .fadeindown {
+    .fadeindownbig {
         transform: translateY(-10px);
     }
     
-    .fadeindown.visible {
+    .fadeindownbig.visible {
         transform: translateY(0);
     }
     
-    .fadeinright {
+    .fadeinrightbig {
         transform: translateX(-10px);
     }
     
-    .fadeinright.visible {
+    .fadeinrightbig.visible {
         transform: translateX(0);
     }
     
-    .fadeinleft {
+    .fadeinleftbig {
         transform: translateX(10px);
     }
     
-    .fadeinleft.visible {
+    .fadeinleftbig.visible {
+        transform: translateX(0);
+    }
+    
+    .fadeinupnormal {
+        transform: translateY(10px);
+    }
+    
+    .fadeinupnormal.visible {
+        transform: translateY(0);
+    }
+    
+    .fadeindownnormal {
+        transform: translateY(-10px);
+    }
+    
+    .fadeindownnormal.visible {
+        transform: translateY(0);
+    }
+    
+    .fadeinrightnormal {
+        transform: translateX(-10px);
+    }
+    
+    .fadeinrightnormal.visible {
+        transform: translateX(0);
+    }
+    
+    .fadeinleftnormal {
+        transform: translateX(10px);
+    }
+    
+    .fadeinleftnormal.visible {
         transform: translateX(0);
     }
 }

@@ -59,7 +59,7 @@ const Text = ({ texts, text, ...rest }) => {
         ));
 
         return textObj.href && textObj.href.startsWith('/') ? (
-            <Link {...props} key={index} href={textObj.href}>
+            <Link {...props} key={index} href={textObj.href} >
                 {textContent}
             </Link>
         ) : (

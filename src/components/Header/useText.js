@@ -17,8 +17,7 @@ import {
     ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR,
     ROUTE_SUCCESSSTORIES_BANKINGGRUPOGENTERA,
     ROUTE_SUCCESSSTORIES_BANKINGION,
-    TAG_INVENTIAEXPERIENCE,
-    TAG_INVENTIASOFTWARE
+    TAG_JOIN_TEAM
 } from "@/utils/routes";
 
 const useText = (isMenuOpen) => {
@@ -39,7 +38,7 @@ const useText = (isMenuOpen) => {
             tag: "p",
             font: isServices && !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
-            color: 'blackBase',
+            color: !isSmallScreen && !isServices ? 'blackCaption' : 'blackBase',
         }
     ];
 
@@ -138,7 +137,7 @@ const useText = (isMenuOpen) => {
             tag: "p",
             font: isSuccessStories && !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
-            color: 'blackBase'
+            color: !isSmallScreen && !isSuccessStories ? 'blackCaption' : 'blackBase',
         }
     ];
 
@@ -211,10 +210,32 @@ const useText = (isMenuOpen) => {
     const aboutUsText = [
         {
             text: t('header.about-us.title'),
-            tag: !isMenuOpen ? "a" : "p",
-            href: ROUTE_ABOUTUS,
+            href: null,
+            tag: "p",
             font: isAboutUs && !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
+            color: !isSmallScreen && !isAboutUs ? 'blackCaption' : 'blackBase',
+        }
+    ];
+
+    const aboutUsFirstText = [
+        {
+            text: t('header.about-us.section1.subtitle1'),
+            tag: "a",
+            href: ROUTE_SUCCESSSTORIES,
+            font: "poppinsMedium",
+            size: 13,
+            color: 'blackBase'
+        }
+    ];
+
+    const aboutUsSecondText = [
+        {
+            text: t('header.about-us.section2.subtitle1'),
+            tag: "a",
+            href: `${ROUTE_SUCCESSSTORIES}${TAG_JOIN_TEAM}`,
+            font: "poppinsMedium",
+            size: 13,
             color: 'blackBase'
         }
     ];
@@ -226,7 +247,7 @@ const useText = (isMenuOpen) => {
             href: ROUTE_CONTACTUS,
             font: isContactUs && !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
-            color: 'blackBase'
+            color: !isSmallScreen && !isContactUs ? 'blackCaption' : 'blackBase',
         }
     ];
 
@@ -236,7 +257,7 @@ const useText = (isMenuOpen) => {
             tag: "p",
             font: !isSmallScreen ? "poppinsExtrabold" : "poppinsMedium",
             size: !isSmallScreen ? 20 : 22,
-            color: 'blackBase'
+            color: !isSmallScreen ? 'blackCaption' : 'blackBase'
         }
     ];
 
@@ -318,6 +339,21 @@ const useText = (isMenuOpen) => {
         }
     ];
 
+    const dropdownDataAboutUs = [
+        {
+            title: {
+                text: t('header.about-us.section1.subtitle1'),
+                href: ROUTE_ABOUTUS
+            }
+        },
+        {
+            title: {
+                text: t('header.about-us.section2.subtitle1'),
+                href: `${ROUTE_ABOUTUS}#${TAG_JOIN_TEAM}`
+            }
+        }
+    ];
+
     return {
         servicesText,
         servicesInventiaExperienceText,
@@ -336,10 +372,17 @@ const useText = (isMenuOpen) => {
         successBankingOption2Text,
         successText,
         aboutUsText,
+        aboutUsFirstText,
+        aboutUsSecondText,
         contactUsText,
         langText,
         dropdownDataServices,
-        dropdownDataSuccessStories
+        dropdownDataSuccessStories,
+        dropdownDataAboutUs,
+        isServices,
+        isSuccessStories,
+        isAboutUs,
+        isContactUs,
     }
 }
 

@@ -46,11 +46,13 @@
 }
 
 .buttonItem {
-    width: 100%;
+    width: 360px;
     height: 82px !important;
     border-radius: 39.887px;
     background: #E77C30;
     border: none;
+    display: block;
+    margin: 0 auto;
 }
 
 .buttonItem:disabled {
@@ -79,7 +81,5 @@
         width: 243px !important;
         height: 56px !important;
         border-radius: 29.343px;
-        background: #E77C30;
-        border: none;
     }
 }

@@ -64,8 +64,8 @@ const Main = () => {
     const explanation2Text = {
         text:
             isResponsive ?
-            t('services.inventiaexperience-research.block2.text2-mobile') :
-            t('services.inventiaexperience-research.block2.text2'),
+                t('services.inventiaexperience-research.block2.text2-mobile') :
+                t('services.inventiaexperience-research.block2.text2'),
         tag: "p",
         font: "poppinsMedium",
         size: isResponsive ? 12 : 20,
@@ -109,42 +109,42 @@ const Main = () => {
                     </div>
                 </FadeInWrapper>
                 <div className={styles.texts}>
-                    <FadeInWrapper type='fadeinup' replay={true}>
-                        <div className={styles.textContent}>
-                            <Image
-                                src="/images/services/inventiaexperience-research/explanation/person.svg"
-                                alt="Better client understanding"
-                                width={isResponsive ? 104 : 214}
-                                height={isResponsive ? 104 : 214}
-                                priority
-                            />
-                            <div className={styles.text}><Text text={explanation1Text} /></div>
-                        </div>
-                    </FadeInWrapper>
-                    <FadeInWrapper type='fadeinup' replay={true}>
-                        <div className={styles.textContent}>
-                            <Image
-                                src="/images/services/inventiaexperience-research/explanation/chat.svg"
-                                alt="Better client understanding"
-                                width={isResponsive ? 104 : 214}
-                                height={isResponsive ? 104 : 214}
-                                priority
-                            />
-                            <div className={styles.text}><Text text={explanation2Text} /></div>
-                        </div>
-                    </FadeInWrapper>
-                    <FadeInWrapper className={styles.lastChild} type='fadeinup' replay={true}>
-                        <div className={styles.textContent}>
-                            <Image
-                                src="/images/services/inventiaexperience-research/explanation/light.svg"
-                                alt="Better client understanding"
-                                width={isResponsive ? 104 : 214}
-                                height={isResponsive ? 104 : 214}
-                                priority
-                            />
-                            <div className={styles.text}><Text text={explanation3Text} /></div>
-                        </div>
-                    </FadeInWrapper>
+
+                    <div className={styles.textContent}>
+                        <Image
+                            src="/images/services/inventiaexperience-research/explanation/person.svg"
+                            alt="Better client understanding"
+                            width={isResponsive ? 104 : 214}
+                            height={isResponsive ? 104 : 214}
+                            priority
+                        />
+                        <div className={styles.text}><Text text={explanation1Text} /></div>
+                    </div>
+
+
+                    <div className={styles.textContent}>
+                        <Image
+                            src="/images/services/inventiaexperience-research/explanation/chat.svg"
+                            alt="Better client understanding"
+                            width={isResponsive ? 104 : 214}
+                            height={isResponsive ? 104 : 214}
+                            priority
+                        />
+                        <div className={styles.text}><Text text={explanation2Text} /></div>
+                    </div>
+
+
+                    <div className={styles.textContent}>
+                        <Image
+                            src="/images/services/inventiaexperience-research/explanation/light.svg"
+                            alt="Better client understanding"
+                            width={isResponsive ? 104 : 214}
+                            height={isResponsive ? 104 : 214}
+                            priority
+                        />
+                        <div className={styles.text}><Text text={explanation3Text} /></div>
+                    </div>
+
                 </div>
             </div>
         </section>

@@ -42,7 +42,13 @@
             }
         },
         "about-us": {
-            "title": "About us"
+            "title": "About us",
+            "section1": {
+                "subtitle1": "Our team"
+            },
+            "section2": {
+                "subtitle1": "Hiring"
+            }
         },
         "contact-us": {
             "title": "Let’s talk!"

@@ -42,7 +42,13 @@
             }
         },
         "about-us": {
-            "title": "Nosotros"
+            "title": "Nosotros",
+            "section1": {
+                "subtitle1": "Nuestro equipo"
+            },
+            "section2": {
+                "subtitle1": "Reclutamiento"
+            }
         },
         "contact-us": {
             "title": "¡Hablemos!"

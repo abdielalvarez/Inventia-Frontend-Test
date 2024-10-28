@@ -30,9 +30,9 @@
     .background {
         height: 503px;
         padding: 69px 20px 0 74px;
-        background-position: 81% 49px;
+        background-position: 81%;
         background-repeat: no-repeat;
-        background-size: 195%;
+        background-size: cover;
     }
 
     .title {

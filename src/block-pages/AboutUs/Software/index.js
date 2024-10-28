@@ -3,7 +3,7 @@ import styles from "../../../styles/block-pages/about-us/software.module.css"
 import Image from "next/image";
 import useText from "../useText";
 import AnchorButton from "@/components/AnchorButton";
-import { ROUTE_ABOUTUS, TAG_JOIN_TEAM } from "@/utils/routes";
+import { ROUTE_ABOUTUS, TAG_INVENTIASOFTWARE, TAG_JOIN_TEAM } from "@/utils/routes";
 import useResponsive from "@/hooks/useResponsive";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
 
@@ -27,7 +27,7 @@ const Software = () => {
     const isResponsive = useResponsive(768)
 
     return (
-        <section className={styles.background}>
+        <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
             <div className={styles.wrapper}>
                 <FadeInWrapper type='fadeindown' replay={true}>
                     <div className={styles.container1}>
