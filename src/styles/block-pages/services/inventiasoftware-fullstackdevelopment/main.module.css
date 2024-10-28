@@ -69,7 +69,7 @@
 .background2 {
     width: 100%;
     max-width: 100%;
-    padding: 112px 0 0;
+    padding: 0 0 0;
 }
 
 .background2 :global(img) {
@@ -99,7 +99,7 @@
     }
 
     .background2 {
-        padding: 69px 0 0;
+        padding: 0 0 0;
     }
 
     .title {

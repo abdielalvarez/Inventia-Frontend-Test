@@ -1,6 +1,6 @@
 .background {
     background: #FFFFFF;
-    padding: 250px 40px 300px;
+    padding: 196px 40px 300px;
 }
 
 .wrapper {
@@ -37,6 +37,7 @@
     max-width: 380px;
     width: 100%;
     line-height: 49.156px;
+    margin: 0 0 100vh;
 }
 
 .content {
@@ -65,7 +66,7 @@
     }
 
     .background {
-        padding: 120px 40px;
+        padding: 69px 40px 120px;
     }
 
     .title {

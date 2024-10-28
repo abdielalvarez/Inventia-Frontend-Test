@@ -1,6 +1,6 @@
 .background {
     position: relative;
-    padding: 350px 40px 161px;
+    padding: 172px 40px 161px;
     background-color: #2005C0;
 }
 
@@ -68,7 +68,7 @@
 @media (max-width: 768px) {
 
     .background {
-        padding: 170px 10px 100px 40px;
+        padding: 101px 10px 100px 40px;
     }
 
     .formContainer {

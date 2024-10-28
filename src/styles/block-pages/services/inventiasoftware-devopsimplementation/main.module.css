@@ -1,6 +1,6 @@
 .background {
     background: #FFFFFF;
-    padding: 333px 40px 0;
+    padding: 155px 40px 0;
 }
 
 .wrapper {
@@ -71,7 +71,7 @@
 @media (max-width: 768px) {
 
     .background {
-        padding: 110px 40px 0;
+        padding: 69px 40px 0;
     }
 
     .title {

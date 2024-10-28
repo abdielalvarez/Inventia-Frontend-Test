@@ -1,5 +1,5 @@
 .background {
-  padding: 112px 0 0;
+  padding: 0 0 0;
 }
 
 .videoFullScreen {
@@ -20,6 +20,6 @@
 
 @media (max-width: 768px) {
   .background {
-    padding: 69px 0 0;
+    padding: 0 0 0;
   }
 }

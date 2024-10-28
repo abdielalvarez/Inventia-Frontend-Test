@@ -1,0 +1,162 @@
+.through1hidden {
+    display: none;
+}
+
+.through1DownSecCont {
+    display: flex;
+}
+
+.through1DinamicDiv {
+    margin: 62px 0 0 254px;
+}
+
+.through1FixedDiv {
+    height: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.through1StickyIcon {
+    display: inline-block;
+    position: sticky;
+    top: 300px;
+    height: 214px;
+    width: auto;
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+}
+
+@media (max-width: 768px) {
+
+    .through1StickyIcon {
+        display: inline-block;
+        position: sticky;
+        top: 38%;
+        height: 214px;
+        width: auto;
+        animation-name: fadeIn;
+        animation-duration: .3s;
+        animation-fill-mode: both;
+    }
+
+    .through1DinamicDiv {
+        margin: 40px 0 0 40px;
+    }
+}
+
+.through2hidden {
+    display: none;
+}
+
+.through2DownSecCont {
+    display: flex;
+}
+
+.through2DinamicDiv {
+    margin: 62px 200px 0 0;
+}
+
+.through2FixedDiv {
+    height: auto;
+    margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.through2StickyIcon {
+    display: inline-block;
+    position: sticky;
+    top: 300px;
+    height: 214px;
+    width: auto;
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+}
+
+@media (max-width: 768px) {
+
+    .through2StickyIcon {
+        display: inline-block;
+        position: sticky;
+        top: 38%;
+        height: 214px;
+        width: auto;
+        animation-name: fadeIn;
+        animation-duration: .3s;
+        animation-fill-mode: both;
+    }
+
+    .through2DinamicDiv {
+        margin: 58px 0 0 40px;
+    }
+}
+
+.through3hidden {
+    display: none;
+}
+
+.through3DownSecCont {
+    display: flex;
+}
+
+.through3DinamicDiv {
+    margin: 0 254px 0 0;
+}
+
+.through3FixedDiv {
+    height: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.through3StickyIcon {
+    display: inline-block;
+    position: sticky;
+    top: 300px;
+    height: 214px;
+    width: auto;
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+}
+
+@media (max-width: 768px) {
+
+    .through3StickyIcon {
+        display: inline-block;
+        position: sticky;
+        top: 38%;
+        height: 214px;
+        width: auto;
+        animation-name: fadeIn;
+        animation-duration: .3s;
+        animation-fill-mode: both;
+    }
+
+    .through3DinamicDiv {
+        margin: 28px 40px 0 0;
+    }
+}

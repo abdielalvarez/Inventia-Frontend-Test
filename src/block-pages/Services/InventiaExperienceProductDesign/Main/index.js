@@ -1,12 +1,14 @@
 import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
-import styles from "../../../../styles/block-pages/services/inventiaexperience-productdesign/main.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import {
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
 import Image from "next/image";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
+import { useInView } from "react-intersection-observer";
+import styles from "../../../../styles/block-pages/services/inventiaexperience-productdesign/main.module.css"
+import throughStyles from "../../../../styles/components/animations/through.module.css"
 
 const Main = () => {
 
@@ -111,6 +113,10 @@ const Main = () => {
         },
     ]
 
+    const { ref: text1, inView: isText1 } = useInView();
+    const { ref: text2, inView: isText2 } = useInView();
+    const { ref: text3, inView: isText3 } = useInView();
+
     return (
         <div>
             <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
@@ -143,44 +149,37 @@ const Main = () => {
                 />
             </div>
             <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
-                <div className={styles.wrapper1}>
-                    <div className={styles.texts}>
-                        <FadeInWrapper type='fadeinup' replay={true}>
-                            <div className={styles.textContent}>
-                                <Image
-                                    src="/images/services/inventiaexperience-productdesign/explanation/vision.svg"
-                                    alt="Better client understanding"
-                                    width={isResponsive ? 107 : 270}
-                                    height={isResponsive ? 47 : 118}
-                                    priority
-                                />
-                                <div className={styles.text}><Text texts={explanation1Text} /></div>
-                            </div>
-                        </FadeInWrapper>
-                        <FadeInWrapper type='fadeinup' replay={true}>
-                            <div className={styles.textContent}>
-                                <Image
-                                    src="/images/services/inventiaexperience-productdesign/explanation/person.svg"
-                                    alt="Better client understanding"
-                                    width={isResponsive ? 104 : 214}
-                                    height={isResponsive ? 104 : 214}
-                                    priority
-                                />
-                                <div className={styles.text}><Text texts={explanation2Text} /></div>
-                            </div>
-                        </FadeInWrapper>
-                        <FadeInWrapper type='fadeinup' replay={true}>
-                            <div className={styles.textContent}>
-                                <Image
-                                    src="/images/services/inventiaexperience-productdesign/explanation/prototype.svg"
-                                    alt="Better client understanding"
-                                    width={isResponsive ? 104 : 214}
-                                    height={isResponsive ? 104 : 214}
-                                    priority
-                                />
-                                <div className={styles.text}><Text texts={explanation3Text} /></div>
-                            </div>
-                        </FadeInWrapper>
+                <div className={throughStyles.through2DownSecCont}>
+                    <div className={throughStyles.through2FixedDiv}>
+                        <Image
+                            src="/images/services/inventiaexperience-productdesign/explanation/vision.svg"
+                            alt="Better client understanding"
+                            width={isResponsive ? 107 : 270}
+                            height={isResponsive ? 47 : 118}
+                            priority
+                            className={isText1 ? throughStyles.through2StickyIcon : throughStyles.through2hidden}
+                        />
+                        <Image
+                            src="/images/services/inventiaexperience-productdesign/explanation/person.svg"
+                            alt="Better client understanding"
+                            width={isResponsive ? 104 : 214}
+                            height={isResponsive ? 104 : 214}
+                            priority
+                            className={isText2 ? throughStyles.through2StickyIcon : throughStyles.through2hidden}
+                        />
+                        <Image
+                            src="/images/services/inventiaexperience-productdesign/explanation/prototype.svg"
+                            alt="Better client understanding"
+                            width={isResponsive ? 104 : 214}
+                            height={isResponsive ? 104 : 214}
+                            priority
+                            className={isText3 ? throughStyles.through2StickyIcon : throughStyles.through2hidden}
+                        />
+                    </div>
+                    <div className={throughStyles.through2DinamicDiv}>
+                        <div ref={text1} className={styles.text}><Text texts={explanation1Text} /></div>
+                        <div ref={text2} className={styles.text}><Text texts={explanation2Text} /></div>
+                        <div ref={text3} className={styles.text}><Text texts={explanation3Text} /></div>
                     </div>
                 </div>
             </section>

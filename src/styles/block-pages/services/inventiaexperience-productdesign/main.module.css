@@ -1,6 +1,6 @@
 .background {
     background: #FFFFFF;
-    padding: 230px 40px 0;
+    padding: 209px 40px 0;
 }
 
 .wrapper {
@@ -60,6 +60,7 @@
 .text {
     max-width: 283px;
     width: 100%;
+    margin: 0 0 100vh;
 }
 
 .background2 {
@@ -74,7 +75,7 @@
 @media (max-width: 768px) {
 
     .background {
-        padding: 110px 13px 70px;
+        padding: 69px 13px 70px;
     }
 
     .wrapper {

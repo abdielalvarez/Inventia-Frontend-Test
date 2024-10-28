@@ -1,7 +1,7 @@
 .background {
     background-color: #FFFFFF;
     position: relative;
-    padding: 469px 139px 416px;
+    padding: 291px 139px 416px;
 }
 
 .wrapper {
@@ -33,7 +33,7 @@
 @media (max-width: 768px) {
 
     .background {
-        padding: 112px 20px 56px;
+        padding: 43px 20px 56px;
     }
 
     .wrapper {

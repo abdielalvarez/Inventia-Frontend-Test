@@ -1,12 +1,14 @@
 import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
-import styles from "../../../../styles/block-pages/services/inventiaexperience-servicedesign/main.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import {
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
 import Image from "next/image";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
+import { useInView } from "react-intersection-observer";
+import styles from "../../../../styles/block-pages/services/inventiaexperience-servicedesign/main.module.css"
+import throughStyles from "../../../../styles/components/animations/through.module.css"
 
 const Main = () => {
 
@@ -45,6 +47,9 @@ const Main = () => {
         color: 'blackBase',
     }
 
+    const { ref: text1, inView: isText1 } = useInView();
+    const { ref: text2, inView: isText2 } = useInView();
+
     return (
         <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
             <div className={styles.wrapper}>
@@ -63,30 +68,33 @@ const Main = () => {
                         </div>
                     </div>
                 </FadeInWrapper>
-                <FadeInWrapper type='fadeinright' replay={true}>
+                
                     <div className={styles.content}>
-                        <div className={styles.contentInfo1}>
-                            <div className={styles.text}><Text text={explanationText} /></div>
-                        </div>
-                        <div className={styles.contentInfo2}>
-                            <Image
-                                src="/images/services/inventiaexperience-servicedesign/description/settings.svg"
-                                alt="Settings"
-                                width={isResponsive ? 104 : 385}
-                                height={isResponsive ? 104 : 385}
-                                priority
-                                className={styles.img1}
-                            />
-                            <Image
-                                src="/images/services/inventiaexperience-servicedesign/description/location.svg"
-                                alt="Location"
-                                width={isResponsive ? 104 : 385}
-                                height={isResponsive ? 104 : 385}
-                                priority
-                            />
+                        <div className={throughStyles.through3DownSecCont}>
+                            <div className={throughStyles.through3DinamicDiv}>
+                                <div ref={text1} className={styles.text}><Text text={explanationText} /></div>
+                            </div>
+                            <div className={throughStyles.through3FixedDiv}>
+                                <Image
+                                    src="/images/services/inventiaexperience-servicedesign/description/settings.svg"
+                                    alt="Settings"
+                                    width={isResponsive ? 104 : 385}
+                                    height={isResponsive ? 104 : 385}
+                                    priority
+                                    className={!isText1 ? throughStyles.through3StickyIcon : throughStyles.through3hidden}
+                                />
+                                <Image
+                                    src="/images/services/inventiaexperience-servicedesign/description/location.svg"
+                                    alt="Location"
+                                    width={isResponsive ? 104 : 385}
+                                    height={isResponsive ? 104 : 385}
+                                    priority
+                                    className={isText1 ? throughStyles.through3StickyIcon : throughStyles.through3hidden}
+                                />
+                            </div>
                         </div>
                     </div>
-                </FadeInWrapper>
+                
             </div>
         </section>
     )

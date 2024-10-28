@@ -1,12 +1,14 @@
 import Text from "@/components/Text";
 import { useApiContext } from "@/context/wrappers/ContextProvider";
-import styles from "../../../../styles/block-pages/services/inventiaexperience-research/main.module.css"
 import useResponsive from "@/hooks/useResponsive";
 import {
     TAG_INVENTIASOFTWARE
 } from "@/utils/routes";
 import Image from "next/image";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
+import { useInView } from "react-intersection-observer";
+import styles from "../../../../styles/block-pages/services/inventiaexperience-research/main.module.css"
+import throughStyles from "../../../../styles/components/animations/through.module.css"
 
 const Main = () => {
 
@@ -82,13 +84,21 @@ const Main = () => {
         color: 'blackBase',
     }
 
+    // const { ref: upTiRef, inView: isUpTiVisible } = useInView();
+    const { ref: text1, inView: isText1 } = useInView();
+    const { ref: text2, inView: isText2 } = useInView();
+    const { ref: text3, inView: isText3 } = useInView();
+
     return (
         <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
             <div className={styles.wrapper}>
                 <div className={styles.titleContainer}>
                     <Text text={titleText} className={styles.title} />
                 </div>
-                <FadeInWrapper type='fadeinright' replay={true}>
+                <FadeInWrapper
+                    type='fadeinright'
+                    replay={true}
+                >
                     <div className={styles.container}>
                         <div className={styles.titleContainer}>
                             <Image
@@ -108,44 +118,43 @@ const Main = () => {
                         </div>
                     </div>
                 </FadeInWrapper>
+                
                 <div className={styles.texts}>
-
-                    <div className={styles.textContent}>
-                        <Image
-                            src="/images/services/inventiaexperience-research/explanation/person.svg"
-                            alt="Better client understanding"
-                            width={isResponsive ? 104 : 214}
-                            height={isResponsive ? 104 : 214}
-                            priority
-                        />
-                        <div className={styles.text}><Text text={explanation1Text} /></div>
+                    <div className={throughStyles.through1DownSecCont}>
+                        <div className={throughStyles.through1FixedDiv}>
+                            <Image
+                                src="/images/services/inventiaexperience-research/explanation/person.svg"
+                                alt="Better client understanding"
+                                width={isResponsive ? 104 : 214}
+                                height={isResponsive ? 104 : 214}
+                                priority
+                                className={isText1 ? throughStyles.through1StickyIcon : throughStyles.through1hidden}
+                            />
+                            <Image
+                                src="/images/services/inventiaexperience-research/explanation/chat.svg"
+                                alt="Better client understanding"
+                                width={isResponsive ? 104 : 214}
+                                height={isResponsive ? 104 : 214}
+                                priority
+                                className={isText2 ? throughStyles.through1StickyIcon : throughStyles.through1hidden}
+                            />
+                            <Image
+                                src="/images/services/inventiaexperience-research/explanation/light.svg"
+                                alt="Better client understanding"
+                                width={isResponsive ? 104 : 214}
+                                height={isResponsive ? 104 : 214}
+                                priority
+                                className={isText3 ? throughStyles.through1StickyIcon : throughStyles.through1hidden}
+                            />
+                        </div>
+                        <div className={throughStyles.through1DinamicDiv}>
+                            <div ref={text1} className={styles.text}><Text text={explanation1Text} /></div>
+                            <div ref={text2} className={styles.text}><Text text={explanation2Text} /></div>
+                            <div ref={text3} className={styles.text}><Text text={explanation3Text} /></div>
+                        </div>
                     </div>
-
-
-                    <div className={styles.textContent}>
-                        <Image
-                            src="/images/services/inventiaexperience-research/explanation/chat.svg"
-                            alt="Better client understanding"
-                            width={isResponsive ? 104 : 214}
-                            height={isResponsive ? 104 : 214}
-                            priority
-                        />
-                        <div className={styles.text}><Text text={explanation2Text} /></div>
-                    </div>
-
-
-                    <div className={styles.textContent}>
-                        <Image
-                            src="/images/services/inventiaexperience-research/explanation/light.svg"
-                            alt="Better client understanding"
-                            width={isResponsive ? 104 : 214}
-                            height={isResponsive ? 104 : 214}
-                            priority
-                        />
-                        <div className={styles.text}><Text text={explanation3Text} /></div>
-                    </div>
-
                 </div>
+
             </div>
         </section>
     )

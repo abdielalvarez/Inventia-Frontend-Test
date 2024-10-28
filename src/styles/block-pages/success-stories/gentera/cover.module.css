@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 100%;
     display: block;
-    padding: 112px 0 0;
+    padding: 0 0 0;
 }
 
 .background :global(img) {
@@ -11,6 +11,6 @@
 
 @media (max-width: 768px) {
     .background {
-        padding: 69px 0 0;
+        padding: 0 0 0;
     }
 }

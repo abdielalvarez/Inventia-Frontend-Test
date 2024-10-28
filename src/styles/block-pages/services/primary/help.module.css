@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
     height: 1625px;
-    padding: 178px 156px 0;
+    padding: 0 156px 0;
 }
 
 .wrapper {
@@ -83,7 +83,7 @@
 
     .background {
         height: 673px;
-        padding: 69px 38px 0;
+        padding: 0 38px 0;
     }
 
     .wrapper {

@@ -1,6 +1,6 @@
 .background {
     position: relative;
-    padding: 257px 139px 233px;
+    padding: 79px 139px 233px;
 }
 
 .wrapper {
@@ -32,7 +32,7 @@
 @media (max-width: 768px) {
 
     .background {
-        padding: 115px 20px 56px;
+        padding: 46px 20px 56px;
     }
 
     .wrapper {
