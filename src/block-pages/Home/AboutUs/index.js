@@ -80,6 +80,7 @@ const AboutUs = () => {
                         className={styles.wrapper1}
                         type='fadeinright'
                         replay={true}
+                        animationSize="large"
                     >
                         <div className={styles.containerLeft2}>
                             {!isResponsive ?

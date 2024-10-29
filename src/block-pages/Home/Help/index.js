@@ -60,7 +60,7 @@ const Help = () => {
         <section className={styles.background}>
             <div className={styles.wrapper}>
                 <div className={styles.column1}>
-                    <FadeInWrapper type='fadeinright' replay={true}>
+                    <FadeInWrapper type='fadeinright' replay={true} animationSize="large" speed=".5s">
                         <Text texts={helpText1} className={styles.text1} />
                         <Text texts={helpText2} className={styles.text2} />
                     </FadeInWrapper>

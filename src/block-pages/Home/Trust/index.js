@@ -4,14 +4,15 @@ import styles from "../../../styles/block-pages/home/trust.module.css";
 import useResponsive from "@/hooks/useResponsive";
 import AnchorButton from "@/components/AnchorButton";
 import {
-    EXTERNAL_ROUTE_BBVA,
-    EXTERNAL_ROUTE_GENTERA,
-    EXTERNAL_ROUTE_ION,
-    EXTERNAL_ROUTE_PODEMOS_PROGRESAR,
-    ROUTE_CONTACTUS
+    ROUTE_CONTACTUS,
+    ROUTE_SUCCESSSTORIES_BANKINGBBVA,
+    ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR,
+    ROUTE_SUCCESSSTORIES_BANKINGGRUPOGENTERA,
+    ROUTE_SUCCESSSTORIES_BANKINGION
 } from "@/utils/routes";
 import Image from "next/image";
 import FadeInWrapper from "@/context/wrappers/FadeInWrapper";
+import Link from "next/link";
 
 const Trust = () => {
     const { t } = useApiContext();
@@ -55,10 +56,10 @@ const Trust = () => {
                 </div>
                 <FadeInWrapper speed=".5s" type='fadeinup' replay={true}>
                     <div className={styles.imgContainer}>
-                        <p
-                            // href={EXTERNAL_ROUTE_BBVA}
-                            // target='_blank'
-                            // rel='noopener noreferrer'
+                        <Link
+                            href={ROUTE_SUCCESSSTORIES_BANKINGBBVA}
+                            target='_blank'
+                            rel='noopener noreferrer'
                             className={styles.anchor1}
                         >
                             <Image
@@ -68,11 +69,11 @@ const Trust = () => {
                                 height={isResponsive ? 33 : 112}
                                 priority
                             />
-                        </p>
-                        <p
-                            // href={EXTERNAL_ROUTE_GENTERA}
-                            // target='_blank'
-                            // rel='noopener noreferrer'
+                        </Link>
+                        <Link
+                            href={ROUTE_SUCCESSSTORIES_BANKINGGRUPOGENTERA}
+                            target='_blank'
+                            rel='noopener noreferrer'
                             className={styles.anchor2}
                         >
                             <Image
@@ -82,11 +83,11 @@ const Trust = () => {
                                 height={isResponsive ? 19 : 42}
                                 priority
                             />
-                        </p>
-                        <p
-                            // href={EXTERNAL_ROUTE_ION}
-                            // target='_blank'
-                            // rel='noopener noreferrer'
+                        </Link>
+                        <Link
+                            href={ROUTE_SUCCESSSTORIES_BANKINGION}
+                            target='_blank'
+                            rel='noopener noreferrer'
                             className={styles.anchor3}
                         >
                             <Image
@@ -96,11 +97,11 @@ const Trust = () => {
                                 height={isResponsive ? 53 : 134}
                                 priority
                             />
-                        </p>
-                        <p
-                            // href={EXTERNAL_ROUTE_PODEMOS_PROGRESAR}
-                            // target='_blank'
-                            // rel='noopener noreferrer'
+                        </Link>
+                        <Link
+                            href={ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR}
+                            target='_blank'
+                            rel='noopener noreferrer'
                             className={styles.anchor4}
                         >
                             <Image
@@ -110,7 +111,7 @@ const Trust = () => {
                                 height={isResponsive ? 30 : 87}
                                 priority
                             />
-                        </p>
+                        </Link>
                     </div>
                 </FadeInWrapper>
             </div>

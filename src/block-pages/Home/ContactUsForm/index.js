@@ -84,7 +84,7 @@ const ContactUsForm = () => {
             <div className={styles.wrapper}>
                 <div>
                     <div className={styles.infoContent}>
-                        <FadeInWrapper animationSize="big" speed=".5s" type='fadeindown' replay={true}>
+                        <FadeInWrapper animationSize="large" speed=".5s" type='fadeindown' replay={true}>
                             <Image
                                 src="/images/home/lets-talk/line-1.svg"
                                 alt="Let's talk"
@@ -92,6 +92,14 @@ const ContactUsForm = () => {
                                 height={575}
                                 priority
                                 className={styles.icon1}
+                            />
+                            <Image
+                                src="/images/home/lets-talk/line-2.svg"
+                                alt="Let's talk"
+                                width={1}
+                                height={417}
+                                priority
+                                className={styles.icon2}
                             />
                             <Image
                                 src="/images/home/lets-talk/logo.svg"
@@ -102,14 +110,6 @@ const ContactUsForm = () => {
                                 className={styles.logoImg}
                             />
                         </FadeInWrapper>
-                        <Image
-                            src="/images/home/lets-talk/line-2.svg"
-                            alt="Let's talk"
-                            width={1}
-                            height={417}
-                            priority
-                            className={styles.icon2}
-                        />
                         <Image
                             src="/images/home/lets-talk/line-3.svg"
                             alt="Let's talk"

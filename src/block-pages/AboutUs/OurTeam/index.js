@@ -45,7 +45,12 @@ const OurTeam = () => {
     }
 
     return (
-        <FadeInWrapper type='fadeindown' replay={true}>
+        <FadeInWrapper
+            type='fadeindown'
+            replay={true}
+            animationSize="large"
+            speed=".5s"
+        >
             <section className={styles.background}>
                 {isResponsive ?
                     <Image

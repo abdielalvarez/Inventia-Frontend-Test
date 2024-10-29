@@ -222,7 +222,7 @@ const useText = (isMenuOpen) => {
         {
             text: t('header.about-us.section1.subtitle1'),
             tag: "a",
-            href: ROUTE_SUCCESSSTORIES,
+            href: ROUTE_ABOUTUS,
             font: "poppinsMedium",
             size: 13,
             color: 'blackBase'
@@ -233,7 +233,7 @@ const useText = (isMenuOpen) => {
         {
             text: t('header.about-us.section2.subtitle1'),
             tag: "a",
-            href: `${ROUTE_SUCCESSSTORIES}${TAG_JOIN_TEAM}`,
+            href: `${ROUTE_ABOUTUS}#${TAG_JOIN_TEAM}`,
             font: "poppinsMedium",
             size: 13,
             color: 'blackBase'

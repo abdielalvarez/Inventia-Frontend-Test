@@ -26,7 +26,12 @@ const Experience = () => {
     return (
         <section id={TAG_INVENTIAEXPERIENCE} className={styles.background}>
             <div className={styles.wrapper}>
-                <FadeInWrapper type='fadeindown' replay={true}>
+                <FadeInWrapper
+                    type='fadeindown'
+                    replay={true}
+                    animationSize="large"
+                    speed=".5s"
+                >
                     <div className={styles.container1}>
                         <div className={styles.line} />
                         <Image
