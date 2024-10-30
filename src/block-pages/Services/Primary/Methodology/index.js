@@ -101,24 +101,27 @@ const Methodology = () => {
     })
 
     const handleHoverOpen = (hoverName) => {
-        setHover({
-            ...hover,
-            [hoverName]: true,
-        });
+        setHover(Object.keys(hover).reduce((acc, key) => {
+            acc[key] = key === hoverName;
+            return acc;
+        }, {}));
     };
+    
 
-    const handleHoverClose = (hoverName) => {
+    const handleHoverClose = () => {
         setHover({
-            ...hover,
-            [hoverName]: false
+            empathyHover: false,
+            descriptionHover: false,
+            ideaHover: false,
+            prototypeHover: false
         });
     };
 
     const handleClick = (hoverName) => {
-        setHover({
-            ...hover,
-            [hoverName]: !hover[hoverName]
-        });
+        setHover(Object.keys(hover).reduce((acc, key) => {
+            acc[key] = key === hoverName;
+            return acc;
+        }, {}));
     }
 
     return (
@@ -159,7 +162,9 @@ const Methodology = () => {
                     <>
                         {isResponsive ?
                             <div className={styles.description1}>
-                                <Text className={styles.descriptionMobile} text={empathyDescriptionText} />
+                                <FadeInWrapper type='fadeindown' replay={true}>
+                                    <Text className={styles.descriptionMobile} text={empathyDescriptionText} />
+                                </FadeInWrapper>
                             </div> : null
                         }
                     </> : null
@@ -187,7 +192,9 @@ const Methodology = () => {
                     <>
                         {isResponsive ?
                             <div className={styles.description2}>
-                                <Text className={styles.descriptionMobile} text={definitionDescriptionText} />
+                                <FadeInWrapper type='fadeindown' replay={true}>
+                                    <Text className={styles.descriptionMobile} text={definitionDescriptionText} />
+                                </FadeInWrapper>
                             </div> : null
                         }
                     </> : null
@@ -214,7 +221,9 @@ const Methodology = () => {
                     <>
                         {isResponsive ?
                             <div className={styles.description3}>
-                                <Text className={styles.descriptionMobile} text={ideaDescriptionText} />
+                                <FadeInWrapper type='fadeindown' replay={true}>
+                                    <Text className={styles.descriptionMobile} text={ideaDescriptionText} />
+                                </FadeInWrapper>
                             </div> : null
                         }
                     </> : null}
@@ -240,7 +249,9 @@ const Methodology = () => {
                     <>
                         {isResponsive ?
                             <div className={styles.description4}>
-                                <Text className={styles.descriptionMobile} text={prototypeDescriptionText} />
+                                <FadeInWrapper type='fadeindown' replay={true}>
+                                    <Text className={styles.descriptionMobile} text={prototypeDescriptionText} />
+                                </FadeInWrapper>
                             </div> : null
                         }
                     </> : null}

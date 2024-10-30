@@ -132,7 +132,7 @@ const Input = ({
           className={`${className} ${styles.input} ${styles.customSelect}`}
           {...rest}
         >
-          <option value="" disabled>{placeholder}</option>
+          <option value="">{placeholder}</option>
           {options.map((option, index) => (
             <option key={index} value={option.label}>
               {option.value}

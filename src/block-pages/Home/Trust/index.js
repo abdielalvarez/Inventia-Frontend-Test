@@ -54,7 +54,7 @@ const Trust = () => {
                         </AnchorButton>
                     </div>
                 </div>
-                <FadeInWrapper speed=".5s" type='fadeinup' replay={true}>
+                <FadeInWrapper speed="1s" animationSize="large" type='fadeinup' replay={true}>
                     <div className={styles.imgContainer}>
                         <Link
                             href={ROUTE_SUCCESSSTORIES_BANKINGBBVA}

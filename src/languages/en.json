@@ -17,7 +17,7 @@
             "title": "Services",
             "section1": {
                 "subtitle1": "Inventia Experience",
-                "text1": "Costumer Research and Insights",
+                "text1": "Customer Research and Insights",
                 "text2": "Product Design & Build",
                 "text3": "Service Design"
             },
@@ -191,12 +191,12 @@
                 "text3-mobile": "You will obtain insights and findings about your organization and competitors."
             },
             "block3": {
-                "text1": "Based on Design Thinking, Costumer Research and insights will provide you with extensive knowledge and information to lay the foundations for any project.",
+                "text1": "Based on Design Thinking, Customer Research and insights will provide you with extensive knowledge and information to lay the foundations for any project.",
                 "button": "Let’s talk!"
             },
             "block4": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with them focused on Product Design & Build."
+                "text1": "Meet our clients and the projects\nwe have done with them focused\non Customer Research and Insights."
             }
         },
         "inventiaexperience-productdesign": {
@@ -222,7 +222,7 @@
             },
             "block4": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with them focused on Service design."
+                "text1": "Meet our clients and the projects we have done with them focused on Product Design & Build."
             }
         },
         "inventiaexperience-servicedesign": {
@@ -232,7 +232,7 @@
                 "text1": "UX applied across all your services. Understand and interact with your clients by creating and delivering effective and differentiated services."
             },
             "block2": {
-                "text1": "It’s about going beyond the screens to create intentional and meaningful experiences and interactions throughout the costumer journey."
+                "text1": "It’s about going beyond the screens to create intentional and meaningful experiences and interactions throughout the customer journey."
             },
             "block3": {
                 "text1": "We design strategies and process.\nWe work to make the complete service truly functional.",
@@ -241,7 +241,7 @@
             },
             "block4": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with them focused on Full Stack Development."
+                "text1": "Meet our clients and the projects we have done with them focused on Service Design."
             }
         },
         "inventiasoftware-fullstackdevelopment": {
@@ -274,7 +274,7 @@
             },
             "block3": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with them focused on Cloud Engineering."
+                "text1": "Meet our clients and the projects we have done with them focused on Full Stack Development."
             }
         },
         "inventiasoftware-cloudengineering": {
@@ -293,7 +293,7 @@
             },
             "block3": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with them focused on Devops Implementation."
+                "text1": "Meet our clients and the projects we have done with them focused on Cloud Engineering."
             }
         },
         "inventiasoftware-devopsimplementation": {
@@ -319,7 +319,7 @@
             },
             "block3": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with then focused on Customer Research and Insights."
+                "text1": "Meet our clients and the projects we have done with then focused on DevOps Implementation."
             }
         }
     },
@@ -346,20 +346,20 @@
                 }
             },
             "block4": {
-                "text1": "We offer product and service design consulting services for different sales or costumer service channels."
+                "text1": "We offer product and service design consulting services for different sales or customer service channels."
             },
             "block5": {
                 "title": "Testimonials",
                 "slide1": {
-                    "message": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
+                    "message": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...”",
                     "author": "-Nombre Apellido 1."
                 },
                 "slide2": {
-                    "message": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,”",
+                    "message": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...”",
                     "author": "-Nombre Apellido 2."
                 },
                 "slide3": {
-                    "message": "“Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum...”",
+                    "message": "“Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum...”",
                     "author": "-Nombre Apellido 3."
                 }
             },

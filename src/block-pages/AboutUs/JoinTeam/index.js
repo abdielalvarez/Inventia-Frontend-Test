@@ -88,7 +88,7 @@ const JoinTeamForm = () => {
     }, [formData])
 
     return (
-        <section className={styles.background}>
+        <section id={TAG_JOIN_TEAM} className={styles.background}>
             <div className={styles.wrapper}>
                 <div>
                     <div className={styles.infoContent}>
@@ -102,7 +102,7 @@ const JoinTeamForm = () => {
                                 className={styles.logoImg}
                             /> : null
                         }
-                        <div id={TAG_JOIN_TEAM} className={styles.titleContainer}>
+                        <div className={styles.titleContainer}>
                             <Text text={titleText} className={styles.title} />
                         </div>
                         <div className={styles.subtitleContainer}>

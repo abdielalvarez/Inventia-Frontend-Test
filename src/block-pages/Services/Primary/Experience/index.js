@@ -96,10 +96,10 @@ const Experience = () => {
                     <div className={styles.texts}>
                         <div className={styles.textContent}>
                             <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_RESEARCH}>
-                                <FadeInWrapper type='fadeinup' replay={true}>
+                                <FadeInWrapper type='fadeinup' replay={true} animationSize="small">
                                     <div className={styles.text}><Text text={option1Text} className={styles.item} /></div>
                                 </FadeInWrapper>
-                                <FadeInWrapper type='fadeinright' replay={true}>
+                                <FadeInWrapper type='fadeinright' replay={true} animationSize="small">
                                     <Image
                                         src="/images/services/primary/experience/arrow.svg"
                                         alt="Custom Research e Insights"
@@ -112,10 +112,10 @@ const Experience = () => {
                         </div>
                         <div className={styles.textContent}>
                             <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_PRODUCTDESIGN}>
-                                <FadeInWrapper type='fadeinup' replay={true}>
+                                <FadeInWrapper type='fadeinup' replay={true} animationSize="small">
                                     <div className={styles.text}><Text text={option2Text} className={styles.item} /></div>
                                 </FadeInWrapper>
-                                <FadeInWrapper type='fadeinright' replay={true}>
+                                <FadeInWrapper type='fadeinright' replay={true} animationSize="small">
                                     <Image
                                         src="/images/services/primary/experience/arrow.svg"
                                         alt="Product Design and Build"
@@ -128,10 +128,10 @@ const Experience = () => {
                         </div>
                         <div>
                             <Link href={ROUTE_SERVICES_INVENTIAEXPERIENCE_SERVICEDESIGN}>
-                                <FadeInWrapper type='fadeinup' replay={true}>
+                                <FadeInWrapper type='fadeinup' replay={true} animationSize="small">
                                     <div className={styles.text}><Text text={option3Text} className={styles.item} /></div>
                                 </FadeInWrapper>
-                                <FadeInWrapper type='fadeinright' replay={true}>
+                                <FadeInWrapper type='fadeinright' replay={true} animationSize="small">
                                     <Image
                                         src="/images/services/primary/experience/arrow.svg"
                                         alt="Service Design"

@@ -34,7 +34,7 @@ const ContactUs = () => {
     return (
         <section className={styles.background}>
             <div className={styles.wrapper}>
-                <FadeInWrapper type='fadeinright' replay={true} animationSize="large" speed=".5s">
+                <FadeInWrapper type='fadeinright' replay={true} animationSize="large" speed="1s">
                     <Text texts={contactText} className={styles.title} />
                 </FadeInWrapper>
                 <div className={styles.buttonContainer}>

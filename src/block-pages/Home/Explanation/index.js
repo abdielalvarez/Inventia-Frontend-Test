@@ -63,9 +63,18 @@ const Explanation = () => {
     }
 
     return (
-        <section className={styles.background}>
+        <section style={{
+            position: 'relative'
+        }} className={styles.background}>
+            <div
+                id={TAG_INVENTIAEXPERIENCE}
+                style={{
+                    position: 'absolute',
+                    top: isSmallScreen ? -30 : 100
+                }}
+            />
             <div className={styles.wrapper}>
-                <div id={TAG_INVENTIAEXPERIENCE} className={styles.containerLeft1}>
+                <div className={styles.containerLeft1}>
                     <Image
                         src="/images/home/explanation/people1.png"
                         alt="Inventia Experience"
@@ -75,13 +84,14 @@ const Explanation = () => {
                         className={styles.imgLeft1}
                     />
                     <div className={styles.containerLeft2}>
-                        <FadeInWrapper type='fadeinright' replay={true} animationSize="large" speed=".5s">
+                        <FadeInWrapper type='fadeinright' replay={true} animationSize="big" speed="1s">
                             <Text texts={explanationText1} className={styles.textLeft1} />
                         </FadeInWrapper>
-                        <Link href={ROUTE_SERVICES}>
-                            <div className={styles.containerLeft3}>
-                                <Text text={experienceText1} className={styles.textLeft2} />
-                                <FadeInWrapper type='fadeinright' replay={true} animationSize="large" speed=".5s">
+
+                        <div className={styles.containerLeft3}>
+                            <Text text={experienceText1} className={styles.textLeft2} />
+                            <FadeInWrapper type='fadeinright' replay={true} animationSize="big" speed="1s">
+                                <Link href={`${ROUTE_SERVICES}#${TAG_INVENTIAEXPERIENCE}`}>
                                     <Image
                                         src="/images/home/explanation/orange-arrow.svg"
                                         alt="Inventia Experience"
@@ -90,21 +100,30 @@ const Explanation = () => {
                                         priority
                                         className={styles.imgLeft2}
                                     />
-                                </FadeInWrapper>
-                            </div>
-                        </Link>
+                                </Link>
+                            </FadeInWrapper>
+                        </div>
                     </div>
                 </div>
 
-                <div id={TAG_INVENTIASOFTWARE} className={styles.containerRight1}>
+                <div style={{
+                    position: 'relative'
+                }} className={styles.containerRight1}>
+                    <div
+                        id={TAG_INVENTIASOFTWARE}
+                        style={{
+                            position: 'absolute',
+                            top: -180
+                        }}
+                    />
                     <div className={styles.containerRight2}>
-                        <FadeInWrapper type='fadeinup' replay={true} animationSize="large" speed=".5s">
+                        <FadeInWrapper type='fadeinup' replay={true} animationSize="big" speed="1s">
                             <Text texts={explanationText2} className={styles.textRight1} />
                         </FadeInWrapper>
-                        <Link href={ROUTE_SERVICES}>
-                            <div className={styles.containerRight3}>
-                                <Text text={softwareText1} className={styles.textRight2} />
-                                <FadeInWrapper type='fadeinright' replay={true} animationSize="large" speed=".5s">
+                        <div className={styles.containerRight3}>
+                            <Text text={softwareText1} className={styles.textRight2} />
+                            <FadeInWrapper type='fadeinright' replay={true} animationSize="big" speed="1s">
+                                <Link href={`${ROUTE_SERVICES}#${TAG_INVENTIASOFTWARE}`}>
                                     <Image
                                         src="/images/home/explanation/blue-arrow.svg"
                                         alt="Inventia Software"
@@ -113,9 +132,9 @@ const Explanation = () => {
                                         priority
                                         className={styles.imgRight2}
                                     />
-                                </FadeInWrapper>
-                            </div>
-                        </Link>
+                                </Link>
+                            </FadeInWrapper>
+                        </div>
                     </div>
                     <Image
                         src="/images/home/explanation/people2.png"

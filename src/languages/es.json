@@ -17,7 +17,7 @@
             "title": "Servicios",
             "section1": {
                 "subtitle1": "Inventia Experience",
-                "text1": "Costumer Research and Insights",
+                "text1": "Customer Research e Insights",
                 "text2": "Product Design & Build",
                 "text3": "Service Design"
             },
@@ -196,7 +196,7 @@
             },
             "block4": {
                 "title": "casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen Product Design & Build."
+                "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen Customer Research e Insights."
             }
         },
         "inventiaexperience-productdesign": {
@@ -222,7 +222,7 @@
             },
             "block4": {
                 "title": "casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen Service design."
+                "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen Product Design & Build."
             }
         },
         "inventiaexperience-servicedesign": {
@@ -241,7 +241,7 @@
             },
             "block4": {
                 "title": "casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, Fullstack Development."
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, Service Design."
             }
         },
         "inventiasoftware-fullstackdevelopment": {
@@ -274,7 +274,7 @@
             },
             "block3": {
                 "title": "casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados\nen Cloud Engineering."
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados\nen Full Stack Development."
             }
         },
         "inventiasoftware-cloudengineering": {
@@ -293,7 +293,7 @@
             },
             "block3": {
                 "title": "casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados\nen Devops Implementation."
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados\nen Cloud Engineering."
             }
         },
         "inventiasoftware-devopsimplementation": {
@@ -319,7 +319,7 @@
             },
             "block3": {
                 "title": "casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen Customer Research e Insights."
+                "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen DevOps Implementation."
             }
         }
     },
@@ -351,15 +351,15 @@
             "block5": {
                 "title": "Testimonios",
                 "slide1": {
-                    "message": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
+                    "message": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...”",
                     "author": "-Nombre Apellido 1."
                 },
                 "slide2": {
-                    "message": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,”",
+                    "message": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...”",
                     "author": "-Nombre Apellido 2."
                 },
                 "slide3": {
-                    "message": "“Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum...”",
+                    "message": "“Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum...”",
                     "author": "-Nombre Apellido 3."
                 }
             },

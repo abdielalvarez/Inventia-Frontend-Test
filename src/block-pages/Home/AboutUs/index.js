@@ -76,7 +76,7 @@ const AboutUs = () => {
                         className={styles.imgLeft1}
                     />
                     <FadeInWrapper
-                        speed=".5s"
+                        speed="1s"
                         className={styles.wrapper1}
                         type='fadeinright'
                         replay={true}

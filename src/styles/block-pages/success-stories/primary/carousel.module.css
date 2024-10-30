@@ -110,7 +110,7 @@
 
     .message {
         max-width: 265px;
-        margin: 0 auto 0 45px;
+        margin: 54px auto 0 45px;
         text-align: start;
     }
 
@@ -124,7 +124,7 @@
 
     .title {
         text-align: start;
-        margin: 0 0 -39px 60px;
+        margin: 0 0 -10px 60px;
     }
     
     .bullets {
