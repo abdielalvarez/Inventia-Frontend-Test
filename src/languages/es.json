@@ -60,8 +60,8 @@
     "footer": {
         "contact-us": {
             "title": "Contáctanos",
-            "cellphone": "55.55.92.32.66",
-            "email": "contacto@inventialab.com"
+            "cellphone": "+52 (55) 8851-1250",
+            "email": "hablemos@inventialab.com"
         },
         "address": {
             "title": "Dirección",
@@ -241,7 +241,7 @@
             },
             "block4": {
                 "title": "casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, Service Design."
+                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Service Design."
             }
         },
         "inventiasoftware-fullstackdevelopment": {
@@ -521,7 +521,7 @@
             "input1": "teléfono",
             "input2": "email",
             "input3": "nombre",
-            "input4": "puesto al que estás interesado",
+            "input4": "puesto de interés",
             "button": "¡Enviar!"
         }
     },

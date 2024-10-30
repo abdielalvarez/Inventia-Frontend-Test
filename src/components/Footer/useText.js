@@ -23,8 +23,8 @@ const useText = () => {
     const cellphoneText = [{
         text: t('footer.contact-us.cellphone'),
         tag: "a",
-        href: "tel:+525555923266",
-        ariaLabel: "Call 55 55 92 32 66",
+        href: "tel:+525588511250",
+        ariaLabel: "Call 55 88 51 12 50",
         font: "poppinsLight",
         size: 15,
         color: 'whiteBase',

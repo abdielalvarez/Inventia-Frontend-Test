@@ -60,12 +60,12 @@
     "footer": {
         "contact-us": {
             "title": "Contact us",
-            "cellphone": "55.55.92.32.66",
-            "email": "contacto@inventialab.com"
+            "cellphone": "+52 (55) 8851-1250",
+            "email": "hablemos@inventialab.com"
         },
         "address": {
             "title": "Address",
-            "text1": "Lisboa #47 Colonia Juárez, C.P 06600, CDMX"
+            "text1": "Av. Santa Fe 94-Torre A - Piso 8,\nSanta Fe, Zedec Sta Fé, Álvaro Obregón\nC.P 01210, Ciudad de México"
         },
         "home": {
             "title": "Home",
@@ -521,7 +521,7 @@
             "input1": "phone number",
             "input2": "email",
             "input3": "name",
-            "input4": "position you are interested in",
+            "input4": "position of interest",
             "button": "Send!"
         }
     },
