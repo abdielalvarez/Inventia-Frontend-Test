@@ -22,6 +22,7 @@ export const TAG_INVENTIAEXPERIENCE = 'inventiaexperience'
 export const TAG_INVENTIASOFTWARE = 'inventiasoftware'
 export const TAG_METHODOLOGY = 'methodology'
 export const TAG_JOIN_TEAM = 'join-team'
+export const TAG_JOIN_TEAM_MOBILE = 'join-team-mobile'
 
 export const EXTERNAL_ROUTE_ION = "https://www.ion.com.mx/"
 export const EXTERNAL_ROUTE_GENTERA = "https://www.gentera.com.mx/gentera/"

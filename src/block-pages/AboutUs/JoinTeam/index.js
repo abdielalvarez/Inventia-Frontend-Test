@@ -9,7 +9,7 @@ import ApiService from "@/services";
 import { joinTeamOptions } from "@/utils/constants";
 import { useMemo, useState } from "react";
 import envs from "@/config/envs";
-import { TAG_JOIN_TEAM } from "@/utils/routes";
+import { TAG_JOIN_TEAM, TAG_JOIN_TEAM_MOBILE } from "@/utils/routes";
 import styles from "../../../styles/block-pages/about-us/jointeamform.module.css";
 import inputStyles from "../../../styles/components/input.module.css";
 
@@ -91,7 +91,7 @@ const JoinTeamForm = () => {
         <section id={TAG_JOIN_TEAM} className={styles.background}>
             <div className={styles.wrapper}>
                 <div>
-                    <div className={styles.infoContent}>
+                    <div id={TAG_JOIN_TEAM_MOBILE} className={styles.infoContent}>
                         {isResponsive ?
                             <Image
                                 src="/images/home/lets-talk/logo.svg"
