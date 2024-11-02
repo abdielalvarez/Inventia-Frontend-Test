@@ -68,7 +68,19 @@ const Experience = () => {
     }
 
     return (
-        <section id={TAG_INVENTIAEXPERIENCE} className={styles.background}>
+        <section
+            className={styles.background}
+            style={{
+                position: 'relative'
+            }}
+        >
+            <div
+                id={TAG_INVENTIAEXPERIENCE}
+                style={{
+                    position: 'absolute',
+                    top: isResponsive ? -50 : 0
+                }}
+            />
             <div className={styles.wrapper}>
                 <div className={styles.textContainer}>
                     <FadeInWrapper type='fadeinright' replay={true}>

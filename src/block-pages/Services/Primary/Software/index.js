@@ -76,7 +76,14 @@ const Software = () => {
     }
 
     return (
-        <section id={TAG_INVENTIASOFTWARE} className={styles.background}>
+        <section className={styles.background}>
+            <div
+                id={TAG_INVENTIASOFTWARE}
+                style={{
+                    position: 'absolute',
+                    top: isResponsive ? -50 : 50
+                }}
+            />
             <div className={styles.wrapper}>
                 <div className={styles.textContainer}>
                     <div>
