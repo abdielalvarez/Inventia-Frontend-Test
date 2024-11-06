@@ -1,6 +1,7 @@
 .background {
     position: relative;
     overflow: hidden;
+    margin: -1px 0 0px;
 }
 
 .wrapper1 {
@@ -51,7 +52,7 @@
 
 .img {
     position: absolute;
-    top: 38%;
+    top: 41%;
     right: 0;
 }
 
@@ -70,7 +71,7 @@
 
     .img {
         position: absolute;
-        top: 36%;
+        top: 42%;
         right: 0;
     }
 

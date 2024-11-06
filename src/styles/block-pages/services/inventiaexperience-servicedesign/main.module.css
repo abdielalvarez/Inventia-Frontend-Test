@@ -1,6 +1,6 @@
 .background {
     background: #FFFFFF;
-    padding: 196px 40px 300px;
+    padding: 250px 40px 300px;
 }
 
 .wrapper {
@@ -20,8 +20,8 @@
     width: 100%;
 }
 
-.titleContainer p {
-    line-height: 95%;
+.title {
+    line-height: 45.6px;
 }
 
 .descriptionContainer {
@@ -29,15 +29,10 @@
     width: 100%;
 }
 
-.descriptionContainer p {
-    line-height: 140.625%;
-}
-
 .text {
     max-width: 380px;
     width: 100%;
     line-height: 49.156px;
-    margin: 0 0 100vh;
 }
 
 .content {
@@ -66,7 +61,7 @@
     }
 
     .background {
-        padding: 69px 40px 120px;
+        padding: 120px 40px;
     }
 
     .title {
