@@ -80,8 +80,8 @@ const Header = () => {
         <Image
           src="/images/header/logo.svg"
           alt="Logo"
-          width={!isSmallScreen ? 73 : 36}
-          height={!isSmallScreen ? 87 : 43}
+          width={!isSmallScreen ? 42 : 36}
+          height={!isSmallScreen ? 50 : 43}
           priority
         />
       </Link>
