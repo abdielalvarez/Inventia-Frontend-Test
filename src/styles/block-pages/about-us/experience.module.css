@@ -14,6 +14,13 @@
 
 .img {
     margin: 0 0 113px;
+    background-color: #EBA058;
+    width: 204px;
+    height: 204px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .container1 {
@@ -37,14 +44,14 @@
 }
 
 .button {
-    margin: 150px 0 0;
+    margin: 302px 0 0;
     display: flex;
     justify-content: flex-end;
 }
 
 .line {
-    background: #B4B3B3;
-    width: 1px;
+    background: #EBA058;
+    width: 4px;
     height: 83%;
     position: absolute;
     top: 20px;
@@ -53,7 +60,7 @@
 }
 
 .box {
-    max-width: 128px;
+    max-width: 220px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -99,11 +106,13 @@
 
     .img {
         margin: 0 0 50px;
+        width: 109px;
+        height: 109px;
     }
 
     .line {
         left: auto;
-        right: 45px;
+        right: 52px;
     }
 
     .box {

@@ -37,30 +37,33 @@ const Software = () => {
                 >
                     <div className={styles.container1}>
                         <div className={styles.line} />
-                        <Image
-                            src="/images/about-us/software/icon1.png"
-                            alt="Software"
-                            width={isResponsive ? 90 : 189}
-                            height={isResponsive ? 90 : 189}
-                            priority
-                            className={styles.img}
-                        />
-                        <Image
-                            src="/images/about-us/software/icon2.png"
-                            alt="Software"
-                            width={isResponsive ? 90 : 189}
-                            height={isResponsive ? 90 : 189}
-                            priority
-                            className={styles.img}
-                        />
-                        <Image
-                            src="/images/about-us/software/icon3.png"
-                            alt="Software"
-                            width={isResponsive ? 90 : 189}
-                            height={isResponsive ? 90 : 189}
-                            priority
-                            className={styles.img}
-                        />
+                        <div className={styles.img}>
+                            <Image
+                                src="/images/about-us/software/new/icon1.png"
+                                alt="Software"
+                                width={isResponsive ? 64 : 120}
+                                height={isResponsive ? 63 : 189}
+                                priority
+                            />
+                        </div>
+                        <div className={styles.img}>
+                            <Image
+                                src="/images/about-us/software/new/icon2.png"
+                                alt="Software"
+                                width={isResponsive ? 64 : 120}
+                                height={isResponsive ? 58 : 110}
+                                priority
+                            />
+                        </div>
+                        <div className={styles.img}>
+                            <Image
+                                src="/images/about-us/software/new/icon3.png"
+                                alt="Software"
+                                width={isResponsive ? 76 : 143}
+                                height={isResponsive ? 34 : 66}
+                                priority
+                            />
+                        </div>
                     </div>
                 </FadeInWrapper>
                 <div className={styles.container2}>

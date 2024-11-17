@@ -1,6 +1,6 @@
 .background {
     background: #B4B3B3;
-    padding: 293px 40px 212px;
+    padding: 200px 240px 240px;
 }
 
 .wrapper {
@@ -17,14 +17,14 @@
 
 .titleContainer {
     width: 100%;
-    margin: 0 0 20px;
+    margin: 0 0 80px;
     display: flex;
     justify-content: flex-end;
 }
 
 .container2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 100%;
     margin: 20px 0 0;
 }
@@ -33,11 +33,16 @@
 
     .background {
         background: #B4B3B3;
-        padding: 115px 40px;
+        padding: 64px 32px 90px;
+    }
+
+    .titleContainer {
+        margin: 0 0 15px;
     }
 
     .container {
-        margin: 0 0 10px;
+        margin: 0 auto 10px;
+        max-width: 265px;
     }
 
     .img {
@@ -45,7 +50,7 @@
     }
 
     .title {
-        max-width: 147px;
+        max-width: 142px;
         line-height: 19px;
     }
 }

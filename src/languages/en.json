@@ -330,10 +330,14 @@
                 "text1": "We transform processes that lead from understanding your customer to offering a functional solution."
             },
             "block2": {
-                "title": "We specialize in financial services",
-                "title-mobile": "We specialize in financial services"
+                "text1": "We have",
+                "text2": "done",
+                "text3": "+114",
+                "text4": "successful",
+                "text5": "projects."
             },
             "block3": {
+                "title": "We are specialists in:",
                 "collider1": {
                     "title": "Financial Services",
                     "explanation1": "Podemos progresar",

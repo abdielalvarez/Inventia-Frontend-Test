@@ -34,30 +34,33 @@ const Experience = () => {
                 >
                     <div className={styles.container1}>
                         <div className={styles.line} />
-                        <Image
-                            src="/images/about-us/experience/icon1.png"
-                            alt="Experience"
-                            width={isResponsive ? 90 : 189}
-                            height={isResponsive ? 90 : 189}
-                            priority
-                            className={styles.img}
-                        />
-                        <Image
-                            src="/images/about-us/experience/icon2.png"
-                            alt="Experience"
-                            width={isResponsive ? 90 : 189}
-                            height={isResponsive ? 90 : 189}
-                            priority
-                            className={styles.img}
-                        />
-                        <Image
-                            src="/images/about-us/experience/icon3.png"
-                            alt="Experience"
-                            width={isResponsive ? 90 : 189}
-                            height={isResponsive ? 90 : 189}
-                            priority
-                            className={styles.img}
-                        />
+                        <div className={styles.img}>
+                            <Image
+                                src="/images/about-us/experience/new/icon1.png"
+                                alt="Experience"
+                                width={isResponsive ? 64 : 120}
+                                height={isResponsive ? 63 : 120}
+                                priority 
+                            />
+                        </div>
+                        <div className={styles.img}>
+                            <Image
+                                src="/images/about-us/experience/new/icon2.png"
+                                alt="Experience"
+                                width={isResponsive ? 64 : 120}
+                                height={isResponsive ? 63 : 120}
+                                priority 
+                            />
+                        </div>
+                        <div className={styles.img}>
+                            <Image
+                                src="/images/about-us/experience/new/icon3.png"
+                                alt="Experience"
+                                width={isResponsive ? 65 : 122}
+                                height={isResponsive ? 54 : 106}
+                                priority 
+                            />
+                        </div>
                     </div>
                 </FadeInWrapper>
                 <div className={styles.container2}>

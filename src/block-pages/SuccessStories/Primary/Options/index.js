@@ -38,6 +38,7 @@ const Options = () => {
     }, [colliders]);
 
     const {
+        optionTitleText,
         financialServicesText,
         financialServicesOption1Text,
         financialServicesOption2Text,
@@ -55,67 +56,70 @@ const Options = () => {
 
     return (
         <div className={styles.background}>
-            <div className={styles.wrapper}>
-                <div
-                    className={`${styles.optionsCollider} ${
-                        colliders.financialServices
-                            ? styles.optionsColliderOpen
-                            : ""
-                    }`}
-                    onClick={() => toggleCollider("financialServices")}
-                >
-                    <Text className={styles.title} text={financialServicesText} />
+            <Text className={styles.mainTitle} text={optionTitleText} />
+            <div className={styles.mainContainer}>
+                <div className={styles.wrapper}>
                     <div
-                        className={styles.collapseContent}
-                        ref={financialServicesRef}
+                        className={`${styles.optionsCollider} ${
+                            colliders.financialServices
+                                ? styles.optionsColliderOpen
+                                : ""
+                        }`}
+                        onClick={() => toggleCollider("financialServices")}
                     >
-                        <div className={styles.text}>
-                            <Text text={financialServicesOption1Text} />
+                        <Text className={styles.title} text={financialServicesText} />
+                        <div
+                            className={styles.collapseContent}
+                            ref={financialServicesRef}
+                        >
+                            <div className={styles.text}>
+                                <Text text={financialServicesOption1Text} />
+                            </div>
+                            <div className={styles.text}>
+                                <Text text={financialServicesOption2Text} />
+                            </div>
                         </div>
-                        <div className={styles.text}>
-                            <Text text={financialServicesOption2Text} />
-                        </div>
+                        <Image
+                            src={`/images/success-stories/primary/main/${openedFinancialServicesArrow}-arrow.svg`}
+                            alt="Financial Services"
+                            width={is768 ? 25 : 50}
+                            height={is768 ? 12 : 30}
+                            priority
+                        />
                     </div>
-                    <Image
-                        src={`/images/success-stories/primary/main/${openedFinancialServicesArrow}-arrow.svg`}
-                        alt="Financial Services"
-                        width={is768 ? 25 : 50}
-                        height={is768 ? 12 : 30}
-                        priority
-                    />
-                </div>
-                <div
-                    className={`${styles.optionsCollider} ${
-                        colliders.banking ? styles.optionsColliderOpen : ""
-                    }`}
-                    onClick={() => toggleCollider("banking")}
-                >
-                    <Text className={styles.title} text={bankingText} />
-                    <div className={styles.collapseContent} ref={bankingRef}>
-                        <div className={styles.text}>
-                            <Text text={bankingOption1Text} />
+                    <div
+                        className={`${styles.optionsCollider} ${
+                            colliders.banking ? styles.optionsColliderOpen : ""
+                        }`}
+                        onClick={() => toggleCollider("banking")}
+                    >
+                        <Text className={styles.title} text={bankingText} />
+                        <div className={styles.collapseContent} ref={bankingRef}>
+                            <div className={styles.text}>
+                                <Text text={bankingOption1Text} />
+                            </div>
+                            <div className={styles.text}>
+                                <Text text={bankingOption2Text} />
+                            </div>
                         </div>
-                        <div className={styles.text}>
-                            <Text text={bankingOption2Text} />
-                        </div>
+                        <Image
+                            src={`/images/success-stories/primary/main/${openedBankingArrow}-arrow.svg`}
+                            alt="Banking"
+                            width={is768 ? 25 : 50}
+                            height={is768 ? 12 : 30}
+                            priority
+                        />
                     </div>
-                    <Image
-                        src={`/images/success-stories/primary/main/${openedBankingArrow}-arrow.svg`}
-                        alt="Banking"
-                        width={is768 ? 25 : 50}
-                        height={is768 ? 12 : 30}
-                        priority
-                    />
                 </div>
+                <Image
+                    src={`/images/success-stories/primary/banner/illustration.jpg`}
+                    alt="Success Stories"
+                    width={is768 ? 196 : is1150 ? 500 : 893}
+                    height={is768 ? 294 : is1150 ? 750 : 1039}
+                    priority
+                    className={styles.img}
+                />
             </div>
-            <Image
-                src={`/images/success-stories/primary/banner/illustration.jpg`}
-                alt="Success Stories"
-                width={is768 ? 196 : is1150 ? 500 : 893}
-                height={is768 ? 294 : is1150 ? 750 : 1039}
-                priority
-                className={styles.img}
-            />
         </div>
     );
 };

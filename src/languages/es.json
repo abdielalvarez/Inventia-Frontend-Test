@@ -241,7 +241,7 @@
             },
             "block4": {
                 "title": "casos de éxito",
-                "text1": "Conoce a nuestros clientes y los proyectos que hemos realizado con ellos, enfocados en Service Design."
+                "text1": "Conoce a nuestros clientes y los proyectos\nque hemos realizado con ellos, enfocados\nen Service Design."
             }
         },
         "inventiasoftware-fullstackdevelopment": {
@@ -330,10 +330,14 @@
                 "text1": "Transformamos procesos que llevan desde el entendimiento de tu cliente, a ofrecer una solución funcional."
             },
             "block2": {
-                "title": "Nos especializamos en\nservicios financieros",
-                "title-mobile": "Nos especializamos en servicios financieros"
+                "text1": "Hemos",
+                "text2": "realizado",
+                "text3": "+114",
+                "text4": "proyectos",
+                "text5": "con éxito."
             },
             "block3": {
+                "title": "Somos especialistas en:",
                 "collider1": {
                     "title": "Servicios Financieros",
                     "explanation1": "Podemos progresar",

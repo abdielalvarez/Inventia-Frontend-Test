@@ -1,6 +1,6 @@
 .background {
     background: #B4B3B3;
-    padding: 320px 40px 360px;
+    padding: 200px 240px 178px;
 }
 
 .wrapper {
@@ -11,14 +11,13 @@
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
 }
 
 .titleContainer {
-    max-width: 489px;
     width: 100%;
-    margin: 0 0 20px;
+    margin: 0 0 44px;
     text-align: end;
 }
 
@@ -40,17 +39,17 @@
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    margin: 100px 0 0;
+    margin: 80px 0 0;
 }
 
 @media (max-width: 768px) {
 
     .background {
-        padding: 70px 40px;
+        padding: 64px 32px;
     }
 
     .container {
-        margin: 0 0 10px;
+        margin: 0 0 6px;
     }
 
     .container2 {
@@ -58,7 +57,7 @@
         align-items: flex-end;
         max-width: 248px;
         width: 100%;
-        margin: 0 0 10px auto;
+        margin: 0 0 0 auto;
     }
 
     .titleContainer {

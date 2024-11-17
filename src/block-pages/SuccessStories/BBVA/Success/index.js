@@ -32,14 +32,14 @@ const Success = () => {
                         }
                     </FadeInWrapper>
                     <div className={styles.container2}>
-                        <Image
+                        {/* <Image
                             src="/images/success-stories/banking-bbva/success/illustration.jpg"
                             alt="Success"
                             width={isResponsive ? 130 : 345}
                             height={isResponsive ? 164 : 435}
                             priority
                             className={styles.img}
-                        />
+                        /> */}
                         <div>
                             {isResponsive ?
                                 <div className={styles.titleContainer}>

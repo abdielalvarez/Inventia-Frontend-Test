@@ -33,15 +33,6 @@ const Success = () => {
             <div className={styles.wrapper}>
                 <div className={styles.container}>
                     <div>
-                        <Image
-                            src="/images/services/inventiaexperience-productdesign/success/illustration.jpg"
-                            alt="Success"
-                            width={isResponsive ? 130 : 345}
-                            height={isResponsive ? 164 : 435}
-                            priority
-                        />
-                    </div>
-                    <div>
                         <FadeInWrapper type='fadeinup' replay={true}>
                             <div className={styles.titleContainer}>
                                 <Text text={titleText} className={styles.title} />

@@ -4,7 +4,8 @@ import ContactUs from "@/block-pages/SuccessStories/Primary/ContactUs";
 import Description from "@/block-pages/SuccessStories/Primary/Description";
 import Main from "@/block-pages/SuccessStories/Primary/Main";
 import Options from "@/block-pages/SuccessStories/Primary/Options";
-import Specialize from "@/block-pages/SuccessStories/Primary/Specialize";
+import Projects from "@/block-pages/SuccessStories/Primary/Projects";
+// import Specialize from "@/block-pages/SuccessStories/Primary/Specialize";
 import React, { useEffect } from "react";
 
 export default function SuccessStories() {
@@ -17,7 +18,8 @@ export default function SuccessStories() {
     <>
       <main>
         <Main />
-        <Specialize />
+        {/* <Specialize /> */}
+        <Projects />
         <Options />
         <Description />
         <Carousel />

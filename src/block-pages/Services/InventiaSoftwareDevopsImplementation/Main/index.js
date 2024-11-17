@@ -145,8 +145,17 @@ const Main = () => {
                         </div>
                     </div>
                 </FadeInWrapper>
-
             </section>
+            <div className={styles.background2}>
+                <Image
+                    src="/images/services/inventiasoftware-devopsimplementation/main/background.jpg"
+                    alt="Devops Implementation"
+                    width={1920}
+                    height={1080}
+                    priority
+                    layout="responsive"
+                />
+            </div>
         </div>
     )
 }

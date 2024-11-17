@@ -1,12 +1,25 @@
 'use client'
 import { useApiContext } from "@/context/wrappers/ContextProvider";
 import useResponsive from "@/hooks/useResponsive";
-import { ROUTE_SUCCESSSTORIES_BANKINGBBVA, ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR, ROUTE_SUCCESSSTORIES_BANKINGGRUPOGENTERA, ROUTE_SUCCESSSTORIES_BANKINGION } from "@/utils/routes";
+import {
+    ROUTE_SUCCESSSTORIES_BANKINGBBVA,
+    ROUTE_SUCCESSSTORIES_BANKINGFINANCIERAPODEMOSPROGRESAR,
+    ROUTE_SUCCESSSTORIES_BANKINGGRUPOGENTERA,
+    ROUTE_SUCCESSSTORIES_BANKINGION
+} from "@/utils/routes";
 
 const useText = (colliders) => {
 
     const { t } = useApiContext()
     const isResponsive = useResponsive(768);
+
+    const optionTitleText = {
+        text: t('success-stories.primary.block3.title'),
+        tag: "p",
+        font: "poppinsMedium",
+        size: isResponsive ? 16 : 40,
+        color: 'blackUltra',
+    }
 
     const financialServicesText = {
         text: t('success-stories.primary.block3.collider1.title'),
@@ -61,6 +74,7 @@ const useText = (colliders) => {
     }
 
     return {
+        optionTitleText,
         financialServicesText,
         financialServicesOption1Text,
         financialServicesOption2Text,
