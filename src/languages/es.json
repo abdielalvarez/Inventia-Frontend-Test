@@ -6,6 +6,7 @@
     "upload": {
         "text1": "Arrastra y suelta o",
         "text2": "selecciona tus documentos",
+        "text2-mobile": "selecciona tus documentos",
         "text3": "PDF, JPG o PNG"
     },
     "button": {

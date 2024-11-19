@@ -62,7 +62,7 @@ const Brief = () => {
                 <div className={styles.container2}>
                     <FadeInWrapper type='fadeindown' replay={true}>
                         <div className={styles.description1Container}>
-                            <Text text={description1Text} />
+                            <Text className={styles.descriptionText} text={description1Text} />
                         </div>
                     </FadeInWrapper>
                 </div>

@@ -56,7 +56,7 @@ const Input = ({
   };
 
   const selectDocumentText = {
-    text: t('upload.text2'),
+    text: isResponsive ? t('upload.text2-mobile') : t('upload.text2'),
     tag: "p",
     font: "poppinsMedium",
     size: isResponsive ? 12 : 16,
@@ -99,7 +99,11 @@ const Input = ({
                 priority
               />
             </div>
-            <div><Text text={dragAndDropText} className={styles.fileText1} /></div>
+            {!isResponsive ?
+              <div>
+                <Text text={dragAndDropText} className={styles.fileText1} />
+              </div> : null
+            }
             <div><Text text={selectDocumentText} className={styles.fileText2} /></div>
             <div><Text text={extensionsText} className={styles.fileText3} /></div>
           </label>

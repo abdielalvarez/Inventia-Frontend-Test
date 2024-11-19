@@ -73,6 +73,12 @@
         margin: 0 0 30px;
     }
 
+    .title {
+        max-width: inherit;
+        
+        white-space: inherit;
+    }
+
     .titleContainer {
         text-align: start;
     }

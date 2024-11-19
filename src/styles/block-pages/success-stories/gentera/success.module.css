@@ -53,4 +53,8 @@
         max-width: 142px;
         line-height: 19px;
     }
+
+    .container2 {
+        text-align: end;
+    }
 }

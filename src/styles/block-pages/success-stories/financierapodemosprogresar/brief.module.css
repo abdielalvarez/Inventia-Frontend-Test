@@ -81,6 +81,7 @@
     }
 
     .description1Container p {
+        display: block;
         line-height: 15.469px;
     }
 }

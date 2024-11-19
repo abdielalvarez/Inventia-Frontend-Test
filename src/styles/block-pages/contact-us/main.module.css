@@ -68,7 +68,7 @@
 @media (max-width: 768px) {
 
     .background {
-        padding: 101px 10px 100px 40px;
+        padding: 101px 10px 100px 65.5px;
     }
 
     .formContainer {
@@ -97,7 +97,7 @@
 
     .subtitle {
         display: block;
-        max-width: 286px;
+        max-width: 240px;
         width: 100%;
     }
 
@@ -107,6 +107,10 @@
 
     .buttonContainer button {
         height: 48px;
+    }
+
+    .titleContainer {
+        margin: 0 auto 16px;
     }
 
     .subtitleContainer {

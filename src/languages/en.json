@@ -6,6 +6,7 @@
     "upload": {
         "text1": "Drop and drag",
         "text2": "or choose your files",
+        "text2-mobile": "choose your files",
         "text3": "PDF, JPG or PNG"
     },
     "button": {
