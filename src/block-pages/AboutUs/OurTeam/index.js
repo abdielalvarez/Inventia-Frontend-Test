@@ -33,7 +33,7 @@ const OurTeam = () => {
         tag: "p",
         font: isResponsive ? "poppinsSemibold" : "poppinsBold",
         size: isResponsive ? 24 : 48,
-        color: isResponsive ? 'blackBase' : 'orangeBase',
+        color: 'orangeBase',
     }
 
     const softwareText = {
@@ -41,7 +41,7 @@ const OurTeam = () => {
         tag: "p",
         font: isResponsive ? "poppinsSemibold" : "poppinsBold",
         size: isResponsive ? 24 : 48,
-        color: isResponsive ? 'blackBase' : 'blueBase',
+        color: 'blueBase',
     }
 
     return (
