@@ -22,7 +22,7 @@ export default function SuccessStories() {
         <Projects />
         <Options />
         <Description />
-        <Carousel />
+        {/* <Carousel /> */}
         <ContactUs />
       </main>
     </>

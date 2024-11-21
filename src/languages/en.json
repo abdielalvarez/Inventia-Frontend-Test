@@ -19,7 +19,7 @@
             "section1": {
                 "subtitle1": "Inventia Experience",
                 "text1": "Customer Research and Insights",
-                "text2": "Product Design & Build",
+                "text2": "Product Design and Build",
                 "text3": "Service Design"
             },
             "section2": {
@@ -223,7 +223,7 @@
             },
             "block4": {
                 "title": "success stories",
-                "text1": "Meet our clients and the projects we have done with them focused on Product Design & Build."
+                "text1": "Meet our clients and the projects we have done with them focused on Product Design and Build."
             }
         },
         "inventiaexperience-servicedesign": {
