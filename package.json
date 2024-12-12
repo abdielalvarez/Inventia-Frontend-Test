@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "emulate": "next build && firebase emulators:start",
+    "deploy": "next build && firebase deploy",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "config": "firebase experiments:enable webframeworks"
   },
   "dependencies": {
     "framer-motion": "^11.11.9",
